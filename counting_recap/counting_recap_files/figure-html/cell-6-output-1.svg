@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="192" height="192" viewBox="0 0 192 192">
+<defs>
+</defs>
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">16</text>
+</g>
+<g transform="translate(48,0)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
+</g>
+<g transform="translate(96,0)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
+</g>
+<g transform="translate(144,0)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">13</text>
+</g>
+<g transform="translate(0,48)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+</g>
+<g transform="translate(48,48)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">11</text>
+</g>
+<g transform="translate(96,48)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">10</text>
+</g>
+<g transform="translate(144,48)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+</g>
+<g transform="translate(0,96)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+</g>
+<g transform="translate(48,96)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+</g>
+<g transform="translate(96,96)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+<g transform="translate(144,96)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">12</text>
+</g>
+<g transform="translate(0,144)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
+<g transform="translate(48,144)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">14</text>
+</g>
+<g transform="translate(96,144)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">15</text>
+</g>
+<g transform="translate(144,144)">
+<rect x="0" y="0" width="48" height="48" fill="white" stroke="black" stroke-width="2" />
+<text x="24.0" y="24.0" font-size="28" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+</svg>
