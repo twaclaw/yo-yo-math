@@ -1,0 +1,113 @@
+## Introducing the Soroban abacus
+
+
+:::{.fun-fact}
+My fellow townsman, Jaime García Serrano, has a superpower. He can perform complex mathematical computations in his head in the blink of an eye. That's why people call him "the human calculator." 
+
+He claims that he is not a genius, but rather that he developed a method based on his early work with the Japanese abacus, as well as through a lot of practice.
+
+Do you see? Like playing the cello, dancing, or climbing mountains, math is something you get better at by practicing.
+:::
+
+:::{.teacher-tip}
+Having a real abacus can be practical and fun. Make sure you spend some time teaching the kids how to use it and which fingers to use. There are plenty of good online resources for that. 
+
+This is a Python library for drawing these Soroban abacuses: [https://github.com/twaclaw/soroban](https://github.com/twaclaw/soroban).
+:::
+
+A Soroban abacus looks like this:
+
+```{python}
+# | echo: false
+# | label: soroban-1
+# | fig-cap: "A representation of a Soroban abacus."
+
+from soroban import Soroban
+
+abacus = Soroban(ncolumns=12)
+
+abacus.to_svg()
+# fig.show()
+```
+
+The number of columns can vary. For now, we will be using a tiny, cute one-column Soroban.
+
+```{python}
+# | echo: false
+# | label: soroban-1-column
+# | fig-cap: "A tiny, 1-column Soroban. In this position, the beads represent $0$."
+
+from soroban import Soroban
+
+abacus = Soroban(ncolumns=1)
+
+abacus.to_svg()
+# fig.show()
+```
+
+
+The beads on an abacus represent quantities, and you can perform operations like addition and subtraction with them. The dark bar inside the abacus is called the "answer" bar. Beads only add to the value if they touch the answer bar. 
+
+The beads on this one-column  abacus represent numbers from $0$ to $9$. The upper beads represent $0$ when they are not touching the bar and $5$ when they are. The lower beads each represent the value of $1$.
+
+Review the following examples, then complete the exercises.
+
+```{python}
+# | echo: false
+# | fig-cap: "Number $8$. Notice that the upper bead is touching the answer bar, which means it contributes $5$ to the total value. The three lower beads are also touching the answer bar, which means they contribute $3$ to the total value. In total, we have $5 + 3 = 8$."
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+soroban_column(8)
+# fig.show()
+```
+
+### Exercises {.unlisted .unnumbered}
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+soroban_column(1, font_color="white")
+```
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+soroban_column(7, font_color="white")
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+soroban_column(4, font_color="white")
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+soroban_column(9, font_color="white")
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+soroban_column(5, font_color="white")
+```
+
+
+

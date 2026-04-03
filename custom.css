@@ -1,0 +1,68 @@
+.sidebar-tools-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px !important;
+}
+.sidebar-tools-main a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.sidebar-tools-main a::after {
+  content: attr(title);
+  margin-left: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* Color the sidebar icons */
+.sidebar-tools-main a[title="Buy me a coffee"] i {
+  color: #EE7733; /* kidOrange */
+}
+.sidebar-tools-main a[title="Give us a star on GitHub"] i {
+  color: #009988; /* kidGreen */
+}
+.sidebar-tools-main a[title="Download PDF"] i {
+  color: #0077BB; /* kidBlue */
+}
+
+/* Titles and subtitles in HTML version as in PDF version */
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif !important;
+}
+
+h1, .title, .subtitle {
+  color: #0077BB !important; /* kidBlue */
+}
+
+h2, h3, h4, h5, h6 {
+  color: #EE7733 !important; /* kidOrange */
+}
+
+/* Ensure images fit within the main column */
+main.content img, main.content figure {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Specific to cell outputs (like plots) */
+.cell-output-display {
+    overflow-x: auto;
+}
+
+div.cell-output-display img {
+    max-width: 100%;
+}
+
+/* Widen the main content area by reducing or removing the right margin column if unused */
+/* This targets the grid layout for screens that are wide enough */
+@media (min-width: 992px) {
+    /* If there is no right sidebar content, we can expand */
+    /* However, Quarto themes can be tricky with grid definitions */
+    /* Just ensuring max-width helps a lot */
+    
+    /* Try to force the body text container to be wider if possible */
+    /* This depends on the theme "united" variables */
+}

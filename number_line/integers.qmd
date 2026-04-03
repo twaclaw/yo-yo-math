@@ -1,0 +1,111 @@
+## The integers
+
+
+The counting numbers we introduced in @sec-counting and have used so far form a **set**:  the set of natural numbers.
+
+
+:::{.big-math}
+$$
+ \color{red}{\mathbb{N} = \{0, 1, 2, 3, 4 \cdots\}}
+$$ 
+:::
+
+:::{.fun-fact title="What is a set?"}
+A set is a collection of objects. For instance, this a set of  animals: 
+
+$$
+A=\left\{\text{[koala:2em]{.twemoji}}, \text{[dog_face:2em]{.twemoji}}, \text{[frog:2em]{.twemoji}}, \text{[panda:2em]{.twemoji}}, \text{[chicken:2em]{.twemoji}}\right\}$$
+
+A set can be a subset of another set, meaning that it is contained in that set. For instance, the set of mammals, which are hairy, warm-blooded vertebrates that drink milk, give birth to live young:
+
+$$
+M=\left\{\text{[koala:2em]{.twemoji}}, \text{[dog_face:2em]{.twemoji}}, \text{[panda:2em]{.twemoji}}\right\}
+$$ 
+
+is a subset of the previous set of animals, $A$. We denote it using the symbol $\subset$, that is $M \subset A$. 
+
+Some sets contain only $1$ element, like the set of moons of planet Earth $S = \left\{\text{[moon:2em]{.twemoji}}\right\}$. Some sets contain no elements, like the set of moons of planet Mercury or the set of sharks that can fly $S' = \{\}$. This set is called the empty set and is denoted with $\emptyset$.
+:::
+
+The set that results from extending the natural numbers with the negative reflections of the positive numbers is called the  **integers** and is denoted with ${\color{blue}{\mathbb{Z}}}$.^[$\mathbb{Z}$ stands for "Zahlen", the German word for "numbers".]
+
+:::{.big-math}
+$$
+\color{blue}{\mathbb{Z} = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}}
+$$
+:::
+
+
+This new set contains all the numbers we have learned so far, including the natural numbers and the negative numbers. 
+
+:::{.big-math}
+$$
+{\color{red}{\mathbb{N}}} \subset {\color{blue}{\mathbb{Z}}}
+$$
+:::
+
+The negative integers are also a set denoted with $\color{green}{\mathbb{Z}^-}$.
+
+:::{.big-math}
+$$
+{\color{green}{\mathbb{Z}^-}} \subset {\color{blue}{\mathbb{Z}}}
+$$
+:::
+
+These relationships are shown in the following figure.
+
+```{.tikz}
+\begin{tikzpicture}[x=0.8cm]
+    % Draw the number line
+    \draw[latex-latex, thick] (-10,0) -- (10,0);
+    
+    % Draw ticks and numbers
+    \foreach \x in {-9,...,9} {
+        \draw[thick] (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+    }
+    
+    % Natural Numbers (0 to 9) - Red
+    \draw[decorate,decoration={brace,amplitude=10pt,mirror,raise=15pt},red,thick] 
+        (-0.1,0) -- (9,0) node[midway,yshift=-30pt] {$\mathbb{N}$};
+        
+    % Negative Integers (-9 to -1) - Green
+    \draw[decorate,decoration={brace,amplitude=10pt,mirror,raise=15pt},green!70!black,thick] 
+        (-9,0) -- (-0.9,0) node[midway,yshift=-30pt] {$\mathbb{Z}^-$};
+        
+    % Integers (entire range) - Blue
+    \draw[decorate,decoration={brace,amplitude=10pt,mirror,raise=45pt},blue,thick] 
+        (-9,0) -- (9,0) node[midway,yshift=-60pt] {$\mathbb{Z}$};
+
+    % Extend bounding box to include the braces and labels
+    \path (0, -2.5);
+\end{tikzpicture}
+```
+
+
+$\color{red}{\mathbb{N}}$ and $\color{blue}{\mathbb{Z}}$ are very important sets in mathematics, you will find them over and over again in different contexts.
+
+$\color{blue}{\mathbb{Z}}$ and the operation of addition on this set has some important properties:
+
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers, the result is another integer. For example, $2 + 3 = 5$ and $-2 + (-3) = -5$. Associativity means that the order in which you group numbers when adding does not change the result. For example, $(2 + 3) + 4 = 2 + (3 + 4)$.
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an identity element**: There is a _neutral_ number $e$,  such that $e + a = a + e = a$. In the case of addition, this do-nothing number is $0$. For example, $2 + 0 = 0 + 2 = 2$ and $-3 + 0 = 0 + (-3) = -3$. Adding (or subtracting) $0$ is like doing nothing.
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an inverse**: For every integer $a$, there is another integer that, when added to the first, yields the identity element $0$. For example, the additive inverse of $2$ is $-2$ because $2 + (-2) = 0$, and the additive inverse of $-3$ is $3$ because $-3 + 3 = 0$. You can think of the additive inverse as the evil twin of a number, the reflection of the number across zero.
+
+These properties make the set of integers with the operation of addition a mathematical structure called a **group**.
+
+
+:::{.fun-fact title="Whoa, why are groups important?" image="/static_images/okapi.pdf" width="0.7" scale="0.9"}
+In short, it's important to establish that the integers form a group under addition because all future group concepts will apply to the integers under addition.
+
+Here is a loose analogy: You know that mammals are warm-blooded vertebrates that drink milk, give birth to live young, and have hair. 
+
+Then I ask you about okapis and saolas. You might not know what they are, as I didn't until recently. But if I tell you that okapis and saolas are mammals, suddenly you know a lot about them.
+:::
+
+<!-- Finally, one tricky question. -->
+
+<!-- Which set is bigger, $\color{red}{\mathbb{N}}$ or $\color{blue}{\mathbb{Z}}$? -->
+
+
+
+<!-- The answer is that they are the same size! This is because there is a one-to-one correspondence between the natural numbers and the integers. For every natural number, there is a corresponding integer, and vice versa. For example, we can pair $0$ with $0$, $1$ with $-1$, $2$ with $-2$, and so on. This means that even though $\mathbb{Z}$ contains more elements than $\mathbb{N}$, they are both infinite sets and have the same cardinality (size). They are equinumerous. -->
+

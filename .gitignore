@@ -1,0 +1,6 @@
+/.quarto/
+**/*.quarto_ipynb
+
+/.luarc.json
+
+static_images/polygons

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    id="svg2"
+    sodipodi:docname="Roadsign Kangaroos.svg"
+    viewBox="0 0 2126 2126"
+    version="1.1"
+    inkscape:version="0.47 r22583"
+  >
+  <sodipodi:namedview
+      id="base"
+      inkscape:zoom="0.175"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="-1162.0832"
+      inkscape:cy="802.36343"
+      borderlayer="true"
+      inkscape:window-maximized="1"
+      showgrid="false"
+      units="mm"
+      showguides="true"
+      bordercolor="#666666"
+      inkscape:window-x="-4"
+      inkscape:guide-bbox="true"
+      objecttolerance="4"
+      inkscape:window-y="-4"
+      inkscape:window-width="1680"
+      inkscape:pageopacity="0.0"
+      inkscape:pageshadow="2"
+      guidetolerance="3"
+      pagecolor="#ffffff"
+      gridtolerance="4"
+      inkscape:document-units="px"
+      inkscape:window-height="994"
+    >
+    <sodipodi:guide
+        id="guide2829"
+        position="1078.8429,666.70069"
+        orientation="1,0"
+    />
+    <sodipodi:guide
+        id="guide2831"
+        position="464.67018,1054.5993"
+        orientation="0,1"
+    />
+  </sodipodi:namedview
+  >
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(0 1073.6)"
+    >
+    <rect
+        id="Yellow_sign"
+        ry="50.831"
+        style="stroke-linejoin:bevel;stroke:#000000;stroke-linecap:square;stroke-dasharray:10.62899986999999900, 3.54299995000000000;stroke-width:3.543;fill:#f9e825"
+        rx="50.831"
+        transform="rotate(-45.2)"
+        height="1509.8"
+        width="1509.8"
+        y="-4.8227"
+        x="-1.6363"
+        inkscape:label="#rect2827"
+    />
+    <path
+        id="path2844"
+        sodipodi:nodetypes="csssssssssccssccssscscsssccsccccccccccscccccsc"
+        style="stroke:#000000;stroke-width:3.5433;fill:#000000"
+        transform="translate(0 -1073.6)"
+        d="m260.62 911.78s70.812 95.622 123.24 117.18c31.148 12.807 68.768 11.733 101.02 2.0203 94.084-28.338 189.77-129.24 268.7-200.01 63.881-57.277 75.106-114.85 149.5-157.58 0 0 71.807-65.342 107.08-74.751 46.849-12.499 122.52-18.572 161.62 10.102 0 0 63.2 47.35 90.914 72.731 54.194 49.633 68.97 107.54 129.3 149.5 20.124 13.997 44.229 27.86 68.69 26.264 28.264-1.8447 74.751-40.406 74.751-40.406v-16.162s-34.345-9.5964-56.568-31.315c-22.223-21.718-55.769-49.184-34.345-49.497 37.939-0.55558 80.946 15.979 80.946 15.979s27.113 45.768 52.394 54.731c10.156 3.6008 28.056-1.4999 40.406 4.0406 20.873 9.3641 30.104 30.701 50.508 46.467 27.198 21.016 58.474 21.705 86.873 48.487 9.7619 9.206-12.122 38.386-12.122 38.386s-65.953-4.9595-98.995-6.0609l-60.609-2.0203s-60.226 51.685-84.853 80.812c-21.051 24.898-18.734 65.08-46.467 72.731 0 0-42.424 3.9505-58.589 16.162-15.801 11.937-33.382 34.45-47.257 56.848l-63.86 102.76s-34.658 0.1583-42.426-14.142c-6.5012-11.968-2.0203-44.447-2.0203-44.447l20.203 28.284h16.162l28.284-149.5-68.69-14.142-48.487 88.894 24.244 216.17 361.63 117.18v28.284l-414.16-82.832s-25.049-108.82-42.624-162.22c-17.444-53.001-62.432-156.98-62.432-156.98l-46.467-6.061-167.69-155.56h-22.223l-260.54 143.32s-119.56 20.202-169.71-6.0609c-61.8-32.3-125.25-167.62-125.25-167.62z"
+    />
+    <path
+        id="rect3605"
+        style="fill:#000000"
+        d="m1059.5 53.156c-13 0.046-26 5.072-35.9 15.063l-955.63 962.28c-19.844 20-19.733 52.1 0.249 71.9l962.28 955.6c20 19.9 52.1 19.8 71.9-0.2l955.6-962.3c19.9-20 19.8-52.1-0.2-71.9l-962.3-955.63c-10-9.923-23-14.859-36-14.814zm0.1 38.656c13-0.045 26 4.892 36 14.808l923.5 917.08c20 19.9 20.1 51.9 0.3 71.9l-917.1 923.5c-19.9 20-51.9 20.1-71.9 0.3l-923.52-917.1c-19.987-19.9-20.098-51.9-0.26-71.9l917.08-923.52c9.9-9.996 22.9-15.022 35.9-15.068z"
+        transform="translate(0 -1073.6)"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

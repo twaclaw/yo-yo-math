@@ -1,0 +1,302 @@
+## Multiplication tables
+
+In The Man Who Counted by Malba Tahan, Beremiz Samir is a superhero Persian mathematician who can count faster than anyone else. He can look at a flock of birds and immediately tell you the exact number of birds in it.
+
+We can also learn to count quickly. As we saw in the previous section, identifying patterns is the first step. The second step is to practice and memorize the results of basic multiplications. Mastering these calculations will give you superpowers and provide a foundation for algorithms for multiplying larger numbers.
+
+We will use tables like the one below to practice our multiplication skills. Don't worry about memorizing them; practice makes perfect.
+
+This tables are very similar to the ones we saw before for addition when defining groups.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+# Full 10×10 table, upper triangle only, highlight row 3, col 2, and cell (3,2)
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=False,
+)
+display_vector(fig)
+```
+
+The values in the table are the _products_ of multiplying the row and column numbers. For example, to find the result of $3 \times 4$, first locate the row with the number $3$, then the column with the number $4$. The cell where the row and column intersect contains the product, which is $12$ in this case. Therefore, $3 \times 4 = 12$.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+# Full 10×10 table, upper triangle only, highlight row 3, col 2, and cell (3,2)
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=False,
+    rows={3: "lightblue"},
+    cols={4: "lightblue"},
+    elements={(3, 4): "pink"},
+)
+display_vector(fig)
+```
+
+In the same way, we can compute  for instance $2 \times 5$.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+# Full 10×10 table, upper triangle only, highlight row 3, col 2, and cell (3,2)
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=False,
+    rows={3: "lightblue"},
+    cols={5: "lightblue"},
+    elements={(2, 5): "lightgreen"},
+)
+display_vector(fig)
+```
+
+If you look closely, you will see that the results of previous multiplications appear twice in the table.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+# Full 10×10 table, upper triangle only, highlight row 3, col 2, and cell (3,2)
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=False,
+    elements={(2, 5): "lightgreen", (5, 2): "lightgreen", (3, 4): "pink", (4, 3): "pink"},
+)
+display_vector(fig)
+```
+
+Why is that?
+
+:::{.teacher-tip}
+Stop and think!
+:::
+
+Those values appear twice because multiplication, like addition, is _commutative_. 
+
+::: {.big-math}
+$$
+a \times b = b \times a
+$$
+:::
+
+In previous examples, we saw that $2 \times 5 = 5 \times 2$ and $3 \times 4 = 4 \times 3$.  This property makes the multiplication table symmetric with respect to the diagonal.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+# Full 10×10 table, upper triangle only, highlight row 3, col 2, and cell (3,2)
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=False,
+    elements={(i, i): "coral" for i in range(0, 6)},
+)
+display_vector(fig)
+```
+
+What does it mean? It means good news! We only need to learn one half of the table: either the upper or lower triangle. Hooray! $\text{[partying_face:2em]{.twemoji}}$
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+# Full 10×10 table, upper triangle only, highlight row 3, col 2, and cell (3,2)
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=True,
+)
+display_vector(fig)
+```
+
+However, keep in mind that the product you want to calculate may not be directly accessible, so you may need to use the commutative property to find it. For instance, if you want to calculate $5 \times 2$, you could look for $2 \times 5$ instead.
+
+### What are the sequences of each row and column? {.unnumbered .unlisted}
+
+
+By looking at one row or column in particular, such as the sequence of values in row $n$, which is the same as the sequence of values in column $n$, we obtain an arithmetic progression of multiples of $n$. For example, the sequence of values in row $3$ is the same as the sequence of values in column $3$. We obtain the sequence $0, 3, 6, 9, 12, 15, 18, \ldots$.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 8
+fig = draw_operation_table(
+    nrows=n, ncols=n,
+    show_upper=False,
+    rows={3: "lightblue"},
+    cols={3: "lightblue"},
+)
+display_vector(fig)
+```
+
+In other words, the values in a given row or column correspond to the series in Kangaroo Math when Joey jumps $n$ units at a time.
+
+
+```{python}
+#| echo: false 
+#| fig-align: "center"
+
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+image = "/static_images/emojis/1f998_kangaroo_flipped.svg"
+freq = 3
+arc = {"color": "fuchsia", "len": freq, "text": f"+{freq}"}
+fig = (NumberLine(0, 21, tick_frequency=3)
+ .add_tick_icons({0: image})
+ .add_arcs({i: arc for i in range(0, 21, freq)})
+)
+display_vector(fig)
+```
+
+
+
+
+
+### What are the values in the diagonal? {.unnumbered .unlisted}
+
+What do the values in the diagonal of the multiplication table represent? 
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 11
+fig = draw_operation_table(
+    nrows=n, ncols=n,
+    show_upper=True,
+    elements={(i, i): "coral" for i in range(0, n)},
+)
+display_vector(fig)
+```
+
+These are the results of multiplying a number by itself. We will soon learn that this operation is called _squaring_ a number, and the result is called the _square_ of the number. 
+
+
+
+:::{.content-visible when-format="html"}
+::: {.big-math}
+$$
+\underbrace{a \times a}_{{\color{red}{2}} \text{ times}} = a^{{\color{red}{2}}}
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+::: {.big-math}
+:::{{latex}}
+\begin{equation*}
+    \underbrace{a \times a}_{\eqnmarkbox[Red]{k1}{{\color{red}{2}}} \text{ times}} = a^{\eqnmarkbox[Red]{k2}{\color{red}{2}}}
+\end{equation*}
+\annotatetwo[yshift=1em]{above}{k1}{k2}{The exponent represents the number of times we multiply $a$ by itself.}
+:::
+:::
+:::
+
+
+
+For instance:
+
+::: {.big-math}
+\begin{align*}
+1 \times 1 &= 1^{{\color{red}{2}}} = 1\\
+2 \times 2 &= 2^{{\color{red}{2}}} = 4\\
+3 \times 3 &= 3^{{\color{red}{2}}} = 9\\
+4 \times 4 &= 4^{{\color{red}{2}}} = 16\\
+5 \times 5 &= 5^{{\color{red}{2}}} = 25\\
+6 \times 6 &= 6^{{\color{red}{2}}} = 36\\
+7 \times 7 &= 7^{{\color{red}{2}}} = 49\\
+8 \times 8 &= 8^{{\color{red}{2}}} = 64\\
+9 \times 9 &= 9^{{\color{red}{2}}} = 81\\
+10 \times 10 &= 10^{{\color{red}{2}}} = 100\\
+\vdots \\
+\end{align*}
+:::
+
+
+### Exercises {.unlisted .unnumbered}
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 13
+fig = draw_operation_table(
+    nrows=n, ncols=n,
+    show_upper=True,
+    elements={(i, i): "coral" for i in range(0, n)},
+)
+display_vector(fig)
+```
+
+Calculate the following products:
+
+
+::: {.big-math}
+\begin{align*}
+2 \times 7 &= \boxed{\phantom{123}}\\
+7 \times 2 &= \boxed{\phantom{123}}\\
+11 \times 11 &= \boxed{\phantom{123}}\\
+12 \times 12 &= \boxed{\phantom{123}}\\
+5 \times 9 &= \boxed{\phantom{123}}\\
+7 \times 6 &= \boxed{\phantom{123}}\\
+11 \times 1 &= \boxed{\phantom{12}}\\
+7 \times 1 &= \boxed{\phantom{123}}\\
+8 \times 0 &= \boxed{\phantom{123}}\\
+12 \times 0 &= \boxed{\phantom{123}}\\
+11^2  &= \boxed{\phantom{123}}\\
+12^2  &= \boxed{\phantom{123}}\\
+10^2  &= \boxed{\phantom{123}}\\
+4^2  &= \boxed{\phantom{123}}\\
+\end{align*}
+:::
+
+
+- What happens when you multiply a number by $0$?
+- What happens when you multiply a number by $1$?
+- Write down the arithetic series generated by counting in sevens.
+
+
+```{python}
+# | echo: false
+# | fig-align: "left"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+fig = draw_handwritten_range(list(range(0, 21, 7)), font_size=30, rows=1, font_color="blue", append_comma=True, add_ellipsis=True)
+display_vector(fig)
+```
+
+
+
+
+
+

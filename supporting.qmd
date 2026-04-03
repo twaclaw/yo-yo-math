@@ -1,0 +1,8 @@
+
+# Supporting and Contributing {.unnumbered .unlisted}
+
+If you like this book or find it useful, please consider supporting it by:
+
+- [Buying me a coffee](https://buymeacoffee.com/twaclaw)^[https://buymeacoffee.com/twaclaw] $\text{[hot_beverage:1.5em:-0.3em]{.twemoji}}$ (or two, three, five, seven, etc.) 
+- Giving a star $\text{[star:1.5em:-0.3em]{.twemoji}}$ and contributing on  [GitHub](https://github.com/twaclaw/yo-yo-math)^[https://github.com/twaclaw/yo-yo-math].
+- Sharing with others $\text{[love_letter:1.5em:-0.3em]{.twemoji}}$.

@@ -1,0 +1,197 @@
+## Comparing quantities
+
+- What would you prefer, two ice-creams or one ice-cream?
+- Are your siblings older or younger than you?
+- What about your best friends, are they older than you?
+- What do you prefer $2$, $1$ or $0$ portions of onion soup?
+
+:::{.teacher-tip}
+Encourage the kids to reason about their answers. Ask many "Why's?"
+:::
+
+Think for a second how you answered those questions. What you did, even if unconsciuously, was a comparison between two or more quantities. 
+
+We alread saw a kind of relationship between two quantities, namely when they are *equal*, now we are going to see the two other options.
+
+| Name         | Symbol | Example   | Description            |
+|--------------|--------|-----------|-------------------------|
+| Equal        | $=$    | $3 = 3$   | $3$ is equal to $3$                                       |
+| Greater-than | $>$    | $3 > 1$   | $3$ is greater than $1$ |
+| Less-than    | $<$    | $0 < 1$   | $0$ is less than $1$ |
+
+For instance I am sure you would prefer $2$ bars of chocolate instead of $1$ because $2 > 1$ and $0$ portions of cauliflower soup instead of $1$ because $1 > 0$.
+
+:::{.fun-fact}
+In a way, the greater-than symbol [$>$]{.scale factor="2"} is the same as the less-than one [$<$]{.scale factor="2"}. What you have to remember is that the open part always points to the larger quantity, and the angle to the smaller one.
+
+For instance, if you see something like [$7 > 2$]{.scale factor="2"} you can write read it as $7$ is greater than $2$, but also as $2$ is less than $7$, and write it as [$2 < 7$]{.scale factor="2"}. Same thing!
+:::
+
+
+Time to practice.
+
+
+### Exercises {.unlisted .unnumbered}
+
+```{python}
+# | echo: false
+# | label: practice-comparing-1
+# | fig-cap: "Write down the correct symbol ($>$ or $<$) in the box. Source images: [Freesvg.org](https://freesvg.org/)."
+
+from yoyo_plots.operations import draw_quantity_operation
+from yoyo_plots.common import display_vector
+
+op1 = dict(
+    image="/icon_images/panda_in_love.svg", n=3, font_color="black", nrows=2
+)
+op2 = dict(
+    image="/icon_images/panda_in_love.svg", n=6, font_color="black", nrows=2
+)
+
+fig_op = draw_quantity_operation(
+    op1,
+    op2,
+    {}, # res
+    operation="<",
+    font_size=50,
+    show_operation=False
+)
+display_vector(fig_op)
+```
+
+
+
+
+
+
+::: {.big-math}
+\begin{align*}
+3 \quad \boxed{>} \quad 0\\
+3 \quad \boxed{<} \quad 4\\
+3 \quad \boxed{\phantom{>}} \quad 1\\
+3 \quad \boxed{\phantom{>}} \quad 3\\
+9 \quad \boxed{\phantom{>}} \quad 8\\
+7 \quad \boxed{\phantom{>}} \quad 7\\
+7 \quad \boxed{\phantom{>}} \quad 8\\
+7 \quad \boxed{\phantom{>}} \quad 9\\
+1 \quad \boxed{\phantom{>}} \quad 0\\
+\end{align*}
+:::
+
+
+:::{.fun-fact title="Optimization" image="/static_images/animals.pdf" width="0.7" scale="1.0"}
+Which animal is the tallest? Which one is the heaviest?
+These kind of questions implies also comparisons of quantities, in this case heights and weights which are numbers. Given some quantities like $2,4,7,2,8,9,2$, we can define:
+
+
+- **Minimum**: the smallest number. The  number that is less-than ($<$)  all other numbers in the collection. A number $x^{*}$ such that $x^{*} \leq y$ for all $y$ in the collection. There might multiple instances of this number. In this example, the minimum value is $2$.
+
+- **Maximum**: the largest number. The number that is greater-than ($>$) all other numbers in the collection. A number $x^{*}$ such that $x^{*} \geq y$ for all $y$ in the collection. There might be also multiple instances of this number. In this example, the maximum is $9$.
+
+These points (_minima_ and _maxima_) are called **extrema** (plural of extremum) and they are very important in many branches of mathematics, physics, engineering and economics. We will come back to this very intersting topic which is the base of the theory of *optimization* and of a very beautiful branch of mathematics called *calculus of variations*.
+:::
+
+
+Imagine you are going to have a birthday party and the following kids are attending.
+
+| Name    | Age |
+|---------|-----|
+| Jonas   | 5   |
+| Lea     | 7   |
+| Miguel  | 4   |
+| Zoe     | 4   |
+| Matilde | 2   |
+| Lucas   | 2   |
+| Amelie  | 6   |
+| Zelia   | 9   |
+
+Answer the following questions:
+
+- Who is older, Jonas or Lea?
+- Who is the oldest between Miguel, Zoe and Amelie? 
+- Who is  the youngest kid in the party?
+- Who is the oldest kid in the party?
+
+
+
+Based on the following figures, write down the corresponding relation and answer the following questions:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.speed import speed_limit
+
+s1 = speed_limit(1, "km/h", image_path="/static_images/emojis/1f994_hedgehog.svg")
+s2 = speed_limit(6,"km/h", image_path="/static_images/emojis/1f413_rooster.svg")
+s3 = speed_limit(1, "km/h", image_path="/static_images/emojis/1f9a5_sloth.svg")
+s4 = speed_limit(3, "km/h", image_path="/static_images/emojis/1f422_turtle.svg")
+
+combined = combine_svgs([s1, s2, s3, s4], direction="horizontal")
+display_vector(combined)
+```
+
+- Who is faster, the rooster or the turtle?
+
+:::{.big-math}
+$$
+\begin{aligned}
+ \boxed{6} \quad > \quad \boxed{3}\\
+\end{aligned}
+$$
+:::
+
+Answer: The rooster $\text{[rooster:1.5em]{.twemoji}}$ is faster.
+
+
+- Who is faster, the hedgehog or the rooster?
+
+:::{.big-math}
+$$
+\begin{aligned}
+\boxed{\phantom{1}} \quad \boxed{\phantom{1}} \quad \boxed{\phantom{1}}\\
+\end{aligned}
+$$
+:::
+
+- Who is slower, the sloth or the turtle?
+
+:::{.big-math}
+$$
+\begin{aligned}
+\boxed{\phantom{1}} \quad \boxed{\phantom{1}} \quad \boxed{\phantom{1}}\\
+\end{aligned}
+$$
+:::
+
+- Which animal is the slowest?
+
+:::{.big-math}
+$$
+\begin{aligned}
+\boxed{\phantom{1}} \quad < \quad \boxed{\phantom{1}} \quad < \quad \boxed{\phantom{1}} \quad < \quad \boxed{\phantom{1}} \\
+\end{aligned}
+$$
+:::
+
+
+
+### Time to play {.unlisted .unnumbered}
+
+
+::: {.game-theory image="/static_images/dice_green.pdf" width="0.7" scale="1.0"}
+Now that you can compare quantities, you can start playing. One the simplest and oldest games is the dice game. In some languages the word for die is "bone", because people used to play with certain animal bones. Take turns and roll a die,  the player with the highest number wins. If you play with multiple dice, the player with the highest sum wins. 
+
+As we will see soon in @sec-naming-things, dice are usually built as regular polyhedral solids. The most common one is a cube or hexahedron (with 6 faces). But there are also dice with 4, 8, 10, 12 and 20 faces. 
+
+![A 20-sided dice. Source image: [Freesvg.org](https://freesvg.org/).](../static_images/dice_20.svg){width="20%" fig-align="center"}
+:::
+
+
+::: {.game-theory image="/static_images/poker.pdf" width="0.6" scale="1.0"}
+
+Card games are another instance where comparing is fundamental. In many games, the objecive is to sort the cards in increasing or decreasing order.
+
+For instance, The Mind is a cooperative card game where players have to play cards in alternate turns, and the cards have to be played in increasing order. The catch is that the players are not allowed to talk to each other, so they have to rely on their intuition and on the timing of their plays to guess when to play their cards.
+:::

@@ -1,0 +1,177 @@
+## Cartesian plane
+
+:::{.fun-fact title="Flatland"}
+Mathematical objects can exist in any number of dimensions.  You can think of a dimension as one of the directions in which you can move. Because we live in a three-dimensional world, we can move left or right, forward and backward, and up and down.
+
+Let's imagine how it would be to live in a world with different number of dimensions $N$. 
+
+| $N$ | Object | Symbol | How can we move?|
+| - | -- | -- | --------- |
+| 0 | Point | $\color{red}{\bullet}$ | We cannot move.|
+| 1 | Line | $\color{red}{\rule{2cm}{0.8pt}}$ | We can move only forward and backward.|
+| 2 | Plane/polygons | $\color{red}{\drawpolygon[red]{5}}$ | We can move forward and backward, and also left and right.|
+| 3 | Volumes | $\text{[game_die:4em]{.twemoji}}$ | We can move left, right, forward, backward, and jump up and down.|
+
+
+More than $3$ dimensions are hard to imagine and visualize.
+
+:::
+
+
+So far, we have been operating and counting in one dimension. This means that we can only move in one of the two directions in which the arrows of the number line extends: for instance right and left.
+
+
+We can use two perpendicular number lines to create a two-dimensional plane. Perpendicular lines look like this: $\perp$.
+
+The resulting $2$-dimensional plane is called the **Cartesian plane**. It is named after the French philosopher and mathematician René Descartes, whose latinized name was Renatus Cartesius.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Cartesian plane built with two perpendicular number lines."
+
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+cartesian_fig = CartesianPlane(
+    xmin=-5, 
+    xmax=5, 
+    ymin=-5, 
+    ymax=5,
+    draw_ticks=True,
+)
+
+display_vector(cartesian_fig)
+```
+
+
+
+In the number line, we could move only in two directions, and specifying the position of a point was easy: we needed just one number. 
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 5)
+ .add_tick_icons({3: "/static_images/emojis/1f998_kangaroo.svg"}, tick_icon_size=0.6)
+)
+display_vector(fig)
+```
+
+For instance, we could say the kangaroo is at position $3$ on the number line.
+
+
+Now, in two dimensions, we can move not only left and right, but also in the perpendicular direction. Let's call it for convenience "up and down". 
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+cartesian_fig = CartesianPlane(
+    xmin=-3, 
+    xmax=5, 
+    ymin=-3, 
+    ymax=5
+).add_icons({
+        (3, 4): {"image": "/static_images/emojis/1f998_kangaroo.svg", "color": "orange", "draw_lines": True}
+    }
+)
+
+display_vector(cartesian_fig)
+```
+
+Now to specify the position of the kangaroo, we need two numbers: one for the horizontal direction and one for the vertical direction. We can say that the kangaroo is at position $(3, 4)$, where $3$ is the horizontal coordinate and $4$ is the vertical coordinate. The order is important. 
+
+Coordinates can also be negative. In the following figure, the coordinates are shown close to each animal. For instance, the penguin is at $(-4, 3)$, the monkey is at $(-4, 0)$, etc.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+cartesian_fig = CartesianPlane(
+    xmin=-6, 
+    xmax=6, 
+    ymin=-6, 
+    ymax=6
+).add_icons({
+        (4, 1): {"image": "/static_images/emojis/1f998_kangaroo.svg", "color": "orange", "draw_lines": True, "show_coords": True},
+        (-4, 0): {"image": "/static_images/emojis/1f412_monkey.svg", "show_coords": True, "color": "purple", "draw_lines": True},
+        (-4, -3): {"image": "/static_images/emojis/1f427_penguin.svg", "color": "blue", "draw_lines": True, "show_coords": True},
+        (-2, 5): {"image": "/static_images/emojis/1f413_rooster.svg", "color": "red", "draw_lines": True, "show_coords": True},
+        (1, -3): {"image": "/static_images/emojis/1f422_turtle.svg", "color": "green", "draw_lines": True, "show_coords": True},
+    }
+)
+
+display_vector(cartesian_fig)
+```
+
+### Exercises {.unnumbered .unlisted}
+
+Locate the following points one the Cartesian plane: $\color{lightgray}{(2, 3)}$, $\color{lightgray}{(0, 0)}$, $\color{lightgray}{(-3, 4)}$, $(-2, 5)$, $(1, -3)$, $(0, -7)$, $(-9, 0)$, $(-9, -9)$, $(-9, 1)$, $(0, 7)$, and $(1, 1)$.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+cartesian_fig = CartesianPlane(
+    xmin=-9, 
+    xmax=9, 
+    ymin=-9, 
+    ymax=9
+).add_markers({
+        (2, 3): {"color": "red", "draw_lines": False, "show_coords": True},
+        (0, 0): {"color": "blue", "draw_lines": False, "show_coords": True},
+        (-3, 4): {"color": "green", "draw_lines": False, "show_coords": True}
+    })
+
+display_vector(cartesian_fig)
+```
+
+::: {.game-theory title="Battleship"}
+You can play Battleship on a Cartesian plane. Each player must secretly place their ships on the grid. Then, players take turns calling out coordinates in an attempt to hit their opponent's ships. The first player to sink all of their opponent's ships wins.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+show_coords = False
+cartesian_fig = CartesianPlane(
+    xmin=-6, 
+    xmax=6, 
+    ymin=-6, 
+    ymax=6,
+).add_icons({
+        (4, 1): {"image": "/static_images/pirate_ship.svg", "show_coords": show_coords},
+        (-5, 2): {"image": "/static_images/pirate_ship.svg", "show_coords": show_coords},
+        (-3, -3): {"image": "/static_images/pirate_ship.svg", "show_coords": show_coords},
+        (-3, -5): {"image": "/static_images/pirate_ship.svg", "show_coords": show_coords},
+        (3, -4): {"image": "/static_images/pirate_ship.svg", "show_coords": show_coords},
+        (4, 3): {"image": "/static_images/pirate_ship.svg", "show_coords": show_coords},
+    },
+    icon_size=1.5,
+)
+display_vector(cartesian_fig)
+```
+
+:::
+
+
+

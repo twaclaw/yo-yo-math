@@ -1,0 +1,107 @@
+## Decimal numerals
+
+ The numbers we use for counting —zero, one, two, three, $\dots$— are called counting or natural numbers and are represented with this nicely looking [${\color{red}{\mathbb{N}}}$]{.scale factor="2"}. 
+
+:::{.big-math} 
+$$
+ \color{red}{\mathbb{N} = \{0, 1, 2, 3, 4 \cdots\}}
+$$
+:::
+
+ 
+The three dots, $\cdots$,  mean that the sequence continues forever, until the heavens of infinity. Whether or not to include zero in the set of natural numbers is a matter of convention—or rather, a matter of contention.
+
+Numbers are abstract entities, so defining them is difficult. I'm not going to do  that here, but you could try asking your parents or teachers what numbers are. Ask them something like, "What is the number five?" and observe their reaction $\text{[shrug:1.5em]{.twemoji}}$.
+
+:::{.teacher-tip}
+What is number 5? What is a number? To delve deeper into this and other intricate philosophical questions, I recommend reading a book on the philosophy of mathematics^[For instance, "Lectures On the Philosophy of Mathematics" by Joel Davis Hamkins (MIT Press, 2020)]. This doesn't necessarily mean that you will find a satisfying answer, or any answer at all.
+:::
+
+
+We represent numbers with symbols called "numerals." There are different types of numerals; we will look at some of them later.
+
+Most of the time, we will use Hindu-Arabic numerals. These are the symbols we see everywhere and are most familiar with. We see them on our house doors, watches, phones, football jerseys, birthday candles, and the page numbers of this book.
+
+
+
+
+```{python}
+# | echo: false
+# | label: decimal-numbers
+# | fig-cap: "The decimal numerals"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+fig = draw_handwritten_range(list(range(10)), font_size=60, rows=3, font_color="black")
+display_vector(fig)
+
+```
+
+::: {.fun-fact title="Numbers and stars" image="/static_images/camel.pdf"}
+These symbols are called Hindu-Arabic numerals. Arab scholars adopted them from India.  Along with the names of the stars and many other scientific and mathematical discoveries, they are among the beautiful things that the Arab tradition has bridged from other cultures or created for us.
+
+
+![](../static_images/Hindustani_numerals.svg){width="80%" fig-align="center"}
+
+Hindustani numerals. Source image: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/64/Hindustani_numerals.svg).
+:::
+
+
+
+Go ahead and practice your strokes while enjoying the roundness of the numbers.
+
+:::{.teacher-tip}
+Depending on their age, your kids might not be interested in drawing or scribbling numbers yet. Just skip it and come back to it later.
+:::
+
+
+```{python}
+# | echo: false
+# | fig-align: "center" 
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+from plotly.subplots import make_subplots
+
+fig_combined = make_subplots(rows=10, cols=1, vertical_spacing=0)
+
+for i in range(10):
+    f = draw_handwritten_range(
+        [i] * 7,
+        font_size=60,
+        rows=1,
+        font_color="lightgrey",
+        first_element_color="black",
+    )
+
+    for ann in f.layout.annotations:
+        fig_combined.add_annotation(
+            x=ann.x,
+            y=ann.y,
+            text=ann.text,
+            showarrow=ann.showarrow,
+            font=ann.font,
+            row=i + 1,
+            col=1,
+        )
+
+    fig_combined.update_xaxes(
+        range=f.layout.xaxis.range, visible=False, row=i + 1, col=1
+    )
+    fig_combined.update_yaxes(
+        range=f.layout.yaxis.range, visible=False, row=i + 1, col=1
+    )
+
+fig_combined.update_layout(
+    plot_bgcolor="white",
+    margin=dict(l=5, r=5, t=0, b=0),
+    width=f.layout.width,
+    height=f.layout.height * 10,
+    dragmode="pan",
+)
+display_vector(fig_combined)
+```
+
+

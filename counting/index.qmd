@@ -1,0 +1,40 @@
+# Counting {#sec-counting}
+
+## Introduction
+
+> Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk.
+> _Leopold Kroneker_
+
+
+
+> In conveying messages within the human brain, counting is far more fundamental than language.
+> _Ronald Calinger, A Contextual History of Mathematics_.
+
+
+
+Counting is arguably the most fundamental operation in mathematics. This seemingly trivial process provides the foundation for many areas of mathematics and is central to numerous results, algorithms, and proofs. Counting is pervasive. You will encounter it in instances ranging from playing Snakes and Ladders to solving a Rubik's Cube efficiently to proving the most famous theorem in the history of mathematics. 
+
+
+::: {.fun-fact  image="/static_images/alien.pdf" width="0.8" scale="0.9"}
+Some people speculate that if we were to encounter extraterrestrial intelligence elsewhere in our universe, one thing we might have in common is the ability to count, albeit in different ways. For example, you would count differently if you had six    fingers instead of ten, or no fingers at all.
+:::
+
+{{< include decimal_numerals.qmd >}}
+
+{{< include counting_objects.qmd >}}
+
+{{< include addition_and_substraction.qmd >}}
+
+{{< include additional_addition.qmd >}}
+
+{{< include comparing.qmd >}}
+
+{{< include soroban.qmd >}}
+
+{{< include naming_things.qmd >}}
+
+
+
+
+
+

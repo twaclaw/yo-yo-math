@@ -1,0 +1,161 @@
+## Clock arithmetic
+
+> Dad doesn't like people who talk in circles, but he loves people who count in circles.
+
+I told you before that we can orient the number line in any way we want. It turns out, we can also bend it in a circle. 
+
+:::{.fun-fact title="Ouroboros" image="/static_images/ouroboros.pdf" width="0.7" scale="0.9"}
+Have you seen those depictions of snakes or dragons eating their own tails? They are called "ouroboros" and they represent the idea of something that is cyclic. "οὐροβόρος" is ancient Greek for "tail eater". Now, let's see what we can do with a number line that eats its own tail.
+
+We can take a number line and bend it in a circle. Isn't that cool?
+
+```{python}
+# | echo: false
+from yoyo_plots.number_line import CircularNumberLine
+
+circ_fig = (CircularNumberLine(0, 5, tick_distance=3, font_size=15)
+ .build()
+)
+
+# Remember to restart kernel if you just added the function
+display_vector(circ_fig)
+```
+:::
+
+The kind of arithmetic we can do on a circular number line is called *modulo arithmetic* or *clock arithmetic*, because it is the kind of arithmetic we use when we read a clock. 
+
+Let's consider how to make an addition in this circular number line. Imagine we want to calculate $1+3$. We start at  $1$ and move $3$ steps in the clockwise direction.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CircularNumberLine
+
+icon="/static_images/emojis/1f9a3_mamooth.svg"
+points = [1, 2, 3, 4]
+segment = {"color": "red", "thickness": 3, "arrow": False}
+
+circ_fig = (CircularNumberLine(0, 5, tick_distance=3, font_size=15)
+ .add_markers({point: "red" for point in points} | {"all": "white"}, marker_size=0.2)
+ .add_segments({point: segment for point in points[:-2]} | {points[-2]: segment | {"arrow": True}})
+ .add_tick_icons({point: icon for point in points}, tick_icon_size=1.0)
+ .add_boxes(box_size=1, box_labels={"box1": "1", "box2": "+", "box3": "3", "box4": "4"})
+ .build()
+)
+
+# Remember to restart kernel if you just added the function
+display_vector(circ_fig)
+```
+
+That's pretty normal. Expected.
+
+Now consider we want to do this addition $3+3$. We start at $3$ and move $3$ steps.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CircularNumberLine
+
+tick_icon="/static_images/emojis/1f9a3_mamooth.svg"
+points = [3, 4, 5, 0]
+segment = {"color": "red", "thickness": 3, "arrow": False}
+
+circ_fig = (CircularNumberLine(0, 5, tick_distance=3, font_size=15)
+ .add_markers({point: "red" for point in points} | {"all": "white"}, marker_size=0.2)
+ .add_segments({point: segment for point in points[:-2]} | {points[-2]: segment | {"arrow": True}})
+ .add_tick_icons({point: tick_icon for point in points}, tick_icon_size=1.0)
+ .add_boxes(box_size=1, box_labels={"box1": "3", "box2": "+", "box3": "3", "box4": "0"})
+ .build()
+)
+
+# Remember to restart kernel if you just added the function
+display_vector(circ_fig)
+```
+
+[$3+3=0$]{.scale factor="2"}. That's new ah? $\text{[exploding_head:2em]{.twemoji}}$
+
+This number system is called $\mathbb{Z}_6$. Here is the table of operations for addition in $\mathbb{Z}_6$:
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 6
+fig = draw_operation_table(
+    nrows=n, ncols=n,
+    operation=lambda x, y: (x + y) % n,
+    operation_name="+",
+)
+display_vector(fig)
+```
+
+If you want to calculate a sum in $\mathbb{Z}_6$, for instance $4 + 3$, you can find the row for $4$ and the column for $3$ and see where they intersect. 
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 6
+fig = draw_operation_table(
+    nrows=n, ncols=n,
+    elements={(4, 3): "coral"},
+    rows={4: "lightblue"},
+    cols={3: "lightblue"},
+    operation=lambda x, y: (x + y) % n,
+    operation_name="+",
+)
+display_vector(fig)
+```
+
+
+Same as $\mathbb{Z}$, $\mathbb{Z}_6$ is also a group. Why? Same checklist we used before for $\mathbb{Z}$:
+
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers in $\mathbb{Z}_6$, you get another integer in $\mathbb{Z}_6$. For example, $2 + 3 = 5$ and $4 + 3 = 1$. The operations are associative, for example, $(2 + 3) + 4 = 2 + (3 + 4)$. 
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an identity element**: There is a number, $0$, such that adding it to any number doesn't change that number. For example, $2 + 0 = 2$.
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$  **Existence of an inverse**: For every integer, there is another integer such that when you add them together, you get the identity element $0$. For example, for $2$, the inverse is $4$ because $2 + 4 = 0$, and for $3$ it  is $3$ because $3 + 3 = 0$.
+
+
+
+### Exercises {.unnumbered .unlisted}
+
+Now consider the group $\mathbb{Z}_{4}$ with elements $\{0, 1, 2, 3\}$ and addition modulo $4$.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CircularNumberLine
+
+circ_fig = (CircularNumberLine(0, 3, tick_distance=3, font_size=15)
+ .build()
+)
+
+# Remember to restart kernel if you just added the function
+display_vector(circ_fig)
+```
+
+Complete the group table for addition in $\mathbb{Z}_{4}$:
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 4
+fig = draw_operation_table(
+    nrows=n, ncols=n, only_rows=[0],
+    operation=lambda x, y: (x + y) % n,
+    operation_name="+",
+)
+display_vector(fig)
+```
+

@@ -1,0 +1,265 @@
+## How could we represent numbers greater than 9?
+
+If we only have ten *digits* or symbols:
+
+```{python}
+# | echo: false
+# | fig-cap: "The decimal numbers. Ten digits."
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+fig = draw_handwritten_range(list(range(10)), font_size=50, rows=1, font_color="fuchsia", append_comma=True)
+display_vector(fig)
+```
+
+:::{.fun-fact title="Decem digiti" image="/static_images/fingers.pdf" width="0.6" scale="1.0"}
+The word "digit" comes from the Latin word "digitus," meaning "finger." The plural form is "digiti."
+:::
+
+How to possibly represent numbers above 9? Any ideas?
+
+If  we don't want to introduce new symbols, it seems the only option is  to reuse the same symbols in some way $\text{[thinking:1.5em]{.twemoji}}$. We need to exploit a different property or attribute of these digits somehow. Any ideas?
+
+What about their color? We could establish a color convention where the value of the digitgs  depends on their color.
+
+\scalebox{3}{$\color{red}{9}$, $\color{blue}{9}$, $\color{black}{9}$, $\color{green}{9}$}
+
+Instead of color, we could use another attribute, such as size.
+
+$9$, \scalebox{2}{$9$}, \scalebox{3}{$9$}, \scalebox{5}{$9$}
+
+If you quickly scan the page numbers in this book, you will see that this is not how it is done. Instead, we use the **position** of the digits. 
+
+Just as we can use the letters of the alphabet to write an infinite number of sentences and books, we can also use the ten decimal digits to represent infinite many numbers.
+
+
+## Positional number system
+
+::: {.fun-fact title="The Babylonians" image="/static_images/6oclock.pdf" width="0.8" scale="0.9"}
+The Babylonians, who developed the sexagesimal system that we still use to tell the time, were the first to develop a positional number system. 
+
+> The Babilonians had discovered that the question "How many?" can be enormously simplified if the same number stands for different values depending on its position in a row of numbers. Place-value notation eliminated the need to invent new digits for numbers, no matter how large.
+_A Contextual History of Mathematics, Ronald Calinger (Prentice Hall, 1999)_
+
+This is a significant development because it means that no matter how large a number is, it can always be represented with just ten symbols.
+:::
+
+Numbers greater than $9$ will be represented by combinations of the same ten digits in different positions. Any combination that starts with a number other than $0$ is a valid number.
+
+:::{.font-size-adjust size="25pt"}
+$$
+10, \quad 123, \quad 9999999, \quad 100000000000, \quad \ldots
+$$
+:::
+
+:::{.fun-fact title="Positional number system in a nutshell"}
+The defining feature of the positional number system is that the value of a digit depends on its position in the number.
+For instance, in the number $333$, each digit $3$ has a different value.  
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.hotel import Label, Number
+
+
+label = Label(values=[Number(3, "black")]*3, draw_grid=False)
+
+display_vector(label)
+```
+
+The farther to the left $\Leftarrow$ a digit is, the larger its value. We will use boxes to  emphasize the positions.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.hotel import Label, Number
+
+colors = ["blue", "red", "black"]
+
+label = Label(values=[Number(3, colors[i]) for i in range(3)], draw_grid=True)
+
+display_vector(label)
+```
+:::
+
+A digit's value changes as soon as it is moved to a different position. For example, the resulting number changes each time the digit $3$ is moved to the left; the larger the position to the left, the larger the number.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "A digit's value depends on its position. It increases as we move to the left $\\leftarrow$."
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+colors = ["green", "blue", "red", "black"]
+
+labels = [Label(values=[None]*i + [Number(3, colors[i])] + [None]*(3-i)) for i in range(4)][::-1]
+
+display_vector(combine_svgs(labels, spacing=10, direction="vertical" ))
+```
+
+However, in the last example, these are not valid numbers. We need to fill the empty positions to the right.
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ Any positions to the right of a digit must be filled with additional digits. For the time being, let's use zeros, but any digits will do.  
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "The digit 3 has different values depending on its position."
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+colors = ["green", "blue", "red", "black"]
+
+labels = [Label(values=[None]*i + [Number(3, colors[i])] + [Number(0, "black")]*(3-i)) for i in range(4)]
+
+display_vector(combine_svgs(labels, spacing=50, direction="horizontal" ))
+```
+
+You don't need to know what the numbers are; you only need to know that the further to the left the digit $3$ is, the larger the value it represents^[We don't need to draw the boxes. What matters is the position of each digit.]:
+
+:::{.font-size-adjust size="20pt"}
+$$
+{\color{olive}{3}}000 > {\color{blue}{3}}00 > {\color{red}{3}}0 > 3
+$$
+:::
+
+Even if you don't know what the following numbers mean, you can still tell which number is larger and who is faster in the following figure. Explain why.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.speed import speed_limit
+
+s1 = speed_limit(1, "km/h", image_path="/static_images/emojis/1f994_hedgehog.svg")
+s2 = speed_limit(10, "km/h", image_path="/static_images/emojis/1f3c3-200d-2640-fe0f-jogging-woman.svg")
+s3 = speed_limit(100, "km/h", image_path="/static_images/emojis/1f406_leopard.svg")
+
+combined = combine_svgs([s1, s2, s3], direction="horizontal")
+display_vector(combined)
+```
+
+
+
+
+Let's quickly recap what we just learned. The following are some rules $\text{[woman_police_officer:1.5em]{.twemoji}}$ of the positional number system:
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ The first position is the one on the far right. Values increase as we move to the left. 
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ Any positions to the left of the number that are not used are left empty^[They can also be filled with zeros.]. 
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ The same digit can represent different values depending on where it is in a number. The further to the left the digit is, the larger the value it represents. 
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ Any positions to the right of a digit must be filled with additional digits.
+
+<!-- Okay, I understand that we need more positions that will contain digits. But how will those digits be selected to construct and represent larger numbers?  -->
+
+
+### How to count and construct numbers beyond $9$? {.unnumbered .unlisted}
+
+- We count until we reach $9$:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+
+labels = [Label(values=[Number(i, "black")], draw_grid=True) for i in range(10)]
+
+display_vector(combine_svgs(labels, spacing=10, direction="horizontal" ))
+```
+
+- After $9$,  we need to move to the next position and use an extra placeholder. For clarity, this is highlighted as an extra box. The sequence remains the same as before; we are still counting from $0$ to $9$.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+
+labels = [Label(values=[None, Number(i, "black")], draw_grid=True) for i in range(10)]
+
+display_vector(combine_svgs(labels, spacing=10, direction="horizontal" ))
+```
+
+For the first ten numbers ($0$ to $9$),  the box on the left can be left empty. However, in the following examples, we will add $\color{red}{0}$ to the left box for consistency.  But the value doesn't change,  $01$ is the same as $1$, $02$ is the same as $2$, and so on.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+
+labels = [Label(values=[Number(0, "red"), Number(i, "black")], draw_grid=True) for i in range(10)]
+
+display_vector(combine_svgs(labels, spacing=10, direction="horizontal" ))
+```
+
+- To count beyond $9$, we reuse the lower digits (the rightmost position, colored black), but we now increase the value in the next position (colored in $\color{red}{\text{red}}$). In the following image, we count from $0$ to $19$: Numbers increase from right to left $\to$ and from bottom to top $\color{red}{\uparrow}$.
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+
+labels = []
+
+N = 2
+for j in range(N-1, -1, -1):
+    label = [Label(values=[Number(j, "red"), Number(i, "black")], draw_grid=True) for i in range(10)]
+    labels.append(combine_svgs(label, spacing=10, direction="horizontal" ))
+
+combined = combine_svgs(labels, spacing=10, direction="vertical")
+display_vector(combined)
+```
+
+- We will continue counting this way, climbing up to larger and larger numbers. Now, we count from $0$ to $49$. These are our first fifty numbers. If you look at the $\color{red}{\text{red}}$ digits, you will see that they count from $\color{red}{0}$ to $\color{red}{4}$ in an upward direction $\color{red}{\uparrow}$.
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+
+labels = []
+
+N = 5
+for j in range(N-1, -1, -1):
+    label = [Label(values=[Number(j, "red"), Number(i, "black")], draw_grid=True) for i in range(10)]
+    labels.append(combine_svgs(label, spacing=10, direction="horizontal" ))
+
+combined = combine_svgs(labels, spacing=10, direction="vertical")
+display_vector(combined)
+```
+
+
+In order to master these insights and the way numbers are constructed, we are going on vacation! We'll be staying at the Numbers Grand Hotel.

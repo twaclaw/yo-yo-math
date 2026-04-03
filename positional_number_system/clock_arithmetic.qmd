@@ -1,0 +1,7 @@
+
+## Clock arithmetic
+
+Dad doesn't like people who "talk in circles" but he loves people who "count in circles".
+
+This kind of counting is called "clock arithmetic" or "modulo arithmetic" or if you prefer merry-round arithmetic.
+

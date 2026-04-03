@@ -1,0 +1,552 @@
+# The number line
+
+A number line is a spatial representation of numbers.  It allows us to map numbers to geometric insights and geometric insights to numbers. We will soon learn how to add and subtract quantities and how to easily determine if one number is greater than or less than another.
+
+
+::: {.fun-fact image="/static_images/railways1.pdf" width="0.8" scale="0.9"}
+You can think of the number line as a straight railway. It extends in both directions, but remains one-dimensional and straight.
+:::
+
+```{python}
+# | echo: false
+# | label: fig-number-line-1
+# | fig-cap: "Number line with the numbers we have learned so far. The arrows indicate that the line extends indefinitely in both directions."
+# | fig-pos: "H"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.number_line import NumberLine
+
+fig = NumberLine(0, 9, rotate=False)
+display_vector(fig)
+```
+
+## Representing numbers on the number line
+
+
+We can represent numbers on the number line as points, by marking the position of the number on the line. For instance, in the following figure, we have marked the positions of the numbers [$\color{red}{3}$]{.scale factor="2"} and [$\color{blue}{7}$]{.scale factor="2"}.
+
+
+```{python}
+# | echo: false
+# | label: fig-number-line-2
+# | fig-cap: "Representing numbers $\\color{red}{3}$ and $\\color{blue}{7}$ on the number line."
+# | fig-pos: "H"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.number_line import NumberLine
+
+fig = (NumberLine(0, 9, rotate=False)
+ .add_markers({3: "red", 7: "blue"})
+)
+display_vector(fig)
+```
+
+We are going to use walking and traveling as a metaphor for moving on and adding in the number line, therefore we are taking some poetic liberties and are going to represent points and operations in a more playful way. For instance, the following figure represents number [$\color{red}{2}$]{.scale factor="2"}. You can think of it as the train is a position [$\color{red}{2}$]{.scale factor="2"}.
+
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-3
+# | fig-cap: "Representing number $2$ on the number line."
+# | fig-pos: "H"
+
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 5)
+ .add_markers({2: "red"})
+ .add_tick_icons({2: "/static_images/train_forward_red.svg"}, tick_icon_size=0.8)
+)
+display_vector(fig)
+```
+
+## Addition and substraction on the number line
+
+Adding up and substracting quantities on the number line is very intuitive. Adding up means moving in the direction of increasing numbers, and substracting means moving in the direction of decreasing numbers. I avoid using the words "right" and "left" or "east" and "west" because the line can be oriented or rotated in different ways.
+
+For instance, imagine we want to do the following operation:  $2+4$. We start $2$:
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-4
+# | fig-cap: "We start by locating number $2$ on the number line."
+# | fig-pos: "H"
+
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 9)
+ .add_markers({2: "red"})
+ .add_tick_icons({2: "/static_images/train_forward_red.svg"}, tick_icon_size=1.0)
+)
+display_vector(fig)
+```
+
+
+Then we move from there $4$ units in the direction of the increasing numbers. 
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-5
+# | fig-cap: "Starting at $2$, we move $4$ units in the direction of increasing numbers."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+icon = "/static_images/train_forward_red.svg"
+
+fig = (NumberLine(0, 9)
+ .add_markers({2: "red", 3: "red", 4: "red", 5: "red", 6: "red"})
+ #.add_markers({2: "red", 6: "red"})
+ .add_tick_icons({2: icon, 3: icon, 4: icon, 5: icon, 6: icon}, tick_icon_size=1.0)
+ .add_segments({2: "red", 3: "red", 4: "red", 5: "red"}, segment_width=3)
+)
+display_vector(fig)
+```
+
+The position we end up at is the result, in this case [$2+4=6$]{.scale factor="2"}.
+
+We will be representing the whole operation like this:
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-6
+# | fig-cap: "Computing the result of $2 + 4$ on the number line."
+# | fig-pos: "H"
+
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+icon = "/static_images/train_forward_red.svg"
+fig = (NumberLine(0, 9)
+ .add_markers({2: "red", 3: "red", 4: "red", 5: "red", 6: "red"})
+ .add_tick_icons({2: icon, 3: icon, 4: icon, 5: icon, 6: icon}, tick_icon_size=1.0)
+ .add_segments({2: "red", 3: "red", 4: "red", 5: "red"}, segment_width=3)
+ .add_boxes(box_labels={"box1": "2", "box2": "+", "box3": "4", "box4": "6"})
+)
+display_vector(fig)
+```
+
+
+Substracting is similar, only that we move in the direction of decreasing numbers. For instance, to compute $9 - 3$, we start at $9$ and move $3$ positions in the direction of decreasing numbers, and we end up at $6$.
+
+
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-7
+# | fig-cap: "Computing the result of $9 - 3$ on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+icon= "/static_images/train_backward_red.svg"
+
+fig = (NumberLine(0, 9)
+ .add_markers({9: "red", 8: "red", 7: "red", 6: "red"})
+ .add_tick_icons({9: icon, 8: icon, 7: icon, 6: icon}, tick_icon_size=1.0)
+ .add_segments({6: "red", 7: "red", 8: "red"}, segment_width=3)
+ .add_boxes(box_labels={"box1": "9", "box2": "-", "box3": "3", "box4": "6"})
+)
+display_vector(fig)
+```
+
+Time to practice. In the following exercises, use the number line to compute the result of the following operations. You have to start by coloring the train at the position of the first operand, and then move in the direction indicated by the operation, and finally write down the result in the box.
+
+For instance, to compute $3+3$, we start at $4$ and move $3$ positions in the direction of increasing numbers, and we end up at $6$.
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-8a
+# | fig-cap: "Compute $3+3$ on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+icon_white = "/static_images/train_forward_white.svg"
+icon_red = "/static_images/train_forward_red.svg"
+
+fig = (NumberLine(1, 8)
+ .add_markers({1: "white", 2: "white", 3: "red", 4: "red", 5: "red", 6: "red", 7: "white", 8: "white"})
+ .add_tick_icons({1: icon_white, 2: icon_white, 3: icon_red, 4: icon_red, 5: icon_red, 6: icon_red, 7: icon_white, 8: icon_white}, tick_icon_size=1.1)
+ .add_segments({3: "red", 4: "red", 5: "red"})
+ .add_boxes(box_labels={"box1": "3", "box2": "+", "box3": "3", "box4": "6"})
+)
+display_vector(fig)
+```
+
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-8
+# | fig-cap: "Compute $1+6$ on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 9)
+ .add_markers({0: "white", 1: "white", 2: "white", 3: "white", 4: "white", 5: "white", 6: "white", 7: "white", 8: "white", 9: "white"})
+ .add_tick_icons("/static_images/train_forward_white.svg", tick_icon_size=1.1)
+ .add_boxes(box_labels={"box1": "1", "box2": "+", "box3": "6"})
+)
+display_vector(fig)
+```
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-9
+# | fig-cap: "Compute $2+3$ on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 9)
+ .add_markers({0: "white", 1: "white", 2: "white", 3: "white", 4: "white", 5: "white", 6: "white", 7: "white", 8: "white", 9: "white"})
+ .add_tick_icons("/static_images/train_forward_white.svg", tick_icon_size=1.1)
+ .add_boxes(box_labels={"box1": "2", "box2": "+", "box3": "3"})
+)
+display_vector(fig)
+```
+
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-10
+# | fig-cap: "Compute $8-4$  on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 9)
+ .add_markers({0: "white", 1: "white", 2: "white", 3: "white", 4: "white", 5: "white", 6: "white", 7: "white", 8: "white", 9: "white"})
+ .add_tick_icons("/static_images/train_backward_white.svg", tick_icon_size=1.1)
+ .add_boxes(box_labels={"box1": "8", "box2": "-", "box3": "4"})
+)
+display_vector(fig)
+```
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-11
+# | fig-cap: "Compute $1-1$ on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(0, 9)
+ .add_markers({0: "white", 1: "white", 2: "white", 3: "white", 4: "white", 5: "white", 6: "white", 7: "white", 8: "white", 9: "white"})
+ .add_tick_icons("/static_images/train_backward_white.svg", tick_icon_size=1.1)
+ .add_boxes(box_labels={"box1": "1", "box2": "-", "box3": "1"})
+)
+display_vector(fig)
+```
+
+
+:::{.fun-fact title="Terra incognita" image="/static_images/globe_map.pdf" width="0.6" scale="1.0"}
+Old maps often labeled unexplored territories as "terra incognita," which is Latin for "unknown land." To signal the dangers of these areas, they were often illustrated with sea monsters and dragons. _Hic sunt dracones_: Here be dragons.
+:::
+
+
+```{python}
+# | echo: false
+# | label: fig-number-line-pos-12
+# | fig-cap: "Compute $3-7$ on the number line."
+# | fig-pos: "H"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(-6, 5)
+ .add_markers({-6: "white", -5: "white", -4: "white", -3: "white", -2: "white", -1: "white", 0: "white", 1: "white", 2: "white", 3: "white", 4: "white", 5: "white"}, marker_size=0.1)
+ .add_tick_icons("/static_images/train_backward_white.svg", tick_icon_size=1.2)
+ .add_boxes(box_labels={"box1": "3", "box2": "-", "box3": "7"})
+)
+display_vector(fig)
+```
+
+Did you notice anything unusual about the last operation?  We started at $3$ and had to move $7$ positions in the direction of decreasing numbers. However, after $3$ positions, we ended up at $0$. Does that mean we can't move any further? What is beyond $0$ in that direction? *Suntne hic dracones?* $\text{[dragon:1.5em]{.twemoji}}$  Not really. There are numbers in that direction that are pretty much like the ones you were familiar with on the positive side. These numbers are called negative numbers, and you can think of them as reflections of the positive numbers on the other side of zero. Each negative number is the reflection or *opposite* of the corresponding positive number. In the example above, after $0$, you find the reflection of $1$, which is $-1$ and is read as "negative one" or "minus one"; then, the reflection of $2$, which is $-2$; and so on.
+
+
+::: {.fun-fact image="/static_images/number_line_lift.pdf" width="0.6" scale="0.9"}
+You have likely encountered negative numbers when discussing cold temperatures (if you live in a place where the temperature can drop below 0 degrees) or riding an elevator. In elevators, positive numbers usually represent floors above ground level. Floors below ground level are usually labeled with negative numbers. This is convenient because it eliminates the need for a different display for floors below zero, like the basement. 
+
+Negative numbers provide a convenient bookkeeping mechanism. You can use the same placeholder to represent quantities on two sides of a reference. They can represent deficits, losses, debts, or positions relative to an arbitrary reference. For example, you could represent a year prior to an event, an altitude below sea level, or a floor below the ground floor.
+:::
+
+
+### Exercises {.unlisted .unnumbered}
+
+:::{.teacher-tip}
+Use the following number lines as templates for additional exercises. Even better, have the kids create their own exercises by choosing the numbers and operations they want to practice.
+:::
+
+
+```{python}
+# | echo: false
+# | fig-pos: "H" 
+# | fig-align: "center" 
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+marker_size = 0.25
+
+fig = (NumberLine(-9, 9)
+ .add_markers({"all": "white", -8: "green", -7: "green", -6: "green", -5: "green", -4: "green"}, marker_size=marker_size)
+ .add_segments({-8: "green", -7: "green", -6: "green", -5: "green"})
+ .add_boxes(box_labels={"box1": "-8", "box2": "+", "box3": "4", "box4": "-4"})
+)
+display_vector(fig)
+
+for _ in range(8):
+    fig = (NumberLine(-9, 9)
+     .add_markers({"all": "white"}, marker_size=marker_size)
+     .add_boxes()
+    )
+    display_vector(fig)
+```
+
+
+
+## Negative numbers
+
+We learned that negative numbers are reflections of positive numbers on the opposite side of zero. They are similar to positive numbers, but represent different quantities. In the examples above, there is not a clear difference between positive and negative numbers on the number line other than their position relative to zero. 
+
+An important difference is that negative numbers, unlike their positive counterparts, are not used to represent the amount of an object. You don't usually say, "I have minus two apples." Perhaps because of this, negative numbers have been called "absurd" or "false" throughout history and were not widely accepted in the West until the Renaissance. 
+
+I just wanted to mention one last thing about how to perform operations with negative numbers.
+
+Adding a negative number is the same as subtracting the corresponding positive number. For example, $2 + (-3) = 2 - 3 = -1$. This is more clearly seen on a number line. In both cases, the resulting operation involves moving $3$ positions in the direction of decreasing numbers, starting from $2$ and ending at $-1$.
+
+
+
+```{python}
+# | echo: false
+# | fig-pos: "H"
+# | fig-align: "center"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(-3, 5)
+ .add_markers({"all": "white", 2: "red", 1: "red", 0: "red", -1: "red"}, marker_size=0.15)
+ .add_segments({1: "red", 0: "red", -1: "red"})
+ .add_boxes(box_labels={"box1": "2", "box2": "+", "box3": "-3", "box4": "-1"})
+)
+display_vector(fig)
+
+fig = (NumberLine(-3, 5)
+ .add_markers({"all": "white", 2: "red", 1: "red", 0: "red", -1: "red"}, marker_size=0.15)
+ .add_segments({1: "red", 0: "red", -1: "red"})
+ .add_boxes(box_labels={"box1": "2", "box2": "-", "box3": "3", "box4": "-1"})
+)
+display_vector(fig)
+```
+
+In the general case we have:
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+a + (-b) = a - b
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+a \eqnmark[red]{plus}{+} (\eqnmarkbox[blue]{minus_b}{-b}) = a \eqnmark[blue]{minus}{-} \eqnmarkbox[red]{plus_b}{b}
+\tikzset{annotate equations/arrow/.style={<-}}
+\annotatetwo[yshift=0.5em]{above}{minus}{plus}{}
+\tikzset{annotate equations/arrow/.style={<-}}
+\annotatetwo[yshift=0em]{below}{plus_b}{minus_b}{}
+\end{equation*}
+\vspace{0.5em}
+:::
+:::
+:::
+
+
+Subtracting a negative number is the same as adding the corresponding positive number. For example, $2 - (-3) = 2 + 3 = 5$. In both cases, the resulting operation involves moving $3$ positions in the direction of increasing numbers, starting from $2$ and ending at $5$.
+
+
+```{python}
+# | echo: false
+# | fig-pos: "H"
+# | fig-align: "center"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+marker_size = 0.15
+
+fig = (NumberLine(-3, 5)
+ .add_markers({"all": "white", 2: "red", 3: "red", 4: "red", 5: "red"}, marker_size=marker_size)
+ .add_segments({2: "red", 3: "red", 4: "red"})
+ .add_boxes(box_labels={"box1": "2", "box2": "-", "box3": "-3", "box4": "5"})
+)
+display_vector(fig)
+
+
+fig = (NumberLine(-3, 5)
+ .add_markers({"all": "white", 2: "red", 3: "red", 4: "red", 5: "red"}, marker_size=marker_size)
+ .add_segments({2: "red", 3: "red", 4: "red"})
+ .add_boxes(box_labels={"box1": "2", "box2": "+", "box3": "3", "box4": "5"})
+)
+display_vector(fig)
+```
+
+In the general case we have:
+
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+a - (-b) = a + b
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+a \eqnmark[blue]{minus}{-} (\eqnmarkbox[blue]{minus_b}{-b}) = a \eqnmark[red]{plus}{+} \eqnmarkbox[red]{plus_b}{b}
+\tikzset{annotate equations/arrow/.style={<-}}
+\annotatetwo[yshift=0.5em]{above}{plus}{minus}{}
+\tikzset{annotate equations/arrow/.style={<-}}
+\annotatetwo[yshift=0em]{below}{plus_b}{minus_b}{}
+\end{equation*}
+\vspace{0.5em}
+:::
+:::
+:::
+
+
+
+This last result may be less intuitive. One way to understand it is that each minus sign changes the direction. For example, when you have $a {\color{red}{-}} ({\color{blue}{-}}b)$, the first minus sign, $\color{red}{-}$, tells us to change direction and move in the direction of the decreasing numbers. However, the second minus sign, $\color{blue}{-}$ ,  tells us to change direction again and move in the direction of the increasing numbers. That's why we end up moving $b$ positions in the direction of increasing numbers.
+
+Still confused? No worries—we'll revisit this topic later.
+
+
+
+## Measuring distance on the number line
+
+:::{.fun-fact title="Turtles all the way down" image="/static_images/tortoise.pdf" width="0.7" scale="1.0"}
+
+Tortoises and turtles are recurrent characters in philosophy and mathematics. For example, one of Zeno's paradoxes is called "The Tortoise and Achilles."  
+
+There is also Aesop's fable, "The Hare and the Tortoise." Although not mathematical in nature, we will use the characters from this fable to illustrate some concepts here.
+:::
+
+Measuring distance on a number line is simple. It boils down to counting the number of units or segments of lenght $1$ between two numbers. These units are the space between two consecutive numbers; for example, between $-2$ and $-1$, or between $3$ and $4$. 
+
+:::{.fun-fact title="What is a distance?"}
+A distance is a numerical measurement of how far apart two points or objects are. Examples include the distance from your house to school, the distance from Earth to the sun, the number of days until Christmas, and how many moves your Rubik's Cube is from being solved.
+
+Distances are nonnegative numbers and are symmetric, meaning the distance between your house and the playground is the same as the distance between the playground and your house.
+
+
+$$
+\text{distance}\left(\text{[house:2em]{.twemoji}}, \text{[playground_slide:2em]{.twemoji}}\right) = \text{distance}\left(\text{[playground_slide:2em]{.twemoji}}, \text{[house:2em]{.twemoji}}\right)
+$$
+
+$$
+\text{distance}\left(\text{[globe_showing_Americas:2em]{.twemoji}}, \text{[sun_with_face:2em]{.twemoji}}\right) = \text{distance}\left(\text{[sun_with_face:2em]{.twemoji}}, \text{[globe_showing_Americas:2em]{.twemoji}}\right)
+$$
+
+The distance between an object and itself is always zero. For instance, the distance between your house and your house is zero, and the distance between the sun and the sun is zero.
+
+$$
+\text{distance}\left(\text{[house:2em]{.twemoji}}, \text{[house:2em]{.twemoji}}\right) = 0
+$$
+
+
+
+:::
+
+For example, in the following figure, we want to find the distance between the hare $\text{[rabbit:2em]{.twemoji}}$ and the tortoise $\text{[turtle:2em]{.twemoji}}$. This is how it is done:
+
+- First, we identify the position of the hare, which is $1$.
+- We identify the position of the tortoise, which is $5$.
+- We count the number of segments between the two numbers (colored ${\color[RGB]{255,20,147}{\text{fuchsia}}}$ in the figure), which is $4$.
+- An equivalent way to find the distance is to subtract one number from the other, i.e., $5- 1 = 4$.
+
+
+```{python}
+# | echo: false
+# | fig-cap: "Measuring distance on the number line."
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(-2, 7)
+ .add_tick_icons({1: "/static_images/emojis/1f407_hare.svg", 5: "/static_images/emojis/1f422_turtle.svg"}, tick_icon_size=1.0)
+ .add_segments({1: "fuchsia", 2: "fuchsia", 3: "fuchsia", 4: "fuchsia"}, segment_width=5)
+ .add_boxes(box_labels={"box1": "5", "box2": "-", "box3": "1", "box4": "4"})
+)
+display_vector(fig)
+```
+
+If the hare moves to position $-3$, that's fine; the same logic applies. You just need to remember how to subtract negative numbers. Remember that  $5 - (-3) = 5 + 3 = 8$
+
+
+```{python}
+# | echo: false
+# | fig-cap: "Measuring distance on the number line."
+# | fig-pos: "H"
+# | fig-align: "center"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(-5, 6)
+ .add_tick_icons({-3: "/static_images/emojis/1f407_hare.svg", 5: "/static_images/emojis/1f422_turtle.svg"}, tick_icon_size=1.0)
+ .add_segments({-3: "fuchsia", -2: "fuchsia", -1: "fuchsia", 0: "fuchsia", 1: "fuchsia", 2: "fuchsia", 3: "fuchsia", 4: "fuchsia"}, segment_width=5)
+ .add_boxes(box_labels={"box1": "5", "box2": "-", "box3": "-3", "box4": "8"})
+)
+display_vector(fig)
+```
+
+### Exercises {.unnumbered .unlisted}
+
+Find the distance between the hare and the tortoise:
+
+```{python}
+# | echo: false
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+positions = [(-8, -3), (-8, 0), (-3, 2), (-4, 4), (-1, 7), (0, 2), (-4, 1)]
+
+for hare_pos, tortoise_pos in positions:
+    fig = (NumberLine(-8, 7)
+     .add_tick_icons({hare_pos: "/static_images/emojis/1f407_hare.svg", tortoise_pos: "/static_images/emojis/1f422_turtle.svg"}, tick_icon_size=1.0)
+     .add_boxes()
+    )
+    display_vector(fig)
+```
+
+
+## Comparing quantities on the number line
+
+Once we have established the direction in which the numbers increase, comparing quantities on the number line is trivial.
+
+Thus far, we have drawn horizontal number lines and agreed that  numbers increase as we move towards the right.
+
+Therefore, given two numbers, the one on the right is always larger than the one on the left.
+
+```{python}
+# | echo: false
+# | fig-cap: "Comparing quantities on the number line. ${\\color{red}{-5}} < {\\color{blue}{3}} < {\\color{olive}{6}}$."
+# | fig-pos: "H"
+# | fig-align: "center"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+fig = (NumberLine(-6, 6)
+ .add_markers({"all": "white", -5: "red", 3: "blue", 6: "green"}, marker_size=0.2)
+)
+display_vector(fig)
+```
+
+{{< include cartesian_plane.qmd >}}
+{{< include integers.qmd >}}
+{{< include clock_arithmetic.qmd >}}
+
+

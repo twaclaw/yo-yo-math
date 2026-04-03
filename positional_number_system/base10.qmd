@@ -1,0 +1,139 @@
+## Base 10
+
+```{python}
+# | echo: false
+# | fig-cap: "The base of the decimal system is $10$."
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+fig = draw_handwritten_range([10], font_size=100, rows=1, font_color="fuchsia")
+display_vector(fig)
+```
+
+The reason the number system we have used so far is called the "decimal number system" and each floor of our Grand Hotel has ten rooms is because we are using a number system based precisely on the number $10$. Ten is the base of this system. What does that mean?
+
+
+On the one hand, it means that we have ten digits or symbols:
+
+```{python}
+# | echo: false
+# | fig-cap: "The decimal numbers. Ten digits."
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+fig = draw_handwritten_range(list(range(10)), font_size=50, rows=1, font_color="fuchsia", append_comma=True)
+display_vector(fig)
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Climbing a ladder means adding $10$."
+
+from yoyo_plots.hotel import Ladder, Label, Number
+from yoyo_plots.common import display_vector
+
+ladder = Ladder(x=0, y=0, width=60, height=200, color="red")
+label1 = Label([None, Number(7, "black")])
+label2 = Label([Number(1, "red"), Number(7, "black")])
+
+svg = ladder.to_svg(top_label=label2, bottom_label=label1, annotation="+10")
+display_vector(svg)
+```
+
+It also means that all numbers greater than $9$ are constructed adding one of these ten digits to combinations of $10$^[Technically, powers of $10$, but we will come back to that sometime in the future.].
+
+In our Grand Hotel analogy, climbing a floor means adding up $10$. Each time we climb a ladder, we add $10$. If we climb two ladders we add two times $10$, $2\times 10 = 10 + 10 = 20$, if we climb $5$ ladders we add five times $10$, $5\times 10 = 10 + 10 + 10 + 10 + 10 = 50$, and so on.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Climbing three ladders means adding $3 \\times 10=10 + 10 + 10 = 30$."
+
+from yoyo_plots.hotel import Ladder, Label, Number, draw_ladders
+from yoyo_plots.common import display_vector
+
+ladder1 = Ladder(x=0, y=0, width=60, height=200, color="red")
+ladder2 = Ladder(x=0, y=0, width=60, height=200, color="red")
+ladder3 = Ladder(x=0, y=0, width=60, height=200, color="red")
+
+label1 = Label([None, Number(5, "black")])
+label2 = Label([Number(3, "red"), Number(5, "black")])
+
+svg = draw_ladders(
+    [(ladder1, "+10"), (ladder2, "+10"), (ladder3, "+10")],  # bottom first
+    top_label=label2,
+    bottom_label=label1,
+)
+display_vector(svg)
+```
+
+
+This is how some of the new numbers we just learned are constructed using the base $10$:
+
+::: {.content-visible when-format="html"}
+::: {.big-math size="20pt"}
+\begin{align*}
+13 &= 3 + (1\times 10) = 3 + (\underbrace{10}_{1\text{ time}}) &=  3 + 10 \\
+23 &= 3 + (2\times 10) = 3 + (\underbrace{10 + 10}_{2\text{ times}}) &= 3 + 20 \\
+24 &= 4 + (2\times 10) = 4 + (\underbrace{10 + 10}_{2\text{ times}}) &= 4 + 20 \\
+35 &= 5 + (3\times 10) = 5 + (\underbrace{10 + 10 + 10}_{3\text{ times}}) &= 5 + 30 \\
+\end{align*}
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+::: {.big-math size="20pt"}
+:::{{latex}}
+\begin{align*}
+23 &= 3 + \eqnmarkbox[OliveGreen]{k01}{(2\times 10)} = 3 + \eqnmarkbox[OliveGreen]{k02}{(\underbrace{10 + 10}_{2\text{ times}})} &= 3 + \eqnmarkbox[OliveGreen]{k03}{20} \\
+13 &= 3 + \eqnmarkbox[OliveGreen]{1}{(1\times 10)} = 3 + \eqnmarkbox[OliveGreen]{k2}{(\underbrace{10}_{1\text{ time}})} &=  3 + \eqnmarkbox[OliveGreen]{k3}{10} \\
+24 &= 4 + \eqnmarkbox[OliveGreen]{k1}{(2\times 10)} = 4 + \eqnmarkbox[OliveGreen]{k2}{(\underbrace{10 + 10}_{2\text{ times}})} &= 4 + \eqnmarkbox[OliveGreen]{k3}{20} \\
+35 &= 5 + \eqnmarkbox[OliveGreen]{k1}{(3\times 10)} = 5 + \eqnmarkbox[OliveGreen]{k2}{(\underbrace{10 + 10 + 10}_{3\text{ times}})} &= 5 + \eqnmarkbox[OliveGreen]{k3}{30} \\
+\end{align*}
+\annotate[yshift=1em]{above}{k01, k02, k03}{Same thing!}
+:::
+:::
+
+
+### Exercises {.unnumbered .unlisted}
+
+Complete the following representations:
+
+::: {.content-visible when-format="html"}
+::: {.big-math size="30pt"}
+\begin{align*}
+33 &= 3 + (\boxed{3}\times 10) = 3 + \boxed{30} \\
+76 &= 6 + (\boxed{7}\times 10) = 6 + \boxed{70} \\
+18 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+19 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+39 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+21 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+10 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+11 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+20 &= \boxed{\phantom{8}} + (\boxed{\phantom{1}}\times 10) = \boxed{\phantom{3}} + \boxed{\phantom{10}} \\
+\end{align*}
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+::: {.big-math size="30pt"}
+:::{{latex}}
+\begin{align*}
+33 &= \eqnmarkbox[NavyBlue]{}{3} + \eqnmarkbox[WildStrawberry]{k1}{(\boxed{3}\times 10)} = \eqnmarkbox[NavyBlue]{}{3} + \eqnmarkbox[WildStrawberry]{k2}{\boxed{30}} \\
+76 &= \eqnmarkbox[NavyBlue]{}{6} + \eqnmarkbox[WildStrawberry]{k3}{(\boxed{7}\times 10)} = \eqnmarkbox[NavyBlue]{}{6} + \eqnmarkbox[WildStrawberry]{k4}{\boxed{70}} \\
+18 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+19 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+39 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+21 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+10 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+11 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+20 &= \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{8}}} + \eqnmarkbox[WildStrawberry]{}{(\boxed{\phantom{1}}\times 10)} = \eqnmarkbox[NavyBlue]{}{\boxed{\phantom{3}}} + \eqnmarkbox[WildStrawberry]{}{\boxed{\phantom{10}}} \\
+\end{align*}
+:::
+:::
+:::
+

@@ -1,0 +1,6 @@
+## Credits {.unnumbered .unlisted}
+
+
+- Cover image by  [Gerardo Restrepo](https://www.instagram.com/gerardorestrepotattoo/).
+- If not explicitely cited, images (such as those in the tooltips) come from [Freesvg.org](https://freesvg.org/) and are licensed under Creative Commons [CC0](https://creativecommons.org/public-domain/cc0/).
+- Emoji artwork provided by [Twemoji](https://twemoji.twitter.com/), licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).

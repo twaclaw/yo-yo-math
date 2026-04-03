@@ -1,0 +1,425 @@
+## Counting objects
+
+We use natural numbers to represent the quantity of objects or entities. Natural numbers are used for counting and answering questions that imply "How many?" 
+
+- How many siblings do you have?
+- How many legs do dogs have?
+- How many horns did a triceratops have? What about unicorns?
+- How many candles were in your last birthday cake?
+
+Sometimes the answer is a very special quantity: zero, $0$. Consider the answer to the question "how many horns do you have?" Hopefully none.
+
+
+::: {.fun-fact title="A number to represent nothingness" image="/static_images/zero.pdf" width="0.8" scale="0.9"}
+
+The invention of zero ($0$), a number representing nothingness, was a significant milestone in the history of mathematics. Not all cultures recognized the concept of zero immediately or had a value for representing nothingness. The one in the picture is the Mayan zero. Doesn't it look like a rugby ball? Source image: [Wikipedia](https://en.wikipedia.org/wiki/0#/media/File:Cero_maya.svg).
+:::
+
+Let's see how to use decimal numerals to represent quantities. For example, how many elephants do you see in the next figure? You would agree that the answer is three.
+
+```{python}
+# | echo: false
+# | fig-align: center
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import plot_quantity
+
+fig = plot_quantity("icon_images/elephant1.svg", 3, nrows=1, font_color="black", image_size=0.8, pixels_per_unit=80)
+display_vector(fig)
+```
+
+
+### Exercises {.unnumbered .unlisted}
+
+```{python}
+# | echo: false
+# | out-width: 100%
+# | fig-align: center
+
+from yoyo_plots.quantities import draw_quantity_grid
+from yoyo_plots.common import display_vector
+
+font_size = 100
+image_size = 1.0
+grid_specs = [
+    dict(n=0, font_size=font_size, image_size=image_size),
+    dict(n=1, font_size=font_size, image_size=image_size, image="/icon_images/robot1.svg"),
+    dict(n=5, nrows=2, font_size=font_size, image_size=image_size, image="/icon_images/stegosaurus.svg"),
+    dict(
+        n=7,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size*0.8,
+        image="/static_images/emojis/1f691_ambulance.svg",
+    ),
+    dict(
+        n=4,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/whale.svg",
+    ),
+    dict(
+        n=9,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/submarine.svg",
+    ),
+    dict(
+        n=9,
+        nrows=4,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/panda_in_love.svg",
+    ),
+    dict(
+        n=6,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/triceratops.svg",
+    ),
+    dict(
+        n=2,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/unicorn.svg"
+    ),
+    dict(
+        n=8,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/donkey.svg",
+    ),
+    dict(
+        n=1,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/shark.svg",
+    ),
+    dict(
+        n=7,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        # image="/icon_images/trex.svg",
+        image="/static_images/emojis/1f996_trex.svg",
+    ),
+    # dict(
+    #     n=8,
+    #     nrows=2,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f422_turtle.svg",
+    # ),
+    # dict(
+    #     n=3,
+    #     nrows=1,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f9a3_mamooth.svg",
+    # ),
+    # dict(
+    #     n=2,
+    #     nrows=1,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f9a5_sloth.svg",
+    # ),
+    # dict(
+    #     n=1,
+    #     nrows=1,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f68e_trolleybus.svg",
+    # )
+]
+
+fig = draw_quantity_grid(grid_specs, cols=4)
+display_vector(fig)
+```
+
+```{python}
+# | echo: false
+# | out-width: 100%
+#| fig-align: center
+
+from yoyo_plots.quantities import draw_quantity_grid
+from yoyo_plots.common import display_vector
+
+font_size = 100
+image_size = 1.0
+grid_specs = [
+    dict(
+        n=1,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/teddy.svg",
+    ),
+    dict(
+        n=7,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size*0.8,
+        image="/static_images/emojis/1f692_firefighters.svg",
+    ),
+    dict(
+        n=3,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/orca.svg",
+    ),
+    dict(
+        n=0,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+    ),
+    dict(
+        n=6,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/triceratops.svg",
+    ),
+    dict(
+        n=5,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/stegosaurus.svg",
+    ),
+    dict(
+        n=5,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/whale.svg",
+    ),
+    dict(
+        n=5,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/unicorn.svg",
+    ),
+    dict(
+        n=4,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/robot1.svg",
+    ),
+    dict(
+        n=1,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/giraffe.svg",
+    ),
+    dict(
+        n=9,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/submarine.svg",
+    ),
+    dict(
+        n=9,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/icon_images/octopus.svg",
+    ),
+#
+    # dict(
+    #     n=4,
+    #     nrows=3,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f6b2_bike.svg",
+    # ),
+    # dict(
+    #     n=4,
+    #     nrows=2,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f413_rooster.svg",
+    # ),
+    # dict(
+    #     n=1,
+    #     nrows=1,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f30d_earth.svg",
+    # ),
+    # dict(
+    #     n=2,
+    #     nrows=1,
+    #     font_size=font_size,
+    #     font_color="white",
+    #     image_size=image_size,
+    #     image="/static_images/emojis/1f427_penguin.svg",
+    # ),
+]
+
+fig = draw_quantity_grid(grid_specs, cols=4)
+display_vector(fig)
+```
+
+```{python}
+# | echo: false
+# | out-width: 100%
+# | fig-align: center
+
+from yoyo_plots.quantities import draw_quantity_grid
+from yoyo_plots.common import display_vector
+
+font_size = 100
+image_size = 1.0
+grid_specs = [
+    dict(
+        n=8,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f422_turtle.svg",
+    ),
+    dict(
+        n=3,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f9a3_mamooth.svg",
+    ),
+    dict(
+        n=2,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f9a5_sloth.svg",
+    ),
+    dict(
+        n=1,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f68e_trolleybus.svg",
+    ),
+    dict(
+        n=4,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f6b2_bike.svg",
+    ),
+    dict(
+        n=4,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f413_rooster.svg",
+    ),
+    dict(
+        n=1,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f30d_earth.svg",
+    ),
+    dict(
+        n=2,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f427_penguin.svg",
+    ),
+]
+
+fig = draw_quantity_grid(grid_specs, cols=4)
+display_vector(fig)
+```
+
+
+
+
+Orion, the son of Poseidon and Euryale, was an incomparable hunter, admired even by Artemis. It is also one of the most recognizable constellations in the night sky. He is followed by his two faithful dogs, represented by the constellations Canis Major $\text{[dog:2.5em]{.twemoji}}$ and Canis Minor $\text{[dog:1.5em]{.twemoji}}$. The dogs are pursuing the poor hare, represented by the constellation Lepus $\text{[rabbit:1.5em]{.twemoji}}$. This hunting scene is depicted in the night sky (just look up), as shown in figure @fig-orion-friends. The neighboring constellations Taurus $\text{[taurus:1em]{.twemoji}}$, the bull, and Gemini $\text{[gemini:1em]{.twemoji}}$, the twins, are also shown in the figure. 
+
+Answer the following questions based on figure @fig-orion-friends:
+
+- How many stars are in the Orion Belt? Do you know their names?
+- How many stars can you see in the Greater Dog (Canis Major)? How many do you see in the smaller one, Canis Minor? I know the Lesser Dog doesn't really look like a dog.
+- How many stars are there in Orion's shield on his left arm? Sometimes, instead of a shield, it is depicted as a lion skin, but the number of stars remains the same. 
+- How many orange-red stars do you see in this picture? In which constellations? Do you know their names?
+
+
+
+
+
+```{python}
+#| label: fig-orion-friends
+#| fig-cap: "Winter night sky."
+#| echo: false
+#| out.width: "80%"
+#| fig-align: center
+
+
+from yoyo_plots.astro import plot_sky
+
+# Plot constellations: Orion, Canis Major, Canis Minor, Taurus, Gemini, Lepus
+plot_sky(["Ori", "CMa", "CMi", "Tau", "Gem", "Lep"], show_constellations=True)
+```
+
+:::{.teacher-tip}
+If this example sparked your interest in astronomy and the night sky, here are a series of recommendations:
+
+- [Stellarium](https://stellarium.org/)^[https://stellarium.org/]: A free, open-source planetarium software. 
+- Constellations (Princeton University Press, 2012) by Govert Schilling: A beautifully illustrated book about constellations, their history and mythology.
+- [Canis Major](https://github.com/twaclaw/canismajor)^[https://github.com/twaclaw/canismajor]: A project combining the  two. It provides animations, including constellations, groups of constellations, orbits, etc.
+:::
+
+
+
+

@@ -1,0 +1,38 @@
+
+Are there other bases? Sure there are.
+
+We are going to defer the study of other bases for later. I just wanted to show you how the hotels will look in this cases.
+
+
+
+### Base $2$ {.unnumbered .unlisted}
+
+> There are only 10 kinds of people on this world, those who understand binary and those who don't.
+
+In this base there are only two digits $0$ and $1$. Our hotel floors have only two rooms and climbing a ladder means adding $10$ which is $2$ in binary. That's the number system that computers use to represent numbers.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "First $3$ floors of the base-$2$ hotel."
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+building = Building(0, 0, 3, 3, pad_zeros=False, base=2)
+display_vector(building)
+```
+
+### Base $16$ {.unnumbered .unlisted}
+
+In this base there are sixteen digits: $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$ and $A, B, C, D, E, F$. Our hotel floors have $16$ rooms and climbing a ladder means adding $10$ which is $16$ in hexadecimal. This is the number system that computers use to represent colors and memory addresses.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "First $3$ floors of the base-$16$ hotel."
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+building = Building(0, 0, 2, 3, pad_zeros=False, base=16)
+display_vector(building)
+```
+

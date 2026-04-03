@@ -1,0 +1,68 @@
+# Counting beyond 9
+
+There is nothing to stop us counting beyond $9$. Chances are you already know how to do it and won't have any trouble answering the following questions. If you still cannot, just skip and come back to them after reading the rest of the chapter.
+
+
+```{python}
+# | echo: false
+# | label: fig-pentagonal-2-b
+# | out-width: 100%
+# | fig-pos: "H"
+# | fig-cap: "Count the number of points in this pentagonal number."
+
+from yoyo_plots.figural import plot_figural
+from yoyo_plots.common import display_vector
+
+fig1 = plot_figural("pentagonal", 4, font_color="white")
+display_vector(fig1)
+```
+
+```{python}
+#| label: zodiac
+#| echo: false
+#| out.width: "80%"
+#| fig-align: center
+#| fig-pos: "H"
+#| fig-cap: "Count the number of constellations in the Zodiac."
+
+from yoyo_plots.astro import plot_zodiac
+
+# Plot constellations: The Zodiac and Ophiuchus
+plot_zodiac()
+```
+
+
+```{python}
+# | echo: false
+# | label: sum-beyond-9-1
+# | fig-cap: "Find the total number of bikes."
+# | fig-pos: "H"
+
+from yoyo_plots.operations import draw_quantity_operation
+from yoyo_plots.common import display_vector
+
+op1 = dict(image="/static_images/emojis/1f6b2_bike.svg", n=11, font_color="white", nrows=2)
+op2 = dict(image="/static_images/emojis/1f6b2_bike.svg", n=7, font_color="white", nrows=3)
+res = dict(image="/static_images/emojis/1f6b2_bike.svg", n=19, font_color="white", nrows=3)
+
+fig_op = draw_quantity_operation(
+    op1,
+    op2,
+    res,
+    operation="+",
+    font_size=50,
+)
+display_vector(fig_op)
+```
+
+
+However, the problem may lie in the way numbers are represented. In this chapter, we will learn how to represent and construct numbers larger than 9 using the decimal system. 
+
+
+{{< include positional.qmd >}}
+{{< include hotel.qmd >}}
+{{< include beyond_99.qmd >}}
+{{< include base10.qmd >}}
+{{< include other_bases.qmd >}}
+
+<!-- Manhatan distance -->

@@ -1,0 +1,92 @@
+## Counting even further
+
+Now that we learned to build numbers with two digits, two placeholders, how far can we count? Stop and consider the answer.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-pos: "H"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+fig = draw_handwritten_range(list(range(100)), font_size=34, rows=10, font_color="lightgray", append_comma=True)
+display_vector(fig)
+```
+
+Now the follow-up question is how to count beyond $99$?  Remember what we did before when we wanted to count beyond $9$? Well, we have to do the same, but first, let's try to illustrate the problem again. Imagine our Grand Hotel has now more than $10$ floors, for instance $12$ and observe what happen in the last two floors, can you see the issue?
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-pos: "H"
+# | fig-cap: "The first $12$ floors of our Grand Hotel. Each room number represented with two digits. Do you see the issue with the last two floors?"
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+n = 12
+building = Building(0, 0, 2, n, without_offset=False, pad_zeros=False)
+display_vector(building)
+```
+
+Did you spot the issue? Have a look to the last two floors, the room numbers repeat those of the first two floors. 
+
+
+Luckily you know the solution: more positions!
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-pos: "H"
+# | fig-cap: "The first $12$ floors of our Grand Hotel. Each room number represented with three digits."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+n = 12
+building = Building(0, 0, 3, n, without_offset=False, pad_zeros=False)
+display_vector(building)
+```
+
+How do we climb to the tenth and eleventh floors? We could stack more ladders, but in our ladder analogy, we cannot stack more than ten ladders of the same size.  Fortunately, we have ladders of different sizes. The new blue ladder is as tall as $10$ red ladders stacked on top of each other.
+
+In the following room numbers, the blue digit represents the number of blue ladders climbed, and the red digit represents the number of red ladders climbed, while the black digit represents the room number within the floor.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Number $3$ represented with different number of placeholders. It is always the same number because the digit $3$ is always in the rightmost position."
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.hotel import Label, Number
+
+labels = [
+    Label(values=[Number(1, "blue"), Number(0, "red"), Number(3, "black")]),
+    Label(values=[Number(1, "blue"), Number(1, "red"), Number(3, "black")]),
+]
+
+display_vector(combine_svgs(labels, spacing=50, direction="horizontal" ))
+```
+
+
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-pos: "H"
+# | fig-cap: "To reach rooms in floor number $11$, for instance ${\\color{blue}{1}}{\\color{red}{1}}2$, we have to climb $\\color{blue}{1}$ blue ladder (equivalent to $10$ red ladders) and $\\color{red}{1}$ red ladder."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+n = 12
+building = Building(0, 0, 3, n, without_offset=False, pad_zeros=False)
+building.add_ladder(0, 0, "blue", width=0.4, height=10)
+building.add_ladder(10, 1, "red")
+display_vector(building)
+```

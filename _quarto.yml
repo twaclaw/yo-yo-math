@@ -1,0 +1,238 @@
+project:
+  title: "Lectures on math"
+  type: book
+  output-dir: _book
+  pre-render: scripts/generate_polygons.py
+  resources:
+    - "static_images/*.svg"
+    - "static_images/*.pdf"
+    - "cover.pdf"
+    - "cover.png"
+
+execute:
+  freeze: auto
+
+big-math-size: "30pt"
+
+# jupyter: curriculum-env
+
+book:
+  title: "[Yo]{style='color:#156483'}[-]{style='color:#0F0C0C'}[Yo]{style='color:#993A71'}[-]{style='color:#0F0C0C'}[Math]{style='color:#3D2478'}"
+  output-file: "Yo-Yo-Math"
+  subtitle: "[A book for playing mathematics]{style='color:#2F4D8B'}"
+  cover-image: cover.png
+  author: "Diego Sandoval"
+  chapters:
+    - index.qmd
+    - supporting.qmd
+    - acknowledgment.qmd
+    - credits.qmd
+    - counting/index.qmd
+    - number_line/number_line.qmd
+    - positional_number_system/index.qmd
+    - counting_recap/counting_recap.qmd
+    # - counting_faster/index.qmd
+  sidebar:
+    tools:
+      - icon: cup-hot
+        href: https://buymeacoffee.com/twaclaw
+        text: "Buy me a coffee"
+      - icon: github
+        href: https://github.com/twaclaw/yo-yo-math
+        text: "Star on GitHub"
+      - icon: file-pdf
+        href: Yo-Yo-Math.pdf
+        text: "Download PDF"
+
+# Register our custom box logic
+filters:
+  - diagram
+  - _extensions/custom-boxes/custom-boxes.lua
+  - _extensions/custom-boxes/color-text.lua
+  - _extensions/custom-boxes/scale-text.lua
+  - _extensions/custom-boxes/twemoji.lua
+
+format:
+  html:
+    theme: united
+    css: custom.css
+    include-before-body: before-body.html
+    fig-dpi: 300
+    toc-location: left
+    grid:
+      # Sidebar width for TOC/Nav (default ~250-300px)
+      sidebar-width: 300px
+      # Main content width (increased since margin is gone)
+      body-width: 1000px
+      # Remove right margin completely
+      margin-width: 0px
+  pdf:
+    output-file: "Yo-Yo-Math.pdf"
+    keep-tex: true
+    documentclass: scrreprt
+    pdf-engine: lualatex
+    dpi: 300
+    fig-dpi: 300
+    fig-format: pdf
+    # Enable :smile: shortcodes
+    pandoc-extensions:
+      - emoji
+    # Use a friendly handwritten-style font for headers (sans-serif)
+    # Body text will use the default LaTeX Serif font
+    mainfont: "CMU Serif"
+    sansfont: "Comic Sans MS"
+    # Make text slightly larger and breathable
+    fontsize: 12pt
+    linestretch: 1.3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=2.5cm
+    include-in-header:
+      - text: |
+          % \usepackage{draftwatermark}
+          % \SetWatermarkText{DRAFT}
+          % \SetWatermarkScale{1}
+          % \SetWatermarkColor[gray]{0.9}
+          
+          \usepackage{pdfpages}
+          \usepackage{tikz}
+          \usetikzlibrary{shapes.geometric, decorations.pathreplacing, calligraphy}
+          \usepackage{twemojis}
+          \usepackage{fontspec}
+          \usepackage{graphicx}
+          \usepackage{annotate-equations}
+
+          \usepackage{amsmath}
+          \allowdisplaybreaks
+
+          \usepackage{polyglossia}
+          \setdefaultlanguage{english}
+          \setotherlanguage{greek}
+          % \setsansfont{DejaVuSansM Nerd Font}
+
+          \usepackage{xcolor}
+          \usepackage[table]{xcolor}
+          \definecolor{kidBlue}{HTML}{0077BB}
+          \definecolor{kidOrange}{HTML}{EE7733}
+          \definecolor{kidGreen}{HTML}{009988}
+
+          % Apply color mix to headers (Blue/Orange)
+          \addtokomafont{disposition}{\color{kidBlue}}
+          \addtokomafont{section}{\color{kidOrange}}
+          \addtokomafont{subsection}{\color{kidOrange}}
+          \addtokomafont{subsubsection}{\color{kidOrange}}
+
+          % --- Custom Callout Colors ---
+          % Override standard Quarto callout colors
+          % Note: Blue
+          \definecolor{quarto-callout-note-color}{HTML}{0077BB}
+          \definecolor{quarto-callout-note-color-frame}{HTML}{0077BB}
+          % Warning: Orange
+          \definecolor{quarto-callout-warning-color}{HTML}{EE7733}
+          \definecolor{quarto-callout-warning-color-frame}{HTML}{EE7733}
+          % Tip: Green
+          \definecolor{quarto-callout-tip-color}{HTML}{009988}
+          \definecolor{quarto-callout-tip-color-frame}{HTML}{009988}
+          % Game: Yellow
+          \definecolor{kidYellow}{HTML}{FFCC00}
+
+          % Emoji Support
+          \usepackage{fontawesome5}
+
+          % --- Custom Teacher Tip Box Definition ---
+          \usepackage{etoolbox}
+          \usepackage[most]{tcolorbox}
+          
+          % --- Dedication Page Setup ---
+          \pretocmd{\tableofcontents}{
+            \clearpage
+            \thispagestyle{empty}
+            \begin{flushright}
+              \large \textit{For Jonas and Matildė, who taught me to be here and now, infused me with their curiosity and gave my life a surge of purpose, ideas, and creative energy.}
+            \end{flushright}           
+            \vspace*{\fill}
+            \clearpage
+          }{}{}
+
+          \newtcolorbox{funfact}[4][Fun Fact]{
+             enhanced jigsaw,
+             breakable,
+             colback=white,
+             opacityback=0,             % Transparent background
+             colframe=quarto-callout-tip-color-frame, % Border color
+             leftrule=.75mm,            % Thicker left border
+             rightrule=.15mm,           % Thin right border
+             toprule=.15mm,             % Thin top border
+             bottomrule=.15mm,          % Thin bottom border
+             arc=.35mm,                 % Slightly rounded corners
+             % Header Styling
+             title={\textcolor{quarto-callout-tip-color}{\faLightbulb}\ \ \textbf{#1}},
+             coltitle=black,
+             colbacktitle=quarto-callout-tip-color!10!white, % Faint colored header background
+             opacitybacktitle=0.6,
+             titlerule=0mm,
+             toptitle=1mm,
+             bottomtitle=1mm,
+             left=2mm,
+             % Layout Logic
+             before upper={\ifstrempty{#2}{}{\begin{minipage}[t]{#4\linewidth}\vspace{0pt}}},
+             after upper={\ifstrempty{#2}{}{\end{minipage}\hfill\begin{minipage}[t]{\dimexpr 0.95\linewidth - #4\linewidth\relax}\vspace{0pt}\includegraphics[width=#3\linewidth]{#2}\end{minipage}}}
+          }
+
+          \newtcolorbox{gametheory}[4][Game Theory]{
+             enhanced jigsaw,
+             breakable,
+             colback=white,
+             opacityback=0,             % Transparent background like funfact
+             colframe=kidYellow,        % Border color
+             leftrule=.75mm,
+             rightrule=.15mm,
+             toprule=.15mm,
+             bottomrule=.15mm,
+             arc=.35mm,
+             % Header Styling
+             title={\textcolor{kidYellow}{\faDice}\ \ \textbf{#1}},
+             coltitle=black,
+             colbacktitle=kidYellow!20!white,
+             opacitybacktitle=0.6,
+             titlerule=0mm,
+             toptitle=1mm,
+             bottomtitle=1mm,
+             left=2mm,
+             % Layout Logic (same as funfact for image support)
+             before upper={\ifstrempty{#2}{}{\begin{minipage}[t]{#4\linewidth}\vspace{0pt}}},
+             after upper={\ifstrempty{#2}{}{\end{minipage}\hfill\begin{minipage}[t]{\dimexpr 0.95\linewidth - #4\linewidth\relax}\vspace{0pt}\includegraphics[width=#3\linewidth]{#2}\end{minipage}}}
+          }
+
+          \newtcolorbox{teachertip}{
+             enhanced jigsaw,
+             breakable,
+             colback=white,
+             opacityback=0,
+             colframe=quarto-callout-note-color-frame, % Blue Border matches Info box
+             leftrule=.75mm,
+             rightrule=.15mm,
+             toprule=.15mm,
+             bottomrule=.15mm,
+             arc=.35mm,
+             % Header Styling
+             title={\textcolor{quarto-callout-note-color}{\faInfoCircle}\ \ \textbf{Parent/educator Tip}},
+             coltitle=black,
+             colbacktitle=quarto-callout-note-color!10!white,
+             opacitybacktitle=0.6,
+             titlerule=0mm,
+             toptitle=1mm,
+             bottomtitle=1mm,
+             left=2mm
+          }
+          \newcommand{\drawpolygon}[2][none]{
+          \begin{tikzpicture}
+          \node[regular polygon, draw, fill=#1, regular polygon sides=#2, minimum size=1.5cm] at (0,0) {};
+          \end{tikzpicture}
+          }
+          
+          % Allow markdown table styling
+          \usepackage{colortbl}
+          \usepackage{xcolor}
+          \rowcolors{2}{gray!10}{white}

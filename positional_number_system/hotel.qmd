@@ -1,0 +1,272 @@
+## The Numbers Grand Hotel
+
+:::{.fun-fact image="/static_images/hotel.pdf" width="0.7" scale="1.0"}
+I am probably the first person to use the analogy of a Grand Hotel to explain mathematical concepts $\text{[wink:1.5em]{.twemoji}}$.
+
+Our Grand Hotel is a special one with ten rooms on each floor. The owner is a reasonable man, which is why the floor and room numbers start at zero.
+:::
+
+
+Our hotel rooms look like this. They have  a door and a number on top of it.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Room number $7$."
+
+from yoyo_plots.hotel import Room, Number
+from yoyo_plots.common import display_vector
+
+room = Room(0, 0, width=150, height=200, values=[Number(7, "black")])
+display_vector(room)
+```
+
+The numbers on top of the door are very useful to identify the room. If our hotel has only one floor, we can easily identify a particular room with a single digit number.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Ground floor (floor $0$) of our Grand Hotel."
+
+from yoyo_plots.hotel import Floor
+from yoyo_plots.common import display_vector
+
+floor = Floor(0, 0, 1)
+display_vector(floor)
+```
+
+You wouldn't have any problem finding room number $7$ in the first floor, right? But what happen if our hotel has $2$ or more floors? 
+
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "The first two floors of our Grand Hotel. Rooms have single-digit numbers."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+building = Building(0, 0, 1, 2, without_offset=True, pad_zeros=False)
+display_vector(building)
+```
+
+You cannot unambiguously identify Room $7$ using single-digit numbers. Clearly, we need more numbers to represent additional rooms, and you already know how to construct larger numbers.
+
+
+As we saw in the previous section, the first thing we need to do to represent larger numbers is to add more positions or placeholders.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "The first two floors of our Grand Hotel. Each room number has now two placeholders (two boxes)."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+building = Building(0, 0, 2, 2, without_offset=True, pad_zeros=False)
+display_vector(building)
+```
+
+Adding placeholders is not enough; we also need to fill them with digits. Which digits should we use to unambiguously identify a particular room?
+
+
+:::{.teacher-tip}
+Take a moment to stop and think. Let your children come up with their own ideas.
+:::
+
+That's right; you also need to specify the floor number. For example, you could say "Room $7$ on the $0$ floor" or "Room $7$ on the $1$ floor."
+
+We will now add a second digit to each door in the second placeholder to represent the floor number. The first position, the rightmost one, is for the room number; the second position is for the $\color{red}{\text{floor number}}$.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "First $2$ floors (floor $0$ and floor $1$) of our Grand Hotel."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+building = Building(0, 0, 2, 2, pad_zeros=True)
+display_vector(building)
+```
+
+In the first floor, we don't really need those padding zeros in front, so we can safely remove them. The following numbering is equivalent to the previous one.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "First $2$ floors (floor $0$ and floor $1$) of our Grand Hotel."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+building = Building(0, 0, 2, 2, pad_zeros=False)
+display_vector(building)
+```
+
+That's exactly how we learned in the previous section to represent larger numbers and count beyond $9$. Counting beyond $9$ is like climbing to the next floor in our grand hotel. The following figure shows ladders to help you visualize this process.
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "First $2$ floors (floor $0$ and floor $1$) of our Grand Hotel with ladder."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+building = Building(0, 0, 2, 2, pad_zeros=False)
+
+for i in range(9):
+    building.add_ladder(0, i, "red")
+display_vector(building)
+```
+
+Climbing a ladder means adding $10$. For example, climbing a ladder from Room $7$ on the ground floor will take you to Room $17$ on the first floor, which is $17 = 7 + 10$. 
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Climbing a ladder means adding $10$."
+
+from yoyo_plots.hotel import Ladder, Label, Number
+from yoyo_plots.common import display_vector
+
+ladder = Ladder(x=0, y=0, width=60, height=200, color="red")
+label1 = Label([None, Number(7, "black")])
+label2 = Label([Number(1, "red"), Number(7, "black")])
+
+svg = ladder.to_svg(top_label=label2, bottom_label=label1, annotation="+10")
+display_vector(svg)
+```
+
+
+If we need to go further, we have to climb more ladders. Think of the second placeholder in each room (the red digit) as the floor number or the number of ladders climbed from the ground floor to get there.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "The first $5$ floors of our Grand Hotel."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+n = 5
+building = Building(0, 0, 2, n, without_offset=False, pad_zeros=False)
+for i in range(n-1):
+    building.add_ladder(i, 3, "red")
+
+display_vector(building)
+```
+
+Ladders can be stacked. Every ladder represents the number of times we add $10$.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Climbing three ladders means adding $3 \\times 10=10 + 10 + 10 = 30$."
+
+from yoyo_plots.hotel import Ladder, Label, Number, draw_ladders
+from yoyo_plots.common import display_vector
+
+ladder1 = Ladder(x=0, y=0, width=60, height=200, color="red")
+ladder2 = Ladder(x=0, y=0, width=60, height=200, color="red")
+ladder3 = Ladder(x=0, y=0, width=60, height=200, color="red")
+
+label1 = Label([None, Number(7, "black")])
+label2 = Label([Number(3, "red"), Number(7, "black")])
+
+svg = draw_ladders(
+    [(ladder1, "+10"), (ladder2, "+10"), (ladder3, "+10")],  # bottom first
+    top_label=label2,
+    bottom_label=label1,
+)
+display_vector(svg)
+```
+
+
+### Exercises {.unlisted .unnumbered}
+
+
+
+```{python}
+# | echo: false
+# | fig-cap: "Practice drawing some of the new numbers you have just learned to represent."
+# | fig-pos: "H"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+from plotly.subplots import make_subplots
+
+start, end = 9, 29
+fig_combined = make_subplots(rows=end-start, cols=1, vertical_spacing=0)
+
+for i in range(start, end):
+    f = draw_handwritten_range(
+        [i] * 7,
+        font_size=40,
+        rows=1,
+        font_color="lightgrey",
+        first_element_color="black",
+    )
+
+    for ann in f.layout.annotations:
+        fig_combined.add_annotation(
+            x=ann.x,
+            y=ann.y,
+            text=ann.text,
+            showarrow=ann.showarrow,
+            font=ann.font,
+            row=i + 1 - start,
+            col=1,
+        )
+
+    fig_combined.update_xaxes(
+        range=f.layout.xaxis.range, visible=False, row=i + 1 - start, col=1
+    )
+    fig_combined.update_yaxes(
+        range=f.layout.yaxis.range, visible=False, row=i + 1 - start, col=1
+    )
+
+fig_combined.update_layout(
+    plot_bgcolor="white",
+    margin=dict(l=5, r=5, t=0, b=0),
+    width=f.layout.width,
+    height=f.layout.height * 10,
+    dragmode="pan",
+)
+display_vector(fig_combined)
+```
+
+
+Adding $10$ is quite easy. Complete the following sums.
+
+
+:::{.font-size-adjust size="25pt"}
+$$
+\begin{aligned}
+0 + 10 &= 10\\
+1 + 10 &= 11\\
+2 + 10 &= \boxed{\phantom{13}}\\
+3 + 10 &= \boxed{\phantom{13}}\\
+4 + 10 &= \boxed{\phantom{13}}\\
+5 + 10 &= \boxed{\phantom{13}}\\
+6 + 10 &= \boxed{\phantom{13}}\\
+7 + 10 &= \boxed{\phantom{13}}\\
+8 + 10 &= \boxed{\phantom{13}}\\
+9 + 10 &= \boxed{\phantom{13}}\\
+1 + 20 &= 21\\
+7 + 20 &= \boxed{\phantom{13}}\\
+2 + 30 &= \boxed{\phantom{13}}\\
+2 + 40 &= \boxed{\phantom{13}}\\
+\end{aligned}
+$$
+:::

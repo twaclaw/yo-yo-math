@@ -1,0 +1,49 @@
+---
+format:
+  pdf:
+    include-in-header: cover.tex
+---
+
+
+# Preface {.unnumbered .unlisted}
+
+::: {.content-visible when-format="html"}
+<div style="margin-top: 2em;"></div>
+:::
+
+More Math! More Math!  This book is my response to that surprising demand. 
+
+<!-- Like many parents and educators, I am fortunate to have a very inquisitive child whose favorite word is "why." To them, an answer is never an ending, but an invitation to ask more questions. We often find ourselves pondering deep philosophical questions or facing improbable situations, such as drawing a blank in front of the whiteboard while my child jumps on the couch demanding "More Math!" This situation repeated itself multiple times. I tried my best to improvise, but I inevitably started to repeat myself. -->
+
+I have a  very inquisitive child whose favorite word is "why." To him, an answer is never an ending, but an invitation to ask more questions. I often find myself pondering deep philosophical questions or facing improbable situations, such as drawing a blank in front of the whiteboard while he jumps on the couch demanding "More Math!"
+
+
+That's how these  "impromptu lectures" came to be. They follow a loose order and progression but don't make up a curriculum. They are just short explorations of topics that caught our interest at a given moment in time and were well-received, eliciting interest and, of course, more "whys."
+
+While I draw inspiration from great educators and mathematicians like Seymour Papert and George Pólya, I don't adhere to any particular educational philosophy or method. I also don't have a specific pedagogical goal in mind. You are free to define your own goals or let them emerge during the exploration process. In my case, I realized that the main goal was to play, discover and spend quality time together.
+
+
+I don't just focus on acquiring skills or accumulating knowledge, though I do think both matter. Mathematics, music, games, and an awareness of the world around you are at the top of my list of things young minds should be exposed to. Rather than the clichéd "learning by playing," I prefer "playing for the sake of playing" — learning emerges naturally from that, and I am convinced our role is not to teach, but to facilitate and provide the right environment.
+
+
+<!-- I started teaching my kids math when they were just over two years old and still learning to talk, but I don't have a strong opinion on the ages for which this material might be appropriate.  -->
+
+Inspired by how my kids watch the same film over and over again without losing their awe and amazement, I designed these lectures to be revisited multiple times. Feel free to skip or add content as you progress. I included concepts and ideas that traditional curricula consider "advanced." You might be surprised. Intuition is more powerful than convention.
+
+
+
+:::{.teacher-tip}
+I will use boxes like this one to provide tips for the teachers. By "teacher," I mean the person providing guidance or *translating* the material. Similarly, when I say "your kids," I am referring to anyone you are playing math with: your own kids, students, grandchildren, friends, younger siblings, etc.
+:::
+
+This book is open source and available on [GitHub](https://github.com/twaclaw/yo-yo-math)^[https://github.com/twaclaw/yo-yo-math] — because it's meant to grow and evolve. I welcome your feedback, suggestions, and contributions.
+
+
+Mathematics is not a purely abstract endeavor, but also something you can get a tactile feel for. In that sense, this is a hands-on book—a book for scribbling, coloring, and drawing.
+
+
+I hope you find this book useful the next time someone demands, "More math!"
+
+
+
+

@@ -1,0 +1,397 @@
+# Counting intermezzo
+
+We have covered quite some ground. Before we continue, let's take a moment to recap and internalize what we have learned so far.  Let's try out our new superpower: counting to the infinite and beyond.
+
+
+## Counting objects
+
+I have two goals for  this section: 
+
+- First, I want you to get bored counting dots and sheeps so that later, when we learn to count faster, you will appreciate the power of multiplication and exponentiation.
+- Second, I want you to intuitively figure out a faster way to count.
+
+
+Identify the triangular and pentagonal numbers below. Remember, you need to count the number of points in each one.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center" 
+
+from yoyo_plots.common import combine_svgs, display_vector
+from yoyo_plots.figural import plot_figural
+plots = [plot_figural("triangular", i, box_size=5, font_color="white") for i in range(4, 8)]
+svg_plot = combine_svgs(plots)
+display_vector(svg_plot)
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center" 
+
+from yoyo_plots.common import combine_svgs, display_vector
+from yoyo_plots.figural import plot_figural
+plots = [plot_figural("pentagonal", i, box_size=5, font_color="white") for i in range(2, 6)]
+svg_plot = combine_svgs(plots)
+display_vector(svg_plot)
+```
+
+Count the number of sheeps.
+
+```{python}
+# | echo: false
+# | fig-cap: "Count the number of sheeps."
+
+from yoyo_plots.quantities import draw_quantity_grid
+from yoyo_plots.common import display_vector
+
+image = "/static_images/sheep.svg"
+font_size = 100
+image_size = 0.8
+grid_specs = [
+    dict(n=16, nrows=4, font_size=font_size, image_size=image_size, image=image, font_color="white"),
+    dict(n=17, nrows=4, font_size=font_size, image_size=image_size, image=image, font_color="white"),
+    dict(n=20, nrows=5, font_size=font_size, image_size=image_size, image=image, font_color="white"),
+    dict(n=25, nrows=5, font_size=font_size, image_size=image_size, image=image, font_color="white"),
+]
+
+fig = draw_quantity_grid(grid_specs, cols=2)
+display_vector(fig)
+```
+
+
+## Magic squares
+
+Magic squares are amazing mathematical objects that have fascinated people for centuries. In a square of size $n \times n$, the numbers from $1$ to $n \times n$ are arranged so that the sum of each row, column, and diagonal is the same. For example, in this $3\times 3$ magic square, the numbers from $1$ to $9$ are arranged so that the sum is always a constant. What is that constant? Add up every row, column, and diagonal to find out.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.quantities import draw_magic_squares_grid
+from yoyo_plots.common import display_vector
+
+highlight=[
+    [(0,0), (0, 1), (0, 2)],
+    [(1,0), (1, 1), (1, 2)],
+    [(2,0), (2, 1), (2, 2)],
+    [(0,0), (1, 0), (2, 0)],
+    [(0,1), (1, 1), (2, 1)],
+    [(0,2), (1, 2), (2, 2)],
+    [(0,0), (1, 1), (2, 2)],
+    [(0,2), (1, 1), (2, 0)],
+]
+
+
+grid=[[6,1,8],[7,5,3],[2,9,4]],
+
+# Pass all grids in a single list
+grid_data = grid * len(highlight)
+
+combined_grid = draw_magic_squares_grid(
+    grids=grid_data, 
+    highlights=highlight, 
+    cols=4,
+    spacing=20
+)
+
+display_vector(combined_grid)
+```
+
+What about a magic square of size $4\times 4$? What is the constant sum?
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.quantities import draw_magic_square
+
+draw_magic_square(
+    grid=[
+      [16, 2, 3, 13],
+      [5, 11, 10, 8],
+      [9, 7, 6, 12],
+      [4, 14, 15, 1]],
+)
+```
+
+
+:::{.fun-fact title="Magic squares and cubes" image="/static_images/rubik.pdf" width="0.7" scale="0.9"}
+Did you know that magic squares can be constructed of any size except $2\times 2$ and $6 \times 6$?
+
+Also, Ernő Rubik, the creator of the Rubik's cube,  initially called his amazing toy  Bűvös Kocka, which means "magic cube" in Hungarian.
+:::
+
+
+
+## Number line
+
+Find the distance between the $\text{[turtle:2em]{.twemoji}}$ and the $\text{[rabbit:2em]{.twemoji}}$ on the number line.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.number_line import NumberLine
+from yoyo_plots.common import display_vector
+
+turtle="/static_images/emojis/1f422_turtle.svg"
+hare="/static_images/emojis/1f407_hare.svg"
+icon_size=1.0
+
+lines = [(-2, 7, 1, 5), 
+         (15, 35, 22, 32),
+         (12, 27, 13, 19),
+         (-50, -30, -35, -40),
+         (-10, 10, -5, 5),
+         (20, 40, 25, 35),
+         ]
+
+
+
+for start, end, marker1, marker2 in lines:
+    fig = (NumberLine(start, end)
+     .add_tick_icons({marker1: hare, marker2: turtle}, tick_icon_size=icon_size)
+     .add_boxes(box_size=1.5)
+    )
+    display_vector(fig)
+display_vector(fig)
+```
+
+## Manhattan distance
+
+If you live in or have visited a city with a grid-like structure, to get from one place to another that are not on the same street, you need to walk along two perpendicular streets. This distance is called the Manhattan distance. 
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Manhattan distance between two points on the Cartesian plane."
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+house = "/static_images/emojis/1f3e1_house.svg"
+school = "/static_images/emojis/1f3eb_school.svg"
+
+cartesian_fig = CartesianPlane(
+    xmin=-7, 
+    xmax=7, 
+    ymin=-7, 
+    ymax=7,
+    draw_ticks=True,
+).add_manhattan_lines({
+        ((2, -3), (-4, 5)): {"color": "red", "path": "x_first", "dash": "solid"},
+    }).add_icons({
+        (-4, 5): {"image": house, "show_coords":True, "color": "red"},
+        (2, -3): {"image": school, "show_coords":True, "color": "blue"},
+    }
+)
+
+display_vector(cartesian_fig)
+```
+
+
+:::{.big-math size="15pt"}
+$$
+\underbrace{\text{Manhattan distance}}_{d_M} = \underbrace{\text{horizontal distance}}_{d_h} + \underbrace{\text{vertical distance}}_{d_v}
+$$
+:::
+
+Since addition is commutative, and distances are always positive, the order in which you walk, either horizontally or vertically first, doesn't matter. The total distance traveled will be the same either way.
+
+
+For example, the Manhattan distance between the $\text{[turtle:2em]{.twemoji}}$ and the $\text{[rabbit:2em]{.twemoji}}$ is the same in the following figures, even though you walk in a different order in each figure. In the first figure, you walk horizontally first and then vertically, while in the second figure, you walk vertically first and then horizontally. 
+
+:::{.big-math size="20pt"}
+$$
+d_M(\text{[turtle:1.0em]{.twemoji}}, \text{[rabbit:1.5em]{.twemoji}}) =  \underbrace{d_h(\text{[turtle:1.0em]{.twemoji}}, \text{[rabbit:1.0em]{.twemoji}})}_{2-(-4) = 2 + 4 = 6} + \underbrace{d_v(\text{[turtle:1.0em]{.twemoji}}, \text{[rabbit:1.0em]{.twemoji}})}_{2-(-2) = 2 + 2 = 4} = 10
+$$
+:::
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Walking first horizontally and then vertically."
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+turtle="/static_images/emojis/1f422_turtle.svg"
+hare="/static_images/emojis/1f407_hare.svg"
+
+cartesian_fig = CartesianPlane(
+    xmin=-6, 
+    xmax=6, 
+    ymin=-6, 
+    ymax=6,
+    draw_ticks=True,
+).add_manhattan_lines({
+        ((2, 2), (-4, -2)): {"color": "green", "path": "x_first", "dash": "solid"},
+    }).add_icons({
+        (-4, -2): {"image": hare},
+        (2, 2): {"image": turtle},
+    }
+)
+
+display_vector(cartesian_fig)
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "Walking first vertically and then horizontally."
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+turtle="/static_images/emojis/1f422_turtle.svg"
+hare="/static_images/emojis/1f407_hare.svg"
+
+cartesian_fig = CartesianPlane(
+    xmin=-6, 
+    xmax=6, 
+    ymin=-6, 
+    ymax=6,
+    draw_ticks=True,
+).add_manhattan_lines({
+        ((2, 2), (-4, -2)): {"color": "green", "path": "y_first", "dash": "solid"},
+    }).add_icons({
+        (-4, -2): {"image": hare},
+        (2, 2): {"image": turtle},
+    })
+
+display_vector(cartesian_fig)
+```
+
+The following is a map of the city. Your house $\text{[house:2.0em]{.twemoji}}$  is located at $\text{(-7, -9)}$.
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+
+carousel = "/static_images/emojis/1f3a0_carousel.svg"
+station = "/static_images/emojis/1f689_metro_station.svg"
+firefighters = "/static_images/emojis/1f692_firefighters.svg"
+house = "/static_images/emojis/1f3e1_house.svg"
+school = "/static_images/emojis/1f3eb_school.svg"
+orangutan = "/static_images/emojis/1f9a7_orangutan.svg"
+
+
+cartesian_fig = CartesianPlane(
+    xmin=-13, 
+    xmax=7, 
+    ymin=-11, 
+    ymax=10,
+    draw_ticks=True,
+).add_icons({
+        (-7, -9): {"image": house,  "show_coords": True, "color": "red"},
+        (7, -5): {"image": school,  "show_coords": True, "color": "orange"},
+        (5, 5): {"image": orangutan,  "show_coords": True, "color": "green"},
+        (-12, 7): {"image": carousel,  "show_coords": True, "color": "blue"},
+        (2, 2): {"image": firefighters,  "show_coords": True, "color": "red"},
+        (-2, 1): {"image": station,  "show_coords": True, "color": "purple"},
+    }
+)
+
+display_vector(cartesian_fig)
+```
+
+- Find the following distances:
+
+:::{.big-math size="20pt"}
+$$
+\begin{aligned}
+d_M\left(\text{[house:1.0em]{.twemoji}}, \text{[school:1.0em]{.twemoji}}\right) &= \boxed{\phantom{1}} + \boxed{\phantom{1}} = \boxed{\phantom{1}}\\
+d_M\left(\text{[station:1.0em]{.twemoji}}, \text{[orangutan:1.0em]{.twemoji}}\right) &= \boxed{\phantom{1}} + \boxed{\phantom{1}} = \boxed{\phantom{1}}\\
+d_M\left(\text{[station:1.0em]{.twemoji}}, \text{[fire_engine:1.0em]{.twemoji}}\right) &= \boxed{\phantom{1}} + \boxed{\phantom{1}} = \boxed{\phantom{1}}
+\end{aligned}
+$$
+:::
+
+- Which is farther from your house: the school $\text{[school:2.0em]{.twemoji}}$ or the amusement park $\text{[carousel_horse:2.0em]{.twemoji}}$?
+- If you are at the fire station $\text{[fire_engine:2.0em]{.twemoji}}$, which is closer to you: the school $\text{[school:2.0em]{.twemoji}}$ or the zoo $\text{[orangutan:2.0em]{.twemoji}}$?
+- If it takes you 15 minutes to walk from home to school, how long would it take you to walk back home, assuming you walk at the same speed? Why?
+
+
+
+## Clock arithmetic
+
+Consider the group $\mathbb{Z}_{12}$ with elements $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\}$ and addition modulo $12$.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CircularNumberLine
+
+circ_fig = (CircularNumberLine(0, 11, tick_distance=3, font_size=15)
+ .add_center_image("/static_images/emojis/2600_sun.svg", size=4.0)
+ .add_tick_icons({3: "/static_images/emojis/1f30d_earth.svg"}, tick_icon_size=1.0)
+ .add_markers({"all": "white"}, marker_size=0.2)
+ .build()
+)
+
+# Remember to restart kernel if you just added the function
+display_vector(circ_fig)
+```
+
+Complete the group table for addition in $\mathbb{Z}_{12}$:
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+n = 12
+fig = draw_operation_table(
+    nrows=n, ncols=n,
+    only_rows=[0, 1],
+    operation=lambda x, y: (x + y) % n,
+    operation_name="+",
+)
+display_vector(fig)
+```
+
+
+## Is $\color{red}{\mathbb{N}}$ a group?
+
+We saw that $\color{blue}{\mathbb{Z}}$, $\mathbb{Z}_{6}$, and $\mathbb{Z}_{12}$ are examples of groups. However, the natural numbers $\color{red}{\mathbb{N}}$ are not a group under addition. Why?
+
+
+**Hint:** Think of the three things we verified to determine if a set and an operation form a group. Which one of those three conditions is not met?
+
+- $\text{[white_question_mark:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity:** Is the sum of two natural numbers always a natural number? Is the order in which you group numbers when adding them does not change the result?
+- $\text{[white_question_mark:1.5em:-0.3em]{.twemoji}}$ **Identity:** Is there a natural number that, when added to any other natural number, results in the same number?
+- $\text{[white_question_mark:1.5em:-0.3em]{.twemoji}}$ **Inverses:** For every natural number, is there another natural number that, when added to itself, yields the identity element?
+
+
+## Comparing quantities
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.common import display_vector, combine_svgs
+from yoyo_plots.speed import speed_limit
+
+s1 = speed_limit(900, "km/h", image_path="/static_images/emojis/2708_plane.svg")
+s2 = speed_limit(28000,"km/h", image_path="/static_images/emojis/1f680_rocket.svg", n_fontsize=20)
+s3 = speed_limit(60, "km/h", image_path="/static_images/emojis/1f695_taxi.svg")
+s4 = speed_limit(350, "km/h", image_path="/static_images/emojis/1f685_bullet_train.svg")
+s5 = speed_limit(62, "km/h", image_path="/static_images/emojis/1f6b4-1f3ff_bike.svg")
+s6 = speed_limit(96000,"km/h", image_path="/static_images/emojis/2604_comet.svg", n_fontsize=20)
+
+c1 = combine_svgs([s1,s2, s3], direction="horizontal")
+c2 = combine_svgs([s4,s5, s6], direction="horizontal")
+display_vector(c1)
+display_vector(c2)
+```
+
+- Which is faster: the plane or the bullet train?
+- What is faster: the Tour de France champion or a taxi?
+- Which is faster: the comet or the rocket?
+- Which is the fastest?
+- Which is the slowest?
