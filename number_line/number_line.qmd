@@ -427,14 +427,18 @@ Still confused? No worries—we'll revisit this topic later.
 
 
 
-## Measuring distance on the number line
+## How far apart are the tortoise $\text{[turtle:1em]{.twemoji}}$ and the hare $\text{[rabbit:1em]{.twemoji}}$?
 
 :::{.fun-fact title="Turtles all the way down" image="/static_images/tortoise.pdf" width="0.7" scale="1.0"}
 
-Tortoises and turtles are recurrent characters in philosophy and mathematics. For example, one of Zeno's paradoxes is called "The Tortoise and Achilles."  
-
-There is also Aesop's fable, "The Hare and the Tortoise." Although not mathematical in nature, we will use the characters from this fable to illustrate some concepts here.
+Tortoises and turtles are recurrent characters in philosophy and mathematics. In many traditions, a giant world turtle supports the earth. One of Zeno's paradoxes is called "The Tortoise and Achilles" and intended to illustrate the impossibility of motion.  There is also Aesop's fable "The Hare and the Tortoise." Though not mathematical in nature, we will use the characters from this fable to illustrate the concept of distance.
 :::
+
+
+::: {.story-time title="The hare and the tortoise" image="/static_images/tortoise_and_hare.pdf" scale="1.1" width="0.7" ref="Read more Aesop's fables at Project Gutemberg: https://www.gutenberg.org/"}
+A Hare was one day making fun of a Tortoise for being so slow upon his feet. "Wait a bit," said the Tortoise; "I'll run a race with you, and I'll wager that I win." "Oh, well," replied the Hare, who was much amused at the idea, "let's try and see"; and it was soon agreed that the fox should set a course for them, and be the judge. When the time came both started off together, but the Hare was soon so far ahead that he thought he might as well have a rest: so down he lay and fell fast asleep. Meanwhile the Tortoise kept plodding on, and in time reached the goal. At last the Hare woke up with a start, and dashed on at his fastest, but only to find that the Tortoise had already won the race.
+:::
+
 
 Measuring distance on a number line is simple. It boils down to counting the number of units or segments of lenght $1$ between two numbers. These units are the space between two consecutive numbers; for example, between $-2$ and $-1$, or between $3$ and $4$. 
 
