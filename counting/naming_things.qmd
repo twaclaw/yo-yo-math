@@ -1,5 +1,5 @@
 
-## Naming things by a number {#sec-naming-things}
+## Triceratops, unicorns $\text{[unicorn:1.0em]{.twemoji}}$ and polygons  {#sec-naming-things}
 
 Some things are called after some inherent number or quantity.
 

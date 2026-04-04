@@ -52,9 +52,18 @@ local emoji_map = {
   black_cat="🐈‍⬛",
   pig="🐖",
   cow="🐄",
+  snake="🐍",
+  unicorn="🦄",
+  ghost="👻",
+  brick="🧱",
+  input_numbers="🔢",
+  abacus="🧮",
+  pirate_flag="🏴‍☠️",
+  parrot="🦜",
   check_mark_button="✅",
   white_question_mark="❔",
   puzzle_piece="🧩",
+  hotel="🏨",
   
   -- Add more here as needed
 }

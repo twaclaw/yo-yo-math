@@ -1,4 +1,4 @@
-## Counting objects
+## Counting objects $\text{[abacus:1.0em]{.twemoji}}$
 
 We use natural numbers to represent the quantity of objects or entities. Natural numbers are used for counting and answering questions that imply "How many?" 
 

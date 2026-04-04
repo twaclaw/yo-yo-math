@@ -1,4 +1,4 @@
-## Clock arithmetic
+## Number lines that eat their own tails $\text{[snake:1.0em]{.twemoji}}$
 
 > Dad doesn't like people who talk in circles, but he loves people who count in circles.
 
@@ -90,6 +90,7 @@ fig = draw_operation_table(
     nrows=n, ncols=n,
     operation=lambda x, y: (x + y) % n,
     operation_name="+",
+    show_upper=False
 )
 display_vector(fig)
 ```
@@ -110,6 +111,7 @@ fig = draw_operation_table(
     cols={3: "lightblue"},
     operation=lambda x, y: (x + y) % n,
     operation_name="+",
+    show_upper=False
 )
 display_vector(fig)
 ```
@@ -155,6 +157,7 @@ fig = draw_operation_table(
     nrows=n, ncols=n, only_rows=[0],
     operation=lambda x, y: (x + y) % n,
     operation_name="+",
+    show_upper=False
 )
 display_vector(fig)
 ```

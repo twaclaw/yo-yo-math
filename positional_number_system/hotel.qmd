@@ -1,4 +1,4 @@
-## The Numbers Grand Hotel
+## The Numbers Grand Hotel $\text{[hotel:1.0em]{.twemoji}}$
 
 :::{.fun-fact image="/static_images/hotel.pdf" width="0.7" scale="1.0"}
 I am probably the first person to use the analogy of a Grand Hotel to explain mathematical concepts $\text{[wink:1.5em]{.twemoji}}$.

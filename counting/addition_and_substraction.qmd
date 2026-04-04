@@ -1,5 +1,5 @@
 
-## Addition and substraction
+## Addition and substraction $\text{[brick:1.0em]{.twemoji}}$
 
 Imagine that you are building a tower out of LEGO bricks. Each time you add a brick to the top, the total number of bricks in the tower increases, meaning the tower gets taller. If you start with one brick and add a second, the tower is now one brick taller. Now, you have $2$ bricks.
 
@@ -357,7 +357,7 @@ Encourage the kids to do this on their own, you can provide a few examples.
 :::
 
 
-## Playing hide-and-seek with numbers
+## Playing hide-and-seek with numbers $\text{[ghost:1.0em]{.twemoji}}$
 
 ::: {.fun-fact title="Playing hide-and-seek" image="/static_images/puzzle.pdf" width="0.7" scale="0.9"}
 Did you know that with the operations you just learned, you can actually play hide-and-seek? The game consist in finding numbers that are hiding? It is like finding the missing piece of a puzzle. 

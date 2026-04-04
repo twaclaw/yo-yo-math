@@ -1,4 +1,4 @@
-## Decimal numerals
+## Decimal numerals $\text{[input_numbers:1.0em]{.twemoji}}$
 
  The numbers we use for counting —zero, one, two, three, $\dots$— are called counting or natural numbers and are represented with this nicely looking [${\color{red}{\mathbb{N}}}$]{.scale factor="2"}. 
 
