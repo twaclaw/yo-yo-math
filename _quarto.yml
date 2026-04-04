@@ -1,5 +1,5 @@
 project:
-  title: "Lectures on math"
+  title: "Yo-Yo-Math"
   type: book
   output-dir: _book
   pre-render: scripts/generate_polygons.py
@@ -12,6 +12,7 @@ project:
 execute:
   freeze: auto
 
+# Custom variable for big-math environment
 big-math-size: "30pt"
 
 # jupyter: curriculum-env
@@ -21,6 +22,12 @@ book:
   output-file: "Yo-Yo-Math"
   subtitle: "[A book for playing mathematics]{style='color:#2F4D8B'}"
   cover-image: cover.png
+  open-graph:
+    image: cover.png
+    description: "A book for playing mathematics"
+  twitter-card:
+    image: cover.png
+    description: "A book for playing mathematics"
   author: "Diego Sandoval"
   chapters:
     - index.qmd
@@ -44,7 +51,6 @@ book:
         href: Yo-Yo-Math.pdf
         text: "Download PDF"
 
-# Register our custom box logic
 filters:
   - diagram
   - _extensions/custom-boxes/custom-boxes.lua
@@ -60,11 +66,8 @@ format:
     fig-dpi: 300
     toc-location: left
     grid:
-      # Sidebar width for TOC/Nav (default ~250-300px)
       sidebar-width: 300px
-      # Main content width (increased since margin is gone)
       body-width: 1000px
-      # Remove right margin completely
       margin-width: 0px
   pdf:
     output-file: "Yo-Yo-Math.pdf"
@@ -77,8 +80,6 @@ format:
     # Enable :smile: shortcodes
     pandoc-extensions:
       - emoji
-    # Use a friendly handwritten-style font for headers (sans-serif)
-    # Body text will use the default LaTeX Serif font
     mainfont: "CMU Serif"
     sansfont: "Comic Sans MS"
     # Make text slightly larger and breathable
