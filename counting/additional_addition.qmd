@@ -73,7 +73,6 @@ $$
 Imagine I ask you to find the sum of the numbers you have learned so far, that is from $0$ to $9$.  Instead of writing the explicit sum $0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$, you can write it more succinctly as:
 
 
-Mathemathicians and programmers are lazy. They don't like to write the same thing over and over again. Instead, they *loop* their way out.
 
 
 :::{.content-visible when-format="html"}
@@ -83,6 +82,8 @@ $$
 $$
 :::
 :::
+
+
 
 :::{.content-visible when-format="pdf"}
 :::{.big-math}
@@ -109,8 +110,11 @@ $$
 $$
 :::
 
+
 Admitedly, 10 numbers is not that much, but later, when we learn bigger and bigger numbers, this notation will come handy.
 
+
+Mathemathicians and programmers are lazy. They don't like to write the same thing over and over again. Instead, they *loop* their way out.
 
 We can also write a program, for instance in Python, to do the same thing:
 

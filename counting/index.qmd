@@ -25,8 +25,6 @@ Some people speculate that if we were to encounter extraterrestrial intelligence
 
 {{< include addition_and_substraction.qmd >}}
 
-{{< include additional_addition.qmd >}}
-
 {{< include comparing.qmd >}}
 
 {{< include soroban.qmd >}}
