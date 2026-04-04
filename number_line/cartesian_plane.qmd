@@ -1,4 +1,4 @@
-## Cartesian plane
+## Battleship
 
 :::{.fun-fact title="Flatland"}
 Mathematical objects can exist in any number of dimensions.  You can think of a dimension as one of the directions in which you can move. Because we live in a three-dimensional world, we can move left or right, forward and backward, and up and down.
@@ -9,7 +9,7 @@ Let's imagine how it would be to live in a world with different number of dimens
 | - | -- | -- | --------- |
 | 0 | Point | $\color{red}{\bullet}$ | We cannot move.|
 | 1 | Line | $\color{red}{\rule{2cm}{0.8pt}}$ | We can move only forward and backward.|
-| 2 | Plane/polygons | $\color{red}{\drawpolygon[red]{5}}$ | We can move forward and backward, and also left and right.|
+| 2 | Plane/polygons | `<img src="../static_images/polygons/square_filled.svg" width="40"/>`{=html}`$\color{red}{\drawpolygon[red]{4}}$`{=latex} | We can move forward and backward, and also left and right.|
 | 3 | Volumes | $\text{[game_die:4em]{.twemoji}}$ | We can move left, right, forward, backward, and jump up and down.|
 
 
