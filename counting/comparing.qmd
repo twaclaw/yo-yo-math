@@ -94,16 +94,12 @@ These points (_minima_ and _maxima_) are called **extrema** (plural of extremum)
 
 Imagine you are going to have a birthday party and the following kids are attending.
 
-| Name    | Age |
-|---------|-----|
-| Jonas   | 5   |
-| Lea     | 7   |
-| Miguel  | 4   |
-| Zoe     | 4   |
-| Matilde | 2   |
-| Lucas   | 2   |
-| Amelie  | 6   |
-| Zelia   | 9   |
+| Name    | Age | Name    | Age |
+|---------|-----|---------|-----|
+| Jonas   | 5   | Miguel  | 4   |
+| Lea     | 7   | Zoe     | 4   |
+| Matilde | 2   | Amelie  | 6   |
+| Lucas   | 2   | Zelia   | 9   |
 
 Answer the following questions:
 

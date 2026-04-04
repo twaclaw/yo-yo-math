@@ -384,14 +384,17 @@ display_vector(fig)
 
 
 
+::: {.story-time title="Bedtime stories drawn in the sky" image="/static_images/orion.pdf" scale="0.9" width="0.7" ref="You can find more about this story in D'Aulaires Book of Greek Myths. Doubleday, 1962, and Penguin Random House 1992."}
+Orion, the son of Poseidon and Euryale, was an unrivaled hunter who was even admired by Artemis. Her brother Apollo grew jealous of Orion and sent a giant scorpion to sting him in the ankle. After Orion's death, Artemis forgave Apollo, and they both immortalized Orion in the night sky. He is followed by his two faithful dogs, represented by the constellations Canis Major $\text{[dog:2.5em]{.twemoji}}$ and Canis Minor $\text{[dog:1.5em]{.twemoji}}$. The dogs are pursuing the poor hare, represented by the constellation Lepus $\text{[rabbit:1.5em]{.twemoji}}$. The constellation Scorpius, a summer constellation, is usually not seen with Orion at the same time, symbolizing an eternal chase.
+:::
 
-Orion, the son of Poseidon and Euryale, was an incomparable hunter, admired even by Artemis. It is also one of the most recognizable constellations in the night sky. He is followed by his two faithful dogs, represented by the constellations Canis Major $\text{[dog:2.5em]{.twemoji}}$ and Canis Minor $\text{[dog:1.5em]{.twemoji}}$. The dogs are pursuing the poor hare, represented by the constellation Lepus $\text{[rabbit:1.5em]{.twemoji}}$. This hunting scene is depicted in the night sky (just look up), as shown in figure @fig-orion-friends. The neighboring constellations Taurus $\text{[taurus:1em]{.twemoji}}$, the bull, and Gemini $\text{[gemini:1em]{.twemoji}}$, the twins, are also shown in the figure. 
+This hunting scene is depicted in the night sky (just look up), as shown in figure @fig-orion-friends. The neighboring constellations Taurus $\text{[taurus:1em]{.twemoji}}$, the bull, and Gemini $\text{[gemini:1em]{.twemoji}}$, the twins, are also shown in the figure. 
 
 Answer the following questions based on figure @fig-orion-friends:
 
 - How many stars are in the Orion Belt? Do you know their names?
 - How many stars can you see in the Greater Dog (Canis Major)? How many do you see in the smaller one, Canis Minor? I know the Lesser Dog doesn't really look like a dog.
-- How many stars are there in Orion's shield on his left arm? Sometimes, instead of a shield, it is depicted as a lion skin, but the number of stars remains the same. 
+- How many stars are there in Orion's shield on his right arm? Sometimes, instead of a shield, it is depicted as a lion skin, but the number of stars remains the same. 
 - How many orange-red stars do you see in this picture? In which constellations? Do you know their names?
 
 
@@ -401,6 +404,7 @@ Answer the following questions based on figure @fig-orion-friends:
 ```{python}
 #| label: fig-orion-friends
 #| fig-cap: "Winter night sky."
+#| fig-pos: "H"
 #| echo: false
 #| out.width: "80%"
 #| fig-align: center
@@ -409,7 +413,17 @@ Answer the following questions based on figure @fig-orion-friends:
 from yoyo_plots.astro import plot_sky
 
 # Plot constellations: Orion, Canis Major, Canis Minor, Taurus, Gemini, Lepus
-plot_sky(["Ori", "CMa", "CMi", "Tau", "Gem", "Lep"], show_constellations=True)
+plot_sky(["Ori", "CMa", "CMi", "Tau", "Gem", "Lep"], show_constellations=True,
+    markers={
+        ("delOri", "epsOri", "zetOri"): {
+            "color": "#FF6644",
+            "text": "Orion's Belt",
+        },
+        ("pi1Ori", "pi2Ori", "pi3Ori", "pi4Ori", "pi5Ori", "pi6Ori", "omi2Ori"): {
+            "color": "#4488CC",
+            "text": "Orion's Right Arm",
+        },
+    })
 ```
 
 :::{.teacher-tip}
