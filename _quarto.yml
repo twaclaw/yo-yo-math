@@ -137,6 +137,8 @@ format:
           \definecolor{quarto-callout-tip-color-frame}{HTML}{009988}
           % Game: Yellow
           \definecolor{kidYellow}{HTML}{FFCC00}
+          % Story: Lavender
+          \definecolor{kidLavender}{HTML}{9B72CF}
 
           % Emoji Support
           \usepackage{fontawesome5}
@@ -227,6 +229,45 @@ format:
              bottomtitle=1mm,
              left=2mm
           }
+
+          \newtcolorbox{storytime}[5][Story Time]{%
+             enhanced jigsaw,
+             breakable,
+             colback=kidLavender!3!white,
+             opacityback=0.5,
+             colframe=kidLavender,
+             leftrule=.75mm,
+             rightrule=.15mm,
+             toprule=.15mm,
+             bottomrule=.15mm,
+             arc=2mm,                    % Rounder corners for a softer look
+             borderline={0.5pt}{1pt}{kidLavender!40!white, dashed}, % Outer dashed halo
+             % Header Styling
+             title={\textcolor{kidLavender}{\faMoon\ \faStar}~~ \textit{#1}},
+             coltitle=black,
+             colbacktitle=kidLavender!12!white,
+             opacitybacktitle=0.7,
+             titlerule=0mm,
+             toptitle=1mm,
+             bottomtitle=1mm,
+             left=2mm,
+             % Layout Logic (same as funfact for image support)
+             % #2=image, #3=scale, #4=width, #5=ref
+             before upper={\ifstrempty{#2}{}{\begin{minipage}[t]{#4\linewidth}\vspace{0pt}}},
+             after upper={%
+               \ifstrempty{#2}{%
+                 % No image: print ref below main text if provided
+                 \ifstrempty{#5}{}{\par\vspace{4pt}{\centering\upshape\footnotesize\textcolor{kidLavender!70!black}{#5}\par}}
+               }{%
+                 % With image: close text minipage, show image + ref underneath
+                 \end{minipage}\hfill\begin{minipage}[t]{\dimexpr 0.95\linewidth - #4\linewidth\relax}\vspace{0pt}%
+                   \includegraphics[width=#3\linewidth]{#2}%
+                   \ifstrempty{#5}{}{\par\vspace{2pt}{\centering\upshape\footnotesize\textcolor{kidLavender!70!black}{#5}\par}}%
+                 \end{minipage}%
+               }%
+             }
+          }
+
           \newcommand{\drawpolygon}[2][none]{
           \begin{tikzpicture}
           \node[regular polygon, draw, fill=#1, regular polygon sides=#2, minimum size=1.5cm] at (0,0) {};

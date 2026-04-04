@@ -195,6 +195,107 @@ function Div(div)
             icon = false
         })
     end
+  elseif div.classes:includes("story-time") or div.classes:includes("storytime") then
+    if quarto.doc.is_format("pdf") then
+      local begin_cmd = "\\begin{storytime}"
+      local title = div.attributes["title"] or "Story Time"
+      begin_cmd = begin_cmd .. "[" .. title .. "]"
+
+      local image = div.attributes["image"] or ""
+
+      -- PDF Path Handling:
+      if image:match("^/") then
+        image = image:gsub("^/", "")
+      end
+      if image:match("^%.%./") then
+        image = image:gsub("^%.%./", "")
+      end
+
+      local scale = div.attributes["scale"] or "1"
+      local width = div.attributes["width"] or "0.65"
+      local ref = div.attributes["ref"] or ""
+      begin_cmd = begin_cmd .. "{" .. image .. "}{" .. scale .. "}{" .. width .. "}{" .. ref .. "}"
+
+      local blocks = { pandoc.RawBlock("tex", begin_cmd) }
+      for _, block in ipairs(div.content) do
+        table.insert(blocks, block)
+      end
+      table.insert(blocks, pandoc.RawBlock("tex", "\\end{storytime}"))
+      return blocks
+    elseif quarto.doc.is_format("html") then
+        local title = div.attributes["title"] or "Story Time"
+        local content = div.content
+
+        -- Logic for Image insertion (same layout as fun-fact / game-theory)
+        local image_path = div.attributes["image"]
+        local ref = div.attributes["ref"]
+        if image_path then
+            image_path = image_path:gsub("%.pdf$", ".svg")
+            if image_path:match("^/") then
+                image_path = "../" .. image_path:gsub("^/", "")
+            end
+
+            local text_width_val = tonumber(div.attributes["width"]) or 0.65
+            local text_basis = math.floor(text_width_val * 100) .. "%"
+            local scale_val = tonumber(div.attributes["scale"]) or 1.0
+            local img_style_width = math.floor(scale_val * 100) .. "%"
+
+            local img = pandoc.Image({}, image_path, title)
+            img.attr = pandoc.Attr("", {}, {style = "width: " .. img_style_width .. "; height: auto; max-width: 100%;"})
+
+            -- Build image column: image + optional ref caption underneath
+            local img_elements = { pandoc.Para({img}) }
+            if ref then
+                local ref_p = pandoc.Para({pandoc.Str(ref)})
+                local ref_div = pandoc.Div(ref_p)
+                ref_div.attr = pandoc.Attr("", {"story-time-ref"}, {style = "text-align: center; font-size: 0.8em; color: #6b4d8a; margin-top: 0.3em; font-style: normal;"})
+                table.insert(img_elements, ref_div)
+            end
+
+            local content_div = pandoc.Div(div.content)
+            content_div.attr = pandoc.Attr("", {}, {style = "flex: 0 0 " .. text_basis .. "; padding-right: 1.5em;"})
+
+            local img_div = pandoc.Div(img_elements)
+            img_div.attr = pandoc.Attr("", {}, {style = "flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;"})
+
+            local wrapper = pandoc.Div({content_div, img_div})
+            wrapper.attr = pandoc.Attr("", {}, {style = "display: flex; flex-direction: row; align-items: flex-start;"})
+
+            content = { wrapper }
+        else
+            -- No image: append ref as a note at the bottom of the content
+            if ref then
+                local ref_p = pandoc.Para({pandoc.Str(ref)})
+                local ref_div = pandoc.Div(ref_p)
+                ref_div.attr = pandoc.Attr("", {"story-time-ref"}, {style = "text-align: center; font-size: 0.8em; color: #6b4d8a; margin-top: 0.5em; font-style: normal;"})
+                content = pandoc.List()
+                for _, block in ipairs(div.content) do
+                    content:insert(block)
+                end
+                content:insert(ref_div)
+            end
+        end
+
+        -- Build custom icon with moon + star for bedtime feel
+        local icon_html = '<i class="fa-solid fa-moon" style="color: #9B72CF; margin-right: 0.3em;"></i>'
+                       .. '<i class="fa-solid fa-star" style="color: #9B72CF; margin-right: 0.5em; font-size: 0.7em;"></i> '
+        local display_title = pandoc.List()
+        display_title:insert(pandoc.RawInline("html", icon_html))
+        display_title:insert(pandoc.Str(title))
+
+        local callout = quarto.Callout({
+            type = "important",
+            title = display_title,
+            content = content,
+            appearance = "default",
+            icon = false
+        })
+
+        -- Wrap in a story-time-callout div for custom CSS targeting
+        local outer = pandoc.Div({callout})
+        outer.classes:insert("story-time-callout")
+        return outer
+    end
   elseif div.classes:includes("big-math") then
     local default_size = "30pt"
     if PANDOC_DOCUMENT and PANDOC_DOCUMENT.meta and PANDOC_DOCUMENT.meta["big-math-size"] then
