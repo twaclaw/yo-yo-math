@@ -33,12 +33,13 @@ book:
     - index.qmd
     - supporting.qmd
     - acknowledgment.qmd
-    - credits.qmd
     - counting/index.qmd
     - number_line/number_line.qmd
     - positional_number_system/index.qmd
     - counting_recap/counting_recap.qmd
-    # - counting_faster/index.qmd
+    - counting_faster/index.qmd
+    - multiplication_and_geometry/index.qmd
+    - credits.qmd
   sidebar:
     tools:
       - icon: cup-hot

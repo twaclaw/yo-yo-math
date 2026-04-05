@@ -64,6 +64,9 @@ local emoji_map = {
   white_question_mark="❔",
   puzzle_piece="🧩",
   hotel="🏨",
+  door="🚪",
+  window="🪟",
+  triangular_ruler="📐",
   
   -- Add more here as needed
 }

@@ -1,0 +1,24 @@
+## Triangles $\text{[triangular_ruler:1em]{.twemoji}}$
+
+
+
+Triangles are the simplest polygons, with the fewest sides. They are so important in mathematics that a whole branch of mathematics, trigonometry, is dedicated to their study. 
+
+We can apply our knowledge of how to calculate the area of a rectangle to calculate the area of a triangle. Let's see how.
+
+The corners of a rectangle are right angles. This means that the two lines meeting at each corner are perpendicular to each other [$\perp$]{.scale factor="2"}. You can see examples of right angles at the point where two walls meet, or where a wall meets the floor or ceiling. We can accentuate this with the following symbols:
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector
+
+# Basic rectangle with dimensions and grid
+display_vector(draw_rectangle(5, 3, dimension_labels=("a", "b"), show_grid=False, right_angles=True))
+```
+
+

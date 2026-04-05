@@ -1,0 +1,231 @@
+## Calculating rectangular areas
+
+Initially, we will focus on rectangular objects and then move on to other shapes. Examples of rectangular shapes include Doors $\text{[door:2em]{.twemoji}}$, windows $\text{[window:2em]{.twemoji}}$ and flags.
+
+Given a general rectangle with width $a$ and height $b$:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector
+
+# Basic rectangle with dimensions and grid
+display_vector(draw_rectangle(5, 3, dimension_labels=("a", "b"), show_grid=False))
+```
+
+The area of the rectangle is the space inside it.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector
+
+# Basic rectangle with dimensions and grid
+display_vector(draw_rectangle(5, 3, dimension_labels=("a", "b"), show_grid=False, area_color="lightblue"))
+```
+
+And is calculated as:
+
+
+:::: {.big-math}
+$$
+\text{Area} = a \times b
+$$
+:::
+
+For example, the area of the following rectangle is $21$, which is the number of unit squares inside it. Count them and see for yourself.
+
+:::{.big-math}
+$$
+\text{Area} = 3 \times 7 = 21
+$$
+:::
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector
+
+# basic rectangle with dimensions and grid
+display_vector(draw_rectangle(3, 7,  show_grid=True, area_color="pink"))
+```
+
+The following rectangles have the same area, which is equal to:
+
+:::{.big-math}
+$$
+\text{Area} = 3 \times 4 = 4 \times 3 = 12
+$$
+:::
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+r1 = draw_rectangle(3, 4,  show_grid=True, area_color="green")
+r2 = draw_rectangle(4, 3,  show_grid=True, area_color="green")
+c = combine_svgs([r1, r2], direction="horizontal", separators="=", separator_font_size=40)
+display_vector(c)
+```
+
+### Drawing areas in the Cartesian plane {.unnumbered .unlisted}
+
+We can also draw rectangles in the Cartesian plane.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+areas_fig = (CartesianPlane(xmin=-1, xmax=8, ymin=-1, ymax=5)
+ .add_areas([
+     {
+        "x0": 2, "y0": 0, "x1": 7, "y1": 4, "color": "steelblue",
+        "alpha": 0.3, "show_label": True
+    },
+ ]).add_markers(
+    {
+        (7, 4): {"color": "red", "draw_lines": False, "show_coords": True},
+        (2, 0): {"color": "red", "draw_lines": False, "show_coords": True},
+    }
+ )
+)
+display_vector(areas_fig)
+```
+
+In this case, the area is the product of the horizontal and vertical distances between $(7, 4)$ and $(2, 0)$.
+
+:::{.big-math}
+$$
+\text{Area} = (7-2) \times (4-0) = 5 \times 4 = 20
+$$
+:::
+
+The area depends only on the distances, which are always positive, and not on the rectangle's location. For example, the area of all the rectangles below is $20$, regardless of their location, even if they are in the negative quadrants.
+
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+w = 3
+h = 5
+
+points = [(-6, -5), (-2, -2), (3, 1), (2, -6)]
+
+areas_fig = (CartesianPlane(xmin=-6, xmax=6, ymin=-6, ymax=6)
+ .add_areas([
+     {
+        "x0": x, "y0": y, "x1": x+w, "y1": y+h, "color": "purple",
+        "alpha": 0.3, "show_label": False
+    } for x, y in points
+ ]).add_markers(
+    {
+        (x, y): {"color": "purple", "draw_lines": False, "show_coords": True} for x, y in points
+    } | {
+        (x+w, y+h): {"color": "purple", "draw_lines": False, "show_coords": True} for x, y in points
+    }
+ )
+)
+display_vector(areas_fig)
+```
+
+
+### Squaring a number {.unnumbered .unlisted}
+
+We learned that when we multiply a number by itself, we say that we are "squaring" it. These values appear diagonally in the multiplication tables. 
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.multiplication import draw_operation_table
+from yoyo_plots.common import display_vector
+
+fig = draw_operation_table(
+    nrows=6, ncols=6,
+    show_upper=False,
+    elements={(i, i): "coral" for i in range(1, 6)},
+)
+display_vector(fig)
+```
+
+Now, we can see why we call it "squaring." The resulting rectangle is regular, with all sides of the same length—a square.  The following rectangles represent the same values as the highlighted elements on the diagonal of the multiplication table above. Count the number of unit squares and compare.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+rects = [draw_rectangle(i, i,  show_grid=True, area_color="coral") for i in range(1, 6)]
+c = combine_svgs(rects, direction="horizontal", separator_font_size=40)
+display_vector(c)
+```
+
+### Exercises {.unlisted .unnumbered}
+
+Find the total area of the zoo. The total area is the sum of all the green spaces.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+animals = {
+    (-1, -5): "static_images/emojis/1f992_giraffe.svg",
+    (5, 4): "static_images/emojis/1f99b_hippo.svg",
+    (-5, 4): "static_images/emojis/1f405_tiger.svg",
+    (0, 0): "static_images/emojis/1f9a9_flamingo.svg",
+    (5, -5): "static_images/emojis/1f9a7_orangutan.svg"
+}
+
+areas = [
+    (-6, -6 , 1, -5),
+    (3, 3 , 6, 6),
+    (-6, 0, -4, 5),
+    (-1, 1, 3, -2),
+    (2, -3, 6, -6),
+]
+cartesian_fig = CartesianPlane(
+    xmin=-6, 
+    xmax=6, 
+    ymin=-6, 
+    ymax=6
+).add_areas([
+    {
+        "x0": x0, "y0": y0, "x1": x1, "y1": y1, "color": "green",
+        "alpha": 0.2, "show_label": False
+    } for x0, y0, x1, y1 in areas
+]).add_markers({
+    (x, y): {"color": "green", "draw_lines": False, "show_coords": True} for x, y, _, _ in areas
+}).add_markers({
+    (x, y): {"color": "green", "draw_lines": False, "show_coords": True} for _, _, x, y, in areas
+}).add_icons({
+    k: {"image": v, "color": "black", "show_coords": False} for k, v in  animals.items()
+})
+
+display_vector(cartesian_fig)
+```
+
+
+
