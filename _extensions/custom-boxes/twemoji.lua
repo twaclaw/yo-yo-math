@@ -64,6 +64,10 @@ local emoji_map = {
   white_question_mark="❔",
   puzzle_piece="🧩",
   hotel="🏨",
+  running_shoe="👟",
+  socks="🧦",
+  waving_hand="👋",
+  light_bulb="💡",
   
   -- Add more here as needed
 }
