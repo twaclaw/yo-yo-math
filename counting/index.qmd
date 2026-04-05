@@ -12,7 +12,7 @@
 
 
 
-Counting is arguably the most fundamental operation in mathematics. This seemingly trivial process provides the foundation for many areas of mathematics and is central to numerous results, algorithms, and proofs. Counting is pervasive. You will encounter it in instances ranging from playing Snakes and Ladders to solving a Rubik's Cube efficiently to proving the most famous theorem in the history of mathematics. 
+Counting is arguably the most fundamental operation in mathematics. This seemingly trivial process provides the foundation for many areas of mathematics and is central to numerous results, algorithms, and proofs. Counting is pervasive. You will encounter it in instances ranging from playing Snakes and Ladders to solving a Rubik's Cube efficiently to proving the most elusive theorem in the history of mathematics. 
 
 
 ::: {.fun-fact  image="/static_images/alien.pdf" width="0.8" scale="0.9"}
