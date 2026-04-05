@@ -296,6 +296,83 @@ function Div(div)
         outer.classes:insert("story-time-callout")
         return outer
     end
+  elseif div.classes:includes("question") then
+    if quarto.doc.is_format("pdf") then
+      local begin_cmd = "\\begin{question}"
+      local title = div.attributes["title"] or "Question"
+      begin_cmd = begin_cmd .. "[" .. title .. "]"
+
+      local image = div.attributes["image"] or ""
+
+      -- PDF Path Handling:
+      if image:match("^/") then
+        image = image:gsub("^/", "")
+      end
+      if image:match("^%.%./") then
+        image = image:gsub("^%.%./", "")
+      end
+
+      local scale = div.attributes["scale"] or "1"
+      local width = div.attributes["width"] or "0.65"
+      begin_cmd = begin_cmd .. "{" .. image .. "}{" .. scale .. "}{" .. width .. "}"
+
+      local blocks = { pandoc.RawBlock("tex", begin_cmd) }
+      for _, block in ipairs(div.content) do
+        table.insert(blocks, block)
+      end
+      table.insert(blocks, pandoc.RawBlock("tex", "\\end{question}"))
+      return blocks
+    elseif quarto.doc.is_format("html") then
+        local title = div.attributes["title"] or "Question"
+        local content = div.content
+
+        -- Logic for Image insertion (same layout as fun-fact / game-theory)
+        local image_path = div.attributes["image"]
+        if image_path then
+            image_path = image_path:gsub("%.pdf$", ".svg")
+            if image_path:match("^/") then
+                image_path = "../" .. image_path:gsub("^/", "")
+            end
+
+            local text_width_val = tonumber(div.attributes["width"]) or 0.65
+            local text_basis = math.floor(text_width_val * 100) .. "%"
+            local scale_val = tonumber(div.attributes["scale"]) or 1.0
+            local img_style_width = math.floor(scale_val * 100) .. "%"
+
+            local img = pandoc.Image({}, image_path, title)
+            img.attr = pandoc.Attr("", {}, {style = "width: " .. img_style_width .. "; height: auto; max-width: 100%;"})
+
+            local content_div = pandoc.Div(div.content)
+            content_div.attr = pandoc.Attr("", {}, {style = "flex: 0 0 " .. text_basis .. "; padding-right: 1.5em;"})
+
+            local img_div = pandoc.Div(pandoc.Para({img}))
+            img_div.attr = pandoc.Attr("", {}, {style = "flex: 1; display: flex; align-items: center; justify-content: center;"})
+
+            local wrapper = pandoc.Div({content_div, img_div})
+            wrapper.attr = pandoc.Attr("", {}, {style = "display: flex; flex-direction: row; align-items: flex-start;"})
+
+            content = { wrapper }
+        end
+
+        -- Custom icon: fuchsia question-circle
+        local icon_html = '<i class="fa-solid fa-circle-question" style="color: #CC2277; margin-right: 0.5em;"></i> '
+        local display_title = pandoc.List()
+        display_title:insert(pandoc.RawInline("html", icon_html))
+        display_title:insert(pandoc.Str(title))
+
+        local callout = quarto.Callout({
+            type = "caution",
+            title = display_title,
+            content = content,
+            appearance = "default",
+            icon = false
+        })
+
+        -- Wrap in a question-callout div for custom CSS targeting
+        local outer = pandoc.Div({callout})
+        outer.classes:insert("question-callout")
+        return outer
+    end
   elseif div.classes:includes("big-math") then
     local default_size = "30pt"
     if PANDOC_DOCUMENT and PANDOC_DOCUMENT.meta and PANDOC_DOCUMENT.meta["big-math-size"] then
