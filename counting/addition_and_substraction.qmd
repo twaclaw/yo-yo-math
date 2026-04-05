@@ -328,10 +328,28 @@ $$
 \end{align*}
 :::
 
-:::{.fun-fact title="Commutative property"}
-Did you notice that $3 + 2$ yields the same result as $2+3$? We can write that as $3+2=2+3=5$. The same occurs above for $5+3=3+5=8$. This is true for any other pair of number $a$ and $b$, $a + b = b + a$, because addition is **commutative**, meaning that the result doesn't depend on the order of the addends.
+:::{.fun-fact title="The order doesn't matter"}
+Sometimes, the order of things matters. For example, it matters whether you put on first your shoes $\text{[running_shoe:2em:0em:2]{.twemoji}}$ or your socks $\text{[socks:2em]{.twemoji}}$. 
+
+Other times, order doesn't matter, such as when adding up numbers.  For instance, did you notice that $3 + 2$ yields the same result as $2+3$? We can write that as:
+
+:::{.big-math}
+$$
+ 3+2=2+3=5
+$$
 :::
 
+In the general case we have 
+
+:::{.big-math}
+$$
+ a + b = b + a
+$$
+
+We say that addition is **commutative**, meaning the order of the numbers being added does not matter.
+
+:::
+:::
 
 
 Provided you enter the right answers in the previous examples, we say that the equality holds. Try now yourself to create some equalities that hold, both with additions ('$+$') and substractions ('$-$').
