@@ -3,6 +3,7 @@
 As we saw earlier, multiplication is repeated addition—the special case that results from adding a value to itself multiple times. For example:
 
 
+:::{.content-visible when-format="html"}
 :::{.big-math}
 $$
 \begin{aligned}
@@ -10,6 +11,20 @@ $$
 \end{aligned}
 $$
 :::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{align*}
+\underbrace{3+3+3+3+3}_{\eqnmarkbox[Red]{under}{{\color{red}{5}} \text{ times}}} &= \eqnmark[Red]{plus}{{\color{red}{5}}} \times 3 \\
+\annotate[yshift=-0.2em]{below}{under, plus}{}
+\end{align*}
+:::
+:::
+:::
+
+
 
 Adding $3$ to itself five times is the same as counting by threes five times.
 

@@ -426,7 +426,7 @@ So, instead of $3 + \boxed{\phantom{4}} = 7$, you will see $3 + {\color{red}{\al
 
 In many instances in science and engineering you are not given these equations, but instead some observations or a problem. Nature speaks mathematics, but still you will have to convert observations into equations.
 
-- Example 1: f I tell you that Zoe is $2$ years older than you, and then I ask you what's Zoe's age? How would you go about and solve this problem? In this kind of problems you always have two categories, what you know: the data, observations, given information, and what you don't know, the sneaky unknowns. In this case you know your own age, let's say $5$, and you know that Zoe is $2$ years older. The resulting equation would be:
+- Example 1: If I tell you that Zoe is $2$ years older than you, and then I ask you what's Zoe's age? How would you go about and solve this problem? In this kind of problems you always have two categories, what you know: the data, observations, given information, and what you don't know, the sneaky unknowns. In this case you know your own age, let's say $5$, and you know that Zoe is $2$ years older. The resulting equation would be:
 
 ::: {.big-math}
 $$

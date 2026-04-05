@@ -1,12 +1,17 @@
 ## Multiplication tables
 
-In The Man Who Counted by Malba Tahan, Beremiz Samir is a superhero Persian mathematician who can count faster than anyone else. He can look at a flock of birds and immediately tell you the exact number of birds in it.
 
-We can also learn to count quickly. As we saw in the previous section, identifying patterns is the first step. The second step is to practice and memorize the results of basic multiplications. Mastering these calculations will give you superpowers and provide a foundation for algorithms for multiplying larger numbers.
+::: {.story-time title="The Arabian Nights of Numbers" image="/static_images/arabian_nights.pdf" scale="1.1" width="0.6"}
+Beremiz Samir is a gifted mathematician who can count faster than anyone else. He can look at a flock of birds or a herd of camels and instantly tell you how many there are. His mathematical genius guides him through exciting and dangerous adventures as he solves puzzles and riddles, helps people, and finds love.
+Read more about Beremiz Samir in The Man Who Counted by Malba Tahan.
+:::
 
-We will use tables like the one below to practice our multiplication skills. Don't worry about memorizing them; practice makes perfect.
+We can also learn to count quickly. As we saw in the previous section, the first step is identifying patterns. The second step is to practice and memorize the results of basic multiplication. Mastering these calculations will give you superpowers and lay the groundwork for algorithms for multiplying larger numbers.
 
-This tables are very similar to the ones we saw before for addition when defining groups.
+We will use tables like the one below to practice our multiplication skills. Don't worry about memorizing them; with practice, you will get better.
+
+These tables are very similar to the ones we saw before for addition when defining groups.
+
 
 
 ```{python}
@@ -210,9 +215,9 @@ $$
 ::: {.big-math}
 :::{{latex}}
 \begin{equation*}
-    \underbrace{a \times a}_{\eqnmarkbox[Red]{k1}{{\color{red}{2}}} \text{ times}} = a^{\eqnmarkbox[Red]{k2}{\color{red}{2}}}
+    \underbrace{a \times a}_{\eqnmarkbox[Red]{k1}{{\color{red}{2}} \text{ times}}} = a^{\eqnmarkbox[Red]{k2}{\color{red}{2}}}
 \end{equation*}
-\annotatetwo[yshift=1em]{above}{k1}{k2}{The exponent represents the number of times we multiply $a$ by itself.}
+\annotatetwo[yshift=-1em]{below}{k1}{k2}{The exponent represents the number of times we multiply $a$ by itself.}
 :::
 :::
 :::

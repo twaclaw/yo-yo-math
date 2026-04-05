@@ -1,5 +1,12 @@
-## Kangaroo math
-Do you know the classic tale The Giant Turnip? It's about an old man and an old woman who lived in a crooked cottage. They had the following animals:
+## Kangaroo math $\text{[kangaroo:1em]{.twemoji}}$
+
+
+::: {.story-time title="The Gigantic Turnip" image="/static_images/turnip.pdf" scale="1.1" width="0.7" ref="Read more about this and other cumulative tales at https://wikipedia.org/"}
+
+"The Gigantic Turnip" is a cumulative or _chain_ folk tale. 
+In a cumulative tale, the action repeats and builds in a cumulative manner. 
+
+The story is about an old man and an old woman who lived in a crooked cottage and owned the following animals:
 
 
 - $\text{[cow:1.5em:-0.3em:1]{.twemoji}}$
@@ -8,6 +15,7 @@ Do you know the classic tale The Giant Turnip? It's about an old man and an old 
 - $\text{[rooster:1.5em:-0.3em:4]{.twemoji}}$
 - $\text{[swan:1.5em:-0.3em:5]{.twemoji}}$
 - $\text{[baby_chick:1.5em:-0.3em:6]{.twemoji}}$
+:::
 
 The numbers representing the number of each of these animals form an arithmetic progression, or arithmetic sequence, because the difference between any two consecutive numbers is constant. In this case, the common difference is $1$.
 
