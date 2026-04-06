@@ -11,7 +11,7 @@ Encourage the kids to reason about their answers. Ask many "Why's?"
 
 Think for a second how you answered those questions. What you did, even if unconsciuously, was a comparison between two or more quantities. 
 
-We alread saw a kind of relationship between two quantities, namely when they are *equal*, now we are going to see the two other options.
+We already saw a kind of relationship between two quantities, namely when they are *equal*, now we are going to see the two other options.
 
 | Name         | Symbol | Example   | Description            |
 |--------------|--------|-----------|-------------------------|
@@ -19,12 +19,12 @@ We alread saw a kind of relationship between two quantities, namely when they ar
 | Greater-than | $>$    | $3 > 1$   | $3$ is greater than $1$ |
 | Less-than    | $<$    | $0 < 1$   | $0$ is less than $1$ |
 
-For instance I am sure you would prefer $2$ bars of chocolate instead of $1$ because $2 > 1$ and $0$ portions of cauliflower soup instead of $1$ because $1 > 0$.
+For instance I am sure you would prefer $2$ $\text{[chocolate_bar:2em:0em:2]{.twemoji}}$ bars of chocolate instead of $1$ $\text{[chocolate_bar:2em:0em:1]{.twemoji}}$ because $2 > 1$ and $0$ portions of cauliflower soup instead of $1$ because $1 > 0$.
 
 :::{.fun-fact}
 In a way, the greater-than symbol [$>$]{.scale factor="2"} is the same as the less-than one [$<$]{.scale factor="2"}. What you have to remember is that the open part always points to the larger quantity, and the angle to the smaller one.
 
-For instance, if you see something like [$7 > 2$]{.scale factor="2"} you can write read it as $7$ is greater than $2$, but also as $2$ is less than $7$, and write it as [$2 < 7$]{.scale factor="2"}. Same thing!
+For instance, if you see something like [$7 > 2$]{.scale factor="2"} you can read it as $7$ is greater than $2$, but also as $2$ is less than $7$, and write it as [$2 < 7$]{.scale factor="2"}. Same thing!
 :::
 
 
@@ -35,17 +35,17 @@ Time to practice.
 
 ```{python}
 # | echo: false
-# | label: practice-comparing-1
-# | fig-cap: "Write down the correct symbol ($>$ or $<$) in the box. Source images: [Freesvg.org](https://freesvg.org/)."
+# | fig-align: "center"
+# | fig-cap: "Write down the correct symbol ($>$ or $<$) in the box."
 
 from yoyo_plots.operations import draw_quantity_operation
 from yoyo_plots.common import display_vector
 
 op1 = dict(
-    image="/icon_images/panda_in_love.svg", n=3, font_color="black", nrows=2
+    image="/icon_images/panda_in_love.svg", n=3, font_color="black", nrows=2, pixels_per_unit=60
 )
 op2 = dict(
-    image="/icon_images/panda_in_love.svg", n=6, font_color="black", nrows=2
+    image="/icon_images/panda_in_love.svg", n=6, font_color="black", nrows=2, pixels_per_unit=60
 )
 
 fig_op = draw_quantity_operation(
@@ -54,13 +54,11 @@ fig_op = draw_quantity_operation(
     {}, # res
     operation="<",
     font_size=50,
-    show_operation=False
+    show_operation=False,
+    
 )
 display_vector(fig_op)
 ```
-
-
-
 
 
 
@@ -88,7 +86,7 @@ These kind of questions implies also comparisons of quantities, in this case hei
 
 - **Maximum**: the largest number. The number that is greater-than ($>$) all other numbers in the collection. A number $x^{*}$ such that $x^{*} \geq y$ for all $y$ in the collection. There might be also multiple instances of this number. In this example, the maximum is $9$.
 
-These points (_minima_ and _maxima_) are called **extrema** (plural of extremum) and they are very important in many branches of mathematics, physics, engineering and economics. We will come back to this very intersting topic which is the base of the theory of *optimization* and of a very beautiful branch of mathematics called *calculus of variations*.
+These points (_minima_ and _maxima_) are called **extrema** (plural of extremum) and they are very important in many branches of mathematics, physics, engineering and economics.
 :::
 
 

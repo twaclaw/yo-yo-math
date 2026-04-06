@@ -86,7 +86,7 @@ $\color{red}{\mathbb{N}}$ and $\color{blue}{\mathbb{Z}}$ are very important sets
 
 $\color{blue}{\mathbb{Z}}$ and the operation of addition on this set has some important properties:
 
-- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers, the result is another integer. For example, $2 + 3 = 5$ and $-2 + (-3) = -5$. Associativity means that the order in which you group numbers when adding does not change the result. For example, $(2 + 3) + 4 = 2 + (3 + 4)$.
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers, the result is another integer. For example, $2 + 3 = 5$ and $-1 + (-7) = -8$. Associativity means that the order in which you group numbers when adding does not change the result. For example, $(2 + 3) + 4 = 2 + (3 + 4)$.
 - $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an identity element**: There is a _neutral_ number $e$,  such that $e + a = a + e = a$. In the case of addition, this do-nothing number is $0$. For example, $2 + 0 = 0 + 2 = 2$ and $-3 + 0 = 0 + (-3) = -3$. Adding (or subtracting) $0$ is like doing nothing.
 - $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an inverse**: For every integer $a$, there is another integer that, when added to the first, yields the identity element $0$. For example, the additive inverse of $2$ is $-2$ because $2 + (-2) = 0$, and the additive inverse of $-3$ is $3$ because $-3 + 3 = 0$. You can think of the additive inverse as the evil twin of a number, the reflection of the number across zero.
 
@@ -94,7 +94,7 @@ These properties make the set of integers with the operation of addition a mathe
 
 
 :::{.fun-fact title="Whoa, why are groups important?" image="/static_images/okapi.pdf" width="0.7" scale="0.9"}
-In short, it's important to establish that the integers form a group under addition because all future group concepts will apply to the integers under addition.
+It's important to establish that the integers form a group under addition because all future group concepts will apply to the integers under addition.
 
 Here is a loose analogy: You know that mammals are warm-blooded vertebrates that drink milk, give birth to live young, and have hair. 
 

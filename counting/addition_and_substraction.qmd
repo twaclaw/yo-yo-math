@@ -305,7 +305,7 @@ $$
 $$
 :::
 
-
+Compute the following sums and differences.
 
 ::: {.big-math}
 \begin{align*}
@@ -345,10 +345,10 @@ In the general case we have
 $$
  a + b = b + a
 $$
+:::
 
 We say that addition is **commutative**, meaning the order of the numbers being added does not matter.
 
-:::
 :::
 
 
@@ -501,7 +501,7 @@ A special case of addition (or substraction) is when you add a number to itself.
 
 This operation, repeated addition, is called multiplication and is represented by the *times* symbol $\times$. 
 
-We can then write $3+3+3+3$ in a more compact way as ${\color{red}{4}}\times 3$ that is read $4$ *times* $3$. 
+We can then write $3+3+3+3$ in a more compact way as ${\color{red}{4}}\times 3$ that is read $\color{red}{4}$ *times* $3$. 
 
 :::{.content-visible when-format="html"}
 :::{.big-math}
@@ -563,7 +563,7 @@ $$
 
 
 
-We will revisit multiplication later on. For the time being, you can alread do multiplications, albeit in a slower way, using one of your superpowers: addition.
+We will revisit multiplication later on. For the time being, you can already do multiplications, albeit in a slower way, using one of your superpowers: addition.
 
 
 ### Exercises {.unlisted .unnumbered}

@@ -68,6 +68,8 @@ local emoji_map = {
   socks="🧦",
   waving_hand="👋",
   light_bulb="💡",
+  chocolate_bar="🍫",
+
   
   -- Add more here as needed
 }

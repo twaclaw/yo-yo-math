@@ -51,10 +51,6 @@ Hindustani numerals. Source image: [Wikipedia](https://upload.wikimedia.org/wiki
 
 Go ahead and practice your strokes while enjoying the roundness of the numbers.
 
-:::{.teacher-tip}
-Depending on their age, your kids might not be interested in drawing or scribbling numbers yet. Just skip it and come back to it later.
-:::
-
 
 ```{python}
 # | echo: false
