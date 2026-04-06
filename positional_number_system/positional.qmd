@@ -17,7 +17,9 @@ display_vector(fig)
 The word "digit" comes from the Latin word "digitus," meaning "finger." The plural form is "digiti."
 :::
 
+:::{.question}
 How to possibly represent numbers above 9? Any ideas?
+:::
 
 If  we don't want to introduce new symbols, it seems the only option is  to reuse the same symbols in some way $\text{[thinking:1.5em]{.twemoji}}$. We need to exploit a different property or attribute of these digits somehow. Any ideas?
 
@@ -48,6 +50,7 @@ $$
 The defining feature of the positional number system is that the value of a digit depends on its position in the number.
 For instance, in the number $333$, each digit $3$ has a different value.  
 
+:::{.content-visible when-format="html"}
 ```{python}
 # | echo: false
 # | fig-align: "center"
@@ -60,6 +63,20 @@ label = Label(values=[Number(3, "black")]*3, draw_grid=False)
 
 display_vector(label)
 ```
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math size="20"}
+:::{{latex}}
+\begin{equation*}
+\eqnmark[Blue]{k1}{3}\eqnmark[Red]{k2}{3}\eqnmark[Black]{k3}{3}
+\annotate[yshift=0.5em]{above,left}{k1}{Greatest value}
+\annotate[yshift=0.5em]{above,right}{k2}{Second greatest value}
+\annotate[yshift=-0.5em]{below,right}{k3}{Lowest value}
+\end{equation*}
+:::
+:::
+:::
 
 The farther to the left $\Leftarrow$ a digit is, the larger its value. We will use boxes to  emphasize the positions.
 
@@ -141,7 +158,11 @@ $$
 
 
 
-Even if you don't know what the following numbers mean, you can still tell which number is larger and who is faster in the following figure. Explain why.
+Even if you don't know what the numbers mean, you can use what you just learned to determine which number is larger and who is faster in the figure below. 
+
+:::{question}
+Explain why?
+:::
 
 ```{python}
 # | echo: false
@@ -275,6 +296,48 @@ Notice that with the $\color{blue}{\text{blue}}$ digits, we are also counting in
 
 
 This is a recurring process. We continue to do the same thing: add positions and reuse the same digits to create larger and larger numbers.
+
+### Exercises {.unnumbered .unlisted}
+
+- Write the numbers from $0$ to $31$.
+
+```{python}
+#| echo: false 
+#| fig-align: "left"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+
+fig = draw_handwritten_range(list(range(4)), font_size=40, rows=1, font_color="lightgray", append_comma=True, add_ellipsis=False)
+display_vector(fig)
+
+for _ in range(10):
+    print()
+```
+
+- Write the numbers from $90$ to $110$.
+
+```{python}
+#| echo: false 
+#| fig-align: "left"
+
+from yoyo_plots.common import display_vector
+from yoyo_plots.quantities import draw_handwritten_range
+
+
+fig = draw_handwritten_range(list(range(90, 95)), font_size=40, rows=1, font_color="lightgray", append_comma=True, add_ellipsis=False)
+display_vector(fig)
+
+for _ in range(5):
+    print()
+```
+
+
+
+
+
+
 
 
 In order to master these insights and the way numbers are constructed, we are going on vacation! We'll be staying at the Numbers Grand Hotel.

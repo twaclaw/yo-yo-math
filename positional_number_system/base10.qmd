@@ -43,7 +43,7 @@ svg = ladder.to_svg(top_label=label2, bottom_label=label1, annotation="+10")
 display_vector(svg)
 ```
 
-It also means that all numbers greater than $9$ are constructed adding one of these ten digits to combinations of $10$^[Technically, powers of $10$, but we will come back to that sometime in the future.].
+It also means that all numbers greater than $9$ are constructed adding one of these ten digits to combinations of $10$^[Technically, powers of $10$.].
 
 In our Grand Hotel analogy, climbing a floor means adding up $10$. Each time we climb a ladder, we add $10$. If we climb two ladders we add two times $10$, $2\times 10 = 10 + 10 = 20$, if we climb $5$ ladders we add five times $10$, $5\times 10 = 10 + 10 + 10 + 10 + 10 = 50$, and so on.
 
@@ -136,4 +136,28 @@ Complete the following representations:
 :::
 :::
 :::
+
+Using  base $10$ also means that we can stack a maximum of $10$ ladders of a given type. To continue climbing our hotel, we need to add a new type of ladder. Each time we add a position, we also add a new type of ladder. The numbers from right to left in the second position represent the number of ladders of the first type. The numbers in the third position represent the number of ladders of the second type, and so on.
+
+Fill in the blanks with the numbers of the missing rooms in the upper floors.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-pos: "H"
+# | fig-cap: "To reach rooms in floor number $11$, for instance ${\\color{blue}{1}}{\\color{red}{1}}2$, we have to climb $\\color{blue}{1}$ blue ladder (equivalent to $10$ red ladders) and $\\color{red}{1}$ red ladder."
+
+from yoyo_plots.hotel import Building
+from yoyo_plots.common import display_vector
+
+
+skip_rooms = list(range(95, 99)) + list(range(102, 113))
+
+n = 12
+building = Building(0, 0, 3, n, without_offset=False, pad_zeros=False, roof=True, plants=True, plant_scale=2.5, skip_rooms=skip_rooms)
+building.add_ladder(0, 0, "blue", width=0.4, height=10)
+building.add_ladder(10, 1, "red")
+display_vector(building)
+```
 

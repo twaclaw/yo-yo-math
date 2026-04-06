@@ -61,5 +61,5 @@ However, the problem may lie in the way numbers are represented. In this chapter
 
 {{< include positional.qmd >}}
 {{< include hotel.qmd >}}
-{{< include beyond_99.qmd >}}
 {{< include base10.qmd >}}
+{{< include comparing_quantities.qmd >}}

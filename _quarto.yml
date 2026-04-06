@@ -139,8 +139,8 @@ format:
           \definecolor{kidYellow}{HTML}{FFCC00}
           % Story: Lavender
           \definecolor{kidLavender}{HTML}{9B72CF}
-          % Question: Fuchsia
-          \definecolor{kidFuchsia}{HTML}{CC2277}
+          % Question: Light Blue
+          \definecolor{kidLightBlue}{HTML}{5DADE2}
 
           % Emoji Support
           \usepackage{fontawesome5}
@@ -273,18 +273,18 @@ format:
           \newtcolorbox{question}[4][Question]{
              enhanced jigsaw,
              breakable,
-             colback=kidFuchsia!3!white,
+             colback=kidLightBlue!3!white,
              opacityback=0.5,
-             colframe=kidFuchsia,
+             colframe=kidLightBlue,
              leftrule=.75mm,
              rightrule=.15mm,
              toprule=.15mm,
              bottomrule=.15mm,
              arc=.35mm,
              % Header Styling
-             title={\textcolor{kidFuchsia}{\faQuestionCircle}\ \ \textbf{#1}},
+             title={\textcolor{kidLightBlue}{\faQuestionCircle}\ \ \textbf{#1}},
              coltitle=black,
-             colbacktitle=kidFuchsia!10!white,
+             colbacktitle=kidLightBlue!10!white,
              opacitybacktitle=0.6,
              titlerule=0mm,
              toptitle=1mm,

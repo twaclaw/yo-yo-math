@@ -355,7 +355,7 @@ function Div(div)
         end
 
         -- Custom icon: fuchsia question-circle
-        local icon_html = '<i class="fa-solid fa-circle-question" style="color: #CC2277; margin-right: 0.5em;"></i> '
+        local icon_html = '<i class="fa-solid fa-circle-question" style="color: #5DADE2; margin-right: 0.5em;"></i> '
         local display_title = pandoc.List()
         display_title:insert(pandoc.RawInline("html", icon_html))
         display_title:insert(pandoc.Str(title))
