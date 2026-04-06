@@ -67,6 +67,10 @@ local emoji_map = {
   door="🚪",
   window="🪟",
   triangular_ruler="📐",
+  running_shoe="👟",
+  socks="🧦",
+  waving_hand="👋",
+  light_bulb="💡",
   
   -- Add more here as needed
 }

@@ -48,14 +48,11 @@ You wouldn't have any problem finding room number $7$ in the first floor, right?
 from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
 
-building = Building(0, 0, 1, 2, without_offset=True, pad_zeros=False)
+building = Building(0, 0, 1, 2, without_offset=True, pad_zeros=False, roof=True)
 display_vector(building)
 ```
 
-You cannot unambiguously identify Room $7$ using single-digit numbers. Clearly, we need more numbers to represent additional rooms, and you already know how to construct larger numbers.
-
-
-As we saw in the previous section, the first thing we need to do to represent larger numbers is to add more positions or placeholders.
+You cannot unambiguously identify Room $7$ using single-digit numbers. Clearly, we need more numbers to represent additional rooms, and you already know how to construct larger numbers.  As we saw in the previous section, the first thing we need to do to represent larger numbers is to add more positions.
 
 
 ```{python}
@@ -66,15 +63,12 @@ As we saw in the previous section, the first thing we need to do to represent la
 from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
 
-building = Building(0, 0, 2, 2, without_offset=True, pad_zeros=False)
+building = Building(0, 0, 2, 2, without_offset=True, pad_zeros=False, roof=True)
 display_vector(building)
 ```
 
-Adding placeholders is not enough; we also need to fill them with digits. Which digits should we use to unambiguously identify a particular room?
-
-
-:::{.teacher-tip}
-Take a moment to stop and think. Let your children come up with their own ideas.
+:::{.question}
+Adding one position is not enough; we also need to fill them with digits. Which digits should we use to unambiguously identify a particular room?
 :::
 
 That's right; you also need to specify the floor number. For example, you could say "Room $7$ on the $0$ floor" or "Room $7$ on the $1$ floor."
@@ -90,7 +84,7 @@ We will now add a second digit to each door in the second placeholder to represe
 from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
 
-building = Building(0, 0, 2, 2, pad_zeros=True)
+building = Building(0, 0, 2, 2, pad_zeros=True, roof=True)
 display_vector(building)
 ```
 
@@ -105,12 +99,11 @@ In the first floor, we don't really need those padding zeros in front, so we can
 from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
 
-building = Building(0, 0, 2, 2, pad_zeros=False)
+building = Building(0, 0, 2, 2, pad_zeros=False, roof=True)
 display_vector(building)
 ```
 
-That's exactly how we learned in the previous section to represent larger numbers and count beyond $9$. Counting beyond $9$ is like climbing to the next floor in our grand hotel. The following figure shows ladders to help you visualize this process.
-
+To get from one room on the ground floor (floor $0$) to the corresponding room on the first floor (floor $1$), we have to climb a ladder.
 
 
 ```{python}
@@ -121,7 +114,7 @@ That's exactly how we learned in the previous section to represent larger number
 from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
 
-building = Building(0, 0, 2, 2, pad_zeros=False)
+building = Building(0, 0, 2, 2, pad_zeros=False, roof=True)
 
 for i in range(9):
     building.add_ladder(0, i, "red")
@@ -159,7 +152,7 @@ from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
 
 n = 5
-building = Building(0, 0, 2, n, without_offset=False, pad_zeros=False)
+building = Building(0, 0, 2, n, without_offset=False, pad_zeros=False, roof=True, plants=True, plant_scale=2.5)
 for i in range(n-1):
     building.add_ladder(i, 3, "red")
 
@@ -194,60 +187,28 @@ display_vector(svg)
 
 ### Exercises {.unlisted .unnumbered}
 
-
+Fill in the blanks with the numbers of the missing rooms.
 
 ```{python}
 # | echo: false
-# | fig-cap: "Practice drawing some of the new numbers you have just learned to represent."
-# | fig-pos: "H"
+# | fig-align: "center"
+# | fig-cap: "The first $5$ floors of our Grand Hotel."
 
+from yoyo_plots.hotel import Building
 from yoyo_plots.common import display_vector
-from yoyo_plots.quantities import draw_handwritten_range
 
-from plotly.subplots import make_subplots
+skip_rooms = list(range(15, 25)) + list(range(50, 71)) + [29, 30, 47, 48, 49]
 
-start, end = 9, 29
-fig_combined = make_subplots(rows=end-start, cols=1, vertical_spacing=0)
+n = 8
+building = Building(0, 0, 2, n, without_offset=False, pad_zeros=False, roof=True, plants=True, plant_scale=2.5, skip_rooms=skip_rooms)
+for i in range(n-1):
+    building.add_ladder(i, 3, "red")
 
-for i in range(start, end):
-    f = draw_handwritten_range(
-        [i] * 7,
-        font_size=40,
-        rows=1,
-        font_color="lightgrey",
-        first_element_color="black",
-    )
-
-    for ann in f.layout.annotations:
-        fig_combined.add_annotation(
-            x=ann.x,
-            y=ann.y,
-            text=ann.text,
-            showarrow=ann.showarrow,
-            font=ann.font,
-            row=i + 1 - start,
-            col=1,
-        )
-
-    fig_combined.update_xaxes(
-        range=f.layout.xaxis.range, visible=False, row=i + 1 - start, col=1
-    )
-    fig_combined.update_yaxes(
-        range=f.layout.yaxis.range, visible=False, row=i + 1 - start, col=1
-    )
-
-fig_combined.update_layout(
-    plot_bgcolor="white",
-    margin=dict(l=5, r=5, t=0, b=0),
-    width=f.layout.width,
-    height=f.layout.height * 10,
-    dragmode="pan",
-)
-display_vector(fig_combined)
+display_vector(building)
 ```
 
 
-Adding $10$ is quite easy. Complete the following sums.
+You saw that adding $10$ is quite easy, you just have to climb one ladder to the next floor.
 
 
 :::{.font-size-adjust size="25pt"}
