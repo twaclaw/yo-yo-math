@@ -376,6 +376,38 @@ grid_specs = [
         image_size=image_size,
         image="/static_images/emojis/1f427_penguin.svg",
     ),
+        dict(
+        n=9,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f9a7_orangutan.svg",
+    ),
+    dict(
+        n=5,
+        nrows=2,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f99b_hippo.svg",
+    ),
+    dict(
+        n=1,
+        nrows=1,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f695_taxi.svg",
+    ),
+    dict(
+        n=8,
+        nrows=3,
+        font_size=font_size,
+        font_color="white",
+        image_size=image_size,
+        image="/static_images/emojis/1f9a9_flamingo.svg",
+    ),
 ]
 
 fig = draw_quantity_grid(grid_specs, cols=4)
@@ -385,7 +417,7 @@ display_vector(fig)
 
 
 ::: {.story-time title="Bedtime stories drawn in the sky" image="/static_images/orion.pdf" scale="0.9" width="0.7" ref="You can find more about this story in D'Aulaires Book of Greek Myths. Doubleday, 1962, and Penguin Random House 1992."}
-Orion, the son of Poseidon and Euryale, was an unrivaled hunter. Even Artemis, the goddess of the hunt, admired him and loved spending time with him. Her brother Apollo grew jealous of Orion and sent a giant scorpion to sting him in the ankle. After Orion's death, Artemis forgave Apollo, and they both immortalized Orion in the night sky. He is followed by his two faithful dogs, represented by the constellations Canis Major $\text{[dog:2.5em]{.twemoji}}$ and Canis Minor $\text{[dog:1.5em]{.twemoji}}$. The dogs are pursuing the poor hare, represented by the constellation Lepus $\text{[rabbit:1.5em]{.twemoji}}$. The constellation Scorpius, a summer constellation, is usually not seen with Orion at the same time, symbolizing an eternal chase.
+Orion, the son of Poseidon and Euryale, was an unrivaled hunter. Even Artemis, the goddess of the hunt,  enjoyed hunting with him. However, her brother Apollo grew jealous of Orion and sent a giant scorpion to sting him. After Orion died, Artemis forgave Apollo, and they immortalized him in the sky as the eponymous constellation. He is followed by his two faithful dogs, represented by the constellations Canis Major $\text{[dog:2.5em]{.twemoji}}$ and Canis Minor $\text{[dog:1.5em]{.twemoji}}$. The dogs are pursuing the poor hare, represented by the constellation Lepus $\text{[rabbit:1.5em]{.twemoji}}$. Scorpius, a summer constellation, is usually not seen with Orion at the same time.
 :::
 
 This hunting scene is depicted in the night sky (just look up), as shown in figure @fig-orion-friends. The neighboring constellations Taurus $\text{[taurus:1em]{.twemoji}}$, the bull, and Gemini $\text{[gemini:1em]{.twemoji}}$, the twins, are also shown in the figure. 

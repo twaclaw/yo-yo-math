@@ -100,6 +100,7 @@ If you want to calculate a sum in $\mathbb{Z}_6$, for instance $4 + 3$, you can 
 ```{python}
 # | echo: false
 # | fig-align: center
+# | fig-cap: "$4+3=1$"
 from yoyo_plots.multiplication import draw_operation_table
 from yoyo_plots.common import display_vector
 
@@ -117,9 +118,15 @@ display_vector(fig)
 ```
 
 
-Same as $\mathbb{Z}$, $\mathbb{Z}_6$ is also a group. Why? Same checklist we used before for $\mathbb{Z}$:
+Same as $\color{blue}{\mathbb{Z}}$, $\mathbb{Z}_6$ is also a group.
 
-- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers in $\mathbb{Z}_6$, you get another integer in $\mathbb{Z}_6$. For example, $2 + 3 = 5$ and $4 + 3 = 1$. The operations are associative, for example, $(2 + 3) + 4 = 2 + (3 + 4)$. 
+:::{question}
+Why? 
+:::
+
+Same checklist we used before for $\mathbb{Z}$:
+
+- $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers in $\mathbb{Z}_6$, you get another integer in $\mathbb{Z}_6$. For example, $2 + 3 = 5$ and $4 + 3 = 1$. The operations are associative, for example, $(2 + 3) + 4 = 2 + (3 + 4) = 5 + 4 = 2 + 1 = 3$. 
 - $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an identity element**: There is a number, $0$, such that adding it to any number doesn't change that number. For example, $2 + 0 = 2$.
 - $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$  **Existence of an inverse**: For every integer, there is another integer such that when you add them together, you get the identity element $0$. For example, for $2$, the inverse is $4$ because $2 + 4 = 0$, and for $3$ it  is $3$ because $3 + 3 = 0$.
 

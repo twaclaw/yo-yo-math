@@ -1,13 +1,11 @@
 ## Introducing the Soroban abacus
 
 
-:::{.fun-fact}
 My fellow townsman, Jaime García Serrano, has a superpower. He can perform complex mathematical computations in his head in the blink of an eye. That's why people call him "the human calculator." 
 
 He claims that he is not a genius, but rather that he developed a method based on his early work with the Japanese abacus, as well as through a lot of practice.
 
 Do you see? Like playing the cello, dancing, or climbing mountains, math is something you get better at by practicing.
-:::
 
 :::{.teacher-tip}
 Having a real abacus can be practical and fun. Make sure you spend some time teaching the kids how to use it and which fingers to use. There are plenty of good online resources for that. 
