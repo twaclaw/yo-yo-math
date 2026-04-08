@@ -100,7 +100,7 @@ If you want to calculate a sum in $\mathbb{Z}_6$, for instance $4 + 3$, you can 
 ```{python}
 # | echo: false
 # | fig-align: center
-# | fig-cap: "\$4+3=1\$"
+# | fig-cap: "$4+3=1$"
 from yoyo_plots.multiplication import draw_operation_table
 from yoyo_plots.common import display_vector
 

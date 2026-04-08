@@ -328,15 +328,19 @@ Compute the following sums and differences.
 \end{align*}
 :::
 
-:::{.fun-fact title="The order doesn't matter"}
+:::{.question title="The order doesn't matter"}
 Sometimes, the order of things matters. For example, it matters whether you put on first your shoes $\text{[running_shoe:2em:0em:2]{.twemoji}}$ or your socks $\text{[socks:2em]{.twemoji}}$. 
 
-Other times, order doesn't matter, such as when adding up numbers.  For instance, did you notice that $3 + 2$ yields the same result as $2+3$? We can write that as:
+Other times, order doesn't matter, such as when adding up numbers.  For instance, did you notice that $3 + 2$ yields the same result as $2+3$?
+:::
 
-:::{.big-math}
-$$
- 3+2=2+3=5
-$$
+
+::: {layout-ncol=3}
+![$2+3$](../static_images/legos/commutative/23_c1.svg){#fig-add-3-before fig-align="center" width="30%"}
+
+![$3+2$](../static_images/legos/commutative/32_c1.svg){#fig-add-3-before fig-align="center" width="30%"}
+
+![$2+3=3+2=5$](../static_images/legos/commutative/23_c.svg){#fig-add-3-after fig-align="center" width="30%"}
 :::
 
 In the general case we have 
@@ -347,9 +351,8 @@ $$
 $$
 :::
 
-We say that addition is **commutative**, meaning the order of the numbers being added does not matter.
+$a$ and $b$ represent any two numbers. We say that addition is **commutative**, meaning the order of the numbers being added does not matter.
 
-:::
 
 
 Provided you enter the right answers in the previous examples, we say that the equality holds. Try now yourself to create some equalities that hold, both with additions ('$+$') and substractions ('$-$').
