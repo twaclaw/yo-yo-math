@@ -287,23 +287,66 @@ display_vector(fig_op)
 
 Finally, these operations can also be done with the abstract numbers, without relating them to a particular object.
 
-When adding more than two numbers, we split the operation into multiple steps, we start by adding up the first two numbers, then add the result to the next number, and so on. We can represent this way of *associating* numbers with parenthesis, for instance  $0 + 1 + 2 + 3$ we can do it like 
+When adding more than two numbers, it is helpful to split the operation into multiple steps. We can use parentheses to represent this way of grouping or _associating_ numbers. For example, we can compute $0 + 1 + 2 + 3$ as:
 
-
+:::{.content-visible when-format="html"}
 ::: {.big-math}
 $$
-\underbrace{\underbrace{(\underbrace{(0+1)}_{\text{Step 1}}+2)}_{\text{Step 2}}+3}_{\text{Step 3}} = 6
-$$
-
-
-$$
-\underbrace{
-  \underbrace{
-    \underbrace{0 + 1}_{1} + 2
-  }_{3} + 3
-}_{6}
+\underbrace{\underbrace{(\underbrace{(0+1)}_{0+1={\color{red}{1}}}+2)}_{{\color{red}{1}}+2={\color{blue}{3}}}+3}_{{\color{blue}{3}}+3={\color{green}{6}}} = \color{green}{6}
 $$
 :::
+:::
+
+:::{.content-visible when-format="pdf"}
+::: {.big-math}
+:::{{latex}}
+\begin{equation*}
+    \eqnmarkbox[OliveGreen]{}{
+    \underbrace{
+        \underbrace{
+            \eqnmarkbox[Blue]{}{
+            (
+                \underbrace{
+                    \eqnmarkbox[Red]{}{(0+1)}
+                }_{0+1=\eqnmark[Red]{}{1}}
+            +2
+            )
+            }
+        }_{
+            \eqnmark[Red]{}{1}+2=\eqnmark[Blue]{}{3}
+        }
+    +3}_{
+        \eqnmark[Blue]{}{3}+3=\eqnmark[OliveGreen]{}{6}
+    }} = \eqnmark[OliveGreen]{}{6}
+\end{equation*}
+:::
+:::
+:::
+
+However, we can also associate numbers differently:
+
+
+:::{.content-visible when-format="html"}
+::: {.big-math}
+$$
+\underbrace{\left(\underbrace{(0 + 1)}_{0 + 1 = {{\color{red}{1}}}} + \underbrace{(2 + 3)}_{2 + 3 = {{\color{blue}{5}}}}\right)}_{{\color{red}{1}} + {\color{blue}{5}} = {{\color{green}{6}}}} = 6
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+::: {.big-math}
+:::{{latex}}
+\begin{equation*}
+\eqnmarkbox[OliveGreen]{}{
+\underbrace{\underbrace{\eqnmarkbox[Red]{}{(0 + 1)}}_{0 + 1 = \eqnmark[Red]{s1}{1}} + \underbrace{\eqnmarkbox[Blue]{}{(2 + 3)}}_{2 + 3 = \eqnmark[Blue]{s2}{5}}}_{1 + 5 = \eqnmark[OliveGreen]{}{6}}} = \eqnmark[OliveGreen]{s4}{6}
+\end{equation*}
+:::
+:::
+:::
+
+The property of addition that states the order in which numbers are grouped does not change the result is called **associativity**. 
+
 
 Compute the following sums and differences.
 
