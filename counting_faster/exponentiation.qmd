@@ -1,0 +1,401 @@
+## Exponentiation $\text{[tokyo_tower:1em]{.twemoji}}$
+
+As we saw earlier, repeated addition is multiplication. For example, $4\times 7$ is equivalent to adding $7$ four times: $7+7+7+7$. In the general case, we have:
+
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+\begin{aligned}
+\underbrace{a + a + \cdots + a}_{{\color{red}{n}} \text{ times}} &= {\color{red}{n}} \times a
+\end{aligned}
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{align*}
+\underbrace{a + a + \cdots + a}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} &= \eqnmark[Red]{plus}{{\color{red}{n}}} \times a \\
+\annotate[yshift=-0.2em]{below}{under, plus}{}
+\end{align*}
+:::
+:::
+:::
+
+Because mathematics is recursive, much like the Gigantic Turnip, we can now ask ourselves the following question:
+
+:::{.question}
+If repeated addition is multiplication, then what is repeated multiplication?
+:::
+
+As we've seen, multiplying a number by itself is called squaring the number. We symbolize this with a cute little superscript.
+
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+a \times a = a^2
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+a \times a = a^{\eqnmarkbox[Red]{exp}{{2}}}
+\annotate[yshift=0.2em]{above}{exp}{Number of times we multiply $a$ by itself.}
+\end{equation*}
+:::
+:::
+:::
+
+This little number represents how many times we multiply a number by itself. It is called the **exponent**.
+
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+\begin{aligned}
+\underbrace{a \times a \times \cdots \times a}_{{\color{red}{n}} \text{ times}} &= a^{\color{red}{n}}
+\end{aligned}
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{align*}
+\underbrace{a \times a \times \cdots \times a}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} &= a^{\eqnmark[Red]{exp}{{\color{red}{n}}}} \\
+\annotate[yshift=-0.2em]{below}{under, exp}{Exponent}
+\end{align*}
+:::
+:::
+:::
+
+Just as we call it "squaring" when the exponent is two, we call it "cubing" when the exponent is three because we are defining the volume of a cube.
+
+Here are some examples of exponentiation:
+
+:::{.big-math}
+\begin{align*}
+2^2 &= 2 \times 2  &= 4 \\
+2^3 &= 2 \times 2 \times 2 &= 8 \\
+4^2 &= 4 \times 4 &= 16 \\
+3^3 &= 3 \times 3 \times 3 &= 27
+\end{align*}
+:::
+
+
+## Exponentiation of 10
+
+In the decimal system, a special case of exponentiation occurs when the base is 10.
+
+:::{.big-math}
+\begin{align*}
+10^1 &= 10 &= 10 \\
+10^2 &= 10 \times 10 &= 100 \\
+10^3 &= 10 \times 10 \times 10 &= 1000 \\
+10^4 &= 10 \times 10 \times 10 \times 10 &= 10000
+\end{align*}
+:::
+
+In general we have:
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+\begin{aligned}
+\underbrace{10 \times 10 \times \cdots \times 10}_{{\color{red}{n}} \text{ times}} &= 10^{\color{red}{n}} & 1\underbrace{\color{red}{000\cdots 000}}_{{\color{red}{n}} \text{ zeros}}
+\end{aligned}
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+\underbrace{10 \times 10 \times \cdots \times 10}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} = 10^{\eqnmark[Red]{exp}{{\color{red}{n}}}}   = 1\eqnmarkbox[Red]{zeros}{000\cdots 000}
+\annotate[yshift=0.2em]{above}{exp, zeros}{Number of zeros after the $1$}
+\end{equation*}
+:::
+:::
+:::
+
+Here is a list of the first powers of $10$:
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+\begin{align*}
+10^0 &= 1 \\
+10^1 &= 10 \\
+10^2 &= 100 \\
+10^3 &= 1000 \\
+10^4 &= 10000\\
+10^5 &= 100000 \\
+\end{align*}
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+\begin{aligned}
+10^{\eqnmarkbox[OliveGreen]{e0}{0}} &= 1\eqnmarkbox[OliveGreen]{z0}{\phantom{0}} \\
+10^{\eqnmarkbox[OliveGreen]{e1}{1}} &= 1\eqnmarkbox[OliveGreen]{z1}{0} \\
+10^{\eqnmarkbox[OliveGreen]{e2}{2}} &= 1\eqnmarkbox[OliveGreen]{z2}{00} \\
+10^{\eqnmarkbox[OliveGreen]{e3}{3}} &= 1\eqnmarkbox[OliveGreen]{z3}{000} \\
+10^{\eqnmarkbox[OliveGreen]{e4}{4}} &= 1\eqnmarkbox[OliveGreen]{z4}{0000}\\
+10^{\eqnmarkbox[OliveGreen]{e5}{5}} &= 1\eqnmarkbox[OliveGreen]{z5}{00000}
+\end{aligned}
+\annotate[yshift=-0.1em]{below}{e0, z0}{$0$ zeros}
+\annotate[yshift=-0.1em]{below}{e1, z1}{$1$ zero}
+\annotate[yshift=-0.1em]{below}{e2, z2}{$2$ zeros}
+\annotate[yshift=-0.1em]{below}{e3, z3}{$3$ zeros}
+\annotate[yshift=-0.1em]{below}{e4, z4}{$4$ zeros}
+\annotate[yshift=-0.1em]{below}{e5, z5}{$5$ zeros}
+\end{equation*}
+:::
+:::
+:::
+
+
+
+Notice that $10^0$ is equal to $1$. This is true for any number, not just $10$. $a^0=1$.
+
+As I mentioned before, mathematics is recursive.
+
+
+:::{.question}
+In the same way that repeated addition is multiplication and repeated multiplication is exponentiation, what is repeated exponentiation?
+:::
+
+We will stop at exponentiation. As a curious fact, repeated exponentiation is called _tetration_, which allows us to build towers of numbers like this:
+
+
+:::{.big-math}
+$$
+2^{3^{3^3}}
+$$
+:::
+
+
+### Exercises {.unnumbered .unlisted}
+
+Calculate the following powers:
+
+:::{.big-math}
+\begin{align*}
+2^3 &= \boxed{\phantom{8}} \\
+2^4 &= \boxed{\phantom{16}} \\
+3^2 &= \boxed{\phantom{9}} \\
+10^0 &= \boxed{\phantom{1}} \\
+10^1 &= \boxed{\phantom{10}} \\
+10^5 &= \boxed{\phantom{100000}} \\
+10^4 &= \boxed{\phantom{10000}} \\
+\end{align*}
+:::
+
+
+## Positional number system revisited
+
+Just as calculating powers of $10$ is easy, so too is multiplying a digit by a power of $10$.
+
+:::{.big-math}
+\begin{align*}
+3 \times 10^2 &= 3 \times 100 = 300 \\
+7 \times 10^3 &= 7 \times 1000 = 7000\\
+2 \times 10^4 &= 2 \times 10000 = 20000 \\
+3 \times 10^5 &= 3 \times 100000 = 300000
+\end{align*}
+:::
+
+Do you see the pattern?
+
+Now that we have this information, we can finally formalize the positional number system.
+
+In a positional number system, remember that the value of a digit depends on its position.
+
+
+:::{.question}
+But what is that value of each digit?
+:::
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+\underbrace{\color{blue}{3}}_{2}\underbrace{\color{red}{3}}_{1}\underbrace{\color{Black}{3}}_{0}
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+\eqnmark[Blue]{d2}{3}\eqnmark[Red]{d1}{3}\eqnmark[Black]{d0}{3}
+\annotate[yshift=0.2em]{above, left}{d2}{Position $2$}
+\annotate[yshift=-0.2em]{below}{d1}{Position $1$}
+\annotate[yshift=0.2em]{above}{d0}{Position $0$}
+\end{equation*}
+:::
+:::
+:::
+
+The same number can be written as:
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+{\color{Blue}{3}}{\color{Red}{3}}{\color{Black}{3}} = {\color{Blue}{3}} \times 10^2 + {\color{Red}{3}} \times 10^1 + {\color{Black}{3}} \times 10^0
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+\eqnmark[Blue]{d2}{3}\eqnmark[Red]{d1}{3}\eqnmark[Black]{d0}{3} = \eqnmark[Blue]{d2}{3} \times 10^{\eqnmarkbox[Blue]{p2}{2}} + \eqnmark[Red]{d1}{3} \times 10^{\eqnmarkbox[Red]{p1}{1}} + \eqnmark[Black]{d0}{3} \times 10^{\eqnmarkbox[Black]{p0}{0}}
+\annotate[yshift=0.2em]{above}{p2}{Position $2$}
+\annotate[yshift=0.2em]{above}{p1}{Position $1$}
+\annotate[yshift=0.2em]{above}{p0}{Position $0$}
+\end{equation*}
+:::
+:::
+:::
+
+Therefore, we can write the same number as the sum below:
+
+:::{.big-math}
+$$
+\begin{aligned}
+{\color{Blue}{3}}00 \\
+{\color{Red}{3}}0 \\
+{\color{Black}{3}}\\
+\hline
+{\color{Blue}{3}}{\color{Red}{3}}{\color{Black}{3}}
+\end{aligned}
+$$
+:::
+
+
+
+Here is another example:
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+{\color{Blue}{1}}{\color{Red}{5}}{\color{Black}{0}} = {\color{Blue}{1}} \times 10^2 + {\color{Red}{5}} \times 10^1 + {\color{Black}{0}} \times 10^0
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math size="25pt"}
+:::{{latex}}
+\begin{equation*}
+\eqnmark[OliveGreen]{d3}{4}\eqnmark[Blue]{d2}{1}\eqnmark[Red]{d1}{0}\eqnmark[Black]{d0}{1} =  \eqnmark[OliveGreen]{d3}{4} \times 10^{\eqnmarkbox[OliveGreen]{p3}{3}} + \eqnmark[Blue]{d2}{1} \times 10^{\eqnmarkbox[Blue]{p2}{2}} + \eqnmark[Red]{d1}{0} \times 10^{\eqnmarkbox[Red]{p1}{1}} + \eqnmark[Black]{d0}{1} \times 10^{\eqnmarkbox[Black]{p0}{0}}
+\annotate[yshift=0.2em]{above}{p3}{Position $3$}
+\annotate[yshift=0.2em]{above}{p2}{Position $2$}
+\annotate[yshift=0.2em]{above}{p1}{Position $1$}
+\annotate[yshift=0.2em]{above}{p0}{Position $0$}
+\end{equation*}
+:::
+:::
+:::
+
+:::{.big-math}
+$$
+\begin{aligned}
+{\color{OliveGreen}{4}}000 \\
+{\color{Blue}{1}}00 \\
+{\color{Red}{0}}0 \\
+{\color{Black}{1}}\\
+\hline
+{\color{OliveGreen}{4}}{\color{Blue}{1}}{\color{Red}{0}}{\color{Black}{1}}
+\end{aligned}
+$$
+:::
+
+
+In general, the value of each digit $d_i$ is given by:
+
+:::{.big-math}
+$$
+d_i \times 10^{p_i}
+$$
+:::
+
+Where $p_i$ is the position of the digit $d_i$ in the number, starting from $0$ for the rightmost digit.
+
+:::{.fun-fact}
+This holds true for any base, not just $10$, and can be extended to non-integer numbers as well
+:::
+
+
+### Exercises {.unnumbered .unlisted}
+
+Write each of the following numbers as its constituent parts:
+
+
+:::{.big-math size="25pt"}
+\begin{align*}
+123 &= 100 + 20 + 3 \\
+100 & = 100 + 0 + 0 \\
+4567 &= 4000 + 500 + 60 + 7 \\
+17 &= \boxed{\phantom{10}} + \boxed{\phantom{1}} \\
+23 &= \boxed{\phantom{20}} + \boxed{\phantom{3}} \\
+1001 &= \boxed{\phantom{1000}} + \boxed{\phantom{0}} + \boxed{\phantom{0}} + \boxed{\phantom{1}}\\
+1000 &= \boxed{\phantom{1000}} + \boxed{\phantom{0}} + \boxed{\phantom{0}} + \boxed{\phantom{0}}\\
+555 &= \boxed{\phantom{500}} + \boxed{\phantom{50}} + \boxed{\phantom{5}}\\
+171 &= \boxed{\phantom{100}} + \boxed{\phantom{70}} + \boxed{\phantom{1}}\\
+79 &= \boxed{\phantom{70}} + \boxed{\phantom{9}}\\
+42 &= \boxed{\phantom{40}} + \boxed{\phantom{2}}\\
+10381 &= \boxed{\phantom{10000}} + \boxed{\phantom{0}} + \boxed{\phantom{300}} + \boxed{\phantom{80}} + \boxed{\phantom{1}}\\
+\end{align*}
+:::
+
+
+We saw in section @sec-soroban how to represent values using a single-column Soroban abacus.
+
+Here are some examples to refresh your mamory:
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+from yoyo_plots.common import display_vector
+
+for i in [1, 3, 5, 6]:
+    display_vector(soroban_column(i, font_color="black", single_value=True))
+```
+
+The Soroban abacus follows the same logic as the positional number system, meaning that the first column to the right represents units, that is the value multiplied by $10^0$, the next column represents tens, that is the value multiplied by $10^1$, the next column represents hundreds, that is the value multiplied by $10^2$, and so on.
+
+Complete the following representations:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+for i in [15, 123]:
+    display_vector(soroban_column(i, font_color="black"))
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.operations import soroban_column
+
+for i in [70, 79, 95, 100, 101, 110, 105, 900, 999, 1000, 5000]:
+    display_vector(soroban_column(i, font_color="white"))
+```

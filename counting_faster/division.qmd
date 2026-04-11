@@ -1,0 +1,16 @@
+## Division
+
+Coming soon!
+
+<!-- In the same way as subtraction is the inverse operation of addition, splitting or dividing is the inverse operation of multiplication.  Division is the process of splitting a quantity into equal parts or groups.
+
+- Division: use the same multiplication table
+    - Dividing cards
+    - Lego towers
+    - Splitting a circle
+
+- In mathematics there is almost always an inverse operation: 
+    - Addition and subtraction
+    - Multiplication and division
+    - Exponentiation and logarithm and roots -->
+
