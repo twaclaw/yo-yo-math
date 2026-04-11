@@ -1,4 +1,4 @@
-## Introducing the Soroban abacus
+## Introducing the Soroban abacus {#sec-soroban}
 
 
 My fellow townsman, Jaime García Serrano, has a superpower. He can perform complex mathematical computations in his head in the blink of an eye. That's why people call him "the human calculator." 

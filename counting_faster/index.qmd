@@ -3,34 +3,7 @@
 {{< include arithmetic_series.qmd >}}
 {{< include counting_faster.qmd >}}
 {{< include multiplication_tables.qmd >}}
+{{< include exponentiation.qmd >}}
+{{< include division.qmd >}}
 
 
-
-- Arithmetic series
-    - Kangoroo math
-- Counting from 2 in steops of 2
-- Counting from 3 in steps of 3
-- Counting from 4 in steps of 4
-
-- Multiplication
-- Multiplication tables: highlight elements and rows and columns with color
- - reduce to diagonal table
-- Lego multiplication
-- Exponentiation: LEGO cubes
-- Division: use the same multiplication table
-    - Dividing cards
-    - Lego towers
-    - Splitting a circle
-- Pythagorean theorem:
-  - Tikz
-  - Lego squares
-  - Proof (book) 
-  - Finding distances Euclidian distance
-
-- In mathematics there is almost always an inverse operation: 
-    - Addition and subtraction
-    - Multiplication and division
-    - Exponentiation and logarithm and roots
-
-
-Measuring means comparing something with something else. You can for instance measure if an angle is a right angle by comparing with a right angle template, that's something you already know that has a right angle. You can go ahead and check if the corners of your house, those between adjacent walls and between the floor and walls and the walls and the ceiling, form right angles. You can use something as simple as a lego brick. 

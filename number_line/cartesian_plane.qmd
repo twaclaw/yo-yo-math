@@ -1,4 +1,4 @@
-## Playing Battleship $\text{[pirate_flag:1.0em]{.twemoji}}$ $\text{[parrot:1.0em]{.twemoji}}$ {#sec-cartesian-plane}
+## Playing Battleship $\text{[pirate_flag:1.0em]{.twemoji}}$ $\text{[parrot:1.0em]{.twemoji}}$ {#sec-battle-ship}
 
 :::{.fun-fact title="Flatland"}
 Mathematical objects can exist in any number of dimensions.  You can think of a dimension as one of the directions in which you can move. Because we live in a three-dimensional world, we can move left or right, forward and backward, and up and down.

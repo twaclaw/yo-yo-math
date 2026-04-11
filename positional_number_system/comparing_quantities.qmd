@@ -1,0 +1,112 @@
+## Comparing quantities
+
+Let's start with a definition. The leftmost digit of a number is called the most significant digit because it contributes the most to the number's value. 
+
+:::{.content-visible when-format="html"}
+The most significant digits of the following numbers are highlighted in red:
+:::{.big-math}
+$$
+{\color{red}{1}}000, \quad  \quad {\color{red}{3}}4, \quad {\color{red}{4}}, \quad {\color{red}{5}}61, \quad {\color{red}{3}33}
+$$
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{align*}
+\eqnmarkbox[red]{k1}{1}000, \quad  \quad \eqnmarkbox[red]{k2}{3}4, \quad \eqnmarkbox[red]{k3}{4}, \quad \eqnmarkbox[red]{k4}{5}61, \quad \eqnmarkbox[red]{k5}{3}33
+\annotate[yshift=1em]{above}{k1, k2, k3, k4, k5}{Most significant digit}
+\end{align*}
+:::
+:::
+:::
+
+
+Here are a few rules $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$  to compare quantities of any number of digits.
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ If one number has more digits than the other, then it is larger.
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+s0 = speed_limit(1000, n_fontsize=40)
+s1 = speed_limit(500)
+s2 = speed_limit(99)
+s3 = speed_limit(1)
+
+combined = combine_svgs([s0, s1, s2, s3], direction="horizontal",  separators=">", separator_font_size=40)
+display_vector(combined)
+```
+
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$  If two quantities have the same number of digits, we compare their most significant digits. The quantity with the greater most significant digit is greater.
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+s1 = speed_limit(90)
+s2 = speed_limit(70)
+s3 = speed_limit(50)
+s4 = speed_limit(30)
+
+combined = combine_svgs([s1, s2, s3, s4], direction="horizontal",  separators=">", separator_font_size=40)
+display_vector(combined)
+```
+
+- $\text{[woman_police_officer:1.5em:-0.3em]{.twemoji}}$ If two quantities have the same number of digits and their most significant digits are the same, then we compare their second most significant digits. We continue this process until we break the tie or reach the least significant digit.
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+s1 = speed_limit(57)
+s2 = speed_limit(53)
+s3 = speed_limit(51)
+
+combined = combine_svgs([s1, s2, s3], direction="horizontal",  separators=">", separator_font_size=40)
+display_vector(combined)
+```
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+s1 = speed_limit(539)
+s2 = speed_limit(532)
+s3 = speed_limit(530)
+
+combined = combine_svgs([s1, s2, s3], direction="horizontal",  separators=">", separator_font_size=40)
+display_vector(combined)
+```
+
+### Exercises {.unnumbered .unlisted}
+
+Compare the following quantities and write $>$, $<$, or $=$ accordingly.
+
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+compare = [(1000, 999, 799, 590),
+           (100, 200), 
+           (101, 100), 
+           (4000, 3000, 2999, 1999), 
+           (650, 651, 652, 652), 
+           (1234, 1234, 1234), 
+           (18, 19, 20)]
+
+
+for quantities in compare:
+    svgs = [speed_limit(q, n_fontsize=40 if q >=1000 else 50) for q in quantities]
+    combined = combine_svgs(svgs, direction="horizontal",  separators=[{"type": "box", "width": 40, "height": 40}]*(len(quantities)), separator_font_size=40)
+    display_vector(combined)
+```
+
+
+
+
+

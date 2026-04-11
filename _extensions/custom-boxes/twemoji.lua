@@ -72,6 +72,15 @@ local emoji_map = {
   waving_hand="👋",
   light_bulb="💡",
   chocolate_bar="🍫",
+  scissors="✂️",
+  scroll="📜",
+  man_biking = "🚴‍♂️",
+  person_biking = "🚴‍♀️",
+  woman_biking = "🚴‍♀️",
+  red_circle = "🔴",
+  white_large_square = "⬜",
+  red_triangle_pointed_up = "🔺",
+  tokyo_tower = "🗼",
 
   
   -- Add more here as needed

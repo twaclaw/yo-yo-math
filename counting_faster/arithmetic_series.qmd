@@ -3,7 +3,7 @@
 
 ::: {.story-time title="The Gigantic Turnip" image="/static_images/turnip.pdf" scale="1.1" width="0.7" ref="Read more about this and other cumulative tales at https://wikipedia.org/"}
 
-"The Gigantic Turnip" is a cumulative or _chain_ folk tale. 
+"The Gigantic Turnip" is a cumulative or _chain_ Russian folk tale. 
 In a cumulative tale, the action repeats and builds in a cumulative manner. 
 
 The story is about an old man and an old woman who lived in a crooked cottage and owned the following animals:

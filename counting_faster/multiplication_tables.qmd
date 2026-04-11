@@ -60,7 +60,7 @@ from yoyo_plots.common import display_vector
 fig = draw_operation_table(
     nrows=6, ncols=6,
     show_upper=False,
-    rows={3: "lightblue"},
+    rows={2: "lightblue"},
     cols={5: "lightblue"},
     elements={(2, 5): "lightgreen"},
 )
@@ -85,9 +85,8 @@ fig = draw_operation_table(
 display_vector(fig)
 ```
 
-Why is that?
 
-:::{.teacher-tip}
+:::{.question title="Why is that?"}
 Stop and think!
 :::
 
@@ -182,7 +181,9 @@ display_vector(fig)
 
 ### What are the values in the diagonal? {.unnumbered .unlisted}
 
+:::{.question}
 What do the values in the diagonal of the multiplication table represent? 
+:::
 
 ```{python}
 # | echo: false
@@ -217,7 +218,7 @@ $$
 \begin{equation*}
     \underbrace{a \times a}_{\eqnmarkbox[Red]{k1}{{\color{red}{2}} \text{ times}}} = a^{\eqnmarkbox[Red]{k2}{\color{red}{2}}}
 \end{equation*}
-\annotatetwo[yshift=-1em]{below}{k1}{k2}{The exponent represents the number of times we multiply $a$ by itself.}
+\annotatetwo[yshift=-0.2em]{below}{k1}{k2}{Number of times we multiply $a$ by itself.}
 :::
 :::
 :::
@@ -245,6 +246,7 @@ For instance:
 
 ### Exercises {.unlisted .unnumbered}
 
+Based on this multiplication table:
 
 ```{python}
 # | echo: false
