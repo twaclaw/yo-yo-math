@@ -1,0 +1,310 @@
+## How much chocolate do you eat per year? $\text{[chocolate_bar:1em:0em:3]{.twemoji}}$
+
+
+I bet you love chocolate! You're a chocolate monster!
+
+The following graph shows how much chocolate you eat each year. The x-axis represents the $12$ months of the year. 
+For each month, you can see how many kilograms of chocolate you eat. For example, in June (month $6$), you only eat about $1$ kg.  This is probably because you prefer ice cream when it's hot outside. On the other hand, you eat a lot of chocolate around Easter and Christmas—around $4$ kg or more.
+
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | width: 110%
+import numpy as np
+from yoyo_plots.functions import FunctionPlot
+from yoyo_plots.common import display_vector
+import logging
+import warnings
+import matplotlib.font_manager
+logging.getLogger('matplotlib.font_manager').disabled = True
+warnings.filterwarnings('ignore')
+
+figsize = (12, 8)
+
+months = np.linspace(0, 12, 400)
+chocolate = (
+    2.8
+    + 1.8 * np.cos(2 * np.pi * (months - 11.5) / 12)   # winter peak
+    + 1.2 * np.exp(-((months - 2) ** 2) / 1.2)          # Valentine's bump
+)
+
+plot = (FunctionPlot(
+    months, chocolate,
+    xlabel="Month",
+    ylabel="Chocolate consumed (kg)",
+    title="Monthly Chocolate Consumption Throughout the Year",
+    only_integers=True,
+    rect_alpha=0.55,
+    line_color="#5d3a1a",
+    figsize=figsize,
+    font_size=20,
+).add_markers({
+            2.35: {"color": "red", "label": "Eastern", "help_line": True},
+            11.5: {"color": "blue", "label": "Chrismas", "help_line": True},
+            6:   {"color": "green", "label": "You feel more like icecream", "help_line": True}
+            }))
+
+display_vector(plot)
+```
+
+:::{.question title="How much chocolate do you eat per year?" image="/static_images/eastern_chocolate.pdf" width="0.7" scale="1.0"}
+In order to answer this question, you must calculate the total area under the above curve.
+:::
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import numpy as np
+from yoyo_plots.functions import FunctionPlot
+from yoyo_plots.common import display_vector
+
+months = np.linspace(0, 12, 400)
+chocolate = (
+    2.8
+    + 1.8 * np.cos(2 * np.pi * (months - 11.5) / 12) 
+    + 1.2 * np.exp(-((months - 2) ** 2) / 1.2) 
+)
+
+plot = (FunctionPlot(
+    months, chocolate,
+    xlabel="Month",
+    ylabel="Chocolate consumed (kg)",
+    title="Monthly Chocolate Consumption Throughout the Year",
+    only_integers=True,
+    rect_alpha=0.55,
+    line_color="#5d3a1a",
+    figsize=figsize,
+    font_size=20,
+).color_area("steelblue", alpha=0.3))
+
+display_vector(plot)
+```
+
+But wait a minute. We don't know how to do that yet.  We don't know how to do it directly yet, but we can use our knowledge of how to calculate the area of rectangles to _approximate_ it.
+
+
+:::{.fun-fact title="Spherical cows" image="/static_images/spherical_cow.pdf" scale="1.0" width=0.7}
+Approximating means cutting corners and simplifying. For example, if a quantity is $99$, you can approximate it as $100$ because $100$ is easier to work with. Engineering and physics make heavy use of this technique. Sometimes it is useful to assume that things are points, that something is constant, and that cows are spheres.
+:::
+
+
+We can approximate the area under the chocolate consumption curve using rectangles. The total value would be the sum of the areas of the rectangles. This is not an exact value, but it will give you an estimate.
+
+
+Compute your total annual chocolate consumption by adding up the areas of all the rectangles.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import numpy as np
+from yoyo_plots.functions import FunctionPlot
+from yoyo_plots.common import display_vector
+
+months = np.linspace(0, 12, 400)
+chocolate = (
+    2.8
+    + 1.8 * np.cos(2 * np.pi * (months - 11.5) / 12)   # winter peak
+    + 1.2 * np.exp(-((months - 2) ** 2) / 1.2)          # Valentine's bump
+)
+
+
+height_colors = {
+    1: "#aed6f1",
+    2: "#82e0aa",
+    3: "#f9e79f",
+    4: "#f0b27a",
+    5: "#ec7063",
+    6: "#c39bd3",
+}
+
+groups = [
+    (0, 2),    # January
+    (2, 4),    # March + April
+    (4, 8),    # May
+    (8, 9),    # September
+    (9, 11),   # October + November
+    (11, 12),  # December (Christmas peak – kept alone)
+]
+
+rectangles = []
+for start, end in groups:
+    mid = 0.5 * (start + end)
+    h_raw = float(np.interp(mid, months, chocolate))
+    h_int = round(h_raw)
+    rectangles.append({
+        "start": start,
+        "end": end,
+        "color": height_colors.get(h_int, "#cccccc"),
+        "show_label": True,
+    })
+
+plot = (FunctionPlot(
+    months, chocolate,
+    xlabel="Month",
+    ylabel="Chocolate consumed (kg)",
+    title="Monthly Chocolate Consumption Throughout the Year",
+    only_integers=True,
+    rect_alpha=0.55,
+    line_color="#5d3a1a",
+    figsize=figsize,
+    font_size=20,
+)
+.add_vertical_rectangles(rectangles))
+
+display_vector(plot)
+```
+
+
+### Exercises {.unnumbered .unlisted}
+
+- Based on the previous graph, compute the total amount of chocolate.
+
+There is another way to calculate the area under the curve. Instead of using vertical rectangles, use horizontal rectangles. Compare the total area of the horizontal rectangles to the previous one. They should be similar, but not exactly the same.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import numpy as np
+from yoyo_plots.functions import FunctionPlot
+from yoyo_plots.common import display_vector
+
+months = np.linspace(0, 12, 400)
+chocolate = (
+    2.8
+    + 1.8 * np.cos(2 * np.pi * (months - 11.5) / 12)   # winter peak
+    + 1.2 * np.exp(-((months - 2) ** 2) / 1.2)          # Valentine's bump
+)
+
+height_colors = {
+    1: "#aed6f1",   # light blue
+    2: "#82e0aa",   # mint green
+    3: "#f9e79f",   # light yellow
+    4: "#f0b27a",   # peach
+    5: "#ec7063",   # salmon
+    6: "#c39bd3",   # lavender
+}
+
+groups = [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+]
+
+rectangles = []
+for start, end in groups:
+    mid = 0.5 * (start + end)
+    h_raw = float(np.interp(mid, months, chocolate))
+    h_int = round(h_raw)
+    rectangles.append({
+        "start": start,
+        "end": end,
+        "color": height_colors.get(h_int, "#cccccc"),
+        "show_label": True,
+    })
+
+plot = (FunctionPlot(
+    months, chocolate,
+    xlabel="Month",
+    ylabel="Chocolate consumed (kg)",
+    title="Monthly Chocolate Consumption Throughout the Year",
+    only_integers=True,
+    rect_alpha=0.55,
+    line_color="#5d3a1a",
+    figsize=figsize,
+    font_size=20,
+)
+.add_horizontal_rectangles(rectangles))
+
+display_vector(plot)
+```
+
+
+Imagine going on a bike tour with your family. Your family loves cycling $\text{[woman_biking:2em]{.twemoji}} \text{[man_biking:2em]{.twemoji}} \text{[person_biking:2em]{.twemoji}}$ as much as you love chocolate.
+
+The following graph shows your speed during the tour. 
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import numpy as np
+from yoyo_plots.functions import FunctionPlot
+from yoyo_plots.common import display_vector
+
+hours = np.linspace(0, 6, 400)
+speed = (
+    4
+    + 4 * np.sin(np.pi * hours / 6)                    # overall bell shape
+    + 3 * np.exp(-((hours - 1.5)**2) / 0.8)            # morning burst
+    - 5 * np.exp(-((hours - 3.5)**2) / 0.4)            # steep hill climb dip
+)
+
+plot = FunctionPlot(
+    hours, speed,
+    xlabel="Hour",
+    ylabel="Speed (km/h)",
+    title="Your speed during a 6-Hour Ride",
+    only_integers=True,
+    line_color="#1a5276",
+    figsize=figsize,
+    font_size=20,
+)
+display_vector(plot)
+```
+
+
+The area under the curve represents the total distance traveled. How far did you travel?
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import numpy as np
+from yoyo_plots.functions import FunctionPlot
+from yoyo_plots.common import display_vector
+
+height_colors = {
+    1: "#aed6f1",   # light blue
+    2: "#82e0aa",   # mint green
+    3: "#f9e79f",   # light yellow
+    4: "#f0b27a",   # peach
+    5: "#ec7063",   # salmon
+    6: "#c39bd3",   # lavender
+    7: "#85c1e9",   # sky blue
+    8: "#f1948a",   # rose
+    9: "#73c6b6",   # teal
+   10: "#f7dc6f",   # gold
+}
+
+vert_rects = []
+for h in range(6):
+    mid = h + 0.5
+    h_raw = float(np.interp(mid, hours, speed))
+    h_int = round(h_raw)
+    vert_rects.append({
+        "start": h, "end": h + 1,
+        "color": height_colors.get(h_int, "#cccccc"),
+        "show_label": True,
+    })
+
+plot = (FunctionPlot(
+    hours, speed,
+    xlabel="Hour",
+    ylabel="Speed (km/h)",
+    title="Distance ≈ sum of speed × time (vertical rectangles)",
+    only_integers=True,
+    rect_alpha=0.55,
+    line_color="#1a5276",
+    figsize=figsize,
+    font_size=20,
+)
+.add_vertical_rectangles(vert_rects))
+
+display_vector(plot)
+```

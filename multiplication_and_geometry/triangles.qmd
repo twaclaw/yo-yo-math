@@ -1,12 +1,11 @@
 ## Triangles $\text{[triangular_ruler:1em]{.twemoji}}$
 
 
-
-Triangles are the simplest polygons, with the fewest sides. They are so important in mathematics that a whole branch of mathematics, trigonometry, is dedicated to their study. 
+Triangles are the simplest type of polygon, with the fewest sides. They are so important in mathematics that an entire branch of the subject, trigonometry, is dedicated to studying them. 
 
 We can apply our knowledge of how to calculate the area of a rectangle to calculate the area of a triangle. Let's see how.
 
-The corners of a rectangle are right angles. This means that the two lines meeting at each corner are perpendicular to each other [$\perp$]{.scale factor="2"}. You can see examples of right angles at the point where two walls meet, or where a wall meets the floor or ceiling. We can accentuate this with the following symbols:
+The corners of a rectangle are right angles. This means that the two lines meeting at each corner are perpendicular to each other [$\perp$]{.scale factor="2"}. Examples of right angles can be seen where two walls meet or where a wall meets the floor or ceiling. We can accentuate this with the following symbols:
 
 
 
@@ -18,7 +17,357 @@ from yoyo_plots.geometry import draw_rectangle
 from yoyo_plots.common import display_vector
 
 # Basic rectangle with dimensions and grid
-display_vector(draw_rectangle(5, 3, dimension_labels=("a", "b"), show_grid=False, right_angles=True))
+display_vector(draw_rectangle(6, 4, dimension_labels=("a", "b"), show_grid=False, right_angles=True))
 ```
 
 
+If we split a rectangle in half, the resulting areas are each half of the area of the original rectangle, right?
+
+For example, the area of the rectangle below is $6 \times 4 = 24$, and the area of the half red rectangle is $\frac{6 \times 4}{2} = \frac{24}{2} = 12$. Count and convince yourself.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector
+
+width = 6
+height = 4
+half_vertical = {(i, j): "red" for i in range(width//2, width) for j in range(height)}
+
+display_vector(draw_rectangle(width, height, show_grid=True, right_angles=True, cell_highlights=half_vertical))
+```
+
+This is true no matter how we split the rectangle in half.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+width = 6
+height = 4
+half_vertical = {(i, j): "red" for i in range(width//2, width) for j in range(height)}
+half_horizontal = {(i, j): "red" for i in range(width) for j in range(height//2, height)}
+
+r1 = draw_rectangle(width, height, show_grid=True, right_angles=True, cell_highlights=half_vertical)
+r2 = draw_rectangle(width, height, show_grid=True, right_angles=True, cell_highlights=half_horizontal)
+r3 = draw_rectangle(width, height, show_grid=True, diagonal=("red", "white"), right_angles=True)
+c = combine_svgs([r1, r2, r3])
+display_vector(c)
+```
+
+:::{.question}
+Why is this fact useful?
+:::
+
+
+Because we can use it to calculate the area of a triangle. A triangle is half of a rectangle, so its area is half that of the rectangle.
+
+The resulting triangles are called right triangles because they have a right angle.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+width = 6
+height = 4
+
+r = draw_rectangle(width, height, show_grid=False, diagonal=("red", "white"), right_angles=False, dimension_labels=("b", "h"))
+display_vector(r)
+```
+
+In general, for a triangle with a base of $b$ and a height of $h$, the area is given by the formula:
+
+:::{.big-math}
+$$
+\text{Area} = \frac{b \times h}{2}
+$$
+:::
+
+
+### Exercises {.unnumbered .unlisted}
+
+Calculate the area of the following triangles:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+dims = [(3, 4), (5, 6), (7, 8), (2, 2)]
+
+triangles = [draw_right_triangle(base, height) for base, height in dims]
+display_vector(combine_svgs(triangles))
+```
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+dims = [(4, 3), (5, 4), (3, 2), (5, 4)]
+
+triangles = [draw_right_triangle(base, height) for base, height in dims]
+display_vector(combine_svgs(triangles))
+```
+
+## Proving the most famous theorem with paper $\text{[scroll:1em]{.twemoji}}$ and scissors $\text{[scissors:1em]{.twemoji}}$
+
+Right triangles are important and useful. They have been studied since ancient times.  One reason they are important is the relationship between the lengths of their sides. For example, you can use this relationship to calculate the shortest distance between two points on a plane.
+
+I am going to show you the geometric relationship between the sides of a right triangle.
+
+First, we start with a right triangle.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector
+base, height = 4, 3
+display_vector(draw_right_triangle(base, height, show_hypotenuse_dimension=True))
+```
+
+Now we are going to square the sides:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector
+base, height = 4, 3
+display_vector(draw_right_triangle(base, height, show_hypotenuse_dimension=True,
+    pythagorean_squares=True,
+    base_color="orange",
+    height_color="skyblue",
+    hypotenuse_color="mediumpurple",
+))
+```
+
+Observe the areas that they define:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+r1 = draw_rectangle(5, 5, show_grid=True,area_color="mediumpurple")
+r2 = draw_rectangle(5, 5, show_grid=True, area_color="white", 
+    cell_highlights={(i, j): "orange" for i in range(4) for j in range(4)} | {(4, i): "skyblue" for i in range(5)} | {(i, 4): "skyblue" for i in range(5)})
+c = combine_svgs([r1, r2], direction="horizontal", separators="=", separator_font_size=40)
+display_vector(c)
+```
+
+:::{.question} 
+What relationship do you see between the areas of the squares on the sides of the triangle?
+:::
+
+That's right. For the triangle above, we have:
+
+:::{.big-math}
+$$
+3^2 + 4^2 = 5^2
+$$
+:::
+
+Here is another example:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector
+base, height = 8, 6
+display_vector(draw_right_triangle(base, height, show_hypotenuse_dimension=True,
+    pythagorean_squares=True,
+    base_color="skyblue",
+    height_color="orange",
+    hypotenuse_color="mediumpurple",
+))
+```
+
+
+Does this hold true for any right triangle?
+It does; that result is called the Pythagorean Theorem. 
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+base, height = 4, 3
+display_vector(draw_right_triangle(base, height, show_hypotenuse_dimension=True,
+    dimension_labels=("a", "b", "c"),
+))
+```
+
+:::{.big-math}
+$$
+a^2 + b^2 = c^2
+$$
+:::
+
+:::{.question image="/static_images/pythagoras.pdf" width="0.7" scale="0.9" title="What is a proof?"}
+How can we be sure that this relationship holds for any right triangle?
+In mathematics, the only way to know for sure is to prove it. A proof is a logical argument that demonstrates the truth of a statement.
+:::
+
+This will be our first proof.
+
+Let's start with a right triangle whose sides have lengths $a$, $b$, and $c$.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+base, height = 3, 4
+display_vector(draw_right_triangle(base, height, show_hypotenuse_dimension=True,
+    dimension_labels=("a", "b", "c")
+))
+```
+
+Now, we are going to arrange the four copies of the triangle inside a square with sides of length $a+b$. We will color the triangles different colors, but keep in mind that they all have the same dimensions.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import RightTriangle
+from yoyo_plots.common import display_vector
+colors = ("hotpink", "gold", "blue", "mediumseagreen")
+tri = RightTriangle(3, 4)
+fig1 = tri.pythagorean_proof(
+    triangle_colors=colors,
+    square_color="lightblue",
+)
+display_vector(fig1)
+```
+
+Note that rearranging the triangles in this way creates a square with side length $c$ and area $c^2$. This area is also equal to the area of the large square minus the area of the four triangles. Right?
+
+Now, we are moving the triangles inside like this: 
+
+- The purple triangle remains where it is.
+- We move the pink triangle so that its $c$ side touches the $c$ side of the purple triangle.
+- Then, we move the green triangle to the top of the big square.
+- Finally, we move the yellow triangle to the left of the big square.
+
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import RightTriangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+
+fig2 = tri.pythagorean_proof_rearranged(
+    triangle_colors=colors,
+    square_color="lightblue",
+)
+display_vector(fig2)
+```
+
+The light area has not changed; it is still the area of the large square minus the areas of the four triangles. By rearranging the triangles, we demonstrated that:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+# | fig-cap: "All the areas are the same in both figures."
+from yoyo_plots.geometry import RightTriangle
+from yoyo_plots.common import display_vector, combine_svgs
+
+# Pythagorean theorem: rearrangement proof (two panels)
+tri = RightTriangle(3, 4)
+
+svg1 = tri.pythagorean_proof(
+    triangle_colors=colors,
+    square_color="lightblue",
+)
+svg2 = tri.pythagorean_proof_rearranged(
+    triangle_colors=colors,
+    square_color="lightblue",
+)
+display_vector(combine_svgs([svg1, svg2], separators="=", separator_font_size=40))
+```
+
+:::{.big-math}
+$$
+c^2 = a^2 + b^2
+$$
+:::
+
+The Pythagorean theorem holds for any right triangle $\blacksquare$.  Congratulations! That's your first proof! $\text{[partying_face:2em]{.twemoji}}$.
+
+
+We began this book by alluding to the proof of the most elusive theorem in the history of mathematics. That theorem is called Fermat's Last Theorem, and it is closely related to the Pythagorean Theorem. The Pythagorean Theorem states that, for any right triangle:
+
+
+:::{.big-math}
+$$
+a^2 + b^2 = c^2
+$$
+:::
+
+However, Fermat's theorem states that this relationship only holds true for squares and not for cubes or higher powers.
+
+:::{.big-math}
+$$
+a^n + b^n = c^n \quad \text{only for } n = 0, 1, 2
+$$
+:::
+
+But proving that one is a bit more difficult, so we are going to leave it for later $$\text{[wink:2em]{.twemoji}}$$.
+
+### Exercises {.unnumbered .unlisted}
+
+We are going to do some crafts. Have paper or cardboard and scissors ready.
+
+Draw or print four copies of the following triangle and color them in different colors.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_right_triangle
+from yoyo_plots.common import display_vector
+
+# Right triangle with dimension labels
+for _ in range(4):
+    display_vector(draw_right_triangle(8, 6, all_labels_inside=True, dimension_labels=("a", "b", "c"), show_hypotenuse_dimension=True))
+```
+
+Draw or print the following square:
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+from yoyo_plots.geometry import draw_rectangle
+from yoyo_plots.common import display_vector
+
+# Basic rectangle with dimensions and grid
+display_vector(draw_rectangle(8+6, 8+6, dimension_labels=("", ""), show_grid=False))
+```
+
+
+Use the colored triangles inside the square to illustrate the Pythagorean Theorem.

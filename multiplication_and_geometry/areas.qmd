@@ -1,6 +1,6 @@
-## Calculating rectangular areas
+## Calculating rectangular areas $\text{[white_large_square:1em]{.twemoji}}$
 
-Initially, we will focus on rectangular objects and then move on to other shapes. Examples of rectangular shapes include Doors $\text{[door:2em]{.twemoji}}$, windows $\text{[window:2em]{.twemoji}}$ and flags.
+Initially, we will focus on rectangular objects and then move on to other shapes. Examples of rectangular shapes include doors $\text{[door:2em]{.twemoji}}$, windows $\text{[window:2em]{.twemoji}}$ and flags.
 
 Given a general rectangle with width $a$ and height $b$:
 
@@ -37,7 +37,7 @@ $$
 $$
 :::
 
-For example, the area of the following rectangle is $21$, which is the number of unit squares inside it. Count them and see for yourself.
+For example, the area of the rectangle below is $21$, which is the number of unit squares inside it. Count them and see for yourself!
 
 :::{.big-math}
 $$
@@ -57,7 +57,7 @@ from yoyo_plots.common import display_vector
 display_vector(draw_rectangle(3, 7,  show_grid=True, area_color="pink"))
 ```
 
-The following rectangles have the same area, which is equal to:
+These rectangles have the same area, which is equal to:
 
 :::{.big-math}
 $$
@@ -78,9 +78,9 @@ c = combine_svgs([r1, r2], direction="horizontal", separators="=", separator_fon
 display_vector(c)
 ```
 
-### Drawing areas in the Cartesian plane {.unnumbered .unlisted}
+### Drawing areas on the Cartesian plane {.unnumbered .unlisted}
 
-We can also draw rectangles in the Cartesian plane.
+We can also draw rectangles on the Cartesian plane.
 
 ```{python}
 # | echo: false
@@ -104,7 +104,7 @@ areas_fig = (CartesianPlane(xmin=-1, xmax=8, ymin=-1, ymax=5)
 display_vector(areas_fig)
 ```
 
-In this case, the area is the product of the horizontal and vertical distances between $(7, 4)$ and $(2, 0)$.
+In this case, the area is equal to the product of the horizontal and vertical distances between $(7, 4)$ and $(2, 0)$.
 
 :::{.big-math}
 $$
@@ -112,7 +112,7 @@ $$
 $$
 :::
 
-The area depends only on the distances, which are always positive, and not on the rectangle's location. For example, the area of all the rectangles below is $20$, regardless of their location, even if they are in the negative quadrants.
+The area depends only on the distances, which are always positive, and not on the location of the rectangle. For example, the area of all the rectangles below is $20$, regardless of their location, even if they are in the negative quadrants.
 
 
 
@@ -164,8 +164,8 @@ fig = draw_operation_table(
 )
 display_vector(fig)
 ```
+Now, we can see why it's called "squaring." The resulting rectangle is a square, with all sides of the same length.  The rectangles below represent the same values as the highlighted elements on the diagonal of the multiplication table above. Count the number of unit squares and compare.
 
-Now, we can see why we call it "squaring." The resulting rectangle is regular, with all sides of the same length—a square.  The following rectangles represent the same values as the highlighted elements on the diagonal of the multiplication table above. Count the number of unit squares and compare.
 
 
 ```{python}

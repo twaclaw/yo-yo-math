@@ -1,4 +1,4 @@
-# Multiplication and geometry
+# Multiplication and geometry $\text{[triangular_ruler:1em]{.twemoji}} \text{[red_circle:1em]{.twemoji}} \text{[white_large_square:1em]{.twemoji}}$
 
 We began our journey of learning multiplication by discerning patterns. Then, we learned how to express those patterns as the product of two or three integers. Finally, we learned how to compute those products using multiplication tables. 
 Now, we are cycling back and formalizing the idea of patterns, making a link between multiplication and geometry. Specifically, we are exploring how multiplying two natural numbers produces a two-dimensional object called a plane and how multiplying three natural numbers produces a three-dimensional object called a volume.
@@ -13,11 +13,11 @@ Remember that in @sec-battle-ship, we defined a dimension as one of the directio
 | 2 | Plane | `<img src="../static_images/polygons/square_filled.svg" width="40"/>`{=html}`$\color{red}{\drawpolygon[red]{4}}$`{=latex} | We can move forward and backward, and also left and right.| $d \times d = d^2$|
 | 3 | Volume | $\text{[game_die:4em]{.twemoji}}$ | We can move left, right, forward, backward, and jump up and down.| $d \times d \times d = d^3$|
 
-An area is a measure of the size of a two-dimensional object. For example, the area of the wall below is equal to the number of LEGO bricks that make up the wall.
+An area is a measurement that indicates the size of a two-dimensional object. For instance, the area of the wall pictured below equals the number of LEGO bricks that comprise it.
 
 ![](../static_images/legos/areas/6x8_green_front.svg){fig-align="center" width="80%"}
 
-The total number of green bricks is [$6 \times 8 = 48$]{.scale factor="2"}. 
+The area is equal to the total number of green bricks: [$6 \times 8 = 48$]{.scale factor="2"}. 
 
 Count the bricks if you want to be convinced.
 
@@ -39,7 +39,7 @@ Similarly, volume is a measure of the size of a three-dimensional object. For ex
 
 ![](../static_images/legos/volumes/2x3x4_yellow.svg){fig-align="center" width="50%"}
 
-The total number of yellow bricks is [$3 \times 4 \times 2 = 24$]{.scale factor="2"}.
+The volume is equal to the total number of yellow bricks: [$3 \times 4 \times 2 = 24$]{.scale factor="2"}.
 
 
 :::{.fun-fact title="What is an volume?"}
@@ -57,4 +57,5 @@ Keep in mind that this is true for any box with a width of $w$, a height of $h$,
 
 {{< include areas.qmd >}}
 {{< include triangles.qmd >}}
+{{< include integrals.qmd >}}
 
