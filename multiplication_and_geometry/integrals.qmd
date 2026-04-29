@@ -43,7 +43,7 @@ plot = (FunctionPlot(
     font_size=20,
 ).add_markers({
             2.35: {"color": "red", "label": "Eastern", "help_line": True},
-            11.5: {"color": "blue", "label": "Chrismas", "help_line": True},
+            11.5: {"color": "blue", "label": "Christmas", "help_line": True},
             6:   {"color": "green", "label": "You feel more like icecream", "help_line": True}
             }))
 

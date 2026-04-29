@@ -274,8 +274,8 @@ Therefore, we can write the same number as the sum below:
 $$
 \begin{aligned}
 {\color{Blue}{3}}00 \\
-{\color{Red}{3}}0 \\
-{\color{Black}{3}}\\
++{\color{Red}{3}}0 \\
++{\color{Black}{3}}\\
 \hline
 {\color{Blue}{3}}{\color{Red}{3}}{\color{Black}{3}}
 \end{aligned}
@@ -312,9 +312,9 @@ $$
 $$
 \begin{aligned}
 {\color{OliveGreen}{4}}000 \\
-{\color{Blue}{1}}00 \\
-{\color{Red}{0}}0 \\
-{\color{Black}{1}}\\
++{\color{Blue}{1}}00 \\
++{\color{Red}{0}}0 \\
++{\color{Black}{1}}\\
 \hline
 {\color{OliveGreen}{4}}{\color{Blue}{1}}{\color{Red}{0}}{\color{Black}{1}}
 \end{aligned}

@@ -101,16 +101,16 @@ display_vector(fig)
 
 
 
-```{python}
+<!-- ```{python}
 # | echo: false
 # | fig-align: center
 
 from yoyo_plots.common import display_vector
 from yoyo_plots.quantities import plot_quantity
-image = "/static_images/emojis/1f437_pig.svg"
-fig = plot_quantity(image, 27, nrows=3, font_color="white", image_size=0.8, quantity="9 x 3", pixels_per_unit=45)
+image = "/static_images/emojis/1f99b_hippo.svg"
+fig = plot_quantity(image, 18, nrows=2, font_color="white", image_size=0.8, pixels_per_unit=50)
 display_vector(fig)
-```
+``` -->
 
 ```{python}
 # | echo: false

@@ -44,6 +44,9 @@ Mathematics is not a purely abstract endeavor, but also something you can get a 
 
 I hope you find this book useful the next time someone demands, "More math!"
 
-
-
+:::{.content-visible when-format="html"}
+:::{.fun-fact title="Consider reading the PDF version of this book"}
+👈 This book is optimized for PDF output. Download the PDF from the sidebar.
+:::
+:::
 

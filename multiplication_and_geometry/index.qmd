@@ -1,4 +1,4 @@
-# Multiplication and geometry $\text{[triangular_ruler:1em]{.twemoji}} \text{[red_circle:1em]{.twemoji}} \text{[white_large_square:1em]{.twemoji}}$
+# Multiplication and geometry
 
 We began our journey of learning multiplication by discerning patterns. Then, we learned how to express those patterns as the product of two or three integers. Finally, we learned how to compute those products using multiplication tables. 
 Now, we are cycling back and formalizing the idea of patterns, making a link between multiplication and geometry. Specifically, we are exploring how multiplying two natural numbers produces a two-dimensional object called a plane and how multiplying three natural numbers produces a three-dimensional object called a volume.

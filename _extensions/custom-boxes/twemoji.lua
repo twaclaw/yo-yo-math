@@ -95,6 +95,39 @@ local function str_rep(s, n)
   return result
 end
 
+-- Convert a Unicode emoji string to a Twemoji SVG URL.
+-- ZWJ sequences keep FE0F; simple emojis strip it.
+local function emoji_to_twemoji_url(emoji_str)
+  local codes = {utf8.codepoint(emoji_str, 1, -1)}
+  local has_zwj = false
+  for _, c in ipairs(codes) do
+    if c == 0x200D then has_zwj = true; break end
+  end
+  local parts = {}
+  for _, c in ipairs(codes) do
+    if not has_zwj and c == 0xFE0F then
+      -- skip variation selector for non-ZWJ sequences
+    else
+      table.insert(parts, string.format("%x", c))
+    end
+  end
+  return "https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/"
+    .. table.concat(parts, "-") .. ".svg"
+end
+
+-- Build an <img> tag for a Twemoji SVG.
+local function emoji_to_img(emoji_str, height, raisebox)
+  local url = emoji_to_twemoji_url(emoji_str)
+  local style = "height:" .. (height or "1.2em") .. ";"
+  if raisebox then
+    style = style .. "vertical-align:" .. raisebox .. ";"
+  else
+    style = style .. "vertical-align:middle;"
+  end
+  return '<img src="' .. url .. '" alt="' .. emoji_str
+    .. '" style="' .. style .. '" draggable="false" />'
+end
+
 function Span(el)
   if el.classes:includes("twemoji") then
     -- Get the emoji name from the content (assuming it's just text like "cat")
@@ -123,15 +156,8 @@ function Span(el)
     elseif FORMAT:match("html") then
       local unicode_char = emoji_map[emoji_name]
       if unicode_char then
-        local style = ""
-        if height then style = style .. "font-size:" .. height .. ";" end
-        local span
-        if style ~= "" then
-          span = '<span style="' .. style .. '">' .. unicode_char .. '</span>'
-        else
-          span = unicode_char
-        end
-        return pandoc.RawInline("html", str_rep(span, reps))
+        local img = emoji_to_img(unicode_char, height, raisebox)
+        return pandoc.RawInline("html", str_rep(img, reps))
       else
         return el
       end
@@ -154,7 +180,8 @@ function Math(el)
   -- REPS    : integer repetition count (default 1)
   --
   -- In PDF:  \raisebox{RAISEBOX}{\twemoji[height=SIZE]{name}}
-  -- In HTML: \style{font-size:SIZE;vertical-align:RAISEBOX}{char}
+  -- In HTML: Twemoji SVG <img> tags (replaces the Math element entirely
+  --          when the whole expression is emoji-only inside \text{})
 
   local pattern_full   = "%[([%w_]+):([^:%]]+):([^:%]]+):(%d+)%]{%.twemoji}"
   local pattern_raised = "%[([%w_]+):([^:%]]+):([^:%]]+)%]{%.twemoji}"
@@ -163,64 +190,102 @@ function Math(el)
 
   if el.text:find(pattern_full) or el.text:find(pattern_raised) or
      el.text:find(pattern_sized) or el.text:find(pattern) then
-    local new_text = el.text
 
-    -- 1. Full: name:SIZE:RAISEBOX:REPS
-    new_text = new_text:gsub(pattern_full, function(name, size, raisebox, reps_str)
-      local reps = tonumber(reps_str) or 1
-      if FORMAT:match("latex") or FORMAT:match("beamer") then
+    -------------------------------------------------------------------
+    -- HTML: try to replace the entire Math element with <img> tags.
+    -- All current usages wrap emoji in  $\text{...}$  so we unwrap,
+    -- substitute every twemoji pattern with an img tag, and – if
+    -- nothing else remains – return a RawInline instead of Math.
+    -------------------------------------------------------------------
+    if FORMAT:match("html") then
+      local inner = el.text:match("^\\text{(.*)}$")
+      if inner then
+        local html_result = ""
+        local remaining = inner
+
+        remaining = remaining:gsub(pattern_full, function(name, size, raisebox, reps_str)
+          local reps = tonumber(reps_str) or 1
+          local char = emoji_map[name] or name
+          html_result = html_result .. str_rep(emoji_to_img(char, size, raisebox), reps)
+          return ""
+        end)
+        remaining = remaining:gsub(pattern_raised, function(name, size, raisebox)
+          local char = emoji_map[name] or name
+          html_result = html_result .. emoji_to_img(char, size, raisebox)
+          return ""
+        end)
+        remaining = remaining:gsub(pattern_sized, function(name, size)
+          local char = emoji_map[name] or name
+          html_result = html_result .. emoji_to_img(char, size)
+          return ""
+        end)
+        remaining = remaining:gsub(pattern, function(name)
+          local char = emoji_map[name]
+          if char then
+            html_result = html_result .. emoji_to_img(char)
+            return ""
+          end
+          return name
+        end)
+
+        if remaining:match("^%s*$") then
+          return pandoc.RawInline("html", html_result)
+        end
+      end
+
+      -- Fallback for mixed math+emoji: embed Unicode (best-effort)
+      local new_text = el.text
+      new_text = new_text:gsub(pattern_full, function(name, size, raisebox, reps_str)
+        local reps = tonumber(reps_str) or 1
+        local char = emoji_map[name] or name
+        return str_rep("\\style{font-size:" .. size .. "}{" .. char .. "}", reps)
+      end)
+      new_text = new_text:gsub(pattern_raised, function(name, size, raisebox)
+        local char = emoji_map[name] or name
+        return "\\style{font-size:" .. size .. "}{" .. char .. "}"
+      end)
+      new_text = new_text:gsub(pattern_sized, function(name, size)
+        local char = emoji_map[name] or name
+        return "\\style{font-size:" .. size .. "}{" .. char .. "}"
+      end)
+      new_text = new_text:gsub(pattern, function(name)
+        local char = emoji_map[name]
+        return char or name
+      end)
+      el.text = new_text
+      return el
+    end
+
+    -------------------------------------------------------------------
+    -- LaTeX / Beamer
+    -------------------------------------------------------------------
+    if FORMAT:match("latex") or FORMAT:match("beamer") then
+      local new_text = el.text
+
+      new_text = new_text:gsub(pattern_full, function(name, size, raisebox, reps_str)
+        local reps = tonumber(reps_str) or 1
         local latex_name = name:gsub("_", " ")
         local base = "\\raisebox{" .. raisebox .. "}{\\twemoji[height=" .. size .. "]{" .. latex_name .. "}}"
         return str_rep(base, reps)
-      elseif FORMAT:match("html") then
-        local char = emoji_map[name] or name
-        local unit = "\\style{font-size:" .. size .. "}{" .. char .. "}"
-        return str_rep(unit, reps)
-      else
-        return name
-      end
-    end)
+      end)
 
-    -- 2. Raised: name:SIZE:RAISEBOX
-    new_text = new_text:gsub(pattern_raised, function(name, size, raisebox)
-      if FORMAT:match("latex") or FORMAT:match("beamer") then
+      new_text = new_text:gsub(pattern_raised, function(name, size, raisebox)
         local latex_name = name:gsub("_", " ")
         return "\\raisebox{" .. raisebox .. "}{\\twemoji[height=" .. size .. "]{" .. latex_name .. "}}"
-      elseif FORMAT:match("html") then
-        local char = emoji_map[name] or name
-        return "\\style{font-size:" .. size .. "}{" .. char .. "}"
-      else
-        return name
-      end
-    end)
+      end)
 
-    -- 3. Sized: name:SIZE
-    new_text = new_text:gsub(pattern_sized, function(name, size)
-      if FORMAT:match("latex") or FORMAT:match("beamer") then
+      new_text = new_text:gsub(pattern_sized, function(name, size)
         local latex_name = name:gsub("_", " ")
         return "\\twemoji[height=" .. size .. "]{" .. latex_name .. "}"
-      elseif FORMAT:match("html") then
-        local char = emoji_map[name] or name
-        return "\\style{font-size:" .. size .. "}{" .. char .. "}"
-      else
-        return name
-      end
-    end)
+      end)
 
-    -- 4. Plain: name
-    new_text = new_text:gsub(pattern, function(name)
-      if FORMAT:match("latex") or FORMAT:match("beamer") then
+      new_text = new_text:gsub(pattern, function(name)
         local latex_name = name:gsub("_", " ")
         return "\\twemoji{" .. latex_name .. "}"
-      elseif FORMAT:match("html") then
-        local char = emoji_map[name]
-        return char or name
-      else
-        return name
-      end
-    end)
+      end)
 
-    el.text = new_text
-    return el
+      el.text = new_text
+      return el
+    end
   end
 end

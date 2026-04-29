@@ -218,7 +218,7 @@ $$
 \begin{equation*}
     \underbrace{a \times a}_{\eqnmarkbox[Red]{k1}{{\color{red}{2}} \text{ times}}} = a^{\eqnmarkbox[Red]{k2}{\color{red}{2}}}
 \end{equation*}
-\annotatetwo[yshift=-0.2em]{below}{k1}{k2}{Number of times we multiply $a$ by itself.}
+\annotatetwo[yshift=-1.3em]{below}{k1}{k2}{Number of times we multiply $a$ by itself.}
 :::
 :::
 :::
