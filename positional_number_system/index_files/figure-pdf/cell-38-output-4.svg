@@ -1,0 +1,29 @@
+<svg width="690.0" height="120.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg x="0.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="40" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">4000</text>
+</svg>
+<rect x="135.0" y="40.0" width="40" height="40" fill="none" stroke="black" stroke-width="1.5"/>
+<svg x="190.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="40" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">3000</text>
+</svg>
+<rect x="325.0" y="40.0" width="40" height="40" fill="none" stroke="black" stroke-width="1.5"/>
+<svg x="380.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="40" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">2999</text>
+</svg>
+<rect x="515.0" y="40.0" width="40" height="40" fill="none" stroke="black" stroke-width="1.5"/>
+<svg x="570.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="40" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">1999</text>
+</svg>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="320" height="240" viewBox="0 0 320 240">
+<defs>
+</defs>
+<g>
+<path d="M50,190 L290,190 L290,30 Z" fill="red" opacity="0.25" />
+<path d="M50,190 L50,30 L290,30 Z" fill="white" opacity="0.25" />
+<rect x="50" y="30" width="240" height="160" fill="none" stroke="black" stroke-width="1.5" />
+<path d="M50,190 L290,30" stroke="black" stroke-width="1.5" />
+<text x="170.0" y="210" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="italic">b</text>
+<text x="30" y="110.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="italic">h</text>
+</g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="880.0" height="960.0" viewBox="0 0 880.0 960.0">
+<defs>
+</defs>
+<g>
+<rect x="290" y="590.0" width="320" height="320" fill="skyblue" opacity="0.2" stroke="skyblue" stroke-opacity="0.5" stroke-width="1.5" />
+<path d="M330,590.0 L330,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,630.0 L610,630.0" stroke="#999" stroke-width="0.5" />
+<path d="M370,590.0 L370,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,670.0 L610,670.0" stroke="#999" stroke-width="0.5" />
+<path d="M410,590.0 L410,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,710.0 L610,710.0" stroke="#999" stroke-width="0.5" />
+<path d="M450,590.0 L450,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,750.0 L610,750.0" stroke="#999" stroke-width="0.5" />
+<path d="M490,590.0 L490,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,790.0 L610,790.0" stroke="#999" stroke-width="0.5" />
+<path d="M530,590.0 L530,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,830.0 L610,830.0" stroke="#999" stroke-width="0.5" />
+<path d="M570,590.0 L570,910.0" stroke="#999" stroke-width="0.5" />
+<path d="M290,870.0 L610,870.0" stroke="#999" stroke-width="0.5" />
+<text x="450.0" y="750.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="skyblue" font-weight="bold">8² = 64</text>
+<rect x="50" y="350.0" width="240" height="240" fill="orange" opacity="0.2" stroke="orange" stroke-opacity="0.5" stroke-width="1.5" />
+<path d="M90,350.0 L90,590.0" stroke="#999" stroke-width="0.5" />
+<path d="M50,390.0 L290,390.0" stroke="#999" stroke-width="0.5" />
+<path d="M130,350.0 L130,590.0" stroke="#999" stroke-width="0.5" />
+<path d="M50,430.0 L290,430.0" stroke="#999" stroke-width="0.5" />
+<path d="M170,350.0 L170,590.0" stroke="#999" stroke-width="0.5" />
+<path d="M50,470.0 L290,470.0" stroke="#999" stroke-width="0.5" />
+<path d="M210,350.0 L210,590.0" stroke="#999" stroke-width="0.5" />
+<path d="M50,510.0 L290,510.0" stroke="#999" stroke-width="0.5" />
+<path d="M250,350.0 L250,590.0" stroke="#999" stroke-width="0.5" />
+<path d="M50,550.0 L290,550.0" stroke="#999" stroke-width="0.5" />
+<text x="170.0" y="470.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="orange" font-weight="bold">6² = 36</text>
+<path d="M610,590.0 L290,350.0 L530.0,30.0 L850.0,270.0 Z" fill="mediumpurple" opacity="0.2" stroke="mediumpurple" stroke-opacity="0.5" stroke-width="1.5" />
+<path d="M634.0,558.0 L314.0,318.0" stroke="#999" stroke-width="0.5" />
+<path d="M578.0,566.0 L818.0,246.0" stroke="#999" stroke-width="0.5" />
+<path d="M658.0,526.0 L338.0,286.0" stroke="#999" stroke-width="0.5" />
+<path d="M546.0,542.0 L786.0,222.00000000000003" stroke="#999" stroke-width="0.5" />
+<path d="M682.0,494.0 L362.0,254.0" stroke="#999" stroke-width="0.5" />
+<path d="M514.0,518.0 L754.0,197.99999999999997" stroke="#999" stroke-width="0.5" />
+<path d="M706.0,462.0 L386.0,222.00000000000003" stroke="#999" stroke-width="0.5" />
+<path d="M482.0,494.0 L722.0,174.0" stroke="#999" stroke-width="0.5" />
+<path d="M730.0,430.0 L410.0,190.0" stroke="#999" stroke-width="0.5" />
+<path d="M450.0,470.0 L690.0,150.0" stroke="#999" stroke-width="0.5" />
+<path d="M754.0,398.0 L434.0,157.99999999999997" stroke="#999" stroke-width="0.5" />
+<path d="M418.0,446.0 L658.0,126.0" stroke="#999" stroke-width="0.5" />
+<path d="M778.0,366.0 L458.0,126.0" stroke="#999" stroke-width="0.5" />
+<path d="M386.0,422.0 L626.0,102.00000000000003" stroke="#999" stroke-width="0.5" />
+<path d="M802.0,334.0 L482.0,94.0" stroke="#999" stroke-width="0.5" />
+<path d="M354.0,398.0 L594.0,78.0" stroke="#999" stroke-width="0.5" />
+<path d="M826.0,302.0 L506.0,62.0" stroke="#999" stroke-width="0.5" />
+<path d="M322.0,374.0 L562.0,54.0" stroke="#999" stroke-width="0.5" />
+<text x="570.0" y="310.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="mediumpurple" font-weight="bold">10² = 100</text>
+<path d="M290,590.0 L610,590.0 L290,350.0 Z" fill="none" stroke="black" stroke-width="1.7999999999999998" />
+<path d="M300.0,590.0 L300.0,580.0 L290,580.0" fill="none" stroke="black" stroke-width="1.5" />
+<text x="450.0" y="610.0" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="normal">8</text>
+<text x="270" y="470.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">6</text>
+<text x="458.4" y="458.8" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">10</text>
+</g>
+</svg>

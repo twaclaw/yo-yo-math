@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Supporting and Contributing – Yo-Yo-Math">
@@ -171,12 +142,6 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Credits</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./counting/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Counting</span></span></a>
   </div>
@@ -199,6 +164,24 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Counting intermezzo</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./counting_faster/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Counting faster</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./multiplication_and_geometry/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Multiplication and geometry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Credits</span></a>
+  </div>
+</li>
     </ul>
     </div>
     
@@ -208,6 +191,7 @@ window.Quarto = {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
 <div style="width: 100%; background-color: white; color: rgb(132, 130, 130); text-align: left; padding: 1em 1em; font-family: 'Comic Sans MS', cursive; font-size: 1.2em; letter-spacing: 0.05em;">
 👈 This book is optimized for PDF output. Download the PDF from the sidebar.
 </div>
@@ -233,9 +217,9 @@ window.Quarto = {
 
 <p>If you like this book or find it useful, please consider supporting it by:</p>
 <ul>
-<li><a href="https://buymeacoffee.com/twaclaw">Buying me a coffee</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <span class="math inline">\(\text{\style{font-size:1.5em}{☕}}\)</span> (or two, three, five, seven, etc.)</li>
-<li>Giving a star <span class="math inline">\(\text{\style{font-size:1.5em}{⭐}}\)</span> and contributing on <a href="https://github.com/twaclaw/yo-yo-math">GitHub</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</li>
-<li>Sharing with others <span class="math inline">\(\text{\style{font-size:1.5em}{💌}}\)</span>.</li>
+<li><a href="https://buymeacoffee.com/twaclaw">Buying me a coffee</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/2615.svg" alt="☕" style="height:1.5em;vertical-align:-0.3em;" draggable="false"> (or two, three, five, seven, etc.)</li>
+<li>Giving a star <img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/2b50.svg" alt="⭐" style="height:1.5em;vertical-align:-0.3em;" draggable="false"> and contributing on <a href="https://github.com/twaclaw/yo-yo-math">GitHub</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</li>
+<li>Sharing with others <img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/1f48c.svg" alt="💌" style="height:1.5em;vertical-align:-0.3em;" draggable="false">.</li>
 </ul>
 
 

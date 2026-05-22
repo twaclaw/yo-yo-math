@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="280" height="200" viewBox="0 0 280 200">
+<defs>
+</defs>
+<g>
+<rect x="50" y="30" width="200" height="120" fill="none" stroke="black" stroke-width="1.5" />
+<path d="M60.0,150 L60.0,140.0 L50,140.0" fill="none" stroke="black" stroke-width="1.5" />
+<path d="M240.0,150 L240.0,140.0 L250,140.0" fill="none" stroke="black" stroke-width="1.5" />
+<path d="M240.0,30 L240.0,40.0 L250,40.0" fill="none" stroke="black" stroke-width="1.5" />
+<path d="M60.0,30 L60.0,40.0 L50,40.0" fill="none" stroke="black" stroke-width="1.5" />
+<text x="150.0" y="170" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="italic">a</text>
+<text x="30" y="90.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="italic">b</text>
+</g>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="1060.0" height="280.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg x="0.0" y="80.0" width="120.0" height="120.0" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<rect x="50" y="30" width="40" height="40" fill="coral" opacity="0.25" />
+<rect x="50" y="30" width="40" height="40" fill="none" stroke="black" stroke-width="1.5" />
+<text x="70.0" y="90" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="normal">1</text>
+<text x="30" y="50.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">1</text>
+</g>
+</svg>
+<svg x="135.0" y="60.0" width="160.0" height="160.0" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<rect x="50" y="30" width="80" height="80" fill="coral" opacity="0.25" />
+<path d="M90,110 L90,30" stroke="#999" stroke-width="0.5" />
+<path d="M50,70 L130,70" stroke="#999" stroke-width="0.5" />
+<rect x="50" y="30" width="80" height="80" fill="none" stroke="black" stroke-width="1.5" />
+<text x="90.0" y="130" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="normal">2</text>
+<text x="30" y="70.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">2</text>
+</g>
+</svg>
+<svg x="310.0" y="40.0" width="200.0" height="200.0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<rect x="50" y="30" width="120" height="120" fill="coral" opacity="0.25" />
+<path d="M90,150 L90,30" stroke="#999" stroke-width="0.5" />
+<path d="M130,150 L130,30" stroke="#999" stroke-width="0.5" />
+<path d="M50,110 L170,110" stroke="#999" stroke-width="0.5" />
+<path d="M50,70 L170,70" stroke="#999" stroke-width="0.5" />
+<rect x="50" y="30" width="120" height="120" fill="none" stroke="black" stroke-width="1.5" />
+<text x="110.0" y="170" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="normal">3</text>
+<text x="30" y="90.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">3</text>
+</g>
+</svg>
+<svg x="525.0" y="20.0" width="240.0" height="240.0" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<rect x="50" y="30" width="160" height="160" fill="coral" opacity="0.25" />
+<path d="M90,190 L90,30" stroke="#999" stroke-width="0.5" />
+<path d="M130,190 L130,30" stroke="#999" stroke-width="0.5" />
+<path d="M170,190 L170,30" stroke="#999" stroke-width="0.5" />
+<path d="M50,150 L210,150" stroke="#999" stroke-width="0.5" />
+<path d="M50,110 L210,110" stroke="#999" stroke-width="0.5" />
+<path d="M50,70 L210,70" stroke="#999" stroke-width="0.5" />
+<rect x="50" y="30" width="160" height="160" fill="none" stroke="black" stroke-width="1.5" />
+<text x="130.0" y="210" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="normal">4</text>
+<text x="30" y="110.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">4</text>
+</g>
+</svg>
+<svg x="780.0" y="0.0" width="280.0" height="280.0" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<rect x="50" y="30" width="200" height="200" fill="coral" opacity="0.25" />
+<path d="M90,230 L90,30" stroke="#999" stroke-width="0.5" />
+<path d="M130,230 L130,30" stroke="#999" stroke-width="0.5" />
+<path d="M170,230 L170,30" stroke="#999" stroke-width="0.5" />
+<path d="M210,230 L210,30" stroke="#999" stroke-width="0.5" />
+<path d="M50,190 L250,190" stroke="#999" stroke-width="0.5" />
+<path d="M50,150 L250,150" stroke="#999" stroke-width="0.5" />
+<path d="M50,110 L250,110" stroke="#999" stroke-width="0.5" />
+<path d="M50,70 L250,70" stroke="#999" stroke-width="0.5" />
+<rect x="50" y="30" width="200" height="200" fill="none" stroke="black" stroke-width="1.5" />
+<text x="150.0" y="250" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="normal">5</text>
+<text x="30" y="130.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="normal">5</text>
+</g>
+</svg>
+</svg>

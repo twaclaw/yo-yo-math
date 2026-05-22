@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="400.0" height="320.0" viewBox="0 0 400.0 320.0">
+<defs>
+</defs>
+<g>
+<path d="M50.0,270.0 L370.0,270.0 L50.0,30.0 Z" fill="none" stroke="black" stroke-width="1.7999999999999998" />
+<path d="M60.0,270.0 L60.0,260.0 L50.0,260.0" fill="none" stroke="black" stroke-width="1.5" />
+<text x="210.0" y="266.0" font-size="14" text-anchor="middle" dominant-baseline="auto" font-family="sans-serif" fill="black" font-style="italic">a</text>
+<text x="57.0" y="150.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="italic">b</text>
+<text x="205.8" y="155.6" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="black" font-style="italic">c</text>
+</g>
+</svg>

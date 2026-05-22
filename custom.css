@@ -66,3 +66,98 @@ div.cell-output-display img {
     /* Try to force the body text container to be wider if possible */
     /* This depends on the theme "united" variables */
 }
+
+/* ========================================================
+   Story Time Callout — whimsical bedtime-story style
+   ======================================================== */
+.story-time-callout .callout {
+    border-color: #9B72CF !important;
+    border-style: dashed !important;
+    border-radius: 12px !important;
+    background: linear-gradient(145deg, #f8f0ff 0%, #fff8fc 50%, #f3eeff 100%) !important;
+    position: relative;
+    overflow: visible;
+}
+
+/* Decorative sparkles on the top-right corner */
+.story-time-callout .callout::before {
+    content: "🌙 ✨";
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    font-size: 1.15em;
+    line-height: 1;
+    z-index: 1;
+}
+
+/* Small stars at the bottom-left */
+.story-time-callout .callout::after {
+    content: "⭐ 🌟";
+    position: absolute;
+    bottom: -12px;
+    left: 18px;
+    font-size: 0.85em;
+    line-height: 1;
+    z-index: 1;
+}
+
+/* Header — softer lavender tint */
+.story-time-callout .callout-header {
+    background-color: rgba(155, 114, 207, 0.12) !important;
+    border-bottom: 1px dashed rgba(155, 114, 207, 0.3) !important;
+}
+
+/* Title in italic for a storytelling voice */
+.story-time-callout .callout-title-container {
+    font-style: italic;
+}
+
+/* Body text — casual with a cozy reading feel */
+.story-time-callout .callout-body-container {
+    color: #3d3052;
+    line-height: 1.7;
+}
+
+/* Override the left-border accent color */
+.story-time-callout .callout-important {
+    border-left-color: #9B72CF !important;
+}
+
+/* ========================================================
+   Question Callout — fuchsia / dark pink style
+   ======================================================== */
+.question-callout .callout {
+    border-color: #5DADE2 !important;
+    border-radius: 8px !important;
+    background: linear-gradient(145deg, #eaf6fd 0%, #f0f9ff 50%, #e1f1fa 100%) !important;
+    position: relative;
+    overflow: visible;
+}
+
+/* Decorative question marks */
+.question-callout .callout::before {
+    content: "❓";
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    font-size: 1.15em;
+    line-height: 1;
+    z-index: 1;
+}
+
+/* Header — soft fuchsia tint */
+.question-callout .callout-header {
+    background-color: rgba(93, 173, 226, 0.12) !important;
+    border-bottom: 1px solid rgba(93, 173, 226, 0.25) !important;
+}
+
+/* Body text */
+.question-callout .callout-body-container {
+    color: #1a3d5c;
+    line-height: 1.7;
+}
+
+/* Override the left-border accent color */
+.question-callout .callout-caution {
+    border-left-color: #5DADE2 !important;
+}

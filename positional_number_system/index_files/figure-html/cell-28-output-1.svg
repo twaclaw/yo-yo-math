@@ -1,567 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1050" height="2410" viewBox="0 0 1050 2410">
+     width="1060" height="1685" viewBox="0 0 1060 1685">
 <defs>
 </defs>
 <g>
-<g>
-<g>
-<rect x="0" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="12.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="52.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
-</g>
-<rect x="26.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="104" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="116.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="156.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-</g>
-<rect x="130.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="208" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="220.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="260.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-</g>
-<rect x="234.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="312" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="324.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="364.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
-<rect x="338.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="416" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="428.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="468.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
-</g>
-<rect x="442.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="520" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="532.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="572.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
-<rect x="546.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="624" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="636.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="676.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
-<rect x="650.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="728" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="740.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="780.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
-<rect x="754.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="832" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="844.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="884.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
-</g>
-<rect x="858.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="936" y="2200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="948.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="988.0" y="2230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="2250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
-</g>
-<rect x="962.0" y="2280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="2283.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-</g>
-<g>
-<g>
-<rect x="0" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="12.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="52.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
-</g>
-<rect x="26.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="104" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="116.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="156.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-</g>
-<rect x="130.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="208" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="220.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="260.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-</g>
-<rect x="234.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="312" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="324.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="364.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
-<rect x="338.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="416" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="428.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="468.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
-</g>
-<rect x="442.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="520" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="532.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="572.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
-<rect x="546.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="624" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="636.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="676.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
-<rect x="650.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="728" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="740.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="780.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
-<rect x="754.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="832" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="844.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="884.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
-</g>
-<rect x="858.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="936" y="2000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="948.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="2050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="988.0" y="2030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="2050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
-</g>
-<rect x="962.0" y="2080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="2083.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-</g>
-<g>
-<g>
-<rect x="0" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="12.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="52.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
-</g>
-<rect x="26.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="104" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="116.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="156.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-</g>
-<rect x="130.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="208" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="220.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="260.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-</g>
-<rect x="234.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="312" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="324.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="364.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
-<rect x="338.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="416" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="428.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="468.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
-</g>
-<rect x="442.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="520" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="532.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="572.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
-<rect x="546.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="624" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="636.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="676.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
-<rect x="650.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="728" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="740.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="780.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
-<rect x="754.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="832" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="844.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="884.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
-</g>
-<rect x="858.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="936" y="1800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="948.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="1850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-<rect x="988.0" y="1830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="1850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
-</g>
-<rect x="962.0" y="1880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="1883.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-</g>
-<g>
-<g>
-<rect x="0" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="12.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="52.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
-</g>
-<rect x="26.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="104" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="116.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="156.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-</g>
-<rect x="130.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="208" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="220.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="260.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
-</g>
-<rect x="234.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="312" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="324.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="364.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
-<rect x="338.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="416" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="428.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="468.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
-</g>
-<rect x="442.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="520" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="532.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="572.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
-<rect x="546.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="624" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="636.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="676.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
-<rect x="650.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="728" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="740.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="780.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
-<rect x="754.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="832" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="844.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="884.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
-</g>
-<rect x="858.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-<g>
-<rect x="936" y="1600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
-<g>
-<rect x="948.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="1650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
-<rect x="988.0" y="1630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="1650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
-</g>
-<rect x="962.0" y="1680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="1683.0" width="46.0" height="114.0" fill="white" stroke="none" />
-</g>
-</g>
+<g transform="translate(0,50)">
 <g>
 <g>
 <rect x="0" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="32.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="52.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="72.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
 </g>
-<rect x="26.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="136.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="156.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="176.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 </g>
-<rect x="130.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="240.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="260.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="280.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
-<rect x="234.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="344.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="364.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="384.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
-<rect x="338.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="448.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="468.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="488.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 </g>
-<rect x="442.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="552.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="572.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="592.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
-<rect x="546.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="656.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="676.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="696.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
-<rect x="650.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="760.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="780.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="800.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 </g>
-<rect x="754.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="864.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="884.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="904.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
-<rect x="858.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="1400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="1450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="968.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="988.0" y="1430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="1008.0" y="1450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
-<rect x="962.0" y="1480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="1483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="1480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="1483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="1487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="1542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="1540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="1539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -569,111 +162,151 @@
 <rect x="0" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="32.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 <rect x="52.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="72.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
 </g>
-<rect x="26.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="136.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 <rect x="156.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="176.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 </g>
-<rect x="130.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="240.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 <rect x="260.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="280.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
-<rect x="234.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="344.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 <rect x="364.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="384.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
-<rect x="338.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="448.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 <rect x="468.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="488.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 </g>
-<rect x="442.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="552.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="572.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="592.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="546.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="656.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="676.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="696.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="650.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="760.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="780.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="800.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="754.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="864.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="884.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="904.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="858.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="1200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="1250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="968.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="988.0" y="1230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1008.0" y="1250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="962.0" y="1280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="1283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="1280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="1283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="1287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="1342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="1340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="1339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -681,111 +314,151 @@
 <rect x="0" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="32.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="52.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="72.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="26.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="136.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="156.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="176.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="130.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="240.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="260.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="280.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="234.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="344.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="364.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="384.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="338.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="448.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="468.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="488.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="442.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="552.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 <rect x="572.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="592.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
-<rect x="546.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="656.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 <rect x="676.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="696.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
-<rect x="650.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="760.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 <rect x="780.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="800.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 </g>
-<rect x="754.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="864.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 <rect x="884.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="904.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
-<rect x="858.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="1000" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="1050.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="968.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="988.0" y="1030.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1008.0" y="1050.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="962.0" y="1080.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="1083.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="1080.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="1083.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="1087.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="1142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="1140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="1139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -793,111 +466,151 @@
 <rect x="0" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="32.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="52.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="72.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="26.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="136.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="156.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="176.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 </g>
-<rect x="130.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="240.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="260.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="280.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
-<rect x="234.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="344.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="364.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="384.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
-<rect x="338.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="448.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="468.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="488.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 </g>
-<rect x="442.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="552.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="572.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="592.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
-<rect x="546.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="656.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="676.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="696.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
-<rect x="650.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="760.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="780.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="800.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 </g>
-<rect x="754.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="864.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="884.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="904.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
-<rect x="858.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="800" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="968.0" y="850.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 <rect x="988.0" y="830.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="1008.0" y="850.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
-<rect x="962.0" y="880.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="883.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="880.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="883.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="887.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="942.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="940.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="939.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -905,111 +618,151 @@
 <rect x="0" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="32.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="52.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="72.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
 </g>
-<rect x="26.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="136.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="156.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="176.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 </g>
-<rect x="130.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="240.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="260.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="280.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
-<rect x="234.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="344.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="364.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="384.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
-<rect x="338.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="448.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="468.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="488.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 </g>
-<rect x="442.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="552.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="572.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="592.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
-<rect x="546.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="656.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 <rect x="676.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="696.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
-<rect x="650.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="760.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="780.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="800.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="754.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="864.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="884.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="904.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="858.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="600" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="650.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="968.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="988.0" y="630.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1008.0" y="650.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="962.0" y="680.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="683.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="680.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="683.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="687.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="742.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="740.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="739.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -1017,111 +770,151 @@
 <rect x="0" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="32.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="52.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="72.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="26.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="136.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="156.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="176.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="130.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="240.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="260.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="280.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="234.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="344.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="364.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="384.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="338.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="448.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="468.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="488.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="442.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="552.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="572.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="592.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="546.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="656.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="676.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="696.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="650.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="760.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="780.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="800.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="754.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="864.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="884.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="904.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="858.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="400" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="450.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="968.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="988.0" y="430.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1008.0" y="450.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="962.0" y="480.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="483.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="480.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="483.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="487.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="542.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="540.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="539.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -1129,111 +922,151 @@
 <rect x="0" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="32.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="52.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="72.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="26.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="136.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="156.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="176.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="176.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="130.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="240.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="260.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="280.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="280.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="234.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="344.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="364.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="384.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="384.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="338.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="448.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="468.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="488.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="488.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="442.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="552.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="572.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="592.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="592.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="546.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="656.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="676.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="696.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="696.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="650.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="760.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="780.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="800.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="800.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="754.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="864.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="884.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="904.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="904.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="858.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="200" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="250.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="968.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="988.0" y="230.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="1008.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1008.0" y="250.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="962.0" y="280.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="283.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="280.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="283.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="287.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="342.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="340.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="339.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
 <g>
@@ -1241,112 +1074,281 @@
 <rect x="0" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="12.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="32.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="32.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 <rect x="52.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="72.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="72.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
 </g>
-<rect x="26.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="29.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="26.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="29.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="33.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="33.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="65.80000000000001" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="65.28000000000002" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="104" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="116.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="136.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="136.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="156.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="176.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
 </g>
-<rect x="130.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="133.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="130.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="133.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="137.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="137.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="169.8" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="169.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="208" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="220.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="240.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="240.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="260.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="280.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
-<rect x="234.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="237.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="234.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="237.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="241.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="241.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="273.79999999999995" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="273.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="312" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="324.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="344.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="344.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="364.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="384.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
-<rect x="338.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="341.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="338.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="341.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="345.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="345.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="377.79999999999995" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="377.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="416" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="428.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="448.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="448.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="468.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="488.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">4</text>
 </g>
-<rect x="442.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="445.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="442.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="445.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="449.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="449.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="481.79999999999995" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="481.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="520" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="532.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="552.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="552.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="572.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="592.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
-<rect x="546.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="549.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="546.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="549.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="553.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="553.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="585.8" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="585.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="624" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="636.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="656.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="656.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="676.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="696.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
-<rect x="650.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="653.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="650.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="653.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="657.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="657.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="689.8" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="689.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="728" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="740.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="760.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="760.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="780.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="800.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 </g>
-<rect x="754.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="757.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="754.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="757.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="761.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="761.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="793.8" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="793.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="832" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="844.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="864.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="864.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="884.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="904.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
-<rect x="858.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="861.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="858.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="861.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="865.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="865.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="897.8" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="897.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 <g>
 <rect x="936" y="0" width="104" height="200" fill="white" stroke="#333333" stroke-width="1" />
 <g>
 <rect x="948.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="968.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="968.0" y="50.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
 <rect x="988.0" y="30.0" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
 <text x="1008.0" y="50.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
-<rect x="962.0" y="80.0" width="52.0" height="120.0" fill="#DEB887" stroke="none" />
-<rect x="965.0" y="83.0" width="46.0" height="114.0" fill="white" stroke="none" />
+<rect x="962.0" y="80.0" width="52.0" height="120.0" fill="#6B4226" stroke="#4A2E14" stroke-width="1.5" />
+<rect x="965.0" y="83.0" width="46.0" height="114.0" fill="#DEB887" stroke="none" />
+<rect x="969.6" y="87.56" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<rect x="969.6" y="142.28" width="36.8" height="50.16" fill="#C9A96E" stroke="#A08050" stroke-width="1" rx="2" ry="2" />
+<circle cx="1001.8" cy="140.0" r="2.6" fill="#DAA520" stroke="#B8860B" stroke-width="1" />
+<circle cx="1001.28" cy="139.48" r="0.78" fill="#FFE4B5" stroke="none" />
 </g>
 </g>
+<g>
+<path d="M403.52,1400 L403.52,1600" stroke="red" stroke-width="4" />
+<path d="M397.28,1400 L409.76,1400" stroke="red" stroke-width="4" />
+<path d="M397.28,1600 L409.76,1600" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,1400 L428.47999999999996,1600" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1400 L434.71999999999997,1400" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1600 L434.71999999999997,1600" stroke="red" stroke-width="4" />
+<path d="M403.52,1433.3333333333333 L428.47999999999996,1433.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,1466.6666666666667 L428.47999999999996,1466.6666666666667" stroke="red" stroke-width="3" />
+<path d="M403.52,1500.0 L428.47999999999996,1500.0" stroke="red" stroke-width="3" />
+<path d="M403.52,1533.3333333333333 L428.47999999999996,1533.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,1566.6666666666667 L428.47999999999996,1566.6666666666667" stroke="red" stroke-width="3" />
+</g>
+<g>
+<path d="M403.52,1200 L403.52,1400" stroke="red" stroke-width="4" />
+<path d="M397.28,1200 L409.76,1200" stroke="red" stroke-width="4" />
+<path d="M397.28,1400 L409.76,1400" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,1200 L428.47999999999996,1400" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1200 L434.71999999999997,1200" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1400 L434.71999999999997,1400" stroke="red" stroke-width="4" />
+<path d="M403.52,1233.3333333333333 L428.47999999999996,1233.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,1266.6666666666667 L428.47999999999996,1266.6666666666667" stroke="red" stroke-width="3" />
+<path d="M403.52,1300.0 L428.47999999999996,1300.0" stroke="red" stroke-width="3" />
+<path d="M403.52,1333.3333333333333 L428.47999999999996,1333.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,1366.6666666666667 L428.47999999999996,1366.6666666666667" stroke="red" stroke-width="3" />
+</g>
+<g>
+<path d="M403.52,1000 L403.52,1200" stroke="red" stroke-width="4" />
+<path d="M397.28,1000 L409.76,1000" stroke="red" stroke-width="4" />
+<path d="M397.28,1200 L409.76,1200" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,1000 L428.47999999999996,1200" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1000 L434.71999999999997,1000" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1200 L434.71999999999997,1200" stroke="red" stroke-width="4" />
+<path d="M403.52,1033.3333333333333 L428.47999999999996,1033.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,1066.6666666666667 L428.47999999999996,1066.6666666666667" stroke="red" stroke-width="3" />
+<path d="M403.52,1100.0 L428.47999999999996,1100.0" stroke="red" stroke-width="3" />
+<path d="M403.52,1133.3333333333333 L428.47999999999996,1133.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,1166.6666666666667 L428.47999999999996,1166.6666666666667" stroke="red" stroke-width="3" />
+</g>
+<g>
+<path d="M403.52,800 L403.52,1000" stroke="red" stroke-width="4" />
+<path d="M397.28,800 L409.76,800" stroke="red" stroke-width="4" />
+<path d="M397.28,1000 L409.76,1000" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,800 L428.47999999999996,1000" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,800 L434.71999999999997,800" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,1000 L434.71999999999997,1000" stroke="red" stroke-width="4" />
+<path d="M403.52,833.3333333333334 L428.47999999999996,833.3333333333334" stroke="red" stroke-width="3" />
+<path d="M403.52,866.6666666666666 L428.47999999999996,866.6666666666666" stroke="red" stroke-width="3" />
+<path d="M403.52,900.0 L428.47999999999996,900.0" stroke="red" stroke-width="3" />
+<path d="M403.52,933.3333333333334 L428.47999999999996,933.3333333333334" stroke="red" stroke-width="3" />
+<path d="M403.52,966.6666666666667 L428.47999999999996,966.6666666666667" stroke="red" stroke-width="3" />
+</g>
+<g>
+<path d="M403.52,600 L403.52,800" stroke="red" stroke-width="4" />
+<path d="M397.28,600 L409.76,600" stroke="red" stroke-width="4" />
+<path d="M397.28,800 L409.76,800" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,600 L428.47999999999996,800" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,600 L434.71999999999997,600" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,800 L434.71999999999997,800" stroke="red" stroke-width="4" />
+<path d="M403.52,633.3333333333334 L428.47999999999996,633.3333333333334" stroke="red" stroke-width="3" />
+<path d="M403.52,666.6666666666666 L428.47999999999996,666.6666666666666" stroke="red" stroke-width="3" />
+<path d="M403.52,700.0 L428.47999999999996,700.0" stroke="red" stroke-width="3" />
+<path d="M403.52,733.3333333333334 L428.47999999999996,733.3333333333334" stroke="red" stroke-width="3" />
+<path d="M403.52,766.6666666666667 L428.47999999999996,766.6666666666667" stroke="red" stroke-width="3" />
+</g>
+<g>
+<path d="M403.52,400 L403.52,600" stroke="red" stroke-width="4" />
+<path d="M397.28,400 L409.76,400" stroke="red" stroke-width="4" />
+<path d="M397.28,600 L409.76,600" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,400 L428.47999999999996,600" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,400 L434.71999999999997,400" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,600 L434.71999999999997,600" stroke="red" stroke-width="4" />
+<path d="M403.52,433.3333333333333 L428.47999999999996,433.3333333333333" stroke="red" stroke-width="3" />
+<path d="M403.52,466.6666666666667 L428.47999999999996,466.6666666666667" stroke="red" stroke-width="3" />
+<path d="M403.52,500.0 L428.47999999999996,500.0" stroke="red" stroke-width="3" />
+<path d="M403.52,533.3333333333334 L428.47999999999996,533.3333333333334" stroke="red" stroke-width="3" />
+<path d="M403.52,566.6666666666667 L428.47999999999996,566.6666666666667" stroke="red" stroke-width="3" />
+</g>
+<g>
+<path d="M403.52,200 L403.52,400" stroke="red" stroke-width="4" />
+<path d="M397.28,200 L409.76,200" stroke="red" stroke-width="4" />
+<path d="M397.28,400 L409.76,400" stroke="red" stroke-width="4" />
+<path d="M428.47999999999996,200 L428.47999999999996,400" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,200 L434.71999999999997,200" stroke="red" stroke-width="4" />
+<path d="M422.23999999999995,400 L434.71999999999997,400" stroke="red" stroke-width="4" />
+<path d="M403.52,233.33333333333334 L428.47999999999996,233.33333333333334" stroke="red" stroke-width="3" />
+<path d="M403.52,266.6666666666667 L428.47999999999996,266.6666666666667" stroke="red" stroke-width="3" />
+<path d="M403.52,300.0 L428.47999999999996,300.0" stroke="red" stroke-width="3" />
+<path d="M403.52,333.33333333333337 L428.47999999999996,333.33333333333337" stroke="red" stroke-width="3" />
+<path d="M403.52,366.6666666666667 L428.47999999999996,366.6666666666667" stroke="red" stroke-width="3" />
+</g>
+</g>
+<path d="M-10,50 L520.0,3 L1050,50 Z" fill="#CC4444" stroke="#8B0000" stroke-width="2" />
+<path d="M0,1650 L1040,1650" stroke="#8B7355" stroke-width="2" />
+<path d="M158.33333333333334,1652.5 L163.33333333333334,1677.5 L183.33333333333334,1677.5 L188.33333333333334,1652.5 Z" fill="#CD853F" stroke="#8B5A2B" stroke-width="1" />
+<rect x="155.83333333333334" y="1647.5" width="35.0" height="7.5" fill="#D2A679" stroke="#8B5A2B" stroke-width="0.5" rx="1" ry="1" />
+<circle cx="163.33333333333334" cy="1640.0" r="15.0" fill="#228B22" stroke="none" />
+<circle cx="183.33333333333334" cy="1640.0" r="15.0" fill="#2E8B57" stroke="none" />
+<circle cx="173.33333333333334" cy="1630.0" r="17.5" fill="#32CD32" stroke="none" />
+<circle cx="178.33333333333334" cy="1617.5" r="7.5" fill="#FF69B4" stroke="none" />
+<circle cx="178.33333333333334" cy="1617.5" r="3.0" fill="#FFD700" stroke="none" />
+<path d="M331.6666666666667,1652.5 L336.6666666666667,1677.5 L356.6666666666667,1677.5 L361.6666666666667,1652.5 Z" fill="#CD853F" stroke="#8B5A2B" stroke-width="1" />
+<rect x="329.1666666666667" y="1647.5" width="35.0" height="7.5" fill="#D2A679" stroke="#8B5A2B" stroke-width="0.5" rx="1" ry="1" />
+<circle cx="336.6666666666667" cy="1640.0" r="15.0" fill="#228B22" stroke="none" />
+<circle cx="356.6666666666667" cy="1640.0" r="15.0" fill="#2E8B57" stroke="none" />
+<circle cx="346.6666666666667" cy="1630.0" r="17.5" fill="#32CD32" stroke="none" />
+<circle cx="351.6666666666667" cy="1617.5" r="7.5" fill="#FF69B4" stroke="none" />
+<circle cx="351.6666666666667" cy="1617.5" r="3.0" fill="#FFD700" stroke="none" />
+<path d="M505.0,1652.5 L510.0,1677.5 L530.0,1677.5 L535.0,1652.5 Z" fill="#CD853F" stroke="#8B5A2B" stroke-width="1" />
+<rect x="502.5" y="1647.5" width="35.0" height="7.5" fill="#D2A679" stroke="#8B5A2B" stroke-width="0.5" rx="1" ry="1" />
+<circle cx="510.0" cy="1640.0" r="15.0" fill="#228B22" stroke="none" />
+<circle cx="530.0" cy="1640.0" r="15.0" fill="#2E8B57" stroke="none" />
+<circle cx="520.0" cy="1630.0" r="17.5" fill="#32CD32" stroke="none" />
+<circle cx="525.0" cy="1617.5" r="7.5" fill="#FF69B4" stroke="none" />
+<circle cx="525.0" cy="1617.5" r="3.0" fill="#FFD700" stroke="none" />
+<path d="M678.3333333333334,1652.5 L683.3333333333334,1677.5 L703.3333333333334,1677.5 L708.3333333333334,1652.5 Z" fill="#CD853F" stroke="#8B5A2B" stroke-width="1" />
+<rect x="675.8333333333334" y="1647.5" width="35.0" height="7.5" fill="#D2A679" stroke="#8B5A2B" stroke-width="0.5" rx="1" ry="1" />
+<circle cx="683.3333333333334" cy="1640.0" r="15.0" fill="#228B22" stroke="none" />
+<circle cx="703.3333333333334" cy="1640.0" r="15.0" fill="#2E8B57" stroke="none" />
+<circle cx="693.3333333333334" cy="1630.0" r="17.5" fill="#32CD32" stroke="none" />
+<circle cx="698.3333333333334" cy="1617.5" r="7.5" fill="#FF69B4" stroke="none" />
+<circle cx="698.3333333333334" cy="1617.5" r="3.0" fill="#FFD700" stroke="none" />
+<path d="M851.6666666666667,1652.5 L856.6666666666667,1677.5 L876.6666666666667,1677.5 L881.6666666666667,1652.5 Z" fill="#CD853F" stroke="#8B5A2B" stroke-width="1" />
+<rect x="849.1666666666667" y="1647.5" width="35.0" height="7.5" fill="#D2A679" stroke="#8B5A2B" stroke-width="0.5" rx="1" ry="1" />
+<circle cx="856.6666666666667" cy="1640.0" r="15.0" fill="#228B22" stroke="none" />
+<circle cx="876.6666666666667" cy="1640.0" r="15.0" fill="#2E8B57" stroke="none" />
+<circle cx="866.6666666666667" cy="1630.0" r="17.5" fill="#32CD32" stroke="none" />
+<circle cx="871.6666666666667" cy="1617.5" r="7.5" fill="#FF69B4" stroke="none" />
+<circle cx="871.6666666666667" cy="1617.5" r="3.0" fill="#FFD700" stroke="none" />
 </g>
 </svg>

@@ -1,39 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="132.0" height="332" viewBox="0 0 132.0 332">
+<svg width="642.0" height="120.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg x="0.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 </defs>
-<g>
-<rect x="0.0" y="14" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="20.0" y="34.0" font-size="20" fill="red" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">1</text>
-<rect x="40.0" y="14" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="60.0" y="34.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
-<g transform="translate(10.0,66)">
-<g>
-<path d="M6.0,0 L6.0,200" stroke="red" stroke-width="4" />
-<path d="M-6.0,0 L18.0,0" stroke="red" stroke-width="4" />
-<path d="M-6.0,200 L18.0,200" stroke="red" stroke-width="4" />
-<path d="M54.0,0 L54.0,200" stroke="red" stroke-width="4" />
-<path d="M42.0,0 L66.0,0" stroke="red" stroke-width="4" />
-<path d="M42.0,200 L66.0,200" stroke="red" stroke-width="4" />
-<path d="M6.0,18.181818181818183 L54.0,18.181818181818183" stroke="red" stroke-width="3" />
-<path d="M6.0,36.36363636363637 L54.0,36.36363636363637" stroke="red" stroke-width="3" />
-<path d="M6.0,54.54545454545455 L54.0,54.54545454545455" stroke="red" stroke-width="3" />
-<path d="M6.0,72.72727272727273 L54.0,72.72727272727273" stroke="red" stroke-width="3" />
-<path d="M6.0,90.90909090909092 L54.0,90.90909090909092" stroke="red" stroke-width="3" />
-<path d="M6.0,109.0909090909091 L54.0,109.0909090909091" stroke="red" stroke-width="3" />
-<path d="M6.0,127.27272727272728 L54.0,127.27272727272728" stroke="red" stroke-width="3" />
-<path d="M6.0,145.45454545454547 L54.0,145.45454545454547" stroke="red" stroke-width="3" />
-<path d="M6.0,163.63636363636365 L54.0,163.63636363636365" stroke="red" stroke-width="3" />
-<path d="M6.0,181.81818181818184 L54.0,181.81818181818184" stroke="red" stroke-width="3" />
-</g>
-</g>
-<text x="86" y="166.0" font-size="20" font-family="Comic Sans MS" fill="red" text-anchor="start" dominant-baseline="central">+10</text>
-<g>
-<rect x="0.0" y="278" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="20.0" y="298.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central"> </text>
-<rect x="40.0" y="278" width="40" height="40" fill="none" stroke="black" stroke-width="1" />
-<text x="60.0" y="298.0" font-size="20" fill="black" font-family="Comic Sans MS" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="40" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">1000</text>
+</svg>
+<text x="147.0" y="60.0" font-size="40" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">></text>
+<svg x="174.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="50" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">500</text>
+</svg>
+<text x="321.0" y="60.0" font-size="40" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">></text>
+<svg x="348.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="50" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">99</text>
+</svg>
+<text x="495.0" y="60.0" font-size="40" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">></text>
+<svg x="522.0" y="0.0" width="120.0" height="120.0" viewBox="-60.0 -60 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="50" fill="white" stroke="red" stroke-width="10" />
+<text x="0" y="0" font-size="50" fill="black" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold">1</text>
+</svg>
 </svg>

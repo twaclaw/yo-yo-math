@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="360" height="360" viewBox="0 0 360 360">
+<defs>
+</defs>
+<g>
+<rect x="40" y="200" width="120" height="120" fill="lightblue" opacity="0.2" stroke="lightblue" stroke-width="2" />
+<text x="100.0" y="260.0" font-size="18" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="lightblue" font-weight="bold" font-style="italic">a²</text>
+<rect x="160" y="40" width="160" height="160" fill="lightblue" opacity="0.2" stroke="lightblue" stroke-width="2" />
+<text x="240.0" y="120.0" font-size="18" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" fill="lightblue" font-weight="bold" font-style="italic">b²</text>
+<path d="M160,320 L320,200 L160,200 Z" fill="hotpink" opacity="0.35" stroke="black" stroke-width="1" />
+<path d="M160,200 L160,40 L40,40 Z" fill="gold" opacity="0.35" stroke="black" stroke-width="1" />
+<path d="M160,320 L320,320 L320,200 Z" fill="blue" opacity="0.35" stroke="black" stroke-width="1" />
+<path d="M40,200 L160,200 L40,40 Z" fill="mediumseagreen" opacity="0.35" stroke="black" stroke-width="1" />
+<rect x="40" y="40" width="280" height="280" fill="none" stroke="black" stroke-width="2" />
+<path d="M160,320 L160,40" stroke="black" stroke-width="1.5" />
+<path d="M40,200 L320,200" stroke="black" stroke-width="1.5" />
+<path d="M172.0,200.0 L172.0,212.0 L160.0,212.0" fill="none" stroke="black" stroke-width="1" />
+<path d="M148.0,40.0 L148.0,51.99999999999999 L160.0,51.99999999999999" fill="none" stroke="black" stroke-width="1" />
+<path d="M308.0,320.0 L308.0,308.0 L320.0,308.0" fill="none" stroke="black" stroke-width="1" />
+<path d="M52.0,200.0 L52.0,188.0 L40.0,188.0" fill="none" stroke="black" stroke-width="1" />
+<text x="100.0" y="338" font-size="14" text-anchor="middle" font-family="sans-serif" font-style="italic" fill="black">a</text>
+<text x="240.0" y="338" font-size="14" text-anchor="middle" font-family="sans-serif" font-style="italic" fill="black">b</text>
+<text x="100.0" y="22" font-size="14" text-anchor="middle" font-family="sans-serif" font-style="italic" fill="black">a</text>
+<text x="240.0" y="22" font-size="14" text-anchor="middle" font-family="sans-serif" font-style="italic" fill="black">b</text>
+<text x="22" y="260.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic" fill="black">a</text>
+<text x="22" y="120.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic" fill="black">b</text>
+<text x="338" y="260.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic" fill="black">a</text>
+<text x="338" y="120.0" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic" fill="black">b</text>
+<path d="M160,315 L160,325" stroke="black" stroke-width="1.5" />
+<path d="M160,35 L160,45" stroke="black" stroke-width="1.5" />
+<path d="M35,200 L45,200" stroke="black" stroke-width="1.5" />
+<path d="M315,200 L325,200" stroke="black" stroke-width="1.5" />
+<text x="231.6" y="248.8" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic" fill="black">c</text>
+<text x="111.2" y="111.6" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic" fill="black">c</text>
+</g>
+</svg>
