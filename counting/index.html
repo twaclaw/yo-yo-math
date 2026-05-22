@@ -244,13 +244,9 @@ window.Quarto = {
 👈 This book is optimized for PDF output. Download the PDF from the sidebar.
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
-    pdfLinks.forEach(link => {
-        link.setAttribute('download', link.href.split('/').pop() || 'download.pdf');
-        link.setAttribute('target', '_blank');
-    });
-});
+window.onload = function() {
+  document.querySelectorAll('a.quarto-navigation-tool[href$=".pdf"]').forEach(a => a.setAttribute('download', 'Yo-Yo-Math.pdf'));
+};
 </script>
 
 <header id="title-block-header" class="quarto-title-block default">
