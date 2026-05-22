@@ -2,3 +2,9 @@
 <div style="width: 100%; background-color: white; color: rgb(132, 130, 130); text-align: left; padding: 1em 1em; font-family: 'Comic Sans MS', cursive; font-size: 1.2em; letter-spacing: 0.05em;">
 👈 This book is optimized for PDF output. Download the PDF from the sidebar.
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const pdfLinks = document.querySelectorAll('a.sidebar-tool[href$=".pdf"]');
+    pdfLinks.forEach(link => link.setAttribute('download', ''));
+});
+</script>
