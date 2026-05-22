@@ -245,8 +245,11 @@ window.Quarto = {
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const pdfLinks = document.querySelectorAll('a.sidebar-tool[href$=".pdf"]');
-    pdfLinks.forEach(link => link.setAttribute('download', ''));
+    const pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
+    pdfLinks.forEach(link => {
+        link.setAttribute('download', link.href.split('/').pop() || 'download.pdf');
+        link.setAttribute('target', '_blank');
+    });
 });
 </script>
 
