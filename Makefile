@@ -22,8 +22,12 @@ publish:
 
 clean:
 	rm -rf $(BOOK_DIR)
-	rm Yo-Yo-Math.tex
+	rm -f Yo-Yo-Math.tex
 	rm -rf _book/
 	rm -rf _freeze/
 	rm -rf index_files/
+	rm -rf counting_faster/index_files
+	rm -rf counting/index_files
+	rm -rf counting_recap/countin_recap_files
+	rm -rf number_line/number_line_files
 	rm -rf site_libs/

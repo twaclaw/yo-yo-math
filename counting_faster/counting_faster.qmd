@@ -143,7 +143,38 @@ The total number of orange bricks is [$\boxed{\phantom{5}} \times \boxed{\phanto
 The total number of yellow bricks is [$\boxed{\phantom{5}} \times \boxed{\phantom{3}} \times \boxed{\phantom{2}}$]{.scale factor="2"}.
 
 
+Based on the chessboard below, answer the following questions. Can you express your answers using multiplication?
 
+- How many squares are there in total on the chessboard?
+- How many white pieces are on the chessboard?
+- How many pieces are there in total (white and black)?
+- How many squares are empty?
+
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+import chess
+import chess.svg
+from IPython.display import SVG, display
+
+board = chess.Board()
+
+# board = chess.Board("r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3")
+
+svg_data = chess.svg.board(
+    board,
+    coordinates=True,
+    size=300,
+    colors={
+        "square light": "#F0D9B5", # Customize the board colors (optional)
+        "square dark": "#B58863"
+    }
+)
+
+display(SVG(svg_data))
+```
 
 
 

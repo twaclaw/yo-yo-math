@@ -6,7 +6,7 @@ I would like to express my warm thanks to everyone who has contributed to this b
 First, my children, for asking so many questions. My wife, Gabrielė Lelytė, for her thorough revisions, detailed feedback, and artistic guidance; for giving me time to write and code; and for filling our home with music and love.
 
 
-Thanks also to [Gerardo Restrepo](https://www.instagram.com/gerardorestrepotattoo/) for drawing the beautiful cover, and to Hamilton Carrillo, Stefan Dutoi, and Eleonora Stassi for reading an early draft of the book and offering valuable feedback and corrections.
+Thanks also to [Gerardo Restrepo](https://www.instagram.com/gerardorestrepotattoo/) for drawing the beautiful cover, and to Hamilton Carrillo and Eleonora Stassi for reading an early draft of the book and offering valuable feedback and corrections.
 
 We often take it for granted, but the world is a better place thanks to the amazing work and dedication of the people who create open-source content and software, from Wikipedia to Blender to \LaTeX. I wrote this book using [Quarto](https://quarto.org/) and used Python and [TikZ](https://tikz.net/) to generate the figures. I also used [LDraw](https://www.ldraw.org/) and [Blender](https://www.blender.org/) to create rendering of the LEGO blocks.
 

@@ -2,7 +2,7 @@
 
 Imagine that you are playing a card game with your friends. It could be Uno, The Mind, or any other card game in which each player starts with an equal number of cards.
 
-Let's say the game has $12$ cards and $3$ are three players. You start by splitting the cards. Initially, each player has $0$ cards.
+Let's say the game has $12$ cards and $3$ are three players.  Initially, each player has $0$ cards.
 
 
 ```{python}
@@ -143,7 +143,7 @@ game = CardGame(
 display_vector(game)
 ```
 
-If we follow the same process of giving out the cards one by one, we end up with each player holding $3$ cards.
+If we follow the same process of giving out the cards one by one, each player ends up with $3$ cards.
 
 
 

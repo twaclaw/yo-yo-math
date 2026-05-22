@@ -87,7 +87,7 @@ But wait a minute. We don't know how to do that yet.  We don't know how to do it
 
 
 :::{.fun-fact title="Spherical cows" image="/static_images/spherical_cow.pdf" scale="1.0" width=0.7}
-Approximating means cutting corners and simplifying. For example, if a quantity is $99$, you can approximate it as $100$ because $100$ is easier to work with. Engineering and physics make heavy use of this technique. Sometimes it is useful to assume that things are points, that something is constant, and that cows are spheres.
+Approximating means cutting corners and simplifying. For example, under some circumstances, if a quantity is $9$, you can approximate it as $10$ because $10$ is easier to work with. Engineering and physics make heavy use of this technique. Sometimes it is useful to assume that things are points, that something is constant, and even that cows are spheres.
 :::
 
 

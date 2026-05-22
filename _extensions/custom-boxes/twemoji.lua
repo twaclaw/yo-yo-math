@@ -81,6 +81,8 @@ local emoji_map = {
   white_large_square = "⬜",
   red_triangle_pointed_up = "🔺",
   tokyo_tower = "🗼",
+  pizza = "🍕",
+  ice_cream = "🍨",
 
   
   -- Add more here as needed
