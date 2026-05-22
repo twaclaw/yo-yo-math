@@ -1,0 +1,180 @@
+# Pizza Math $\text{[pizza:1em]{.twemoji}}$
+
+## How much pizza do you eat?
+
+I know for a fact that, besides being a chocolate $\text{[chocolate_bar:1em]{.twemoji}}$ and a gelato $\text{[ice_cream:1em]{.twemoji}}$ monster, you also love pizza $\text{[pizza:1em]{.twemoji}}$. Margherita, of course.
+
+
+Some times you eat $2$ pizzas in a single day.
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+import importlib
+import yoyo_plots.division
+importlib.reload(yoyo_plots.division)
+
+from yoyo_plots.division import Pizza
+from yoyo_plots.common import combine_svgs, display_vector
+
+margherita = Pizza(numerator=4, denominator=4, flavour="margherita", division_color="lightgray")
+
+
+display_vector(combine_svgs([margherita]*2))
+```
+
+Other times, you eat just $1$ pizza.
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+import importlib
+import yoyo_plots.division
+importlib.reload(yoyo_plots.division)
+
+from yoyo_plots.division import Pizza
+from yoyo_plots.common import combine_svgs, display_vector
+
+margherita = Pizza(numerator=4, denominator=4, flavour="margherita", division_color="lightgray")
+
+
+display_vector(combine_svgs([margherita]*1))
+```
+
+But some times you are not that hungry and you just eat a _fraction_ of the pizza.
+
+
+
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+import importlib
+import yoyo_plots.division
+importlib.reload(yoyo_plots.division)
+
+from yoyo_plots.division import Pizza
+from yoyo_plots.common import combine_svgs, display_vector
+
+pizzas = [Pizza(numerator=i, denominator=j, flavour="margherita", division_color="lightgray") for i, j in [(1, 4), (2, 5), (4, 6)]]
+
+
+display_vector(combine_svgs(pizzas))
+```
+
+:::{.question}
+How should these quantities be represented?
+:::
+
+So far we have operated in the realm of the integers, which represent _whole_ quantities. The very word _integer_ means  _whole_ or _complete_.
+
+In this chapter, we will learn about another set of numbers, called the _rational_ numbers [$\color{purple}{\mathbb{Q}}$]{.scale factor="2"}, which can be used to represent  _parts_ or  _fractions_ of whole quantities. 
+We will learn that just as the natural numbers [${\color{red}{\mathbb{N}}}$]{.scale factor="2"} are included in the integers [${\color{blue}{\mathbb{Z}}}$]{.scale factor="2"}, the integers are included in the rational numbers:
+
+::: {.big-math}
+$$
+ {\color{red}{\mathbb{N}}} \subset {\color{blue}{\mathbb{Z}}} \subset {\color{purple}{\mathbb{Q}}}
+ $$
+:::
+
+
+## How do you name these new numbers?
+
+Naming fractions is easy.  First, you need the number of parts into which the whole unit is divided. That number is called the _denominator_. Then, you need to know how many of those parts are included; that number is called the _numerator_.
+
+
+:::{.big-math}
+:::{.content-visible when-format="html"}
+\frac{\texst{numerator}}{\text{denominator}} = \frac{\text{Number of parts included}}{\text{Number of parts the whole unit is divided into}}
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{{latex}}
+\begin{equation*}
+\frac{\eqnmark[Red]{numerator}{\text{numerator}}}{\eqnmark[Blue]{denominator}{\text{denominator}}}
+\annotate[yshift=0.2em]{above}{numerator}{How many slices you eat}
+\annotate[yshift=-0.05em]{below}{denominator}{Number of slices the pizza is divided into}
+\end{equation*}
+\vspace{0.5em}
+:::
+:::
+:::
+
+
+Now, let's see how to represent these numbers. For example, the following quantity represents the fraction $\frac{1}{3}$, which is read as "one third." This means that the whole pizza is divided into $3$ parts, and you eat $1$ of those parts.
+
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+import importlib
+import yoyo_plots.division
+importlib.reload(yoyo_plots.division)
+
+from yoyo_plots.division import Pizza
+from yoyo_plots.common import combine_svgs, display_vector
+
+pizza = Pizza(numerator=1, denominator=3, flavour="bianca", division_color="lightgray", draw_fraction=True) 
+
+display_vector(pizza)
+```
+
+
+
+
+### Exercises {.unnumbered .unlisted}
+
+Write down the following fractions:
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+import importlib
+import yoyo_plots.division
+importlib.reload(yoyo_plots.division)
+
+from yoyo_plots.division import Pizza
+from yoyo_plots.common import combine_svgs, display_vector
+import random
+
+flavours = ["margherita", "bianca", "pepperoni"]
+fractions = [(1, 4), (1, 2), (2, 4), (4, 8), (3, 4), (2, 5), (1, 6), (5, 8), (3, 10)]
+
+for numerator, denominator in fractions:
+    flavour = random.choice(flavours)
+    pizza = Pizza(numerator=numerator, denominator=denominator, flavour=flavour, division_color="lightgray", draw_fraction=True, font_color="white") 
+    display_vector(pizza)
+```
+
+
+```{python}
+#| echo: false
+#| fig-align: "center"
+
+import importlib
+import yoyo_plots.division
+importlib.reload(yoyo_plots.division)
+
+from yoyo_plots.division import Pizza
+from yoyo_plots.common import combine_svgs, display_vector
+import random
+
+flavours = ["margherita", "bianca", "pepperoni"]
+fractions = [((4, 4), (3, 4)), ((5, 5), (2, 5)),  ((2, 2), (1, 2))]
+
+for pizza1, pizza2 in fractions:
+    numerator1, denominator1 = pizza1
+    numerator2, denominator2 = pizza2
+    flavour = random.choice(flavours)
+    p1 = Pizza(numerator=numerator1, denominator=denominator1, flavour=flavour, division_color="lightgray", draw_fraction=False, font_color="white") 
+    p2 = Pizza(numerator=numerator2, denominator=denominator2, flavour=flavour, division_color="lightgray", draw_fraction=True, font_color="white")
+    display_vector(combine_svgs([p1, p2]))
+```
+
+
+

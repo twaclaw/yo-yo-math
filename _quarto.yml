@@ -39,6 +39,7 @@ book:
     - counting_recap/counting_recap.qmd
     - counting_faster/index.qmd
     - multiplication_and_geometry/index.qmd
+    - pizza_math/index.qmd
     - credits.qmd
   sidebar:
     tools:

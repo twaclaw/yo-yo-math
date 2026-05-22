@@ -1,0 +1,49 @@
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import verovio
+from IPython.display import SVG, display
+
+tk = verovio.toolkit()
+
+tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom": "abc", "footer": "none"})
+
+abc_data = """
+X: 1
+T: Nothing
+M: 4/4
+L: 1/4
+K: C
+C D E F | G A B c |]
+"""
+
+tk.loadData(abc_data)
+
+display(SVG(tk.renderToSVG()))
+```
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import verovio
+from IPython.display import SVG, display
+
+tk = verovio.toolkit()
+
+tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom": "abc", "footer": "none"})
+
+abc_data = """
+X: 1
+T: Simple Scale
+M: 4/4
+L: 1/4
+K: C
+C D E F | G A B c |]
+"""
+
+tk.loadData(abc_data)
+
+display(SVG(tk.renderToSVG()))
+```
+
