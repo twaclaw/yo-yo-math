@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="284.0" height="210" viewBox="0 0 284.0 210">
+<defs>
+<clipPath id="clip-4557123472-4503490000">
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,191.60254037844388,155.0 Z" fill="none" />
+</clipPath>
+</defs>
+<g>
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,191.60254037844388,155.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L191.60254037844388,155.0 A100,100,0,0,1,18.397459621556123,155.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L18.397459621556123,155.0 A100,100,0,0,1,104.99999999999999,5.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,191.60254037844388,155.0 Z" fill="#FEF7E3" stroke="lightgray" stroke-width="2" />
+<use xlink:href="#clip-4557123472-4503490000" />
+<g clip-path="url(#clip-4557123472-4503490000)">
+<circle cx="105.0" cy="105.0" r="92" stroke="#DAA05D" stroke-width="16" fill="none" />
+<circle cx="105.0" cy="105.0" r="98" stroke="#C37B32" stroke-width="5" fill="none" />
+<circle cx="71.47715485880437" cy="182.63990532151763" r="4.035965786734026" fill="#FFFFFF" fill-opacity="0.3136981820080951" />
+<circle cx="66.47920968628068" cy="38.963862068775114" r="5.9712260239339345" fill="#FFFFFF" fill-opacity="0.4077539052331691" />
+<circle cx="43.32265966632567" cy="55.90893292593203" r="5.658146271723853" fill="#D2691E" fill-opacity="0.3345547551002634" />
+<circle cx="53.79455589302809" cy="84.24332481501585" r="2.7987039945186285" fill="#D2691E" fill-opacity="0.5406165719183486" />
+<circle cx="78.8392015967663" cy="93.11227481215917" r="5.960103931182498" fill="#D2691E" fill-opacity="0.44796827475290424" />
+<circle cx="81.42054993922994" cy="165.86273114497868" r="5.4222749799985035" fill="#FFDE75" fill-opacity="0.24794273458525065" />
+<circle cx="110.73950434454991" cy="110.57009802440318" r="3.89078661845385" fill="#D2691E" fill-opacity="0.22733269791142524" />
+<circle cx="100.74303897379214" cy="145.84547692362815" r="2.22507381417214" fill="#FFFFFF" fill-opacity="0.26519013537066305" />
+<circle cx="73.05182800425271" cy="64.97546842149464" r="4.415568199750479" fill="#8B4513" fill-opacity="0.26685790637892176" />
+<circle cx="99.71124449419284" cy="186.95184986918764" r="4.522836547997018" fill="#FFFFFF" fill-opacity="0.3498987832874528" />
+<circle cx="51.81951002832602" cy="103.045397828595" r="4.8492000300126925" fill="#D2691E" fill-opacity="0.5236780607951428" />
+<circle cx="54.49261111118808" cy="63.073134605660485" r="3.0860295970117453" fill="#8B4513" fill-opacity="0.28210852906973705" />
+<circle cx="94.1052171390808" cy="21.601728789158287" r="3.807997803197663" fill="#D2691E" fill-opacity="0.34664002748737055" />
+<circle cx="27.04774511076161" cy="94.56161085384365" r="3.9700283680387707" fill="#8B4513" fill-opacity="0.2563219323792675" />
+<circle cx="164.92846582950776" cy="118.96997871593537" r="4.112647692111249" fill="#D2691E" fill-opacity="0.34586583239620305" />
+<circle cx="162.12843013222374" cy="141.41925687080152" r="6.141294156109259" fill="#FFFFFF" fill-opacity="0.95" stroke="#FAF0E6" stroke-width="1.5" />
+<circle cx="146.10699676291424" cy="67.9255571542528" r="8.124133347066675" fill="#FFFFFF" fill-opacity="0.95" stroke="#FAF0E6" stroke-width="1.5" />
+<circle cx="123.24273809230553" cy="94.4820824543833" r="8.927412072415148" fill="#FFFFFF" fill-opacity="0.95" stroke="#FAF0E6" stroke-width="1.5" />
+<circle cx="142.79277441689112" cy="138.06559928516424" r="9.930910185626228" fill="#FFFFFF" fill-opacity="0.95" stroke="#FAF0E6" stroke-width="1.5" />
+<circle cx="108.0285597171504" cy="108.04652490603686" r="11.42481574574963" fill="#FFFFFF" fill-opacity="0.95" stroke="#FAF0E6" stroke-width="1.5" />
+<circle cx="47.61289912666532" cy="124.92686472648424" r="10.149037146362108" fill="#FFFFFF" fill-opacity="0.95" stroke="#FAF0E6" stroke-width="1.5" />
+</g>
+<rect x="230.0" y="41.0" width="54.0" height="54.0" fill="none" stroke="black" stroke-width="2" />
+<rect x="230.0" y="115.0" width="54.0" height="54.0" fill="none" stroke="black" stroke-width="2" />
+<path d="M225.0,105.0 L289.0,105.0" stroke="black" stroke-width="2" />
+<text x="257.0" y="68.0" font-size="36" font-family="Comic Sans MS, Comic Sans, cursive" dominant-baseline="middle" fill="black" text-anchor="middle">1</text>
+<text x="257.0" y="142.0" font-size="36" font-family="Comic Sans MS, Comic Sans, cursive" dominant-baseline="middle" fill="black" text-anchor="middle">3</text>
+</g>
+</svg>

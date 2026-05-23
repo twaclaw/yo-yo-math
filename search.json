@@ -530,6 +530,36 @@
     ]
   },
   {
+    "objectID": "pizza_math/index.html",
+    "href": "pizza_math/index.html",
+    "title": "7  Pizza Math ",
+    "section": "",
+    "text": "7.1 How much pizza do you eat?\nI know for a fact that, besides being a chocolate  and a gelato  monster, you also love pizza . Margherita, of course.\nSome times you eat \\(2\\) pizzas in a single day.\nOther times, you eat just \\(1\\) pizza.\nBut some times you are not that hungry and you just eat a fraction of the pizza.\nSo far we have operated in the realm of the integers, which represent whole quantities. The very word integer means whole or complete.\nIn this chapter, we will learn about another set of numbers, called the rational numbers \\(\\color{purple}{\\mathbb{Q}}\\), which can be used to represent parts or fractions of whole quantities. We will learn that just as the natural numbers \\({\\color{red}{\\mathbb{N}}}\\) are included in the integers \\({\\color{blue}{\\mathbb{Z}}}\\), the integers are included in the rational numbers:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pizza Math $\\text{[pizza:1em]{.twemoji}}$</span>"
+    ]
+  },
+  {
+    "objectID": "pizza_math/index.html#how-much-pizza-do-you-eat",
+    "href": "pizza_math/index.html#how-much-pizza-do-you-eat",
+    "title": "7  Pizza Math ",
+    "section": "",
+    "text": "Caution Question\n\n\n\nHow should these quantities be represented?\n\n\n\n\n\n\n\\[\n{\\color{red}{\\mathbb{N}}} \\subset {\\color{blue}{\\mathbb{Z}}} \\subset {\\color{purple}{\\mathbb{Q}}}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pizza Math $\\text{[pizza:1em]{.twemoji}}$</span>"
+    ]
+  },
+  {
+    "objectID": "pizza_math/index.html#how-do-you-name-these-new-numbers",
+    "href": "pizza_math/index.html#how-do-you-name-these-new-numbers",
+    "title": "7  Pizza Math ",
+    "section": "7.2 How do you name these new numbers?",
+    "text": "7.2 How do you name these new numbers?\nNaming fractions is easy. First, you need the number of parts into which the whole unit is divided. That number is called the denominator. Then, you need to know how many of those parts are included; that number is called the numerator.\n\n = \n\nNow, let’s see how to represent these numbers. For example, the following quantity represents the fraction \\(\\frac{1}{3}\\), which is read as “one third.” This means that the whole pizza is divided into \\(3\\) parts, and you eat \\(1\\) of those parts.\n\n\n\n\n\n\n\n\n\n\nExercises\nWrite down the following fractions:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Pizza Math $\\text{[pizza:1em]{.twemoji}}$</span>"
+    ]
+  },
+  {
     "objectID": "credits.html",
     "href": "credits.html",
     "title": "Credits",

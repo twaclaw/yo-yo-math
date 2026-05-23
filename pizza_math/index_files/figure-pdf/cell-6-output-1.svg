@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="284.0" height="210" viewBox="0 0 284.0 210">
+<defs>
+<clipPath id="clip-4568043200-4503666768">
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,205.0,105.0 Z" fill="none" />
+</clipPath>
+</defs>
+<g>
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,205.0,105.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L205.0,105.0 A100,100,0,0,1,105.0,205.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L105.0,205.0 A100,100,0,0,1,5.0,105.00000000000001 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L5.0,105.00000000000001 A100,100,0,0,1,104.99999999999999,5.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,205.0,105.0 Z" fill="#F5C754" stroke="lightgray" stroke-width="2" />
+<use xlink:href="#clip-4568043200-4503666768" />
+<g clip-path="url(#clip-4568043200-4503666768)">
+<circle cx="105.0" cy="105.0" r="92" stroke="#DAA05D" stroke-width="16" fill="none" />
+<circle cx="105.0" cy="105.0" r="98" stroke="#C37B32" stroke-width="5" fill="none" />
+<circle cx="71.64396423681191" cy="158.76043042547087" r="3.1467275700307593" fill="#FFDE75" fill-opacity="0.5772710238931881" />
+<circle cx="145.25770032652756" cy="129.84421952727675" r="4.3071297685328345" fill="#8B4513" fill-opacity="0.5195741902630375" />
+<circle cx="65.23600317182718" cy="169.23675036487174" r="3.556113521997938" fill="#FFFFFF" fill-opacity="0.4019151603437604" />
+<circle cx="131.78814670872364" cy="185.31722954404205" r="3.5693167884004984" fill="#FFDE75" fill-opacity="0.2748396180941134" />
+<circle cx="32.5678620806065" cy="95.56543771641694" r="4.312438296602976" fill="#FFDE75" fill-opacity="0.33829552138264096" />
+<circle cx="52.10224654527924" cy="157.19846802259963" r="2.9373438784161285" fill="#D2691E" fill-opacity="0.5467320950056864" />
+<circle cx="37.31005654076412" cy="148.51914180362783" r="5.127367450006826" fill="#8B4513" fill-opacity="0.2147373409860697" />
+<circle cx="48.09849066038979" cy="72.12567673095523" r="5.100854597877251" fill="#D2691E" fill-opacity="0.21592511521482202" />
+<circle cx="25.083209494716357" cy="82.89449249132254" r="2.3505261199487664" fill="#8B4513" fill-opacity="0.5903440109840274" />
+<circle cx="23.462343065408675" cy="123.471634638389" r="2.3652087803781137" fill="#FFDE75" fill-opacity="0.46571971207763" />
+<circle cx="31.918089007394045" cy="83.01814379517158" r="2.4267710655865398" fill="#FFDE75" fill-opacity="0.4005230865996212" />
+<circle cx="179.30996530551707" cy="134.99238599931442" r="4.558563217199744" fill="#D2691E" fill-opacity="0.4111751275514185" />
+<circle cx="79.44627239186356" cy="184.71947003289404" r="5.086508806677976" fill="#FFFFFF" fill-opacity="0.36257365869915714" />
+<circle cx="102.31151712624577" cy="136.14013307814272" r="5.52406662793671" fill="#D2691E" fill-opacity="0.3638510703552894" />
+<circle cx="189.4348654256686" cy="111.59963892777367" r="4.161183700437555" fill="#FFDE75" fill-opacity="0.5774144994604671" />
+<ellipse cx="98.06475378095179" cy="84.09016691161526" rx="6.42626658357879" ry="6.043218165005715" fill="#FFFDF0" fill-opacity="0.6" />
+<ellipse cx="98.6183537752461" cy="83.24796098854615" rx="4.409908304950701" ry="2.5850522484026746" fill="#FFFFFF" fill-opacity="0.85" />
+<ellipse cx="61.55911261194124" cy="94.26274819230764" rx="5.920086180316234" ry="8.358453087911887" fill="#FFFDF0" fill-opacity="0.6" />
+<ellipse cx="61.44254679405915" cy="94.88185115851313" rx="4.204018206518402" ry="2.784729965729065" fill="#FFFFFF" fill-opacity="0.85" />
+<ellipse cx="63.09328526931199" cy="98.52655840049904" rx="5.504824798411057" ry="6.955456518815508" fill="#FFFDF0" fill-opacity="0.6" />
+<ellipse cx="62.41364637841849" cy="99.4895704422201" rx="2.3773867525649184" ry="2.78342620990614" fill="#FFFFFF" fill-opacity="0.85" />
+</g>
+<rect x="230.0" y="41.0" width="54.0" height="54.0" fill="none" stroke="black" stroke-width="2" />
+<rect x="230.0" y="115.0" width="54.0" height="54.0" fill="none" stroke="black" stroke-width="2" />
+<path d="M225.0,105.0 L289.0,105.0" stroke="black" stroke-width="2" />
+</g>
+</svg>
