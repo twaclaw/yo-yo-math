@@ -30,7 +30,7 @@
 
 /* Titles and subtitles in HTML version as in PDF version */
 h1, h2, h3, h4, h5, h6, .title, .subtitle {
-  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif !important;
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Chalkboard", "Marker Felt", sans-serif !important;
 }
 
 h1, .title, .subtitle {
