@@ -28,7 +28,7 @@ I don't just focus on acquiring skills or accumulating knowledge, though I do th
 
 <!-- I started teaching my kids math when they were just over two years old and still learning to talk, but I don't have a strong opinion on the ages for which this material might be appropriate.  -->
 
-Inspired by how my kids watch the same film over and over again without losing their awe and amazement, I designed these lectures to be revisited multiple times. Feel free to skip or add content as you progress. I included concepts and ideas that traditional curricula consider "advanced." You might be surprised. Intuition is more powerful than convention.
+Inspired by how my kids watch the same film over and over again without losing their awe and amazement, I designed these lectures to be revisited multiple times. Feel free to skip or add content, or cherry-pick topics from here and there. I included concepts and ideas that traditional curricula consider "advanced." You might be surprised. Intuition is more powerful than convention.
 
 
 
@@ -46,7 +46,7 @@ I hope you find this book useful the next time someone demands, "More math!"
 
 :::{.content-visible when-format="html"}
 :::{.fun-fact title="Consider reading the PDF version of this book"}
-👈 This book is optimized for PDF output. Download the PDF from the sidebar.
+👈 This book is optimized for PDF output. Download the PDF from the sidebar or menu.
 :::
 :::
 

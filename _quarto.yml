@@ -62,7 +62,9 @@ filters:
 
 format:
   html:
-    theme: united
+    theme:
+      - united
+      - custom.scss
     css: custom.css
     include-before-body: before-body.html
     fig-dpi: 300
