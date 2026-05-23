@@ -28,10 +28,7 @@
   color: #0077BB; /* kidBlue */
 }
 
-/* Titles and subtitles in HTML version as in PDF version */
-h1, h2, h3, h4, h5, h6, .title, .subtitle {
-  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Chalkboard", "Marker Felt", sans-serif !important;
-}
+/* Titles and subtitles colors in HTML version */
 
 h1, .title, .subtitle {
   color: #0077BB !important; /* kidBlue */
