@@ -83,6 +83,7 @@ local emoji_map = {
   tokyo_tower = "🗼",
   pizza = "🍕",
   ice_cream = "🍨",
+  musical_note = "🎵",
 
   
   -- Add more here as needed

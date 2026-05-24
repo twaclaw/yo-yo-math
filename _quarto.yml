@@ -105,6 +105,8 @@ format:
           \usetikzlibrary{shapes.geometric, decorations.pathreplacing, calligraphy}
           \usepackage{twemojis}
           \usepackage{fontspec}
+          \usepackage{musicography}
+          \usepackage{lilyglyphs}
           \usepackage{graphicx}
           \usepackage{annotate-equations}
 

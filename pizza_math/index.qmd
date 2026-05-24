@@ -1,8 +1,8 @@
-# Pizza Math $\text{[pizza:1em]{.twemoji}}$
+# Pizza Math [pizza]{.twemoji}
 
 ## How much pizza do you eat?
 
-I know for a fact that, besides being a chocolate $\text{[chocolate_bar:1em]{.twemoji}}$ and a gelato $\text{[ice_cream:1em]{.twemoji}}$ monster, you also love pizza $\text{[pizza:1em]{.twemoji}}$. Margherita, of course.
+I know for a fact that, besides being a chocolate $\text{[chocolate_bar:1em]{.twemoji}}$ and a gelato $\text{[ice_cream:1em]{.twemoji}}$ monster, you also love pizza [pizza]{.twemoji}. Margherita, of course.
 
 
 Some times you eat $2$ pizzas in a single day.
@@ -178,3 +178,5 @@ for pizza1, pizza2 in fractions:
 
 
 
+{{< include comparing.qmd >}}
+{{< include rythms.qmd >}}

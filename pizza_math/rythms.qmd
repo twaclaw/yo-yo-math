@@ -1,9 +1,46 @@
+## Fractions make you dance [musical_note]{.twemoji}
+
+Fractions appear in many contexts, such as in nature and art, where they are used to describe proportions and ratios. In music, note durations are expressed as fractions relative to a whole note.  
+
+The following symbols represent notes and rests (yes, silence is also very important in music) of different durations.
+
+
+::: {.content-visible when-format="html"}
+| Note | Value | American Name | British Name |
+|:---:|:---:|:---|:---|
+| <span style="font-size: 2em;">&#x1D11C;</span> | $\color{red} 2$ | Double whole note | Breve |
+| <span style="font-size: 2em;">&#x1D15D;</span> | $\color{red} 1$ | Whole note | Semibreve |
+| <span style="font-size: 2em;">&#x1D15E;</span> | $\color{red}\frac{1}{2}$ | Half note | Minim |
+| <span style="font-size: 2em;">&#x2669;</span> | $\color{red}\frac{1}{4}$ | Quarter note | Crotchet |
+| <span style="font-size: 2em;">&#x266A;</span> | $\color{red}\frac{1}{8}$ | Eighth note | Quaver |
+| <span style="font-size: 2em;">&#x1D161;</span> | $\color{red}\frac{1}{16}$ | Sixteenth note | Semiquaver |
+| <span style="font-size: 2em;">&#x1D162;</span> | $\color{red}\frac{1}{32}$ | Thirty-second note | Demisemiquaver |
+:::
+
+::: {.content-visible when-format="pdf"}
+| Note | Value | American Name | British Name |
+|:-:|:-:|:---|:---|
+| \musBreve| $\color{red} 2$ | Double whole note | Breve |
+| \musWhole| $\color{red} 1$ | Whole note | Semibreve |
+| \musHalf| $\color{red}\frac{1}{2}$ | Half note | Minim |
+| \musQuarter| $\color{red}\frac{1}{4}$ | Quarter note | Crotchet |
+| \musEighth| $\color{red}\frac{1}{8}$ | Eighth note | Quaver |
+| \musSixteenth| $\color{red}\frac{1}{16}$ | Sixteenth note | Semiquaver |
+:::
+
+In the following score, each bar—each division of the staff—contains notes that sum to $1$. $1$ "whole" note is worth $1$, $2$ half notes each worth $\frac{1}{2}$, $4$ quarter notes each worth $\frac{1}{4}$, $8$ eighth notes each worth $\frac{1}{8}$, and $16$ sixteenth notes each worth $\frac{1}{16}$, etc.
+
+:::{.question title="Do the notes in a bar sum up to $1$?"}
+Add up the values of the notes in each bar to see that they sum to $1$.
+:::
+
 
 ```{python}
 # | echo: false
 # | fig-align: "center"
 import verovio
 from IPython.display import SVG, display
+verovio.enableLog(verovio.LOG_OFF)
 
 tk = verovio.toolkit()
 
@@ -11,23 +48,29 @@ tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom
 
 abc_data = """
 X: 1
-T: Nothing
+T: Notes
 M: 4/4
 L: 1/4
 K: C
-C D E F | G A B c |]
+"^1"C4 | "^1/2"C2 C2 | "^1/4"C C C C | "^1/8"C/2C/2 C/2C/2 C/2C/2 C/2C/2 | "^1/16"C/4C/4C/4C/4 C/4C/4C/4C/4 C/4C/4C/4C/4 C/4C/4C/4C/4 |]
 """
 
 tk.loadData(abc_data)
 
-display(SVG(tk.renderToSVG()))
+import re
+svg = tk.renderToSVG()
+svg = re.sub(r'(<g id="[^"]+" class="harm")', r'\1 fill="red"', svg)
+display(SVG(svg))
 ```
+
+And similarly for the rests:
 
 ```{python}
 # | echo: false
 # | fig-align: "center"
 import verovio
 from IPython.display import SVG, display
+verovio.enableLog(verovio.LOG_OFF)
 
 tk = verovio.toolkit()
 
@@ -35,15 +78,79 @@ tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom
 
 abc_data = """
 X: 1
-T: Simple Scale
+T: Silences
 M: 4/4
 L: 1/4
 K: C
-C D E F | G A B c |]
+"^1"z4 | "^1/2"z2 z2 | "^1/4"z z z z | "^1/8"z/2z/2 z/2z/2 z/2z/2 z/2z/2 | "^1/16"z/4z/4z/4z/4 z/4z/4z/4z/4 z/4z/4z/4z/4 z/4z/4z/4z/4 |]
 """
 
 tk.loadData(abc_data)
 
-display(SVG(tk.renderToSVG()))
+import re
+svg = tk.renderToSVG()
+svg = re.sub(r'(<g id="[^"]+" class="harm")', r'\1 fill="red"', svg)
+display(SVG(svg))
 ```
+
+In the following score, the values in each bar sum up to $\frac{2}{4}$, that is the same as $\frac{1}{2}$.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import verovio
+from IPython.display import SVG, display
+import re
+verovio.enableLog(verovio.LOG_OFF)
+
+tk = verovio.toolkit()
+tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom": "abc", "footer": "none"})
+
+abc_data = """
+X: 1
+T: 2/4
+M: 2/4
+L: 1/4
+K: C
+C/2 z/2 C | z/2 C/2 C | C z |]
+"""
+
+tk.loadData(abc_data)
+svg = tk.renderToSVG()
+svg = re.sub(r'(<g id="[^"]+" class="harm")', r'\1 fill="red"', svg)
+display(SVG(svg))
+```
+
+
+### Exercises {.unnumbered .unlisted}
+
+Fractions make you dance because different rhythms are based on notes and rests of varying durations, or fractions. Here are some examples of common rhythms. Try clapping and dancing along!
+
+Identify the note and rest values in the following rhythms and add them up.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+import verovio
+from IPython.display import SVG, display
+import re
+verovio.enableLog(verovio.LOG_OFF)
+
+tk = verovio.toolkit()
+tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom": "abc", "footer": "none"})
+
+rhythms = [
+    ("Waltz", "M: 3/4\nL: 1/4\nK: C\nC [EG] [EG] | C [EG] [EG] |]"),
+    ("Rock", "M: 4/4\nL: 1/8\nK: C\nC C C2 C C C2 | C C C2 C C C2 |]"),
+    ("Salsa (3-2 Son Clave)", "M: 4/4\nL: 1/8\nK: C\nC3 C3 C2 | z2 C2 C2 z2 |]"),
+    ("Jazz (Swing Ride)", "M: 4/4\nL: 1/8\nK: C\nC2 C>C C2 C>C | C2 C>C C2 C>C |]")
+]
+
+for i, (title, abc) in enumerate(rhythms):
+    abc_data = f"X: {i+1}\nT: {title}\n{abc}"
+    tk.loadData(abc_data)
+    svg = tk.renderToSVG()
+    display(SVG(svg))
+```
+
 
