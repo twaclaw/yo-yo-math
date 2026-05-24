@@ -3,7 +3,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-05-22T09:33:10.893666</dc:date>
+    <dc:date>2026-05-24T18:27:01.417512</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -10768,7 +10768,7 @@ z
    </g>
    <g id="FillBetweenPolyCollection_1">
     <defs>
-     <path id="m0d1ff75b7d" d="M 55.073125 -63.33625 
+     <path id="m7005ceeada" d="M 55.073125 -63.33625 
 L 55.073125 -506.229596 
 L 57.040857 -505.932518 
 L 59.008589 -505.631627 
@@ -11573,8 +11573,8 @@ L 55.073125 -63.33625
 z
 " style="stroke: #4682b4; stroke-opacity: 0.3"/>
     </defs>
-    <g clip-path="url(#pa61a294d84)">
-     <use xlink:href="#m0d1ff75b7d" x="0" y="568.5225" style="fill: #4682b4; fill-opacity: 0.3; stroke: #4682b4; stroke-opacity: 0.3"/>
+    <g clip-path="url(#pc68fb822c1)">
+     <use xlink:href="#m7005ceeada" x="0" y="568.5225" style="fill: #4682b4; fill-opacity: 0.3; stroke: #4682b4; stroke-opacity: 0.3"/>
     </g>
    </g>
    <g id="matplotlib.axis_1">
@@ -15968,7 +15968,7 @@ L 838.477358 64.793384
 L 839.42359 65.116884 
 L 840.516912 65.491365 
 L 840.198125 66.43125 
-" clip-path="url(#pa61a294d84)" style="fill: none; stroke: #ffffff; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#pc68fb822c1)" style="fill: none; stroke: #ffffff; stroke-width: 4; stroke-linecap: square"/>
     <path d="M 55.073125 62.292904 
 L 56.058074 62.468586 
 L 57.042227 62.649714 
@@ -17035,7 +17035,7 @@ L 838.477358 64.793384
 L 839.42359 65.116884 
 L 840.516912 65.491365 
 L 840.198125 66.43125 
-" clip-path="url(#pa61a294d84)" style="fill: none; stroke: #5d3a1a; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#pc68fb822c1)" style="fill: none; stroke: #5d3a1a; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
     <path d="M 55.073125 505.18625 
@@ -24676,7 +24676,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa61a294d84">
+  <clipPath id="pc68fb822c1">
    <rect x="55.073125" y="30.72625" width="785.125" height="474.46"/>
   </clipPath>
  </defs>

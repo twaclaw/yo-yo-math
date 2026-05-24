@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="284.0" height="210" viewBox="0 0 284.0 210">
+<defs>
+<clipPath id="clip-4530377056-4465619280">
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,105.0,205.0 Z" fill="none" />
+</clipPath>
+</defs>
+<g>
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,105.0,205.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L105.0,205.0 A100,100,0,0,1,104.99999999999999,5.0 Z" fill="none" stroke="lightgray" stroke-width="2" />
+<path d="M105.0,105.0 L105.0,5.0 A100,100,0,0,1,105.0,205.0 Z" fill="#F5C754" stroke="lightgray" stroke-width="2" />
+<use xlink:href="#clip-4530377056-4465619280" />
+<g clip-path="url(#clip-4530377056-4465619280)">
+<circle cx="105.0" cy="105.0" r="92" stroke="#DAA05D" stroke-width="16" fill="none" />
+<circle cx="105.0" cy="105.0" r="98" stroke="#C37B32" stroke-width="5" fill="none" />
+<circle cx="42.89106923909537" cy="76.29003156210267" r="4.43551224211254" fill="#D2691E" fill-opacity="0.3921506968977059" />
+<circle cx="139.25805062850407" cy="143.75389476930278" r="4.02467425563457" fill="#D2691E" fill-opacity="0.5273803718060418" />
+<circle cx="163.0854672435682" cy="137.27819329972687" r="3.822551462695181" fill="#FFDE75" fill-opacity="0.5455146843010604" />
+<circle cx="137.36608070116412" cy="45.89924832074671" r="5.47439862755668" fill="#FFFFFF" fill-opacity="0.5700954409952281" />
+<circle cx="85.6272171076453" cy="135.1833112963768" r="4.880772286242753" fill="#FFFFFF" fill-opacity="0.5582048719918691" />
+<circle cx="106.21080242207047" cy="110.34808260900441" r="2.6636225365448127" fill="#FFFFFF" fill-opacity="0.39730114696286734" />
+<circle cx="109.94264193612528" cy="154.60042034308128" r="3.8964404417812033" fill="#FFDE75" fill-opacity="0.5684852561922691" />
+<circle cx="182.7458174897698" cy="81.77772513126547" r="4.360709295961032" fill="#FFFFFF" fill-opacity="0.42554879458949524" />
+<circle cx="120.04684502945018" cy="65.2297033194454" r="3.9303926996098304" fill="#FFDE75" fill-opacity="0.2762137928810876" />
+<circle cx="118.53418942379366" cy="87.82183731536759" r="4.1995305677685995" fill="#D2691E" fill-opacity="0.3917926269459008" />
+<circle cx="175.04738886857916" cy="109.61647344643828" r="3.7805163656929754" fill="#FFFFFF" fill-opacity="0.26224206833260894" />
+<circle cx="168.2953101074687" cy="146.5673987029024" r="4.796040199675165" fill="#8B4513" fill-opacity="0.3143709625901724" />
+<circle cx="106.94107791550344" cy="121.01930445576363" r="5.425950037282929" fill="#FFDE75" fill-opacity="0.46591085278350414" />
+<circle cx="55.56174321996065" cy="167.27069225345446" r="2.7331936771064425" fill="#8B4513" fill-opacity="0.40955719419347103" />
+<circle cx="74.98204364636362" cy="106.7784441871158" r="4.648871508098649" fill="#D2691E" fill-opacity="0.3952406590369506" />
+<ellipse cx="42.79950329831338" cy="99.2640632217985" rx="9.864258475596909" ry="6.877059346345137" fill="#FFFDF0" fill-opacity="0.6" />
+<ellipse cx="42.24964413427703" cy="98.9769826889601" rx="3.683867276162153" ry="3.142055732916491" fill="#FFFFFF" fill-opacity="0.85" />
+<ellipse cx="169.48760956524436" cy="121.44019309561219" rx="7.718062185352563" ry="4.6400089140449685" fill="#FFFDF0" fill-opacity="0.6" />
+<ellipse cx="169.2428950001751" cy="121.61471526153144" rx="3.6287376682211416" ry="2.257023032504441" fill="#FFFFFF" fill-opacity="0.85" />
+<ellipse cx="138.7630770254215" cy="60.33162008080462" rx="9.089694392092333" ry="4.651913085719919" fill="#FFFDF0" fill-opacity="0.6" />
+<ellipse cx="138.90983176461071" cy="59.97541449530327" rx="3.860509990561325" ry="2.3729745082578493" fill="#FFFFFF" fill-opacity="0.85" />
+</g>
+<rect x="230.0" y="41.0" width="54.0" height="54.0" fill="none" stroke="black" stroke-width="2" />
+<rect x="230.0" y="115.0" width="54.0" height="54.0" fill="none" stroke="black" stroke-width="2" />
+<path d="M225.0,105.0 L289.0,105.0" stroke="black" stroke-width="2" />
+</g>
+</svg>
