@@ -179,4 +179,4 @@ for pizza1, pizza2 in fractions:
 
 
 {{< include comparing.qmd >}}
-{{< include rythms.qmd >}}
+{{< include rhythms.qmd >}}

@@ -1,4 +1,4 @@
-## Exponentiation $\text{[tokyo_tower:1em]{.twemoji}}$
+## Exponentiation
 
 As we saw earlier, repeated addition is multiplication. For example, $4\times 7$ is equivalent to adding $7$ four times: $7+7+7+7$. In the general case, we have:
 

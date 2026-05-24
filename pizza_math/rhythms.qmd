@@ -141,9 +141,9 @@ tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom
 
 rhythms = [
     ("Waltz", "M: 3/4\nL: 1/4\nK: C\nC [EG] [EG] | C [EG] [EG] |]"),
-    ("Rock", "M: 4/4\nL: 1/8\nK: C\nC C C2 C C C2 | C C C2 C C C2 |]"),
-    ("Salsa (3-2 Son Clave)", "M: 4/4\nL: 1/8\nK: C\nC3 C3 C2 | z2 C2 C2 z2 |]"),
-    ("Jazz (Swing Ride)", "M: 4/4\nL: 1/8\nK: C\nC2 C>C C2 C>C | C2 C>C C2 C>C |]")
+    ("Rock", "M: 4/4\nL: 1/8\nK: C\nC2 CC C2 C2 | CC CC C2 C2 |]"),
+    ("Salsa (3-2 Son Clave)", "M: 4/4\nL: 1/8\nK: C\nC2 z C z2 C2 | z2 C2 C2 z2 |]"),
+    # ("Jazz (Swing Ride)", "M: 4/4\nL: 1/8\nK: C\n (3CzC (3CzC (3CzC (3CzC |] ")
 ]
 
 for i, (title, abc) in enumerate(rhythms):

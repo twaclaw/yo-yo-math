@@ -303,7 +303,30 @@ display_vector(fig)
 ```
 
 
+The following are are the rules for multiplying negative numbers:
 
+- If the signs are the same (both positive or both negative), the result is positive. For example, $(-2) \times (-3) = 6$ and $2 \times 3 = 6$.
+- If the signs are different (one positive and one negative), the result is negative. For example, $(-2) \times 3 = -6$ and $2 \times (-3) = -6$.
 
+In other words, the sign is the exclusive or (XOR),  or the sum module $2$ of the signs of the factors.
 
+:::{.question}
+Why multiplying two negative numbers results in a positive number?
+:::
 
+::: {.big-math}
+\begin{align*}
+2 \times -7 &= \boxed{\phantom{-14}}\\
+7 \times -2 &= \boxed{\phantom{-14}}\\
+-11 \times -11 &= \boxed{\phantom{123}}\\
+12 \times 12 &= \boxed{\phantom{123}}\\
+5 \times -9 &= \boxed{\phantom{-45}}\\
+7 \times -6 &= \boxed{\phantom{123}}\\
+11 \times -1 &= \boxed{\phantom{12}}\\
+-7 \times -1 &= \boxed{\phantom{123}}\\
+2 \times 0 &= \boxed{\phantom{123}}\\
+-2 \times 0 &= \boxed{\phantom{123}}\\
+(-10)^2  &= \boxed{\phantom{123}}\\
+(-4)^2  &= \boxed{\phantom{123}}\\
+\end{align*}
+:::

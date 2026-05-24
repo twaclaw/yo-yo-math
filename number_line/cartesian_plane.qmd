@@ -173,5 +173,24 @@ display_vector(cartesian_fig)
 
 :::
 
+Print two copies of the figure below and play Battleship with a friend.
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+show_coords = False
+cartesian_fig = CartesianPlane(
+    xmin=-9, 
+    xmax=9, 
+    ymin=-9, 
+    ymax=9,
+)
+display_vector(cartesian_fig)
+```
+
 
 
