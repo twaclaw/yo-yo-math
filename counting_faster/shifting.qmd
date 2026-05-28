@@ -1,0 +1,98 @@
+## Multiplying and dividing by powers of 10
+
+
+Multiplying and dividing by powers of $10$ is a special case that can be done quickly by shifting the digits of a number. This is because $10$ is the base of our decimal number system. The same idea works in any base and is how computers efficiently perform multiplication and division by powers of $2$.
+
+Given a number with multiple digits, $d_1d_2\dots d_n,$ and a power of $10$ to multiply by, the result is simply the original number shifted to the left by the exponent of $10$ (the number of zeros in the power of ten) for multiplication and to the right for division.
+
+Remember, a power of $10$ is a $1$ followed by $0\text{s}$.
+
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+\begin{aligned}
+\underbrace{10 \times 10 \times \cdots \times 10}_{{\color{red}{n}} \text{ times}} &= 10^{\color{red}{n}} & 1\underbrace{\color{red}{000\cdots 000}}_{{\color{red}{n}} \text{ zeros}}
+\end{aligned}
+:::
+:::
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{equation*}
+\underbrace{10 \times 10 \times \cdots \times 10}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} = 10^{\eqnmark[Red]{exp}{{\color{red}{n}}}}   = 1\eqnmarkbox[Red]{zeros}{000\cdots 000}
+\annotate[yshift=0.2em]{above}{exp, zeros}{Number of zeros after the $1$}
+\end{equation*}
+:::
+:::
+:::
+
+This is what happens when we multiply a general number $d_1d_2\dots d_n$ by a power of $10$:
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math size="20pt"}
+:::{{latex}}
+\begin{equation*}
+\eqnmarkbox[OliveGreen]{number}{d_1d_2\dots d_n} \times 10^{\eqnmarkbox[Red]{exp}{{n}}} =  \eqnmarkbox[OliveGreen]{number}{d_1d_2\dots d_n} \times 1\eqnmarkbox[Red]{nzeros}{\underbrace{0\cdots 0}_{n \text{ zeros}}}  = \eqnmarkbox[OliveGreen]{number}{d_1d_2\dots d_n}\eqnmarkbox[Red]{nzeros}{\underbrace{0\cdots 0}_{n \text{ zeros}}} 
+\end{equation*}
+:::
+:::
+:::
+
+:::{.content-visible when-format="html"}
+:::{.big-math size="20pt"}
+$$
+\begin{aligned}
+\underbrace{d_1d_2\dots d_n}_{\text{number}} \times 10^{\color{red}{n}} &= \underbrace{d_1d_2\dots d_n}_{\text{number}} \times \underbrace{1\color{red}{0\cdots 0}}_{{\color{red}{n}} \text{ zeros}} \\
+&= \underbrace{d_1d_2\dots d_n\color{red}{0\cdots 0}}_{\text{number with $n$ zeros at the end}}
+\end{aligned}
+$$
+:::
+:::
+
+The following examples should make this concept clearer.
+
+:::{.content-visible when-format="pdf"}
+:::{.big-math}
+:::{{latex}}
+\begin{align*}
+\eqnmarkbox[OliveGreen]{number}{5} \times 10^{\eqnmarkbox[Red]{exp}{1}} &=  \eqnmarkbox[OliveGreen]{number}{5} \times 1\eqnmarkbox[Red]{nzeros}{0}  = \eqnmarkbox[OliveGreen]{number}{5}\eqnmarkbox[Red]{nzeros}{0} \\
+\eqnmarkbox[OliveGreen]{number}{5} \times 10^{\eqnmarkbox[Red]{exp}{2}} &=  \eqnmarkbox[OliveGreen]{number}{5} \times 1\eqnmarkbox[Red]{nzeros}{00}  = \eqnmarkbox[OliveGreen]{number}{5}\eqnmarkbox[Red]{nzeros}{00} \\
+\eqnmarkbox[OliveGreen]{number}{753} \times 10^{\eqnmarkbox[Red]{exp}{{4}}} &=  \eqnmarkbox[OliveGreen]{number}{753} \times 1\eqnmarkbox[Red]{nzeros}{0000}  = \eqnmarkbox[OliveGreen]{number}{753}\eqnmarkbox[Red]{nzeros}{0000} 
+\end{align*}
+:::
+:::
+:::
+
+:::{.content-visible when-format="html"}
+:::{.big-math}
+$$
+\begin{aligned}
+{\color{OliveGreen}5} \times 10^{\color{red}1} &= {\color{OliveGreen}5} \times 1{\color{red}0} = {\color{OliveGreen}5}{\color{red}0} \\
+{\color{OliveGreen}5} \times 10^{\color{red}2} &= {\color{OliveGreen}5} \times 1{\color{red}00} = {\color{OliveGreen}5}{\color{red}00} \\
+{\color{OliveGreen}753} \times 10^{\color{red}4} &= {\color{OliveGreen}753} \times 1{\color{red}0000} = {\color{OliveGreen}753}{\color{red}0000}
+\end{aligned}
+$$
+:::
+:::
+
+
+### Exercises {.unnumbered .unlisted}
+
+Perform the following computations:
+
+
+:::{.big-math}
+\begin{align*}
+2 \times 10 &= \boxed{\phantom{20}}\\
+20 \times 10 &= \boxed{\phantom{200}}\\
+123 \times 1000 &= \boxed{\phantom{123000}}\\ 
+123 \times 10^3 &= \boxed{\phantom{123000}}\\ 
+57 \times 10^2 &= \boxed{\phantom{5700}}\\
+21 \times 100 &= \boxed{\phantom{2100}}\\
+1000 \div 10 &= \boxed{\phantom{100}}\\
+1200 \div 100 &= \boxed{\phantom{12}}\\
+5700 \div 10 &= \boxed{\phantom{570}}\\
+5700 \div 10^2 &= \boxed{\phantom{57}}\\
+\end{align*}
+:::

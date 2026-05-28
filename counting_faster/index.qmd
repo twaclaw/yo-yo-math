@@ -6,4 +6,5 @@
 {{< include exponentiation.qmd >}}
 {{< include division.qmd >}}
 
+{{< include shifting.qmd >}}
 
