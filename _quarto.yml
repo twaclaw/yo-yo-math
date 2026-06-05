@@ -7,7 +7,7 @@ project:
     - "static_images/*.svg"
     - "static_images/*.pdf"
     - "cover.pdf"
-    - "cover.png"
+    - "cover.jpg"
 
 execute:
   freeze: auto
@@ -21,12 +21,13 @@ book:
   title: "[Yo]{style='color:#156483'}[-]{style='color:#0F0C0C'}[Yo]{style='color:#993A71'}[-]{style='color:#0F0C0C'}[Math]{style='color:#3D2478'}"
   output-file: "Yo-Yo-Math"
   subtitle: "[A book for playing mathematics]{style='color:#2F4D8B'}"
-  cover-image: cover.png
+  site-url: https://twaclaw.github.io/yo-yo-math/
+  cover-image: cover.jpg
   open-graph:
-    image: cover.png
+    image: cover.jpg
     description: "A book for playing mathematics"
   twitter-card:
-    image: cover.png
+    image: cover.jpg
     description: "A book for playing mathematics"
   author: "Diego Sandoval"
   chapters:
