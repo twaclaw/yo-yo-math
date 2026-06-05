@@ -28,7 +28,7 @@ The following symbols represent notes and rests (yes, silence is also very impor
 | \musSixteenth| $\color{red}\frac{1}{16}$ | Sixteenth note | Semiquaver |
 :::
 
-In the following score, each bar—each division of the staff—contains notes that sum to $1$. $1$ "whole" note worth $1$, $2$ half notes each worth $\frac{1}{2}$, $4$ quarter notes each worth $\frac{1}{4}$, $8$ eighth notes each worth $\frac{1}{8}$, and $16$ sixteenth notes each worth $\frac{1}{16}$, etc.
+In the following score, each bar—each division of the staff—contains notes that sum to $1$. $1$ "whole" note worth $1$, $2$ half notes each worth $\frac{1}{2}$, $4$ quarter notes each worth $\frac{1}{4}$, $8$ eight notes each worth $\frac{1}{8}$, and $16$ sixteenth notes each worth $\frac{1}{16}$.
 
 :::{.question title="Do the notes in a bar sum up to $1$?"}
 Add up the values of the notes in each bar to see that they sum to $1$.

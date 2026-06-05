@@ -40,7 +40,9 @@ book:
     - counting_faster/index.qmd
     - multiplication_and_geometry/index.qmd
     - pizza_math/index.qmd
+    - functions/index.qmd
     - credits.qmd
+    - disclaimer.qmd
   sidebar:
     tools:
       - icon: cup-hot

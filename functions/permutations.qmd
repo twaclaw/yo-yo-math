@@ -1,0 +1,27 @@
+## Permutations and Symmetries
+
+
+Imagine that you have a set of unique game cards representing the values $0, 1, 2, 3$. If you shuffle the cards, they may end up in a different order. For example,  they could end up in the order $2, 1, 0, 3$. We call every reordering of the cards a **permutation**. 
+
+A permutation can be seen as a function—specifically, a one-to-one correspondence, also called a "bijection," or, in other words, an invertible function that maps a set onto itself.
+
+
+For example, if we have the set $\mathbb{Z}_4 = \{0, 1, 2, 3\}$, an invertible function $f:\mathbb{Z}_4 \to \mathbb{Z}_4$ that reorders  the values is called a permutation.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+A = Set(["0", "1", "2", "3"], label="Z")
+B = Set(["1", "3", "0", "2"], label="Z")
+
+diagram = Mapping(
+    sets=[A, B],
+    mappings=[(A[i], B[i]) for i in range(len(A))],
+)
+display_vector(diagram)
+```
+

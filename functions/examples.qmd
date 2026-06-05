@@ -1,0 +1,296 @@
+## Exaples of functions
+
+
+The function $g: L \to G$ maps the Latin alphabet onto the Greek alphabet.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+L = Set(["a", "b", "c", "d"], label="L")
+G = Set(["α", "β", "γ", "δ"], label="G")
+
+diagram = Mapping(
+    sets=[L, G],
+    mappings=[(L[i], G[i]) for i in range(len(G))],
+    arrow_label="g",
+    arrow_label_offset_y=-10
+)
+display_vector(diagram)
+```
+
+The function $h: \text{Kids} \to \text{Food}$ maps a set of kids to their favorite food.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+kids = Set(["Jonas", "Matildė", "Sofia", "Giuliano", "Axel", "Lise"], label="Kids")
+food_emojis = ["1f355_pizza.svg", "1f36b_chocolate.svg", "1fad5_fondue.svg",  "1f35d_pasta.svg", "1f368_icecream.svg", "1f37f_popcorn.svg", "1f349_watermelon.svg", "1f957_salad.svg",]
+food = Set(members=[f"./static_images/emojis/{i}" for i in food_emojis], label="Food")
+
+diagram = Mapping(
+    sets=[kids, food],
+    mappings=[
+        (kids["Jonas"], food[3]),
+        (kids["Matildė"], food[1]),
+        (kids["Sofia"], food[4]),
+        (kids["Giuliano"], food[0]),
+        (kids["Axel"], food[2]),
+        (kids["Lise"], food[5]),
+    ]
+)
+display_vector(diagram)
+```
+
+Finally, a function can also map a set to itself. For example, consider the function $f: \mathbb{Z} \to \mathbb{Z}$, which  maps every integer to its square.
+
+:::{.big-math}
+$$
+f(x) = x^2, \quad \text{for every } x \in \mathbb{Z}
+$$
+:::
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+A = Set(["-2", "-1", "0", "1", "2", "3"], label="Z")
+B = Set(["4", "1", "0", "1", "4", "9"], label="Z")
+
+diagram = Mapping(
+    sets=[A, B],
+    mappings=[(A[i], B[i]) for i in range(len(A))],
+    arrow_label = "f",
+    arrow_label_offset_y= -10
+)
+display_vector(diagram)
+```
+
+A more trivial example is the identify function  $f: \mathbb{Z} \to \mathbb{Z}$
+
+:::{.big-math}
+f(x) = x
+:::
+
+which maps every integer to itself.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+A = Set(["-2", "-1", "0", "1", "2", "3"], label="Z")
+B = Set(["-2", "-1", "0", "1", "2", "3"], label="Z")
+
+diagram = Mapping(
+    sets=[A, B],
+    mappings=[(A[i], B[i]) for i in range(len(A))],
+    arrow_label = "f",
+    arrow_label_offset_y= -10
+)
+display_vector(diagram)
+```
+
+
+
+### Exercises {.unnumbered .unlisted}
+
+The following examples show a mapping that connects cities in Switzerland to cities in Italy. Determine whether this mapping is a function and explain your answer.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_forward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma", "Napoli"], label="I")
+
+diagram = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Geneva"], I["Milano"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+)
+display_vector(diagram)
+```
+
+:::{.question title="Is the previous example a function?"}
+Why?
+:::
+
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_forward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma", "Napoli"], label="I")
+
+d1 = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Zurich"], I["Napoli"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+)
+display_vector(d1)
+```
+
+:::{.question title="Is the previous example a function?"}
+Why?
+:::
+
+
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_forward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma", "Napoli"], label="I")
+
+d1 = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+)
+display_vector(d1)
+```
+
+:::{.question title="Is the previous example a function?"}
+Why?
+:::
+
+
+
+```{python}
+#| echo: false
+#| out.width: "80%"
+#| fig-align: center
+
+
+from yoyo_plots.astro import plot_sky
+
+# Plot constellations: Orion, Canis Major, Canis Minor, Taurus, Gemini, Lepus
+plot_sky(["Ori", "CMa", "CMi", "Tau", "Gem", "Lep"], show_constellations=True,
+    markers={
+        ("delOri", "epsOri", "zetOri"): {
+            "color": "#FF6644",
+            "text": "Orion's Belt",
+        },
+        ("pi1Ori", "pi2Ori", "pi3Ori", "pi4Ori", "pi5Ori", "pi6Ori", "omi2Ori"): {
+            "color": "#4488CC",
+            "text": "Orion's Left Arm",
+        },
+    },
+    show_stars=True
+    )
+```
+
+
+Let the mapping $c: \text{Star} \to \text{Constellation}$  be the mapping of a star to the constellation to which it belongs. Draw the mapping between the sets Star and Constellation, and explain whether this mapping is a function. 
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_forward_red.svg"
+
+S = Set(members=["Aldebaran", "Castor", "Sirius", "Procyon", "Rigel", "Bellatrix", "Pollux"], label="Star")
+C = Set(members=["Orion", "Canis Major", "Taurus",  "Canis Minor", "Lepus"], label="Constellation")
+
+d1 = Mapping(
+    sets=[S, C],
+    mappings=[]
+)
+display_vector(d1)
+```
+
+It is possible to represent numerical relationships, such as the  function $f:\mathbb{Z} \to \mathbb{Z}$, defined as $f(x) = x^2$, which maps every integer to its square, on a Cartesian plane.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+a = list(range(-4, 5, 1))
+
+A = Set([str(i) for i in a], label="Z")
+B = Set([str(i*i) for i in a], label="Z")
+
+diagram = Mapping(
+    sets=[A, B],
+    mappings=[(A[i], B[i]) for i in range(len(A))],
+    arrow_label = "f",
+    arrow_label_offset_y= -10
+)
+display_vector(diagram)
+```
+
+Take every pair of elements: an element in $A$ and its image in $B$, and locate them on the Cartesian plane as follows: the element in $A$ is the x-coordinate, and the element in $B$ is the y-coordinate.
+
+In the following figure, I added the first three pairs: $(-4, 16)$, $(-3, 9)$, and $(-2, 4)$. Add the rest, and then connect those points with a line in the same order. First, connect $(-4, 16)$ to $(-3, 9)$, then $(-3, 9)$ to $(-2, 4)$, and so on.
+
+
+```{python}
+# | echo: false
+# | fig-align: "center"
+
+from yoyo_plots.number_line import CartesianPlane
+from yoyo_plots.common import display_vector
+
+cartesian_fig = CartesianPlane(
+    xmin=-6, 
+    xmax=6, 
+    ymin=0, 
+    ymax=17
+).add_markers({
+        (-4, 16): {"color": "red", "draw_lines": False, "show_coords": True},
+        (-3, 9): {"color": "blue", "draw_lines": False, "show_coords": True},
+        (-2, 4): {"color": "green", "draw_lines": False, "show_coords": True}
+    })
+
+display_vector(cartesian_fig)
+```

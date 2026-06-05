@@ -1,0 +1,45 @@
+# Sets and Functions
+
+As we saw before, sets are a collection of objects. We have encountered prominent examples like [$\color{red}{\mathbb{N}}$]{.scale factor="2"}, the set of counting or natural numbers, [$\color{blue}{\mathbb{Z}}$]{.scale factor="2"}, the set of integers, positive and negative, and [$\color{purple}{\mathbb{Q}}$]{.scale factor="2"}, the rational numbers.
+
+We also made up other examples, such as $M$, a set of mammals, and $S$, the set of the natural satellites of Earth. 
+
+
+
+:::{.big-math}
+$$
+M=\left\{\text{[koala:1em]{.twemoji}}, \text{[dog_face:1em]{.twemoji}}, \text{[panda:1em]{.twemoji}}, \text{[fox:1em]{.twemoji}}, \text{[rabbit_face:1em]{.twemoji}} \right\}
+$$
+
+$$
+S = \left\{\text{[moon:1em]{.twemoji}}\right\}.
+$$
+:::
+
+These sets can also be represented with Euler-Venn diagrams.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+emojis = ["1f43c_panda.svg", "1f428_koala.svg", "1f436_dog_face.svg",   "1f98a_fox.svg", "1f430_rabbit_face.svg"]
+animals = Set(members=[f"./static_images/emojis/{i}" for i in emojis], label="M")
+moons = Set(members=["./static_images/emojis/1f314_moon.svg"], label="S")
+
+display_vector(combine_svgs([animals, moons]))
+```
+
+In this chapter, we will learn how to define relationships between sets, including those between a set and itself. We will also introduce the concept of a function, a specific type of relationship between sets.
+
+
+
+{{< include relationships.qmd >}}
+{{< include examples.qmd >}}
+{{< include inverses.qmd >}}
+{{< include composition.qmd >}}
+{{< include permutations.qmd >}}
+{{< include square.qmd >}}
+
+

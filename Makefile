@@ -30,4 +30,5 @@ clean:
 	rm -rf counting/index_files
 	rm -rf counting_recap/countin_recap_files
 	rm -rf number_line/number_line_files
+	rm -rf functions/index_files
 	rm -rf site_libs/

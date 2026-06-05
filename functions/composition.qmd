@@ -1,0 +1,149 @@
+## Composition of functions
+
+We saw the example of the function $f:A \to B$, which is defined as  "being the mom of" $\text{[woman_feeding_baby:2em]{.twemoji}}$, and  maps an element in $A$ (a child) onto his/her mom.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+kids = Set(["Jonas", "Matildė",  "Axel", "Lise", "Sofía"], label="A")
+moms = Set(["Gabrielė", "Clarisse", "Johana", "Sara"], label="B")
+diagram = Mapping(
+    sets=[kids, moms],
+    mappings=[
+        (kids["Jonas"], moms["Gabrielė"]),
+        (kids["Matildė"], moms["Gabrielė"]),
+        (kids["Axel"], moms["Clarisse"]),
+        (kids["Lise"], moms["Clarisse"]),
+        (kids["Sofía"], moms["Johana"]),
+    ],
+    arrow_label = "f",
+    arrow_label_offset_y=-10
+
+)
+display_vector(diagram)
+```
+
+Now, if we introduce a new set, $C$, consisting of the mother's fathers, we can define a new function $g: B \to C$ as the function  "being the father of" $\text{[man_teacher:2em]{.twemoji}}$ that maps an element in $B$ to her father in $C$.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+kids = Set(["Jonas", "Matildė", "Sofía", "Axel", "Lise"], label="A")
+moms = Set(["Gabrielė", "Clarisse", "Johana", "Sara"], label="B")
+grandpas = Set(["Gediminas","Charles", "Edgar", "Daniel"], label="C")
+diagram = Mapping(
+    sets=[moms, grandpas],
+    mappings=[
+        (moms["Gabrielė"], grandpas["Gediminas"]),
+        (moms["Clarisse"], grandpas["Charles"]),
+        (moms["Johana"], grandpas["Edgar"]),
+        (moms["Sara"], grandpas["Daniel"]),
+    ],
+    arrow_label = "g",
+    arrow_label_offset_y=-10
+
+)
+display_vector(diagram)
+```
+
+We can compose the two functions, meaning we can apply them one after the other.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+kids = Set(["Jonas", "Matildė", "Axel", "Lise", "Sofía"], label="A")
+moms = Set(["Gabrielė", "Clarisse", "Johana", "Sara"], label="B")
+grandpas = Set(["Gediminas", "Charles", "Edgar", "Daniel"], label="C")
+diagram = Mapping(
+    sets=[kids,moms, grandpas],
+    mappings=[
+        (kids["Jonas"], moms["Gabrielė"]),
+        (kids["Matildė"], moms["Gabrielė"]),
+        (kids["Axel"], moms["Clarisse"]),
+        (kids["Lise"], moms["Clarisse"]),
+        (kids["Sofía"], moms["Johana"]),
+        (moms["Gabrielė"], grandpas["Gediminas"]),
+        (moms["Johana"], grandpas["Edgar"]),
+        (moms["Clarisse"], grandpas["Charles"]),
+        (moms["Sara"], grandpas["Daniel"]),
+    ],
+    arrow_label = ["f", "g"],
+    arrow_label_offset_y=-10
+
+)
+display_vector(diagram)
+```
+
+The composition of the functions is denoted by $[g\circ f](x) = g(f(x))$.
+
+This means that we first apply  $f:A\to B$, which sends elements in $A$ to their moms. For example, it sends $\text{Jonas} \to \text{Gabrielė}$, because $f(\text{Jonas}) = \text{Gabrielė}$. Then, $g:B\to C$ sends elements in $B$ to their fathers. For example, it sends $\text{Gabrielė} \to \text{Gediminas}$, because $g(\text{Gabrielė}) = \text{Gediminas}$.
+
+:::{.question}
+What relationship does the new function $g(f(x))$ represent?
+:::
+
+
+```{.tikz}
+\begin{tikzpicture}
+    \node (A) at (0,0) {$A$};
+    \node (B) at (3,0) {$B$};
+    \node (C) at (6,0) {$C$};
+    \draw[->, thick] (A) -- node[above] {mom} (B);
+    \draw[->, thick] (B) -- node[above] {dad} (C);
+    \draw[->, thick] (A) to[bend left=45] node[above] {grandpa} (C);
+\end{tikzpicture}
+```
+
+
+As a final example, consider the function $f: \mathbb{Z} \to \mathbb{Z}$ defined as $f(x) = 2x$, which sends an element to its double, and  $g: \mathbb{Z} \to \mathbb{Z}$, defined as $g(x) = x + 1$, which increments a number by $1$.
+
+
+Here are some examples:
+
+:::{.big-math size="20pt"}
+\begin{align*}
+f({\color{red}{3}}) &= 2\times {\color{red}{3}} &= 6\\
+f({\color{red}{-2}}) &= 2\times {\color{red}{-2}} &= 4\\
+f({\color{red}{1}}) &= 2\times {\color{red}{1}} &= 2\\
+g({\color{red}{1}}) &= {\color{red}{1}} + 1 &= 2\\
+g({\color{red}{0}}) &= {\color{red}{0}} + 1 &= 1\\
+g({\color{red}{-1}}) &= {\color{red}{-1}} + 1 &= 0\\
+\end{align*}
+:::
+
+
+The composition  $[f\circ g](x) = f(g(x))$ will look like this:
+
+:::{.big-math size="20pt"}
+\begin{align*}
+[f\circ g](3) &= f(g(3)) &= 2\times (3 + 1) &= 8\\
+[f\circ g](-1) &= f(g(-1)) &= 2\times (-1 + 1) &= 0\\
+[f\circ g](1) &= f(g(1)) &= 2\times (1 + 1) &= 0\\
+\end{align*}
+:::
+
+The composition  $[g\circ f](x) = g(f(x))$ (they are not commutative) will look like this:
+
+:::{.big-math size="20pt"}
+\begin{align*}
+[g\circ f](3) &= g(f(3)) &= (2\times 3) + 1 &= 7\\
+[g\circ f](-1) &= g(f(-1)) &= (2\times -1) + 1 &= -1\\
+[g\circ f](1) &= g(f(1)) &= (2\times 1) + 1 &= 3\\
+\end{align*}
+:::
+
+
+
+
+

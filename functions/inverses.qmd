@@ -1,0 +1,230 @@
+## Inverse of a function
+
+We encountered  in the examples a function $g: L \to G$ that maps Latin letters into Greek ones.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+L = Set(["a", "b", "c", "d"], label="L")
+G = Set(["α", "β", "γ", "δ"], label="G")
+
+diagram = Mapping(
+    sets=[L, G],
+    mappings=[(L[i], G[i]) for i in range(len(G))],
+    arrow_label="g",
+    arrow_label_offset_y=-10
+)
+display_vector(diagram)
+```
+
+Imagine that we want to do the opposite, namely mapping Greek letters into Latin ones.
+
+To to this, we need to reverse the mapping. We need a new function, let's call it $h$, that maps Greek into Latin, $h: G \to L$. 
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+L = Set(["a", "b", "c", "d"], label="L")
+G = Set(["α", "β", "γ", "δ"], label="G")
+
+diagram = Mapping(
+    sets=[L, G],
+    mappings=[(L[i], G[i]) for i in range(len(G))],
+    arrow_label="h",
+    arrow_label_offset_y=-10,
+    arrow_direction="right_to_left"
+)
+display_vector(diagram)
+```
+
+In a way, this function $h: G \to L$ undoes what the function $f: L \to G$ does, and we call $h$ the inverse function of $f$. We denote the inverse as $h = f^{-1}$. 
+
+:::{.question}
+Is it always possible to find an inverse?
+:::
+
+Let's consider another example to answer this question.
+As you saw in the exercises, the following mapping $f: S \to I$ is a function because every element in $S$ has exactly one image in $I$. In other words, every city in Switzerland is connected to at most one city in Italy.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_forward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma", "Napoli"], label="I")
+
+diagram = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Geneva"], I["Milano"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+)
+display_vector(diagram)
+```
+
+
+Unfortunately, the holidays are over, and we have to travel back from Italy to Switzerland. We need a function that goes in the opposite direction. This function is called the inverse of $f$, and we use the symbol $f^{-1}$ for it. 
+
+
+We need a new function $g:I\to S = f^{-1}$, that undoes $f: S\to I$. 
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_backward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma", "Napoli"], label="I")
+
+diagram = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Geneva"], I["Milano"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+    arrow_direction="right_to_left"
+)
+display_vector(diagram)
+```
+
+:::{.question title="Is this mapping a function?"}
+The departure set, or domain, is Italy, or $I$. 
+
+- Does *every* element in $I$ have an image in $S$? Does a train leave from every city in Italy?
+- Does *every* element in $I$ have a unique image in $S$? Is each city in Italy connected to exactly one city in Swizerland?
+:::
+
+
+We see that the answer to both questions is no. There are no trains leaving from Rome and Napoli, and Milano is connected to more than one city in Switzerland. Therefore, the mapping $g: $I\to S$ is **not** a function. Therefore, the function $f: S \to I$ is not invertible.
+
+For a function to be invertible, an additional condition is needed.
+
+
+:::{.fun-fact title="Invertible functions"}
+A function between two sets $A$ and $B$, $f:A\to B$, is invertible if every element in $B$ is the image of exactly one element in $A$.
+In other words, the function must implement a one-to-one correspondence between the two sets. This means that the inverse mapping, $f' B \to A$, is also a function.
+:::
+
+
+As we saw with the example of mapping Latin letters to Greek letters, this condition is met and the function is therefore invertible.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+L = Set(["a", "b", "c", "d"], label="L")
+G = Set(["α", "β", "γ", "δ"], label="G")
+
+diagram = Mapping(
+    sets=[L, G],
+    mappings=[(L[i], G[i]) for i in range(len(G))],
+    arrow_direction="bidirectional"
+)
+display_vector(diagram)
+```
+
+We can fix the function $f: S\to I$ to be invertible. 
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_forward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma"], label="I")
+
+diagram = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Geneva"], I["Roma"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+)
+display_vector(diagram)
+```
+
+This new function is  invertible, meaning that we can always return home from Italy by taking the train in the opposite direction.
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+train = "/static_images/train_backward_red.svg"
+
+S = Set(members=["Zurich", "Geneva", "Bern", "Basel"], label="S")
+I = Set(members=["Milano", "Bologna", "Firenze",  "Roma"], label="I")
+
+diagram = Mapping(
+    sets=[S, I],
+    mappings=[
+        (S["Zurich"], I["Milano"]),
+        (S["Geneva"], I["Roma"]),
+        (S["Bern"], I["Bologna"]),
+        (S["Basel"], I["Firenze"]),
+    ],
+    arrow_image=train,
+    arrow_image_size=40,
+    arrow_image_offset_y=-5,
+    arrow_direction="right_to_left"
+)
+display_vector(diagram)
+```
+
+
+:::{.question} 
+How did we fix this function?"
+:::
+
+If we take a train from Zurich, we know that we will arrive at f(Zurich), which is Milan. To return to Zurich, we need to take a train to f^(−1)(Milan), which is Zurich.
+If we take a train from  Zurich, we know we will arrive at $f(\text{Zurich}) = \text{Milano}$. To return to Zurich, we need to take a train to $f^{-1}(\text{Milano}=\text{Zurich})$.
+
+
+### Exercises {.unnumbered .unlisted}
+
+Try reasoning about the inverse function of each of the following functions.
+
+:::{.big-math}
+\begin{align*}
+f(x) &= 2 + x \\
+f(x) &= 2x \\
+\end{align*}
+:::

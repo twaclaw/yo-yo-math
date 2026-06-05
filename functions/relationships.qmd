@@ -1,0 +1,128 @@
+## Relationships between sets
+
+Given two sets, $A$ and $B$, we can define a mapping, or relationship, that maps or projects elements of $A$ onto elements of $B$.
+
+For instance, suppose that $A$ is a set of children, such as  you and your friends. Set $B$ is a set of their moms. We can define the relationship "being the mom of" $\text{[woman_feeding_baby:2em]{.twemoji}}$ that maps every child in $A$ onto his/her mom in $B$.
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector 
+
+kids = Set(["Jonas", "Matildė", "Sofía", "Axel", "Lise"], label="A")
+moms = Set(["Gabrielė", "Clarisse", "Johana", "Sara"], label="B")
+diagram = Mapping(
+    sets=[kids, moms],
+    mappings=[
+        (kids["Jonas"], moms["Gabrielė"]),
+        (kids["Matildė"], moms["Gabrielė"]),
+        (kids["Sofía"], moms["Johana"]),
+        (kids["Axel"], moms["Clarisse"]),
+        (kids["Lise"], moms["Clarisse"]),
+    ]
+)
+display_vector(diagram)
+```
+
+:::{.question title="What can you infer from this mapping?"}
+:::
+
+
+A **function** is a rule that maps the elements of one set onto the elements of another. In the following example, the function $f$ maps an animal's image to its English name.
+
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+emojis = ["1f43c_panda.svg", "1f428_koala.svg", "1f436_dog_face.svg",   "1f98a_fox.svg", "1f430_rabbit_face.svg"]
+animals = Set(members=[f"./static_images/emojis/{i}" for i in emojis], label="Animals")
+names = Set(members=["Monkey", "Lion", "Koala",  "Panda", "Dog", "Fox", "Rabbit", "Turtle"], label="Names")
+d = Mapping(
+    sets=[animals, names],
+    mappings=[
+        (animals[0], names[3]),
+        (animals[1], names[2]),
+        (animals[2], names[4]),
+        (animals[3], names[5]),
+        (animals[4], names[6]),
+    ],
+    arrow_label = "f",
+    arrow_label_offset_y = -10
+)
+display_vector(d)
+```
+
+We call the set of Animals the _domain_ of the function $f$.  The function $f: \text{Animals} \to \text{Names}$ is the rule that allows us to map an animal image to its English name. For example:
+
+:::{.big-math}
+$$
+f(\text{[rabbit_face:1em]{.twemoji}}) = \text{Rabbit}
+$$
+:::
+
+We say that Rabbit is the _image_ of $\text{[rabbit_face:2em]{.twemoji}}$.
+
+:::{.question title="Are all mappings between two sets functions?"}
+No. A relationship is only a function if **every** element in the first set is mapped to **exactly one** image in the second set.
+:::
+
+The previous example is a function because every animal in the set Animals is mapped to exactly one Name.
+
+
+However, imagine that we discover a new animal for which we have no English name yet. The following mapping is **not** a function because at least one element in the domain does not have a known name. The requirement is that **every** element has exactly one. 
+
+
+```{python}
+# | echo: false
+# | fig-align: center
+# | fig-cap: "This is not a function because one of the animals is unnamed."
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+emojis = ["1f43c_panda.svg", "1f428_koala.svg", "1f436_dog_face.svg",   "1f98a_fox.svg"]
+animals = Set(members=[f"./static_images/emojis/{i}" for i in emojis] + ["./static_images/unknown_animal.svg"], label="Animals")
+names = Set(members=["Monkey", "Lion", "Panda", "Koala", "Dog", "Fox"], label="Names")
+d = Mapping(
+    sets=[animals, names],
+    mappings=[
+        (animals[0], names[2]),
+        (animals[1], names[3]),
+        (animals[2], names[4]),
+        (animals[3], names[5]),
+    ],
+)
+display_vector(d)
+```
+
+Similarly, if an animal has two names, That relationship is also not a function because every element in the domain must have exactly $1$ image.
+
+```{python}
+# | echo: false
+# | fig-align: center
+# | fig-cap: "It's also not a function because one of the animals has more than one name."
+
+from yoyo_plots.functions import Set, Mapping
+from yoyo_plots.common import display_vector, combine_svgs
+
+emojis = ["1f43c_panda.svg", "1f428_koala.svg", "1f436_dog_face.svg",   "1f98a_fox.svg"]
+animals = Set(members=[f"./static_images/emojis/{i}" for i in emojis] + ["./static_images/orca.svg"], label="Animals")
+names = Set(members=["Panda", "Koala", "Dog", "Fox", "Orca", "Killer Whale"], label="Names")
+d = Mapping(
+    sets=[animals, names],
+    mappings=[
+        (animals[0], names[0]),
+        (animals[1], names[1]),
+        (animals[2], names[2]),
+        (animals[3], names[3]),
+        (animals[4], names[4]),
+        (animals[4], names[5])
+    ],
+)
+display_vector(d)
+```
+
