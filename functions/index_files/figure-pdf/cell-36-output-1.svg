@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="372.892" height="180.0" viewBox="0 0 372.892 180.0">
+<defs>
+</defs>
+<g>
+<text x="18.0" y="90.0" font-size="22.0" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="start" dominant-baseline="central">R</text>
+<text x="30.759999999999998" y="94.84" font-size="15.399999999999999" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="start" dominant-baseline="central">4</text>
+<text x="39.69199999999999" y="90.0" font-size="22.0" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="start" dominant-baseline="central"> =</text>
+<path d="M103.05199999999999,12.0 C87.21199999999999,30.72,87.21199999999999,149.28,103.05199999999999,168.0" fill="none" stroke="#1A1A1A" stroke-width="3" />
+<path d="M335.052,12.0 C350.892,30.72,350.892,149.28,335.052,168.0" fill="none" stroke="#1A1A1A" stroke-width="3" />
+<path d="M135.052,58.0 L135.052,120.0" stroke="#444" stroke-width="2" />
+<path d="M135.052,122.0 L130.552,113.0 L139.552,113.0 Z" fill="#444" stroke="none" />
+<path d="M191.052,58.0 L191.052,120.0" stroke="#444" stroke-width="2" />
+<path d="M191.052,122.0 L186.552,113.0 L195.552,113.0 Z" fill="#444" stroke="none" />
+<path d="M247.052,58.0 L247.052,120.0" stroke="#444" stroke-width="2" />
+<path d="M247.052,122.0 L242.552,113.0 L251.552,113.0 Z" fill="#444" stroke="none" />
+<path d="M303.052,58.0 L303.052,120.0" stroke="#444" stroke-width="2" />
+<path d="M303.052,122.0 L298.552,113.0 L307.552,113.0 Z" fill="#444" stroke="none" />
+<circle cx="135.052" cy="38.0" r="20" fill="#E8736C" stroke="#333" stroke-width="2" />
+<text x="135.052" y="38.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">1</text>
+<circle cx="191.052" cy="38.0" r="20" fill="#5B8FF9" stroke="#333" stroke-width="2" />
+<text x="191.052" y="38.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">2</text>
+<circle cx="247.052" cy="38.0" r="20" fill="#5AD8A6" stroke="#333" stroke-width="2" />
+<text x="247.052" y="38.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">3</text>
+<circle cx="303.052" cy="38.0" r="20" fill="#F6C53F" stroke="#333" stroke-width="2" />
+<text x="303.052" y="38.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">4</text>
+<circle cx="135.052" cy="142.0" r="20" fill="#E8736C" stroke="#333" stroke-width="2" />
+<text x="135.052" y="142.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">1</text>
+<circle cx="191.052" cy="142.0" r="20" fill="#F6C53F" stroke="#333" stroke-width="2" />
+<text x="191.052" y="142.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">4</text>
+<circle cx="247.052" cy="142.0" r="20" fill="#5AD8A6" stroke="#333" stroke-width="2" />
+<text x="247.052" y="142.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">3</text>
+<circle cx="303.052" cy="142.0" r="20" fill="#5B8FF9" stroke="#333" stroke-width="2" />
+<text x="303.052" y="142.0" font-size="22" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">2</text>
+</g>
+</svg>

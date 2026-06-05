@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="575.2" height="305.4" viewBox="0 0 575.2 305.4">
+<defs>
+</defs>
+<g>
+<g transform="translate(0.0,0.0)">
+<g>
+<ellipse cx="99.19999999999999" cy="152.7" rx="99.19999999999999" ry="152.7" fill="white" stroke="#333" stroke-width="2" />
+<text x="99.19999999999999" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">Star</text>
+<text x="99.19999999999999" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Aldebaran</text>
+<text x="99.19999999999999" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Castor</text>
+<text x="99.19999999999999" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Sirius</text>
+<text x="99.19999999999999" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Procyon</text>
+<text x="99.19999999999999" y="201.39999999999995" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Rigel</text>
+<text x="99.19999999999999" y="234.59999999999994" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Bellatrix</text>
+<text x="99.19999999999999" y="267.79999999999995" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Pollux</text>
+</g>
+</g>
+<g transform="translate(338.4,33.20000000000002)">
+<g>
+<ellipse cx="118.4" cy="119.49999999999997" rx="118.4" ry="119.49999999999997" fill="white" stroke="#333" stroke-width="2" />
+<text x="118.4" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">Constellation</text>
+<text x="118.4" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Orion</text>
+<text x="118.4" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Canis Major</text>
+<text x="118.4" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Taurus</text>
+<text x="118.4" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Canis Minor</text>
+<text x="118.4" y="201.39999999999995" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Lepus</text>
+</g>
+</g>
+</g>
+</svg>

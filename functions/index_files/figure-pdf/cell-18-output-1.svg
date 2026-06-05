@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="383.2" height="205.79999999999995" viewBox="0 0 383.2 205.79999999999995">
+<defs>
+</defs>
+<g>
+<g transform="translate(0.0,0.0)">
+<g>
+<ellipse cx="60.8" cy="102.89999999999998" rx="60.8" ry="102.89999999999998" fill="white" stroke="#333" stroke-width="2" />
+<text x="60.8" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">L</text>
+<text x="60.8" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">a</text>
+<text x="60.8" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">b</text>
+<text x="60.8" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">c</text>
+<text x="60.8" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">d</text>
+</g>
+</g>
+<g transform="translate(261.6,0.0)">
+<g>
+<ellipse cx="60.8" cy="102.89999999999998" rx="60.8" ry="102.89999999999998" fill="white" stroke="#333" stroke-width="2" />
+<text x="60.8" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">G</text>
+<text x="60.8" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">α</text>
+<text x="60.8" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">β</text>
+<text x="60.8" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">γ</text>
+<text x="60.8" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">δ</text>
+</g>
+</g>
+<path d="M65.6,68.6 C174.5,68.6,198.7,68.6,307.6,68.6" fill="none" stroke="#444" stroke-width="2" />
+<path d="M317.6,68.6 L305.6,63.599999999999994 L305.6,73.6 Z" fill="#444" stroke="none" />
+<text x="191.60000000000002" y="58.599999999999994" font-size="14" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">g</text>
+<path d="M65.6,101.79999999999998 C174.5,101.79999999999998,198.7,101.79999999999998,307.6,101.79999999999998" fill="none" stroke="#444" stroke-width="2" />
+<path d="M317.6,101.79999999999998 L305.6,96.79999999999998 L305.6,106.79999999999998 Z" fill="#444" stroke="none" />
+<text x="191.60000000000002" y="91.79999999999998" font-size="14" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">g</text>
+<path d="M65.6,134.99999999999997 C174.5,134.99999999999997,198.7,134.99999999999997,307.6,134.99999999999997" fill="none" stroke="#444" stroke-width="2" />
+<path d="M317.6,134.99999999999997 L305.6,129.99999999999997 L305.6,139.99999999999997 Z" fill="#444" stroke="none" />
+<text x="191.60000000000002" y="124.99999999999997" font-size="14" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">g</text>
+<path d="M65.6,168.19999999999996 C174.5,168.19999999999996,198.7,168.19999999999996,307.6,168.19999999999996" fill="none" stroke="#444" stroke-width="2" />
+<path d="M317.6,168.19999999999996 L305.6,163.19999999999996 L305.6,173.19999999999996 Z" fill="#444" stroke="none" />
+<text x="191.60000000000002" y="158.19999999999996" font-size="14" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">g</text>
+</g>
+</svg>

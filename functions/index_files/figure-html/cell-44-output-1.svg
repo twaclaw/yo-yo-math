@@ -1,0 +1,40 @@
+<svg width="794.4" height="360.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg x="0.0" y="0.0" width="360.0" height="360.0" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<g transform="translate(100,100)">
+<rect x="0.0" y="0.0" width="80.0" height="80.0" fill="#E8736C" stroke="#999" stroke-width="1" />
+<rect x="80.0" y="0.0" width="80.0" height="80.0" fill="#5B8FF9" stroke="#999" stroke-width="1" />
+<rect x="80.0" y="80.0" width="80.0" height="80.0" fill="#5AD8A6" stroke="#999" stroke-width="1" />
+<rect x="0.0" y="80.0" width="80.0" height="80.0" fill="#F6C53F" stroke="#999" stroke-width="1" />
+<rect x="0" y="0" width="160" height="160" fill="none" stroke="#333" stroke-width="3" />
+<text x="24.0" y="24.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="136.0" y="24.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="136.0" y="136.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="24.0" y="136.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">4</text>
+<path d="M80.0,-47.13708498984761 A127.13708498984761,127.13708498984761,0,1,1,-47.13708498984761,80.00000000000003" fill="none" stroke="#060606" stroke-width="3" />
+<path d="M-47.13708498984761,80.00000000000003 L-41.63708498984761,91.00000000000003 L-52.63708498984761,91.00000000000003 Z" fill="#060606" stroke="none" />
+<text x="195.35533905932738" y="195.35533905932738" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#060606" text-anchor="middle" dominant-baseline="central">270°</text>
+</g>
+</g>
+</svg>
+<text x="397.2" y="180.0" font-size="24.0" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">→</text>
+<svg x="434.4" y="0.0" width="360.0" height="360.0" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<g>
+<g transform="translate(100,100)">
+<rect x="0.0" y="0.0" width="80.0" height="80.0" fill="#5B8FF9" stroke="#999" stroke-width="1" />
+<rect x="80.0" y="0.0" width="80.0" height="80.0" fill="#5AD8A6" stroke="#999" stroke-width="1" />
+<rect x="80.0" y="80.0" width="80.0" height="80.0" fill="#F6C53F" stroke="#999" stroke-width="1" />
+<rect x="0.0" y="80.0" width="80.0" height="80.0" fill="#E8736C" stroke="#999" stroke-width="1" />
+<rect x="0" y="0" width="160" height="160" fill="none" stroke="#333" stroke-width="3" />
+<text x="24.0" y="24.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="136.0" y="24.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="136.0" y="136.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="24.0" y="136.0" font-size="26" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#1A1A1A" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+</g>
+</svg>
+</svg>
