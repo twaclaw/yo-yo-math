@@ -28,7 +28,7 @@ The following symbols represent notes and rests (yes, silence is also very impor
 | \musSixteenth| $\color{red}\frac{1}{16}$ | Sixteenth note | Semiquaver |
 :::
 
-In the following score, each bar—each division of the staff—contains notes that sum to $1$. $1$ "whole" note is worth $1$, $2$ half notes each worth $\frac{1}{2}$, $4$ quarter notes each worth $\frac{1}{4}$, $8$ eighth notes each worth $\frac{1}{8}$, and $16$ sixteenth notes each worth $\frac{1}{16}$, etc.
+In the following score, each bar—each division of the staff—contains notes that sum to $1$. $1$ "whole" note worth $1$, $2$ half notes each worth $\frac{1}{2}$, $4$ quarter notes each worth $\frac{1}{4}$, $8$ eighth notes each worth $\frac{1}{8}$, and $16$ sixteenth notes each worth $\frac{1}{16}$, etc.
 
 :::{.question title="Do the notes in a bar sum up to $1$?"}
 Add up the values of the notes in each bar to see that they sum to $1$.
@@ -141,7 +141,7 @@ tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom
 
 rhythms = [
     ("Waltz", "M: 3/4\nL: 1/4\nK: C\nC [EG] [EG] | C [EG] [EG] |]"),
-    ("Rock", "M: 4/4\nL: 1/8\nK: C\nC2 CC C2 C2 | CC CC C2 C2 |]"),
+    ("Rock and Roll", "M: 4/4\nL: 1/8\nK: C\nCC Cz CC Cz | CC Cz CC Cz |]"),
     ("Salsa", "M: 4/4\nL: 1/8\nK: C\nC2 z C z2 C2 | z2 C2 C2 z2 |]"),
 ]
 

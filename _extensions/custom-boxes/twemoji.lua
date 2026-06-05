@@ -84,6 +84,10 @@ local emoji_map = {
   pizza = "🍕",
   ice_cream = "🍨",
   musical_note = "🎵",
+  rabbit_face = "🐰",
+  fox = "🦊",
+  woman_feeding_baby = "👩‍🍼",
+  man_teacher = "👨‍🏫"
 
   
   -- Add more here as needed
