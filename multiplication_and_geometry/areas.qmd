@@ -112,7 +112,7 @@ $$
 $$
 :::
 
-The area depends only on the distances, which are always positive, and not on the location of the rectangle. For example, the area of all the rectangles below is $20$, regardless of their location, even if they are in the negative quadrants.
+The area depends only on the distances, which are always positive, and not on the location of the rectangle. For example, the area of all the rectangles below is $15$, regardless of their location, even if they are in the negative quadrants.
 
 
 

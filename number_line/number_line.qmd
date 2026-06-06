@@ -152,7 +152,7 @@ display_vector(fig)
 
 Time to practice. In the following exercises, use the number line to compute the result of the following operations. You have to start by coloring the train at the position of the first operand, and then move in the direction indicated by the operation, and finally write down the result in the box.
 
-For instance, to compute $3+3$, we start at $4$ and move $3$ positions in the direction of increasing numbers, and we end up at $6$.
+For instance, to compute $3+3$, we start at $3$ and move $3$ positions in the direction of increasing numbers, and we end up at $6$.
 
 ```{python}
 # | echo: false

@@ -69,8 +69,7 @@ $$
 :::{.big-math}
 :::{{latex}}
 \begin{align*}
-\underbrace{a \times a \times \cdots \times a}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} &= a^{\eqnmark[Red]{exp}{{\color{red}{n}}}} \\
-\annotate[yshift=-0.2em]{below}{under, exp}{Exponent}
+\underbrace{a \times a \times \cdots \times a}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} &= a^{\eqnmark[Red]{exp}{{\color{red}{n}}}}
 \end{align*}
 :::
 :::
@@ -92,7 +91,8 @@ Here are some examples of exponentiation:
 
 ## Exponentiation of 10
 
-In the decimal system, a special case of exponentiation occurs when the base is 10.
+A special case of exponentiation occurs in the decimal system when the base is $10$.
+
 
 :::{.big-math}
 \begin{align*}
@@ -124,7 +124,7 @@ In general we have:
 :::
 :::
 
-Here is a list of the first powers of $10$:
+Below is a list of the first powers of $10$:
 
 :::{.content-visible when-format="html"}
 :::{.big-math}
@@ -173,7 +173,8 @@ As I mentioned before, mathematics is recursive.
 In the same way that repeated addition is multiplication and repeated multiplication is exponentiation, what is repeated exponentiation?
 :::
 
-We will stop at exponentiation. As a curious fact, repeated exponentiation is called _tetration_, which allows us to build towers of numbers like this:
+We will stop at exponentiation. As an interesting fact, repeated exponentiation is called tetration, which allows us to build towers of numbers like this:
+
 
 
 :::{.big-math}
@@ -217,11 +218,13 @@ Do you see the pattern?
 
 Now that we have this information, we can finally formalize the positional number system.
 
-In a positional number system, remember that the value of a digit depends on its position.
+
+Remember that in a positional number system, the value of a digit depends on its position.
+
 
 
 :::{.question}
-But what is that value of each digit?
+But what is the value of each digit?
 :::
 
 :::{.content-visible when-format="html"}
@@ -330,10 +333,10 @@ d_i \times 10^{p_i}
 $$
 :::
 
-Where $p_i$ is the position of the digit $d_i$ in the number, starting from $0$ for the rightmost digit.
+Where $p_i$ is the position of the digit $d_i$ in the number, starting at $0$ for the rightmost digit.
 
 :::{.fun-fact}
-This holds true for any base, not just $10$, and can be extended to non-integer numbers as well
+This holds true for any base, not just $10$, and can be extended to non-integer numbers as well.
 :::
 
 

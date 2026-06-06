@@ -82,9 +82,9 @@ These relationships are shown in the following figure.
 ```
 
 
-$\color{red}{\mathbb{N}}$ and $\color{blue}{\mathbb{Z}}$ are very important sets in mathematics, you will find them over and over again in different contexts.
+[$\color{red}{\mathbb{N}}$]{.scale factor="2"} and [$\color{blue}{\mathbb{Z}}$]{.scale factor="2"} are very important sets in mathematics, you will find them over and over again in different contexts.
 
-$\color{blue}{\mathbb{Z}}$ and the operation of addition on this set has some important properties:
+[$\color{blue}{\mathbb{Z}}$]{.scale factor="2"} and the operation of addition on this set has some important properties:
 
 - $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Closure and associativity**: If you add two integers, the result is another integer. For example, $2 + 3 = 5$ and $-1 + (-7) = -8$. 
 - $\text{[check_mark_button:1.5em:-0.3em]{.twemoji}}$ **Existence of an identity element**: There is a _neutral_ number $e$,  such that $e + a = a + e = a$. In the case of addition, this do-nothing number is $0$. For example, $2 + 0 = 0 + 2 = 2$ and $-3 + 0 = 0 + (-3) = -3$. Adding (or subtracting) $0$ is like doing nothing.

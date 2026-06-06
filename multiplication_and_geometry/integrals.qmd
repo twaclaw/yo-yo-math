@@ -4,7 +4,7 @@
 I bet you love chocolate! You're a chocolate monster!
 
 The following graph shows how much chocolate you eat each year. The x-axis represents the $12$ months of the year. 
-For each month, you can see how many kilograms of chocolate you eat. For example, in June (month $6$), you only eat about $1$ kg.  This is probably because you prefer ice cream when it's hot outside. On the other hand, you eat a lot of chocolate around Easter and Christmas—around $4$ kg or more.
+For each month, you can see how many kilograms of chocolate you eat. For example, in June (month $6$), you only eat about $1$ kg.  This is probably because you prefer gelato when it's hot outside. On the other hand, you eat a lot of chocolate around Easter and Christmas—around $4$ kg or more.
 
 
 

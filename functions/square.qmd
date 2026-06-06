@@ -37,7 +37,11 @@ Symmetry, from the ancient Greek word συμμετρία, is one of the most pro
 
 Below are examples of symmetric and asymmetric figures. Source: [Wikimedia](https://commons.wikimedia.org/wiki/File:Asymmetric_(PSF).svg#/media/File:Asymmetric_(PSF).svg).
 
+Print this page and cut out the images. Then, fold each image along the vertical, straight line. What is the difference between symmetric and asymmetric figures?
+
 ![](../static_images/asymmetric.svg)
+
+
 :::
 
 ### Rotations {.unnumbered .unlisted}

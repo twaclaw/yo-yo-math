@@ -21,7 +21,7 @@ More than $3$ dimensions are hard to imagine and visualize.
 So far, we have been operating and counting in one dimension. This means that we can only move in one of the two directions in which the arrows of the number line extends: for instance right and left.
 
 
-We can use two perpendicular number lines to create a two-dimensional plane. Perpendicular lines look like this: $\perp$.
+We can use two perpendicular number lines to create a two-dimensional plane. Perpendicular lines look like this: [$\perp$]{.scale factor="2"}.
 
 The resulting $2$-dimensional plane is called the **Cartesian plane**. It is named after the French philosopher and mathematician René Descartes, whose latinized name was Renatus Cartesius.
 
