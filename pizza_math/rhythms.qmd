@@ -1,6 +1,6 @@
 ## Fractions make you dance [musical_note]{.twemoji}
 
-Fractions appear in many contexts, such as in nature and art, where they are used to describe proportions and ratios. In music, note durations are expressed as fractions relative to a whole note.  
+Fractions appear in many contexts, such as nature and art, where they describe proportions, symmetries, and ratios. In music, note durations are expressed as fractions relative to a whole note. What makes you dance when you listen to music is precisely the alternation of notes and rests of different durations. In other words, it is a succession of fractions that makes you dance.  
 
 The following symbols represent notes and rests (yes, silence is also very important in music) of different durations.
 
@@ -120,36 +120,3 @@ svg = tk.renderToSVG()
 svg = re.sub(r'(<g id="[^"]+" class="harm")', r'\1 fill="red"', svg)
 display(SVG(svg))
 ```
-
-
-### Exercises {.unnumbered .unlisted}
-
-Fractions make you dance because different rhythms are based on notes and rests of varying durations, or fractions. Here are some examples of common rhythms. Try clapping and dancing along!
-
-Identify the note and rest values in the following rhythms and add them up.
-
-```{python}
-# | echo: false
-# | fig-align: "center"
-import verovio
-from IPython.display import SVG, display
-import re
-verovio.enableLog(verovio.LOG_OFF)
-
-tk = verovio.toolkit()
-tk.setOptions({"scale": 50, "pageWidth": 1000, "adjustPageHeight": 1, "inputFrom": "abc", "footer": "none"})
-
-rhythms = [
-    ("Waltz", "M: 3/4\nL: 1/4\nK: C\nC [EG] [EG] | C [EG] [EG] |]"),
-    ("Rock and Roll", "M: 4/4\nL: 1/8\nK: C\nCC Cz CC Cz | CC Cz CC Cz |]"),
-    ("Salsa", "M: 4/4\nL: 1/8\nK: C\nC2 z C z2 C2 | z2 C2 C2 z2 |]"),
-]
-
-for i, (title, abc) in enumerate(rhythms):
-    abc_data = f"X: {i+1}\nT: {title}\n{abc}"
-    tk.loadData(abc_data)
-    svg = tk.renderToSVG()
-    display(SVG(svg))
-```
-
-

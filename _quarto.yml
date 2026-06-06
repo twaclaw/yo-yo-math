@@ -25,10 +25,10 @@ book:
   cover-image: cover.jpg
   open-graph:
     image: cover.jpg
-    description: "A book for playing mathematics"
+    description: "A book for playing mathematics. If you like it, please consider supporting by sharing it with others."
   twitter-card:
     image: cover.jpg
-    description: "A book for playing mathematics"
+    description: "A book for playing mathematics. If you like it, please consider supporting by sharing it with others."
   author: "Diego Sandoval"
   chapters:
     - index.qmd
