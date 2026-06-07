@@ -83,13 +83,10 @@ Rotating the square by one-quarter turn can be seen as a function, $R_1:S\to S$,
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R1
 from yoyo_plots.common import display_vector, combine_svgs
 
-perm = SquareSymmetries().rotate(90).to_permutation(name="R_1")
+perm = R1()
 
 display_vector(perm)
 ```
@@ -121,13 +118,10 @@ for rot in [Rotation.R180]:
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R2
 from yoyo_plots.common import display_vector, combine_svgs
 
-perm = SquareSymmetries().rotate(180).to_permutation(name="R_2")
+perm = R2()
 
 display_vector(perm)
 ```
@@ -160,13 +154,10 @@ For example, flipping the square along the axis $C$ results in:
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R4
 from yoyo_plots.common import display_vector, combine_svgs
 
-flipped = SquareSymmetries(color=True).flip_around_axis(FlipAxis.A)
+flipped = R4()
 display_vector(flipped)
 ```
 
@@ -176,14 +167,10 @@ This corresponds to the following mapping:
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R4
 from yoyo_plots.common import display_vector, combine_svgs
 
-R2 = SquareSymmetries().flip_around_axis("A").to_permutation(name="R_4")
-display_vector(R2)
+display_vector(R4())
 ```
 
 
@@ -211,14 +198,10 @@ This corresponds to the following mapping:
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R7
 from yoyo_plots.common import display_vector, combine_svgs
 
-R2 = SquareSymmetries().flip_around_axis("D").to_permutation(name="R_7")
-display_vector(R2)
+display_vector(R7())
 ```
 
 Here is a summary of the symmetries of our colorful square.
@@ -261,15 +244,9 @@ First, we apply $R_1$, which rotates the square by $1/4$. Then, we apply $R_4$, 
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R4, R1, draw_composition
 from yoyo_plots.common import display_vector, combine_svgs
-
-R1 = SquareSymmetries().rotate(90).to_permutation(name="R_1")
-R4 = SquareSymmetries().flip_around_axis("A").to_permutation(name="R_4")
-display_vector(draw_composition([R4, R1], result_name="R_7"))
+display_vector(draw_composition([R4(), R1()], result_name="R_7"))
 ```
 
 :::{.question}
@@ -306,18 +283,18 @@ The symmetries of the square, $S_G = \{R_0, R_1, \cdots R_7\}$, forms a group un
 # | fig-align: center
 
 from yoyo_plots.multiplication import draw_operation_table
-from yoyo_plots.permutations import SquareSymmetries, Permutation, compose
+from yoyo_plots.permutations import SquareSymmetries, Permutation, compose, R1, R2, R3, R4, R5, R6, R7
 from yoyo_plots.common import display_vector
 
 moves = [
     SquareSymmetries().to_permutation().bottom,                       # R0  identity
-    SquareSymmetries().rotate(90).to_permutation().bottom,            # R1  rotate  90°
-    SquareSymmetries().rotate(180).to_permutation().bottom,           # R2  rotate 180°
-    SquareSymmetries().rotate(270).to_permutation().bottom,           # R3  rotate 270°
-    SquareSymmetries().flip_around_axis("A").to_permutation().bottom, # R4  flip A
-    SquareSymmetries().flip_around_axis("B").to_permutation().bottom, # R5  flip B
-    SquareSymmetries().flip_around_axis("C").to_permutation().bottom, # R6  flip C
-    SquareSymmetries().flip_around_axis("D").to_permutation().bottom, # R7  flip D
+    R1().bottom,
+    R2().bottom,
+    R3().bottom,
+    R4().bottom,
+    R5().bottom,
+    R6().bottom,
+    R7().bottom, # R7  flip D
 ]
 index = {p: i for i, p in enumerate(moves)}
 
@@ -349,16 +326,6 @@ from yoyo_plots.multiplication import draw_operation_table
 from yoyo_plots.permutations import SquareSymmetries, Permutation, compose
 from yoyo_plots.common import display_vector
 
-moves = [
-    SquareSymmetries().to_permutation().bottom,                       # R0  identity
-    SquareSymmetries().rotate(90).to_permutation().bottom,            # R1  rotate  90°
-    SquareSymmetries().rotate(180).to_permutation().bottom,           # R2  rotate 180°
-    SquareSymmetries().rotate(270).to_permutation().bottom,           # R3  rotate 270°
-    SquareSymmetries().flip_around_axis("A").to_permutation().bottom, # R4  flip A
-    SquareSymmetries().flip_around_axis("B").to_permutation().bottom, # R5  flip B
-    SquareSymmetries().flip_around_axis("C").to_permutation().bottom, # R6  flip C
-    SquareSymmetries().flip_around_axis("D").to_permutation().bottom, # R7  flip D
-]
 index = {p: i for i, p in enumerate(moves)}
 
 def prod(i, j):
@@ -391,16 +358,6 @@ from yoyo_plots.multiplication import draw_operation_table
 from yoyo_plots.permutations import SquareSymmetries, Permutation, compose
 from yoyo_plots.common import display_vector
 
-moves = [
-    SquareSymmetries().to_permutation().bottom,                       # R0  identity
-    SquareSymmetries().rotate(90).to_permutation().bottom,            # R1  rotate  90°
-    SquareSymmetries().rotate(180).to_permutation().bottom,           # R2  rotate 180°
-    SquareSymmetries().rotate(270).to_permutation().bottom,           # R3  rotate 270°
-    SquareSymmetries().flip_around_axis("A").to_permutation().bottom, # R4  flip A
-    SquareSymmetries().flip_around_axis("B").to_permutation().bottom, # R5  flip B
-    SquareSymmetries().flip_around_axis("C").to_permutation().bottom, # R6  flip C
-    SquareSymmetries().flip_around_axis("D").to_permutation().bottom, # R7  flip D
-]
 index = {p: i for i, p in enumerate(moves)}
 
 def prod(i, j):
@@ -458,15 +415,12 @@ display_vector(R3)
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import (
-    SquareSymmetries, Permutation, Rotation, FlipAxis,
-    compose, draw_composition,
-)
+from yoyo_plots.permutations import R5
 from yoyo_plots.common import display_vector, combine_svgs
 
 
-R5 = SquareSymmetries().flip_around_axis("B").to_permutation(name="R_4", blank=True)
-display_vector(R3)
+r = R5(blank=True)
+display_vector(r)
 ```
 
 
