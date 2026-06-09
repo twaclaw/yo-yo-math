@@ -33,7 +33,7 @@ Explain why rotating the square by $45$ degrees results in a square that doesn't
 
 
 :::{.fun-fact title="Symmetry" image="/static_images/monarch_butterfly2.pdf" width="0.7" scale="0.9"}
-Symmetry, from the ancient Greek word συμμετρία, is one of the most profound and pervasive concepts in nature and mathematics. It governs our perception of beauty, dictates how energy is conserved, and underpins our understanding of music, physics, chemistry, and the world itself. 
+Symmetry, from the ancient Greek word συμμετρία, is one of the most profound and pervasive concepts in nature and mathematics. It governs our perception of beauty, dictates how energy is conserved, and underpins our understanding of music, physics, chemistry, and the world itself.  Symmetry is beautiful and important. In a sense, group theory is the mathematical study of symmetry.
 
 Below are examples of symmetric and asymmetric figures. Source: [Wikimedia](https://commons.wikimedia.org/wiki/File:Asymmetric_(PSF).svg#/media/File:Asymmetric_(PSF).svg).
 

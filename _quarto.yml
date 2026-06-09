@@ -80,6 +80,8 @@ format:
     output-file: "Yo-Yo-Math.pdf"
     keep-tex: true
     documentclass: scrreprt
+    classoption:
+      - twoside
     pdf-engine: lualatex
     dpi: 300
     fig-dpi: 300
@@ -95,7 +97,11 @@ format:
     number-sections: true
     colorlinks: true
     geometry:
-      - margin=2.5cm
+      - a4paper
+      - inner=3.5cm
+      - outer=2.5cm
+      - top=2.5cm
+      - bottom=2.5cm
     include-in-header:
       - text: |
           % \usepackage{draftwatermark}
@@ -157,15 +163,25 @@ format:
           % --- Custom Teacher Tip Box Definition ---
           \usepackage{etoolbox}
           \usepackage[most]{tcolorbox}
+
+          % --- Blank page before dedication ---
           
           % --- Dedication Page Setup ---
           \pretocmd{\tableofcontents}{
+            % Blank page between the title page and the dedication
+            \clearpage
+            \thispagestyle{empty}
+            \null
             \clearpage
             \thispagestyle{empty}
             \begin{flushright}
-              \large \textit{For Jonas and Matildė, who taught me to be here and now, infused me with their curiosity and gave my life a surge of purpose, ideas, and creative energy.}
-            \end{flushright}           
+              \large \textit{For Jonas and Matildė, who taught me to be here and now, filled me with their curiosity and gave my life a surge of purpose, ideas, and creative energy.}
+            \end{flushright}
             \vspace*{\fill}
+            \clearpage
+            % Blank page between the dedication and the table of contents
+            \thispagestyle{empty}
+            \null
             \clearpage
           }{}{}
 

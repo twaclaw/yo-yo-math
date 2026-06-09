@@ -17,7 +17,7 @@ Remember, a power of $10$ is a $1$ followed by $0\text{s}$.
 :::
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math}
+:::{.big-math size="20pt"}
 :::{{latex}}
 \begin{equation*}
 \underbrace{10 \times 10 \times \cdots \times 10}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} = 10^{\eqnmark[Red]{exp}{{\color{red}{n}}}}   = 1\eqnmarkbox[Red]{zeros}{000\cdots 000}
@@ -30,7 +30,7 @@ Remember, a power of $10$ is a $1$ followed by $0\text{s}$.
 This is what happens when we multiply a general number $d_1d_2\dots d_n$ by a power of $10$:
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math size="20pt"}
+:::{.big-math size="18pt"}
 :::{{latex}}
 \begin{equation*}
 \eqnmarkbox[OliveGreen]{number}{d_1d_2\dots d_n} \times 10^{\eqnmarkbox[Red]{exp}{{n}}} =  \eqnmarkbox[OliveGreen]{number}{d_1d_2\dots d_n} \times 1\eqnmarkbox[Red]{nzeros}{\underbrace{0\cdots 0}_{n \text{ zeros}}}  = \eqnmarkbox[OliveGreen]{number}{d_1d_2\dots d_n}\eqnmarkbox[Red]{nzeros}{\underbrace{0\cdots 0}_{n \text{ zeros}}} 
@@ -53,7 +53,7 @@ $$
 The following examples should make this concept clearer.
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math}
+:::{.big-math size="20pt"}
 :::{{latex}}
 \begin{align*}
 \eqnmarkbox[OliveGreen]{number}{5} \times 10^{\eqnmarkbox[Red]{exp}{1}} &=  \eqnmarkbox[OliveGreen]{number}{5} \times 1\eqnmarkbox[Red]{nzeros}{0}  = \eqnmarkbox[OliveGreen]{number}{5}\eqnmarkbox[Red]{nzeros}{0} \\

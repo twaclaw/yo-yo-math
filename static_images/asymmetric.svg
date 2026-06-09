@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="735" height="455" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g stroke-width="4" fill="none" stroke="#000">
+  <path d="m0 389.67h735"/>
+  <path d="m183.75 25.25v364.32"/>
+  <path id="a" d="m183.75 25.254c18.995 0 37.77 6.9314 51.2 20.152 9.7458 9.5939 16.593 22.095 19.431 35.473 13.746 1.4893 27.071 6.7 38.181 14.931 11.11 8.2306 19.976 19.46 25.405 32.176 6.7093 15.715 8.0823 33.626 4.0071 50.221-4.0752 16.594-13.551 31.791-26.552 42.881-15.822 13.496-36.825 20.759-57.604 19.918 11.901 15.698 16.62 36.629 12.604 55.915-4.1156 19.767-17.354 37.44-35.167 46.947 0.45436 6.045 1.6654 12.033 3.5959 17.779 3.4854 10.375 9.3397 19.946 16.988 27.774"/>
+  <use transform="matrix(-1,0,0,1,367.5,0)" xlink:href="#a"/>
+  <path d="m551.52 389.67v-364.42"/>
+  <path d="m505.7 389.67c6.5364-13.639 11.674-27.948 15.306-42.629 3.9654-16.03 6.1346-32.504 6.4539-49.014-14.655 13.233-34.624 20.404-54.349 19.516-18.574-0.83562-36.783-8.8045-49.814-22.067s-20.696-31.715-20.637-50.308c0.0425-13.29 3.9599-26.545 11.149-37.724 7.1891-11.178 17.625-20.241 29.7-25.793-9.9368-6.8135-17.463-17.071-20.98-28.595-3.9848-13.056-2.707-27.723 3.88-39.679 6.587-11.956 18.494-20.953 31.888-23.585 10.498-2.0625 21.718-0.22165 31.007 5.0875-0.9643-9.849 0.20883-19.902 3.415-29.264 4.6269-13.511 13.698-25.657 25.967-32.966 9.8008-5.838 19.735-7.3976 32.835-7.3976s25.931 4.1345 37.23 10.633c17.77 10.22 31.342 27.507 37.053 47.194 18.77 0.52787 37.243 8.3106 50.732 21.373 14.697 14.232 23.248 34.565 23.31 55.024s-8.3194 40.784-22.663 55.372c-15.753 16.022-38.535 24.873-60.974 23.689 7.5501 8.2313 12.644 18.688 14.471 29.707 1.6216 9.7778 0.6966 19.9-2.1019 29.408-2.7985 9.508-7.4369 18.419-13.134 26.529-6.8102 9.6939-15.161 18.303-24.643 25.405l-0.36828 19.961c-0.12375 6.7072-0.247 13.414-0.36828 20.122"/>
+ </g>
+ <g font-family="'Liberation Sans'" font-size="35" text-anchor="middle">
+  <switch transform="translate(184 432)">
+   <text systemLanguage="fr"><tspan>symétrique</tspan></text>
+   <text systemLanguage="de"><tspan>symmetrisch</tspan></text>
+   <text systemLanguage="ru"><tspan>СИММЕТРИЯ</tspan></text>
+   <text systemLanguage="th"><tspan>ภาพสมมาตร</tspan></text>
+   <text systemLanguage="id"><tspan>SIMETRIS</tspan></text>
+   <text systemLanguage="ms"><tspan>SIMETRI</tspan></text>
+   <text systemLanguage="ca"><tspan>SIMÈTRIC</tspan></text>
+   <text systemLanguage="yue"><tspan>對稱</tspan></text>
+   <text><tspan>SYMMETRIC</tspan></text>
+  </switch>
+  <switch transform="translate(552 432)">
+   <text systemLanguage="fr"><tspan>asymétrique</tspan></text>
+   <text systemLanguage="de"><tspan>asymmetrisch</tspan></text>
+   <text systemLanguage="ru"><tspan>АСИММЕТРИЯ</tspan></text>
+   <text systemLanguage="th"><tspan>ภาพอสมมาตร</tspan></text>
+   <text systemLanguage="id"><tspan>ASIMETRIS</tspan></text>
+   <text systemLanguage="ms"><tspan>ASIMETRI</tspan></text>
+   <text systemLanguage="ca"><tspan>ASIMÈTRIC</tspan></text>
+   <text systemLanguage="yue"><tspan>唔對稱</tspan></text>
+   <text><tspan>ASYMMETRIC</tspan></text>
+  </switch>
+ </g>
+</svg>
