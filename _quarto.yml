@@ -20,6 +20,7 @@ big-math-size: "30pt"
 book:
   title: "[Yo]{style='color:#156483'}[-]{style='color:#0F0C0C'}[Yo]{style='color:#993A71'}[-]{style='color:#0F0C0C'}[Math]{style='color:#3D2478'}"
   output-file: "Yo-Yo-Math"
+  favicon: favicon.svg
   subtitle: "[A book for playing mathematics]{style='color:#2F4D8B'}"
   site-url: https://twaclaw.github.io/yo-yo-math/
   cover-image: cover.jpg
