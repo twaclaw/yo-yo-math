@@ -285,70 +285,35 @@ fig_op = draw_quantity_operation(
 display_vector(fig_op)
 ```
 
-Finally, these operations can also be done with the abstract numbers, without relating them to a particular object.
+Addition means combining quantities. So far, we have combined two quantities, but we can combine more. 
 
-When adding more than two numbers, it is helpful to split the operation into multiple steps. We can use parentheses to represent this way of grouping or _associating_ numbers. For example, we can compute $0 + 1 + 2 + 3$ as:
+For example, in the following figure, we are adding $3$ white bricks, $1$ blue brick, $2$ pink bricks, and $3$ yellow ones. This represents the sum $3 + 1 + 2 + 3$, which equals $9$.
 
-:::{.content-visible when-format="html"}
+![](../static_images/legos/associativity/assoc1.svg){fig-align="center" width="30%"}
+
+When adding more than two numbers, it is helpful to break the process down into smaller steps. We can group the summands in different ways. The cool thing is that the result will always be the same, no matter how we group them. This property of addition is called **associativity**. For example, in the following figure, we are grouping the bricks in different ways, but we always end up with $9$ bricks.
+
+![](../static_images/legos/associativity/assoc2.svg){fig-align="center"}
+
+We can use parentheses to indicate which numbers we should group together and add up first.
+
 ::: {.big-math}
 $$
-\underbrace{\underbrace{(\underbrace{(0+1)}_{0+1={\color{red}{1}}}+2)}_{{\color{red}{1}}+2={\color{blue}{3}}}+3}_{{\color{blue}{3}}+3={\color{green}{6}}} = \color{green}{6}
+\underbrace{\underbrace{(\underbrace{(3+1)}_{3+1={\color{red}{4}}}+2)}_{{\color{red}{4}}+2={\color{blue}{6}}}+3}_{{\color{blue}{6}}+3={\color{green}{9}}} = \color{green}{9}
 $$
 :::
-:::
 
-:::{.content-visible when-format="pdf"}
-::: {.big-math}
-:::{{latex}}
-\begin{equation*}
-    \eqnmarkbox[OliveGreen]{}{
-    \underbrace{
-        \underbrace{
-            \eqnmarkbox[Blue]{}{
-            (
-                \underbrace{
-                    \eqnmarkbox[Red]{}{(0+1)}
-                }_{0+1=\eqnmark[Red]{}{1}}
-            +2
-            )
-            }
-        }_{
-            \eqnmark[Red]{}{1}+2=\eqnmark[Blue]{}{3}
-        }
-    +3}_{
-        \eqnmark[Blue]{}{3}+3=\eqnmark[OliveGreen]{}{6}
-    }} = \eqnmark[OliveGreen]{}{6}
-\end{equation*}
-:::
-:::
-:::
 
 However, we can also associate numbers differently:
 
 
-:::{.content-visible when-format="html"}
 ::: {.big-math}
 $$
-\underbrace{\left(\underbrace{(0 + 1)}_{0 + 1 = {{\color{red}{1}}}} + \underbrace{(2 + 3)}_{2 + 3 = {{\color{blue}{5}}}}\right)}_{{\color{red}{1}} + {\color{blue}{5}} = {{\color{green}{6}}}} = 6
+\underbrace{\left(\underbrace{(3 + 1)}_{3 + 1 = {{\color{red}{4}}}} + \underbrace{(2 + 3)}_{2 + 3 = {{\color{blue}{5}}}}\right)}_{{\color{red}{4}} + {\color{blue}{5}} = {{\color{green}{9}}}} = 9
 $$
 :::
-:::
 
-:::{.content-visible when-format="pdf"}
-::: {.big-math}
-:::{{latex}}
-\begin{equation*}
-\eqnmarkbox[OliveGreen]{}{
-\underbrace{\underbrace{\eqnmarkbox[Red]{}{(0 + 1)}}_{0 + 1 = \eqnmark[Red]{s1}{1}} + \underbrace{\eqnmarkbox[Blue]{}{(2 + 3)}}_{2 + 3 = \eqnmark[Blue]{s2}{5}}}_{1 + 5 = \eqnmark[OliveGreen]{}{6}}} = \eqnmark[OliveGreen]{s4}{6}
-\end{equation*}
-:::
-:::
-:::
-
-The property of addition that states the order in which numbers are grouped does not change the result is called **associativity**. 
-
-
-Compute the following sums and differences.
+Now that you have that knowledge, let's solve the following sums. You can use beads, your fingers, or LEGO bricks to help with the calculations.
 
 ::: {.big-math}
 \begin{align*}
