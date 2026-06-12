@@ -309,6 +309,8 @@ fig = draw_operation_table(
     show_upper=False,
     header_label=lambda k: f"R<sub>{k}</sub>",  # row/column headers R₀..R₇
     operation_font_size=40,  
+    font_size=15,
+    pixels_per_unit=30,
 )
 display_vector(fig)
 ```
@@ -341,6 +343,9 @@ fig = draw_operation_table(
     cols={0: "lightblue"},
     header_label=lambda k: f"R<sub>{k}</sub>",  # row/column headers R₀..R₇
     operation_font_size=40,  
+    font_size=15,
+    pixels_per_unit=30,
+
 )
 display_vector(fig)
 ```
@@ -374,6 +379,9 @@ fig = draw_operation_table(
     elements = {(3, 1): "coral"},
     header_label=lambda k: f"R<sub>{k}</sub>",  # row/column headers R₀..R₇
     operation_font_size=40,   
+    font_size=15,
+    pixels_per_unit=30,
+
 )
 display_vector(fig)
 ```

@@ -72,8 +72,9 @@ display_vector(label)
 \eqnmark[Blue]{k1}{3}\eqnmark[Red]{k2}{3}\eqnmark[Black]{k3}{3}
 \annotate[yshift=0.5em]{above,left}{k1}{Greatest value}
 \annotate[yshift=0.5em]{above,right}{k2}{Second greatest value}
-\annotate[yshift=-0.5em]{below,right}{k3}{Lowest value}
+\annotate[yshift=-0.1em]{below,right}{k3}{Lowest value}
 \end{equation*}
+\vspace{0.5em}
 :::
 :::
 :::

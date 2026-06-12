@@ -236,7 +236,7 @@ $$
 :::
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math}
+:::{.big-math size="27pt"}
 :::{{latex}}
 \begin{equation*}
 \eqnmark[Blue]{d2}{3}\eqnmark[Red]{d1}{3}\eqnmark[Black]{d0}{3}
@@ -259,7 +259,7 @@ $$
 :::
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math}
+:::{.big-math size="27pt"}
 :::{{latex}}
 \begin{equation*}
 \eqnmark[Blue]{d2}{3}\eqnmark[Red]{d1}{3}\eqnmark[Black]{d0}{3} = \eqnmark[Blue]{d2}{3} \times 10^{\eqnmarkbox[Blue]{p2}{2}} + \eqnmark[Red]{d1}{3} \times 10^{\eqnmarkbox[Red]{p1}{1}} + \eqnmark[Black]{d0}{3} \times 10^{\eqnmarkbox[Black]{p0}{0}}
@@ -298,7 +298,7 @@ $$
 :::
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math size="25pt"}
+:::{.big-math size="20pt"}
 :::{{latex}}
 \begin{equation*}
 \eqnmark[OliveGreen]{d3}{4}\eqnmark[Blue]{d2}{1}\eqnmark[Red]{d1}{0}\eqnmark[Black]{d0}{1} =  \eqnmark[OliveGreen]{d3}{4} \times 10^{\eqnmarkbox[OliveGreen]{p3}{3}} + \eqnmark[Blue]{d2}{1} \times 10^{\eqnmarkbox[Blue]{p2}{2}} + \eqnmark[Red]{d1}{0} \times 10^{\eqnmarkbox[Red]{p1}{1}} + \eqnmark[Black]{d0}{1} \times 10^{\eqnmarkbox[Black]{p0}{0}}

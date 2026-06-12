@@ -566,7 +566,6 @@ $$
 :::{{latex}}
 \begin{align*}
 \underbrace{a + a + \cdots + a}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} &= \eqnmark[Red]{plus}{{\color{red}{n}}} \times a \\
-\annotate[yshift=-0.2em]{below}{under, plus}{}
 \end{align*}
 :::
 :::
