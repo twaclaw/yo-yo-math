@@ -40,7 +40,6 @@ Count the number of sheeps.
 
 ```{python}
 # | echo: false
-# | fig-cap: "Count the number of sheeps."
 
 from yoyo_plots.quantities import draw_quantity_grid
 from yoyo_plots.common import display_vector
@@ -55,7 +54,10 @@ grid_specs = [
     dict(n=25, nrows=5, font_size=font_size, image_size=image_size, image=image, font_color="white"),
 ]
 
-fig = draw_quantity_grid(grid_specs, cols=2)
+fig = draw_quantity_grid(grid_specs[:2], cols=2)
+display_vector(fig)
+
+fig = draw_quantity_grid(grid_specs[2:], cols=2)
 display_vector(fig)
 ```
 

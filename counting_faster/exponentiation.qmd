@@ -114,7 +114,7 @@ In general we have:
 :::
 
 :::{.content-visible when-format="pdf"}
-:::{.big-math}
+:::{.big-math size="20pt"}
 :::{{latex}}
 \begin{equation*}
 \underbrace{10 \times 10 \times \cdots \times 10}_{\eqnmarkbox[Red]{under}{{\color{red}{n}} \text{ times}}} = 10^{\eqnmark[Red]{exp}{{\color{red}{n}}}}   = 1\eqnmarkbox[Red]{zeros}{000\cdots 000}

@@ -299,7 +299,7 @@ We can use parentheses to indicate which numbers we should group together and ad
 
 ::: {.big-math}
 $$
-\underbrace{\underbrace{(\underbrace{(3+1)}_{3+1={\color{red}{4}}}+2)}_{{\color{red}{4}}+2={\color{blue}{6}}}+3}_{{\color{blue}{6}}+3={\color{green}{9}}} = \color{green}{9}
+\underbrace{\underbrace{(\underbrace{(3+1)}_{3+1={\color{red}{4}}}+2)}_{{\color{red}{4}}+2={\color{blue}{6}}}+3}_{{\color{blue}{6}}+3={\color{green}{9}}} = 9
 $$
 :::
 
