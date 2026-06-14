@@ -7,21 +7,21 @@
 <g transform="translate(0.0,0.0)">
 <g>
 <ellipse cx="84.8" cy="102.89999999999998" rx="84.8" ry="102.89999999999998" fill="white" stroke="#333" stroke-width="2" />
-<text x="84.8" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">S</text>
-<text x="84.8" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Zurich</text>
-<text x="84.8" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Geneva</text>
-<text x="84.8" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Bern</text>
-<text x="84.8" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Basel</text>
+<text x="84.8" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">S</text>
+<text x="84.8" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Zurich</text>
+<text x="84.8" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Geneva</text>
+<text x="84.8" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Bern</text>
+<text x="84.8" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Basel</text>
 </g>
 </g>
 <g transform="translate(309.6,0.0)">
 <g>
 <ellipse cx="89.6" cy="102.89999999999998" rx="89.6" ry="102.89999999999998" fill="white" stroke="#333" stroke-width="2" />
-<text x="89.6" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">I</text>
-<text x="89.6" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Milano</text>
-<text x="89.6" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Bologna</text>
-<text x="89.6" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Firenze</text>
-<text x="89.6" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, cursive" text-anchor="middle" dominant-baseline="middle" fill="#333">Roma</text>
+<text x="89.6" y="26.2" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#333">I</text>
+<text x="89.6" y="68.6" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Milano</text>
+<text x="89.6" y="101.79999999999998" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Bologna</text>
+<text x="89.6" y="134.99999999999997" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Firenze</text>
+<text x="89.6" y="168.19999999999996" font-size="16" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#333">Roma</text>
 </g>
 </g>
 <path d="M123.6,68.6 C234.66000000000003,68.6,259.34000000000003,68.6,370.40000000000003,68.6" fill="none" stroke="#444" stroke-width="2" />

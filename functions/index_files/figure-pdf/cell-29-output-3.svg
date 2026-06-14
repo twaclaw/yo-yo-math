@@ -11,13 +11,13 @@
 <rect x="0.0" y="100.0" width="100.0" height="100.0" fill="white" stroke="#999" stroke-width="1" />
 <rect x="0" y="0" width="200" height="200" fill="none" stroke="#333" stroke-width="3" />
 <path d="M-62.0,-62.0 L262.0,262.0" stroke="#555" stroke-width="1.6" stroke-dasharray="5,5" />
-<text x="274.0" y="274.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">A</text>
+<text x="274.0" y="274.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">A</text>
 <path d="M262.0,-62.0 L-62.0,262.0" stroke="#555" stroke-width="1.6" stroke-dasharray="5,5" />
-<text x="-74.0" y="274.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="-74.0" y="274.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">B</text>
 <path d="M100.0,-62.0 L100.0,262.0" stroke="#555" stroke-width="1.6" stroke-dasharray="5,5" />
-<text x="100.0" y="-74.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">C</text>
+<text x="100.0" y="-74.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">C</text>
 <path d="M-62.0,100.0 L262.0,100.0" stroke="#555" stroke-width="1.6" stroke-dasharray="5,5" />
-<text x="274.0" y="100.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">D</text>
+<text x="274.0" y="100.0" font-size="20.8" font-family="Comic Sans MS, Comic Sans, Chalkboard SE, Chalkboard, Marker Felt, sans-serif" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">D</text>
 </g>
 </g>
 </svg>
