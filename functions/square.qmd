@@ -147,17 +147,17 @@ display_vector(axes)
 
 Again, flipping the square along one of its axes can be thought of as a function, $R: S \to S$, or a permutation. 
 
-For example, flipping the square along the axis $C$ results in:
+For example, flipping the square along the axis $A$ results in:
 
 
 ```{python}
 # | echo: false
 # | fig-align: center
 
-from yoyo_plots.permutations import R4
+from yoyo_plots.permutations import R4, SquareSymmetries, FlipAxis
 from yoyo_plots.common import display_vector, combine_svgs
 
-flipped = R4()
+flipped = SquareSymmetries(color=True).flip_around_axis(FlipAxis.A)
 display_vector(flipped)
 ```
 
@@ -276,7 +276,7 @@ display_vector(combine_svgs([flipped.to_svg(), R7, ]))
 
 ### Group of symmetries {.unnumbered .unlisted}
 
-The symmetries of the square, $S_G = \{R_0, R_1, \cdots R_7\}$, forms a group under the operation of function composition, $\circ$. Remember our checklist? Let's take a look at the Cayley table of the group.
+The symmetries of the square, $S_G = \{R_0, R_1, \cdots R_7\}$, forms a group under the operation of function composition, [$\color{red}{\circ}$]{.scale factor="2"}. Remember our checklist? Let's take a look at the Cayley table of the group.
 
 ```{python}
 # | echo: false
