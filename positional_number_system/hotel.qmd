@@ -1,3 +1,4 @@
+\pagebreak
 ## The Numbers Grand Hotel $\text{[hotel:1.0em]{.twemoji}}$
 
 :::{.fun-fact image="/static_images/hotel.pdf" width="0.7" scale="1.0"}
@@ -132,11 +133,12 @@ Climbing a ladder means adding $10$. For example, climbing a ladder from Room $7
 from yoyo_plots.hotel import Ladder, Label, Number
 from yoyo_plots.common import display_vector
 
-ladder = Ladder(x=0, y=0, width=60, height=200, color="red")
-label1 = Label([None, Number(7, "black")])
-label2 = Label([Number(1, "red"), Number(7, "black")])
+w, h = 40, 120
+ladder = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+label1 = Label([None, Number(7, "black")], cell_size=25)
+label2 = Label([Number(1, "red"), Number(7, "black")], cell_size=25)
 
-svg = ladder.to_svg(top_label=label2, bottom_label=label1, annotation="+10")
+svg = ladder.to_svg(top_label=label2, bottom_label=label1, annotation="+10", font_size=15)
 display_vector(svg)
 ```
 
@@ -169,17 +171,20 @@ Ladders can be stacked. Every ladder represents the number of times we add $10$.
 from yoyo_plots.hotel import Ladder, Label, Number, draw_ladders
 from yoyo_plots.common import display_vector
 
-ladder1 = Ladder(x=0, y=0, width=60, height=200, color="red")
-ladder2 = Ladder(x=0, y=0, width=60, height=200, color="red")
-ladder3 = Ladder(x=0, y=0, width=60, height=200, color="red")
+w, h = 40, 120
 
-label1 = Label([None, Number(7, "black")])
-label2 = Label([Number(3, "red"), Number(7, "black")])
+ladder1 = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+ladder2 = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+ladder3 = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+
+label1 = Label([None, Number(7, "black")], cell_size=25)
+label2 = Label([Number(3, "red"), Number(7, "black")], cell_size=25)
 
 svg = draw_ladders(
     [(ladder1, "+10"), (ladder2, "+10"), (ladder3, "+10")],  # bottom first
     top_label=label2,
     bottom_label=label1,
+    font_size=15
 )
 display_vector(svg)
 ```

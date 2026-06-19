@@ -24,12 +24,12 @@ $$
 
 is a subset of the previous set of animals, $A$. We denote it using the symbol $\subset$, that is $M \subset A$. 
 
-Some sets contain only $1$ element, like the set of moons of planet Earth $S = \left\{\text{[moon:2em]{.twemoji}}\right\}$. Some sets contain no elements, like the set of moons of planet Mercury or the set of sharks that can fly $S' = \{\}$. This set is called the empty set and is denoted with $\emptyset$.
+Some sets contain only $1$ element, like the set of moons of planet Earth $S = \left\{\text{[moon:2em]{.twemoji}}\right\}$. Some sets contain no elements, like the set of moons of planet Mercury or the set of sharks that can fly [$S' = \{\}$]{.scale factor="2"}. This set is called the empty set and is denoted with [$\emptyset$]{.scale factor="2"}.
 :::
 
 The set that results from extending the natural numbers with the negative reflections of the positive numbers is called the  **integers** and is denoted with ${\color{blue}{\mathbb{Z}}}$.^[$\mathbb{Z}$ stands for "Zahlen", the German word for "numbers".]
 
-:::{.big-math}
+:::{.big-math size="25pt"}
 $$
 \color{blue}{\mathbb{Z} = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}}
 $$
@@ -38,7 +38,7 @@ $$
 
 This new set contains all the numbers we have learned so far, including the natural numbers and the negative numbers. 
 
-:::{.big-math}
+:::{.big-math size="25pt"}
 $$
 {\color{red}{\mathbb{N}}} \subset {\color{blue}{\mathbb{Z}}}
 $$
@@ -46,7 +46,7 @@ $$
 
 The negative integers are also a set denoted with $\color{green}{\mathbb{Z}^-}$.
 
-:::{.big-math}
+:::{.big-math size="25pt"}
 $$
 {\color{green}{\mathbb{Z}^-}} \subset {\color{blue}{\mathbb{Z}}}
 $$

@@ -56,17 +56,19 @@ In our Grand Hotel analogy, climbing a floor means adding up $10$. Each time we 
 from yoyo_plots.hotel import Ladder, Label, Number, draw_ladders
 from yoyo_plots.common import display_vector
 
-ladder1 = Ladder(x=0, y=0, width=60, height=200, color="red")
-ladder2 = Ladder(x=0, y=0, width=60, height=200, color="red")
-ladder3 = Ladder(x=0, y=0, width=60, height=200, color="red")
+w, h = 40, 120
 
-label1 = Label([None, Number(5, "black")])
-label2 = Label([Number(3, "red"), Number(5, "black")])
+ladder1 = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+ladder2 = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+ladder3 = Ladder(x=0, y=0, width=w, height=h, color="red", line_width=2)
+
+label1 = Label([None, Number(5, "black")], cell_size=25)
+label2 = Label([Number(3, "red"), Number(5, "black")], cell_size=25)
 
 svg = draw_ladders(
     [(ladder1, "+10"), (ladder2, "+10"), (ladder3, "+10")],  # bottom first
     top_label=label2,
-    bottom_label=label1,
+    bottom_label=label1, font_size=15
 )
 display_vector(svg)
 ```

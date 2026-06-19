@@ -4,13 +4,13 @@ A number line is a spatial representation of numbers.  It allows us to map numbe
 
 
 ::: {.fun-fact image="/static_images/railways1.pdf" width="0.8" scale="0.9"}
-You can think of the number line as a straight railway. It extends in both directions, but remains one-dimensional and straight.
+You can think of the number line as a straight railway. It extends in both directions, but remains one-dimensional.
 :::
 
 ```{python}
 # | echo: false
 # | label: fig-number-line-1
-# | fig-cap: "Number line with the numbers we have learned so far. The arrows indicate that the line extends indefinitely in both directions."
+# | fig-cap: "Number line with the numbers we have learned so far. The arrows indicate that the line extends infinitely in both directions."
 # | fig-pos: "H"
 
 from yoyo_plots.common import display_vector
@@ -60,9 +60,9 @@ fig = (NumberLine(0, 5)
 display_vector(fig)
 ```
 
-## Addition and substraction on the number line
+## Addition and subtraction on the number line
 
-Adding up and substracting quantities on the number line is very intuitive. Adding up means moving in the direction of increasing numbers, and substracting means moving in the direction of decreasing numbers. I avoid using the words "right" and "left" or "east" and "west" because the line can be oriented or rotated in different ways.
+Adding up and subtracting quantities on the number line is very intuitive. Adding up means moving in the direction of increasing numbers, and subtracting means moving in the direction of decreasing numbers. I avoid using the words "right" and "left" or "east" and "west" because the line can be oriented or rotated in different ways.
 
 For instance, imagine we want to do the following operation:  $2+4$. We start $2$:
 ```{python}
@@ -127,7 +127,7 @@ display_vector(fig)
 ```
 
 
-Substracting is similar, only that we move in the direction of decreasing numbers. For instance, to compute $9 - 3$, we start at $9$ and move $3$ positions in the direction of decreasing numbers, and we end up at $6$.
+Subtracting is similar, only that we move in the direction of decreasing numbers. For instance, to compute $9 - 3$, we start at $9$ and move $3$ positions in the direction of decreasing numbers, and we end up at $6$.
 
 
 
@@ -426,6 +426,7 @@ This last result may be less intuitive. One way to understand it is that each mi
 Still confused? No worries—we'll revisit this topic later.
 
 
+\pagebreak
 
 ## How far apart are the tortoise $\text{[turtle:1em]{.twemoji}}$ and the hare $\text{[rabbit:1em]{.twemoji}}$?
 
