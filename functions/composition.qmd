@@ -85,7 +85,7 @@ diagram = Mapping(
 display_vector(diagram)
 ```
 
-The composition of the functions is denoted by $[g\circ f](x) = g(f(x))$.
+The composition of the functions is denoted by [$[g\circ f](x) = g(f(x))$]{.scale factor="2"}.
 
 This means that we first apply  $f:A\to B$, which sends elements in $A$ to their moms. For example, it sends $\text{Jonas} \to \text{Gabrielė}$, because $f(\text{Jonas}) = \text{Gabrielė}$. Then, $g:B\to C$ sends elements in $B$ to their fathers. For example, it sends $\text{Gabrielė} \to \text{Gediminas}$, because $g(\text{Gabrielė}) = \text{Gediminas}$.
 

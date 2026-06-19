@@ -84,7 +84,7 @@ r = draw_rectangle(width, height, show_grid=False, diagonal=("red", "white"), ri
 display_vector(r)
 ```
 
-In general, for a triangle with a base of $b$ and a height of $h$, the area is given by the formula:
+In general, for a right triangle with a base of $b$ and a height of $h$, the area is given by the formula:
 
 :::{.big-math}
 $$
@@ -337,7 +337,7 @@ a^n + b^n = c^n \quad \text{only for } n = 0, 1, 2
 $$
 :::
 
-But proving that one is a bit more difficult, so we are going to leave it for later $$\text{[wink:2em]{.twemoji}}$$.
+But proving that one is a bit more difficult, so we are going to leave it for later! $$\text{[wink:2em:0em:2]{.twemoji}}$$
 
 ### Exercises {.unnumbered .unlisted}
 
@@ -352,9 +352,12 @@ Draw or print four copies of the following triangle and color them in different 
 from yoyo_plots.geometry import draw_right_triangle
 from yoyo_plots.common import display_vector
 
+CELL_SIZE = 60
+W, H = 4, 3
+
 # Right triangle with dimension labels
 for _ in range(4):
-    display_vector(draw_right_triangle(8, 6, all_labels_inside=True, dimension_labels=("a", "b", "c"), show_hypotenuse_dimension=True))
+    display_vector(draw_right_triangle(W, H, all_labels_inside=True, dimension_labels=("a", "b", "c"), show_hypotenuse_dimension=True, cell_size=CELL_SIZE))
 ```
 
 Draw or print the following square:
@@ -366,7 +369,7 @@ from yoyo_plots.geometry import draw_rectangle
 from yoyo_plots.common import display_vector
 
 # Basic rectangle with dimensions and grid
-display_vector(draw_rectangle(8+6, 8+6, dimension_labels=("", ""), show_grid=False))
+display_vector(draw_rectangle(W+H, H+W, dimension_labels=("", ""), show_grid=False, cell_size=CELL_SIZE))
 ```
 
 

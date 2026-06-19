@@ -1,7 +1,7 @@
 ## Symmetries of a Square
 
 
-Let's do some bricolage! Print this page and the next one, then cut out the colored squares. Then, glue them together so that the colors match. It's helpful to print two sets so you can make comparisons. Leave the white square on the page.
+Let's do some bricolage! Print this page, then cut out the colored squares. Then, glue them together so that the colors match. It's helpful to print two sets so you can make comparisons. Leave the white square on the page.
 
 
 ```{python}

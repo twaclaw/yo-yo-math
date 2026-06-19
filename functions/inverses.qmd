@@ -121,14 +121,14 @@ The departure set, or domain, is Italy, or $I$.
 :::
 
 
-We see that the answer to both questions is no. There are no trains leaving from Rome and Napoli, and Milano is connected to more than one city in Switzerland. Therefore, the mapping $g: $I\to S$ is **not** a function. Therefore, the function $f: S \to I$ is not invertible.
+We see that the answer to both questions is no. There are no trains leaving from Rome and Napoli, and Milano is connected to more than one city in Switzerland.  The mapping $g: I\to S$ is **not** a function. Therefore, the function $f: S \to I$ is not invertible.
 
 For a function to be invertible, an additional condition is needed.
 
 
 :::{.fun-fact title="Invertible functions"}
 A function between two sets $A$ and $B$, $f:A\to B$, is invertible if every element in $B$ is the image of exactly one element in $A$.
-In other words, the function must implement a one-to-one correspondence between the two sets. This means that the inverse mapping, $f' B \to A$, is also a function.
+In other words, the function must implement a one-to-one correspondence between the two sets. This means that the inverse mapping, $f': B \to A$, is also a function.
 :::
 
 
@@ -211,11 +211,11 @@ display_vector(diagram)
 
 
 :::{.question} 
-How did we fix this function?"
+How did we fix this function?
 :::
 
-If we take a train from Zurich, we know that we will arrive at f(Zurich), which is Milan. To return to Zurich, we need to take a train to f^(−1)(Milan), which is Zurich.
-If we take a train from  Zurich, we know we will arrive at $f(\text{Zurich}) = \text{Milano}$. To return to Zurich, we need to take a train to $f^{-1}(\text{Milano}=\text{Zurich})$.
+If we take a train from Zurich, we know that we will arrive at f(Zurich), which is Milan. To return to Zurich, we need to take a train to $f^{-1}(\text{Milan})$, which is Zurich.
+If we take a train from  Zurich, we know we will arrive at $f(\text{Zurich}) = \text{Milano}$. To return to Zurich, we need to take a train to $f^{-1}(\text{Milano})=\text{Zurich}$.
 
 
 ### Exercises {.unnumbered .unlisted}
