@@ -386,6 +386,15 @@ fig = draw_operation_table(
 display_vector(fig)
 ```
 
+:::{.fun-fact title="Dihedral group"}
+This group of symmetries is called the _dihedral_  group of order $8$ and is denoted $D_4$. For any polygon of $n$ sides, the dihedral group with $2n$ elements is denoted $D_n$ or $D_{2n}$.
+:::
+
+:::{.question title="Why is called diehedral?"}
+I'll leave this one as an exercise for you to do some research on.
+:::
+
+
 
 ### Exercises {.unnumbered .unlisted}
 
