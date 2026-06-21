@@ -16,7 +16,7 @@ Another prominent example of things named after a number are geometric figures.
 ### Geometric figures {.unnumbered .unlisted}
 
 
-::: {.fun-fact image="/static_images/earth.pdf" width="0.7" scale="0.9"}
+::: {.fun-fact title="Earth measurement" image="/static_images/earth.pdf" width="0.7" scale="0.9"}
 Geometry is an important branch of mathematics. The word "geometry" comes from the Greek word "γεωμετρία" (geometría) meaning "earth (or land) measurement."
 
 According to an unverified story, there was an inscription at the entrance of Plato's Academy that read: "ἀγεωμέτρητος μηδεὶς εἰσίτω",  "Let none but geometers enter here."
