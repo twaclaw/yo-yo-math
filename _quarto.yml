@@ -3,7 +3,9 @@ project:
   type: book
   output-dir: _book
   pre-render: scripts/generate_polygons.py
-  post-render: scripts/prerender_math.mjs
+  post-render:
+    - scripts/prerender_math.mjs
+    - scripts/extract_plot_images.py
   resources:
     - "static_images/*.svg"
     - "static_images/*.pdf"
