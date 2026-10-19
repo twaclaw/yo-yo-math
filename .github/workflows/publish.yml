@@ -30,8 +30,10 @@ jobs:
           # (mainfont) in fonts-cmu. Without them lualatex silently substitutes.
           echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" \
             | sudo debconf-set-selections
+          # poppler-utils supplies pdftocairo, which the diagram filter uses to
+          # turn TikZ PDFs into SVG. Inkscape is kept as the fallback.
           sudo apt-get install -y --no-install-recommends \
-            librsvg2-bin inkscape fonts-cmu ttf-mscorefonts-installer
+            librsvg2-bin inkscape poppler-utils fonts-cmu ttf-mscorefonts-installer
           sudo fc-cache -f
 
       - name: Headless Chrome shared libraries
@@ -60,6 +62,25 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
+
+      - name: LaTeX packages for the TikZ diagram filter
+        # The filter shells out to pdflatex itself, so Quarto's on-demand
+        # package installation never covers it, and TinyTeX ships neither
+        # standalone nor pgf. Without these every TikZ figure fails to compile.
+        run: |
+          TEXBIN=$(dirname "$(find "$HOME/.TinyTeX/bin" -name pdflatex | head -1)")
+          echo "TeX binaries: $TEXBIN"
+          # Quarto knows where TinyTeX lives and uses it for its own PDF pass,
+          # but the diagram filter shells out to a bare `pdflatex`, so the
+          # directory has to be on PATH in the render step too, not just here.
+          echo "$TEXBIN" >> "$GITHUB_PATH"
+          export PATH="$TEXBIN:$PATH"
+          # TinyTeX pins an older tlmgr than the package repository it points
+          # at, and tlmgr refuses to install anything until it updates itself.
+          tlmgr update --self
+          tlmgr install standalone pgf
+          # Fail here, with a clear reason, rather than at render time.
+          kpsewhich standalone.cls tikz.sty
 
       # Code execution (Plotly/kaleido) dominates the build; reuse it when no
       # source or script changed, and fall back to the newest cache otherwise.

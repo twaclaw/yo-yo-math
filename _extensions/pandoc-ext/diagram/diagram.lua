@@ -79,6 +79,11 @@ end
 --- Reads the contents of a file.
 local function read_file (filepath)
   local fh = io.open(filepath, 'rb')
+  -- Return nil rather than crashing on a missing file: callers check for it,
+  -- and the crash used to bury the real error that caused the file to be absent.
+  if not fh then
+    return nil
+  end
   local contents = fh:read('a')
   fh:close()
   return contents
@@ -215,7 +220,6 @@ local tikz = {
           'latex',
           {template = tikz_template}
         )
-        io.stderr:write("---- TEX CODE ----\n" .. tex_code .. "\n------------------\n")
         write_file(tikz_file, tex_code)
 
         -- Execute the LaTeX compiler:
@@ -225,15 +229,32 @@ local tikz = {
           { '-interaction=nonstopmode', '-output-directory', tmpdir, tikz_file },
           ''
         )
+        -- A warning here would let the build succeed with the figure missing,
+        -- so fail instead: a dropped diagram should never reach the site.
         if not success then
-          warn(string.format(
-                 "The call\n%s\nfailed with error code %s. Output:\n%s",
-                 result.command,
-                 result.error_code,
-                 result.output
+          -- pandoc.pipe reports a command that ran and failed as a table, but
+          -- a command it could not start at all as something else entirely.
+          -- Printing the table's fields blindly turned the latter into three
+          -- lines of "nil", hiding that the binary was simply not on PATH.
+          local detail = (type(result) == 'table')
+            and string.format('exit code %s\n%s',
+                              tostring(result.error_code),
+                              tostring(result.output))
+            or  tostring(result)
+          error(string.format(
+                 'Running %s for a TikZ diagram failed. Is it installed and on PATH?\n%s',
+                 self.execpath or 'pdflatex',
+                 detail
           ))
         end
-        return read_file(pdf_file), 'application/pdf'
+        local pdf = read_file(pdf_file)
+        -- Only meaningful when the command actually ran; otherwise the error
+        -- above already said what went wrong and this would contradict it.
+        if success and (not pdf or pdf == '') then
+          error((self.execpath or 'pdflatex') ..
+                ' reported success but wrote no PDF for a TikZ diagram.')
+        end
+        return pdf, 'application/pdf'
       end)
     end)
   end
@@ -451,19 +472,38 @@ end
 --
 
 --- Converts a PDF to SVG.
+-- Tries each converter in turn. pdftocairo (poppler-utils) is headless and
+-- behaves the same everywhere, so it is preferred on build machines; inkscape
+-- is upstream's choice and is what most desktops already have. Output that
+-- contains no <svg> counts as a failure: a converter that quietly writes
+-- nothing would otherwise drop the figure from the document without a word,
+-- which is exactly how these diagrams went missing from the published site.
 local pdf2svg = function (imgdata)
   -- Using `os.tmpname()` instead of a hash would be slightly cleaner, but the
   -- function causes problems on Windows (and wasm). See, e.g.,
   -- https://github.com/pandoc-ext/diagram/issues/49
   local pdf_file = 'diagram-' .. pandoc.utils.sha1(imgdata) .. '.pdf'
   write_file(pdf_file, imgdata)
-  local args = {
-    '--export-type=svg',
-    '--export-plain-svg',
-    '--export-filename=-',
-    pdf_file
+  local converters = {
+    {'pdftocairo', {'-svg', pdf_file, '-'}},
+    {'inkscape', {'--export-type=svg', '--export-plain-svg',
+                  '--export-filename=-', pdf_file}},
   }
-  return pandoc.pipe('inkscape', args, ''), os.remove(pdf_file)
+  local problems = {}
+  for _, converter in ipairs(converters) do
+    local name, args = converter[1], converter[2]
+    local ok, out = pcall(pandoc.pipe, name, args, '')
+    if ok and out and out:find('<svg', 1, true) then
+      os.remove(pdf_file)
+      return out
+    end
+    problems[#problems + 1] = ok
+      and (name .. ': ran but produced no SVG')
+      or  (name .. ': ' .. tostring(type(out) == 'table' and out.output or out))
+  end
+  os.remove(pdf_file)
+  error('Could not convert a diagram from PDF to SVG. Tried:\n  ' ..
+        table.concat(problems, '\n  '))
 end
 
 local function properties_from_code (code, comment_start)
@@ -600,17 +640,19 @@ local function code_to_figure (conf)
       success, imgdata, imgtype =
         pcall(engine.compile, engine, block.text, dgr_opt.opt)
 
-      -- Bail if an error occurred; imgdata contains the error message
-      -- when that happens.
+      -- Upstream only warns here and returns the block unchanged, which ships
+      -- the raw diagram source as a code block and still exits 0. That is how
+      -- every TikZ figure silently vanished from the published book while CI
+      -- stayed green, so a failed diagram is fatal instead.
       if not success then
-        warn(PANDOC_SCRIPT_FILE, ': ', tostring(imgdata))
-        return nil
+        error(string.format('%s: could not render a %s diagram.\n%s',
+                            PANDOC_SCRIPT_FILE, diagram_type, tostring(imgdata)))
       elseif not imgdata then
-        warn(PANDOC_SCRIPT_FILE, ': Diagram engine returned no image data.')
-        return nil
+        error(PANDOC_SCRIPT_FILE .. ': ' .. diagram_type ..
+              ' engine returned no image data.')
       elseif not imgtype then
-        warn(PANDOC_SCRIPT_FILE, ': Diagram engine did not return a MIME type.')
-        return nil
+        error(PANDOC_SCRIPT_FILE .. ': ' .. diagram_type ..
+              ' engine did not return a MIME type.')
       end
 
       -- Convert SVG if necessary.
