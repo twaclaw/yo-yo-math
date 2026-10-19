@@ -3,6 +3,7 @@ project:
   type: book
   output-dir: _book
   pre-render: scripts/generate_polygons.py
+  post-render: scripts/prerender_math.mjs
   resources:
     - "static_images/*.svg"
     - "static_images/*.pdf"
@@ -66,6 +67,7 @@ filters:
 
 format:
   html:
+    html-math-method: katex
     theme:
       - united
       - custom.scss
@@ -133,6 +135,8 @@ format:
           \definecolor{kidBlue}{HTML}{0077BB}
           \definecolor{kidOrange}{HTML}{EE7733}
           \definecolor{kidGreen}{HTML}{009988}
+          % Used in math; KaTeX resolves the CSS name, LaTeX needs it defined.
+          \definecolor{fuchsia}{HTML}{FF00FF}
 
           % Apply color mix to headers (Blue/Orange)
           \addtokomafont{disposition}{\color{kidBlue}}

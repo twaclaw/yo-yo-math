@@ -1,0 +1,75 @@
+name: Publish book
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Deploy straight to Pages from the build artifact: no gh-pages branch, so the
+# repo never grows by one full copy of the site per publish.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: System dependencies
+        run: |
+          sudo add-apt-repository -y multiverse
+          sudo apt-get update
+          # Comic Sans MS (sansfont) ships in ttf-mscorefonts-installer; CMU Serif
+          # (mainfont) in fonts-cmu. Without them lualatex silently substitutes.
+          echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" \
+            | sudo debconf-set-selections
+          sudo apt-get install -y --no-install-recommends \
+            librsvg2-bin inkscape fonts-cmu ttf-mscorefonts-installer
+          sudo fc-cache -f
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - run: uv sync
+      - run: uv run plotly_get_chrome --yes   # kaleido renders the Plotly figures
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci   # katex, for the post-render pass
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      # Code execution (Plotly/kaleido) dominates the build; reuse it when no
+      # source or script changed, and fall back to the newest cache otherwise.
+      - uses: actions/cache@v4
+        with:
+          path: _freeze
+          key: freeze-${{ hashFiles('**/*.qmd', 'scripts/**', 'uv.lock') }}
+          restore-keys: freeze-
+
+      - run: uv run quarto render   # both html and pdf in one pass
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _book
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

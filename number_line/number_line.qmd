@@ -471,7 +471,7 @@ For example, in the following figure, we want to find the distance between the h
 
 - First, we identify the position of the hare, which is $1$.
 - We identify the position of the tortoise, which is $5$.
-- We count the number of segments between the two numbers (colored ${\color[RGB]{255,20,147}{\text{fuchsia}}}$ in the figure), which is $4$.
+- We count the number of segments between the two numbers (colored ${\color{fuchsia}{\text{fuchsia}}}$ in the figure), which is $4$.
 - An equivalent way to find the distance is to subtract one number from the other, i.e., $5- 1 = 4$.
 
 
