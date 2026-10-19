@@ -34,11 +34,22 @@ jobs:
             librsvg2-bin inkscape fonts-cmu ttf-mscorefonts-installer
           sudo fc-cache -f
 
-      - uses: astral-sh/setup-uv@v7
+      - name: Headless Chrome shared libraries
+        # Best-effort: the runner image ships most of these, and the audio
+        # library was renamed between Ubuntu releases. Chrome does not need it
+        # for image export, so a miss here must not fail the build.
+        run: |
+          sudo apt-get install -y --no-install-recommends \
+            libnss3 libatk-bridge2.0-0 libgbm1 || true
+          sudo apt-get install -y --no-install-recommends libasound2t64 \
+            || sudo apt-get install -y --no-install-recommends libasound2 || true
+
+      # setup-uv publishes no floating major tag past v7, so pin exactly.
+      - uses: astral-sh/setup-uv@v10.3.0
         with:
           enable-cache: true
       - run: uv sync
-      - run: uv run plotly_get_chrome --yes   # kaleido renders the Plotly figures
+      - run: uv run plotly_get_chrome -y   # kaleido renders the Plotly figures
 
       - uses: actions/setup-node@v5
         with:
@@ -60,7 +71,7 @@ jobs:
 
       - run: uv run quarto render   # both html and pdf in one pass
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _book
 
@@ -72,4 +83,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
